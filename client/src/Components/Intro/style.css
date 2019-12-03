@@ -1,0 +1,27 @@
+#intro {
+    height: 100vh;
+    padding: 1rem;
+    border: 1px solid black;
+    /* background: slategrey; */
+    background: url('../../Assets//images/IMG_3902.JPG');
+    background-size: cover;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    transition: transform 1s;
+    transform: translateY(0);
+}
+
+a:hover {
+    transform: translateY(-10%);
+    text-decoration: none;
+    color: white;
+}
