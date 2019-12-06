@@ -1,0 +1,31 @@
+.opaque-cover {
+    width: 100%;
+    border: 1px solid rgba(78, 78, 78, 0.788);
+    background: rgba(66, 66, 66, 0.418);
+    /* background: white; */
+    color: white;
+    position: relative;
+    padding: 3rem 6rem;
+    top: 25%;
+}
+
+html, body {
+    height: 100vh;
+    overflow:hidden;
+}
+
+/* THE HEIGHT OF THIS CONTAINER IS REALLY IMPORTANT */
+/* WHEN IT IS SET TO 100vh, there is whitespace which is bad */
+/* It is currently *working* but need to find a more permanent solution */
+.home-container {
+    height: 103vh;
+    overflow: scroll;
+    scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(100vh);
+    scroll-snap-type: y mandatory;
+    /* overflow: scroll; */
+}
+
+/* .y-scroll {
+    margin-bottom: 10px;
+} */

@@ -1,5 +1,25 @@
 #about {
+    scroll-snap-align: start;
+    position: relative;
+    /* scroll-snap-stop: normal; */
+    /* scroll-margin: 10px; */
     height: 100vh;
-    border: 1px solid black;
-    background:rgb(13, 52, 126);
+    /* border: 1px solid black; */
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url('../../Assets/images/IMG_4231.JPG');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.img-float {
+    float:left;
+    margin-right: 3rem;
+    /* padding: 1rem; */
+}
+
+h2 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 1.50rem "Lato", sans-serif;
+    text-align: center;
 }

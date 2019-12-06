@@ -1,5 +1,11 @@
 #contact {
+    scroll-snap-align: start;
+    scroll-snap-stop: normal;
+    /* scroll-margin: 10px; */
     height: 100vh;
-    border: 1px solid black;
-    background: rgb(1, 85, 1)
+    /* border: 1px solid black; */
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),url('../../Assets/images/IMG_3437.JPG');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }

@@ -1,0 +1,7 @@
+#home-featured {
+    scroll-snap-align: start;
+    scroll-snap-stop: normal;
+    /* scroll-margin: 10px; */
+    background: slategrey;
+    height:100vh;
+}
