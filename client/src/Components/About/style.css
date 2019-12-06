@@ -11,11 +11,11 @@
     background-repeat: no-repeat;
 }
 
-.img-float {
-    float:left;
-    margin-right: 3rem;
-    /* padding: 1rem; */
+.col {
+    text-align: center;
 }
+
+
 
 h2 {
     letter-spacing: 5px;

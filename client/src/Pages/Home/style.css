@@ -1,12 +1,19 @@
 .opaque-cover {
+    /* height: fit-content; */
     width: 100%;
     border: 1px solid rgba(78, 78, 78, 0.788);
-    background: rgba(66, 66, 66, 0.418);
+    background: rgba(66, 66, 66, 0.685);
     /* background: white; */
     color: white;
     position: relative;
-    padding: 3rem 6rem;
+    padding: 3rem 10rem;
     top: 25%;
+}
+
+.opaque-cover p {
+    letter-spacing: 1.5px;
+    font-weight: 100;
+    font-family: 'Lato', sans-serif;
 }
 
 html, body {
@@ -24,6 +31,14 @@ html, body {
     scroll-snap-points-y: repeat(100vh);
     scroll-snap-type: y mandatory;
     /* overflow: scroll; */
+}
+
+.img-float {
+    float:left;
+    margin-right: 3rem;
+    width: 400px;
+    border-radius: 25px;
+    /* padding: 1rem; */
 }
 
 /* .y-scroll {

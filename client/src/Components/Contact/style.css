@@ -4,8 +4,33 @@
     /* scroll-margin: 10px; */
     height: 100vh;
     /* border: 1px solid black; */
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),url('../../Assets/images/IMG_3437.JPG');
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)),url('../../Assets/images/IMG_3437.JPG');
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
+}
+
+.contact-area {
+    height: auto;
+    overflow:auto;
+}
+
+
+.link-rise {
+    transition: transform 0.5s;
+}
+
+.link-rise:hover {
+    transform: translateY(-15%);
+}
+
+.link {
+    text-decoration: none;
+    color:white;
+    transition: transform 0.5s;
+}
+
+.link:hover {
+    text-decoration: none;
+    color:white;
 }

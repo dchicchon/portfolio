@@ -41,8 +41,8 @@ class Navbar extends React.Component {
                     <div className='nav-links'>
                         <ul>
                             <li><Link to='/code'>Code</Link></li>
-                            <li><Link to='/music'>Music</Link></li>
-                            <li><Link to='/photography'>Photos</Link></li>
+                            <li><Link to='/photography'>Photography</Link></li>
+                            <li><Link to='/music'>Videography</Link></li>
                         </ul>
                     </div>
                 </nav>
