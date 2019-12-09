@@ -19,8 +19,6 @@ class Code extends React.Component {
                 <Featured />
                 <CodeAbout />
                 <Projects />
-                <div>About</div>
-                <div>Other Projects</div>
             </div>
         )
     }

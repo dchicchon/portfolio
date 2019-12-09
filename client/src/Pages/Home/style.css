@@ -10,6 +10,12 @@
     top: 25%;
 }
 
+@media only screen and (max-width: 600px) {
+    .opaque-cover {
+        padding: 3rem 1rem;
+    }
+}
+
 .opaque-cover p {
     letter-spacing: 1.5px;
     font-weight: 100;

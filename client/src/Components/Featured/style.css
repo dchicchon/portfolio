@@ -1,5 +1,9 @@
 .featured {
-    /* height: 100vh; */
-    padding: 5rem;
+    height: 100vh;
+    padding: 3rem 5rem;
     background: rgb(36, 35, 35);
+}
+
+.featured-carousel {
+    width: 60%;
 }
