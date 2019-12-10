@@ -26,7 +26,7 @@ const About = () => {
                 {/* Might add profile later */}
                 {/* <img className='img-float' src={profileimg} alt='daniel_chicchon' width='200px' /> */}
                 <p>
-                    I am an Web Designer and Full Stack Web Developer currently residing the in the Outer Richmond District of San Francisco. In my free time, I take photographs, make videos, play music, and explore the city with friends. I made this site to host all of the projects I have worked on, current projects, photographs and videos.
+                    I'm a Web Designer and Full Stack Web Developer currently residing the in the Outer Richmond District of San Francisco. In my free time, I take photographs, make videos, play music, and explore the city with friends. I made this site to host all of the projects I have worked on, current projects, photographs and videos.
                 </p>
                 {/* <Container> */}
                 <Row className="justify-content-md-center">
