@@ -64,7 +64,7 @@ const Featured = () => {
                                 </a>
                                 <Carousel.Caption>
                                     <h4 className='project-title'>A planner app that helps keep track of your day</h4>
-                                    <p className='project-caption'>Firebase, Yelp API, Bart API, Open Weather API</p>
+                                    <p className='project-caption'>Firebase, APIs, JQuery, HTML5, CSS</p>
                                 </Carousel.Caption>
                             </Carousel.Item>
                         </Carousel>

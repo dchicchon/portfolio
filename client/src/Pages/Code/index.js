@@ -17,6 +17,30 @@ class Code extends React.Component {
 
     }
 
+    fadeIn = () => {
+        console.log("I exist")
+        let techArr = document.getElementsByClassName('boxshadow')
+        console.log(techArr)
+        techArr.forEach(elm => {
+            let bottom_of_object = elm.position().top + elm.outerHeight;
+            let bottom_of_window = window.scrollTop() + window.innerHeight();
+            console.log(bottom_of_object);
+            console.log(bottom_of_window);
+            if (bottom_of_window > bottom_of_object) {
+                elm.animate({ 'opacity': '1' }, 500);
+            }
+        });
+    }
+
+    componentDidMount() {
+        window.onscroll = () => {
+            console.log("Scroll")
+        }
+    }
+
+    componentWillUnmount() {
+    }
+
     render() {
         return (
             <div>
