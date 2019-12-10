@@ -8,11 +8,11 @@ class Navbar extends React.Component {
     }
 
     hideBar = () => {
-
         const { hidden } = this.state
+        console.log(window.scrollY)
         // This is hardcoded for now. Will not work with everything. Must find a more permanent solution
-        if (window.scrollY > 560) { // if it is greater than the intro
-            // this.setState({ hidden: false })
+        if (window.scrollY > 100) { // if it is greater than the intro
+            this.setState({ hidden: false })
             window.scrollY > this.prev ?
                 !hidden && this.setState({ hidden: true })
                 :

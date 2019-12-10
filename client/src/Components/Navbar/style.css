@@ -8,13 +8,13 @@
     z-index: 100;
     animation-name: dropIn;
     animation-duration: 0.5s;
-    /* animation-fill-mode: forwards ; */
+    animation-fill-mode: forwards ;
 }
 
 @keyframes dropIn {
     from {top: -50px;}
     to {top: 0px;}
-}
+} 
 
 .nav-hide {
     position: fixed;

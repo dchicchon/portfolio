@@ -1,25 +1,19 @@
 #intro {
     scroll-snap-align: start;
     scroll-snap-stop: normal;
-    /* scroll-margin: 10px; */
     height: 100vh;
     padding: 1rem;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('../../Assets//images/IMG_3902.JPG');
-    /* the gradient on top, adjust color and opacity to your taste */
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('../../Assets/images/introx1400.jpg');
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    /* border-top: 2.5rem black solid; */
-    /* border-bottom: 2.5rem black solid; */
 }
 
 .content {
     transform: translateY(100%);
-    /* filter: brightness(150%) */
 }
 
 h1 {
-    /* background-attachment; */
     text-align: center;
     font-size: 4rem;
     font-weight: 100;
@@ -35,3 +29,6 @@ h1 {
 .rise:hover {
     transform: translateY(-15%)
 }
+
+/* minified */
+/* #intro{scroll-snap-align:start;scroll-snap-stop:normal;height:100vh;padding:1rem;background:linear-gradient(0deg,rgba(0,0,0,.1),rgba(0,0,0,.2)),url(../../Assets/images/IMG_3902.JPG);background-size:cover;background-attachment:fixed;background-repeat:no-repeat}.content{transform:translateY(100%)}h1{text-align:center;font-size:4rem;font-weight:100;letter-spacing:.5rem;margin-bottom:2rem}.rise{transition:transform .5s;width:min-content}.rise:hover{transform:translateY(-15%)} */

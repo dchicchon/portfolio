@@ -7,3 +7,26 @@
 .featured-carousel {
     width: 60%;
 }
+
+@media only screen and (max-width: 414px) {
+    h3 {
+        font-size: 3rem;
+    }
+
+    .featured {
+        padding: 0;
+        height: 50vh
+    }
+
+    .featured-carousel {
+        width: 100%;
+    }
+
+    .project-caption {
+        display:none;
+    }
+    .project-title {
+        display: none;
+    }
+
+}

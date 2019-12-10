@@ -11,8 +11,8 @@ class Photography extends React.Component {
         return (
             <div id='photography'>
                 <h1>Photography</h1>
+                {/* <Gallery /> */}
                 {/* Here is where I append all of my photos */}
-                <section></section>
             </div>
         )
     }

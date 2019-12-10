@@ -3,8 +3,8 @@ import React from 'react';
 import './style.css';
 
 // Components
-import Navbar from '../../Components/Navbar';
-import Block from '../../Components/Block';
+// import Navbar from '../../Components/Navbar';
+// import Block from '../../Components/Block';
 import Intro from '../../Components/Intro';
 import About from '../../Components/About';
 import HomeFeatured from '../../Components/HomeFeatured';
@@ -33,7 +33,7 @@ class Home extends React.Component {
     render() {
         return (
             <div className='home-container y-proximity y-scroll'>
-                <Navbar />
+                {/* <Navbar /> */}
                 <Intro />
                 {/* <Block /> */}
                 <About />

@@ -1,0 +1,9 @@
+html, body {
+    height: 100vh;
+    overflow:hidden;
+}
+
+#code {
+    height: 103vh;
+    overflow: scroll;
+}

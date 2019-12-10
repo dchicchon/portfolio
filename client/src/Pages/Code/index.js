@@ -5,7 +5,10 @@ import './style.css';
 // Components
 import Featured from '../../Components/Featured';
 import CodeAbout from '../../Components/CodeAbout';
-import Projects from '../../Components/Projects';
+import Footer from '../../Components/Footer';
+// import Projects from '../../Components/Projects';
+
+import Navbar from '../../Components/Navbar';
 
 
 class Code extends React.Component {
@@ -16,9 +19,13 @@ class Code extends React.Component {
     render() {
         return (
             <div>
-                <Featured />
-                <CodeAbout />
-                <Projects />
+                <Navbar />
+                <div id='code'>
+                    <Featured />
+                    <CodeAbout />
+                    <Footer />
+                    {/* <Projects /> */}
+                </div>
             </div>
         )
     }

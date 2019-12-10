@@ -10,8 +10,6 @@ const HomeFeatured = () => {
                 <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi obcaecati tempore corporis quisquam, pariatur adipisci? Rerum esse, temporibus expedita, magnam ea fugiat aliquid at maxime modi neque officia sequi laborum.
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi obcaecati tempore corporis quisquam, pariatur adipisci? Rerum esse, temporibus expedita, magnam ea fugiat aliquid at maxime modi neque officia sequi laborum.
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi obcaecati tempore corporis quisquam, pariatur adipisci? Rerum esse, temporibus expedita, magnam ea fugiat aliquid at maxime modi neque officia sequi laborum.
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi obcaecati tempore corporis quisquam, pariatur adipisci? Rerum esse, temporibus expedita, magnam ea fugiat aliquid at maxime modi neque officia sequi laborum.
                     
                 </p>
 

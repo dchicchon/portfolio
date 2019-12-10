@@ -26,7 +26,7 @@ const Featured = () => {
                     <Col xs lg='10'>
                         <Carousel>
                             <Carousel.Item>
-                                <a target='_blank' href='http://www.gittrack.ml/'>
+                                <a target='_blank' rel='noopener noreferrer' href='http://www.gittrack.ml/'>
 
                                     <img
                                         className="d-block w-100"
@@ -35,24 +35,27 @@ const Featured = () => {
                                     />
                                 </a>
                                 <Carousel.Caption>
-                                    <h4>A commit tracking site for instructors to keep track of student progress.</h4>
-                                    <p>React.js, MySQL, Victory.js, Passport.js</p>
+                                    <h4 className='project-title'>A commit tracking site for instructors to keep track of student progress.</h4>
+                                    <p className='project-caption'>React.js, MySQL, Victory.js, Passport.js</p>
                                 </Carousel.Caption>
                             </Carousel.Item>
                             <Carousel.Item>
-                                <img
-                                    className="d-block w-100"
-                                    src={spaceTrivia}
-                                    alt="Third slide"
-                                />
+                                <a target='_blank' rel='noopener noreferrer' href='https://spacetrivia.herokuapp.com/' >
+
+                                    <img
+                                        className="d-block w-100"
+                                        src={spaceTrivia}
+                                        alt="Third slide"
+                                    />
+                                </a>
 
                                 <Carousel.Caption>
-                                    <h4>Test your knowledge of the Solar System!</h4>
-                                    <p>JQuery, HMTL5, CSS, MongoDB</p>
+                                    <h4 className='project-title'>Test your knowledge of the Solar System!</h4>
+                                    <p className='project-caption'>JQuery, HMTL5, CSS, MongoDB</p>
                                 </Carousel.Caption>
                             </Carousel.Item>
                             <Carousel.Item>
-                                <a target='_blank' href='http://planit.ml/'>
+                                <a target='_blank' rel='noopener noreferrer' href='http://planit.ml/'>
                                     <img
                                         className="d-block w-100"
                                         src={plannit}
@@ -60,8 +63,8 @@ const Featured = () => {
                                     />
                                 </a>
                                 <Carousel.Caption>
-                                    <h3>A planner app that helps keep track of your day</h3>
-                                    <p>Firebase, Yelp API, Bart API, Open Weather API</p>
+                                    <h4 className='project-title'>A planner app that helps keep track of your day</h4>
+                                    <p className='project-caption'>Firebase, Yelp API, Bart API, Open Weather API</p>
                                 </Carousel.Caption>
                             </Carousel.Item>
                         </Carousel>

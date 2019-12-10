@@ -1,0 +1,41 @@
+#code-about {
+    /* margin-top: 2rem; */
+    /* background: rgb(36, 35, 35); */
+    width: 100%;
+    padding: 2rem;
+    height: 100vh;
+    color: black;
+    /* background: rgb(36, 35, 35); */
+}
+
+#code-section {
+    background: white;
+    /* transform: translateY(25%); */
+    margin: 0 auto;
+    padding: 2rem;
+    width: 90%;
+    height: 70%;
+}
+
+#code-title {
+    font-size: 2rem;
+    font-weight: 100;
+    letter-spacing: 0.35rem;
+}
+
+.tech-link {
+    text-decoration: none;
+    color: black;
+}
+
+.tech-link:hover {
+    color:black;
+}
+
+.boxshadow {
+    transition: box-shadow 0.5s
+}
+
+.boxshadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
