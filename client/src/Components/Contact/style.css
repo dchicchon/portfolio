@@ -12,8 +12,18 @@
 
 .contact-area {
     height: auto;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
     overflow:auto;
 }
+
+@media only screen and (max-width: 600px) {
+    .img-float {
+        width: 95%;
+    }
+}
+
 
 
 .link-rise {

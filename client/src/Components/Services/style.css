@@ -1,0 +1,26 @@
+#services {
+    width: 100%;
+    height: 60vh;
+    padding: 2rem;
+    margin: 1rem auto;
+    color: black;
+}
+
+@media only screen and (max-width: 600px) {
+    #services {
+        height: auto;
+        margin-bottom: 1rem;
+    }
+}
+
+#services-title {
+    font-size: 2rem;
+    font-weight: 100;
+    letter-spacing: 0.35rem;
+}
+
+.service-item {
+    font-size: 1.25rem;
+    text-transform: capitalize;
+    margin-bottom:1.5rem;
+}

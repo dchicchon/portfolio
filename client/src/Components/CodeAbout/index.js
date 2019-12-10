@@ -2,7 +2,6 @@ import React from 'react';
 import './style.css';
 
 import Container from 'react-bootstrap/Container';
-import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
@@ -10,7 +9,7 @@ const CodeAbout = () => {
     return (
         <div id='code-about'>
             <Container>
-                <h1 id='code-title'>Available Services</h1>
+                <h1 id='code-title'>Technologies</h1>
                 {/* <h3>Skills</h3> */}
                 <Row className='justify-content-md-center m-4'>
                     <Col className='boxshadow p-2' xs lg={3}>
@@ -40,9 +39,10 @@ const CodeAbout = () => {
                 </Row>
                 <Row className='justify-content-md-center m-4'>
                     <Col className='boxshadow p-2' xs lg={3}>
-                        <a className='tech-link' target='_blank' href='https://www.python.org/' rel='noopener noreferrer'>
-                            <p>Python</p>
-                            <i className="fab fa-python fa-w-20 fa-7x"></i>
+                        <a className='tech-link' target='_blank' href='https://www.paypal.com/us/webapps/mpp/merchant' rel='noopener noreferrer'>
+                            <p>Paypal</p>
+                            <i className="fab fa-paypal fa-w-20 fa-7x"></i>
+                            {/* <i className="fab fa-python fa-w-20 fa-7x"></i> */}
 
                         </a>
                     </Col>

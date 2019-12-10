@@ -13,6 +13,7 @@
 @media only screen and (max-width: 600px) {
     .opaque-cover {
         padding: 3rem 1rem;
+        top:15%;
     }
 }
 
@@ -31,7 +32,7 @@ html, body {
 /* WHEN IT IS SET TO 100vh, there is whitespace which is bad */
 /* It is currently *working* but need to find a more permanent solution */
 .home-container {
-    height: 102.8vh;
+    height: 102.9vh;
     overflow: scroll;
     scroll-snap-type: mandatory;
     scroll-snap-points-y: repeat(100vh);

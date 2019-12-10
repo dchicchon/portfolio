@@ -4,6 +4,7 @@ import './style.css';
 
 // Components
 import Featured from '../../Components/Featured';
+import Services from '../../Components/Services';
 import CodeAbout from '../../Components/CodeAbout';
 import Footer from '../../Components/Footer';
 // import Projects from '../../Components/Projects';
@@ -22,9 +23,9 @@ class Code extends React.Component {
                 <Navbar />
                 <div id='code'>
                     <Featured />
+                    <Services />
                     <CodeAbout />
                     <Footer />
-                    {/* <Projects /> */}
                 </div>
             </div>
         )
