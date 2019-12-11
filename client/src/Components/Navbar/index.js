@@ -8,8 +8,8 @@ class Navbar extends React.Component {
     }
 
     hideBar = () => {
+        console.log("i exist!")
         const { hidden } = this.state
-        console.log(window.scrollY)
         // This is hardcoded for now. Will not work with everything. Must find a more permanent solution
         if (window.scrollY > 100) { // if it is greater than the intro
             this.setState({ hidden: false })
@@ -32,14 +32,15 @@ class Navbar extends React.Component {
     }
 
     render() {
-        const classHide = this.state.hidden ? 'nav-hide' : 'nav-show'
+        // const classHide = this.state.hidden ? 'nav-hide' : 'nav-show'
         return (
-            <header className={classHide}>
+            <header className={this.props.active}>
                 <nav className='nav-area'>
-                    <div className='nav-title'>Home</div>
-                    <div className='spacer'></div>
+                    {/* <div className='nav-title'>Home</div> */}
+                    {/* <div className='spacer'></div> */}
                     <div className='nav-links'>
                         <ul>
+                            <li><Link to='/'>Home</Link></li>
                             <li><Link to='/code'>Code</Link></li>
                             <li><Link to='/photography'>Photography</Link></li>
                             <li><Link to='/music'>Videography</Link></li>

@@ -1,6 +1,6 @@
 .nav-show {
     position: fixed;
-    height: 56px;
+    height: 7%;
     top: 0;
     left: 0;
     background: rgb(28, 28, 31);
@@ -18,7 +18,7 @@
 
 .nav-hide {
     position: fixed;
-    height: 56px;
+    height: 7%;
     top: 0;
     left: 0;
     background: rgb(28, 28, 31);
@@ -31,6 +31,8 @@
 .nav-area {
     display: flex;
     align-items: center;
+    justify-content: center;
+    text-align: center;
     height: 100%;
     padding: 0 1rem;
 }
