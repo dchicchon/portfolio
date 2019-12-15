@@ -1,24 +1,26 @@
 .nav-show {
     position: fixed;
-    height: 7%;
+    height: 10%;
     top: 0;
     left: 0;
     background: rgb(28, 28, 31);
-    width: 100vw;
+    width: 100%;
+    /* transition: top 0.6s; */
     z-index: 100;
     animation-name: dropIn;
     animation-duration: 0.5s;
     animation-fill-mode: forwards ;
 }
 
-@keyframes dropIn {
-    from {top: -50px;}
-    to {top: 0px;}
-} 
+/* @keyframes dropIn { */
+    /* from {top: -50px;} */
+    /* to {top: 0px;} */
+/* }  */
 
 .nav-hide {
+    /* top: 50px; */
     position: fixed;
-    height: 7%;
+    height: 10%;
     top: 0;
     left: 0;
     background: rgb(28, 28, 31);

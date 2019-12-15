@@ -13,14 +13,41 @@ import Navbar from '../../Components/Navbar';
 
 
 class Code extends React.Component {
-    state = {
-        hidden: true
+    state = { hidden: false };
+
+    componentDidMount() {
+        // window.addEventListener('scroll', this.hideBar)
+        this.navbarfunction()
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('scroll', this.hideBar)
+    }
+
+    hideBar = (e) => {
+        console.log(e)
+        console.log("I exist")
+    }
+
+    navbarfunction() {
+        console.log("itworks")
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function () {
+            console.log("scrolling")
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("navbar").style.top = "0";
+            } else {
+                document.getElementById("navbar").style.top = "-50px";
+            }
+            prevScrollpos = currentScrollPos;
+        }
     }
 
     render() {
         return (
             <div>
-                <Navbar />
+                {this.state.hidden ? <Navbar active='nav-hide' /> : <Navbar active='nav-show' />}
                 <div id='code'>
                     <Featured />
                     <Services />
