@@ -1,16 +1,13 @@
 #code-about {
-    /* margin-top: 2rem; */
-    /* background: rgb(36, 35, 35); */
     width: 100%;
     padding: 2rem;
-    height: 100vh;
+    /* height: 100vh; */
     color: black;
-    /* background: rgb(36, 35, 35); */
+    background-color: white;
 }
 
 #code-section {
     background: white;
-    /* transform: translateY(25%); */
     margin: 0 auto;
     padding: 2rem;
     width: 90%;

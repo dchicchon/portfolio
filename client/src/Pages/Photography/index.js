@@ -1,18 +1,24 @@
 import React from "react";
 import { storage } from "../../Utils/firebaseConfig";
-// import axios from "axios";
 import "./style.css";
+
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 // https://firebase.google.com/docs/storage/web/list-files
 // https://stackoverflow.com/questions/37335102/how-to-get-a-list-of-all-files-in-cloud-storage-in-a-firebase-app
 
 // Components
+import Navbar from "../../Components/Navbar";
 import Photo from "../../Components/Photo";
+// import Footer from "../../Components/Footer";
 
 // This Page will have to make a call to the server to serve up the images that I send it from my unsplash account
 class Photography extends React.Component {
   state = {
-    photos: []
+    photos: [],
+    loading: true
   };
 
   // Listing all the urls
@@ -26,15 +32,18 @@ class Photography extends React.Component {
           imageRef.getDownloadURL().then(url => {
             // If the url exists, push the url to the urlList
             if (url) {
-              urlsList.push(url);
+              let image = {
+                url,
+                name: imageRef.name
+              };
+              urlsList.push(image);
             }
 
             // Have a better way of doing this in the future
             if (urlsList.length > 5) {
-              console.log("Return URLs");
-              console.log(urlsList);
               this.setState({
-                photos: urlsList
+                photos: urlsList,
+                loading: false
               });
             }
           });
@@ -51,17 +60,31 @@ class Photography extends React.Component {
 
   render() {
     return (
-      <div id="photography">
-        <h1>Photography</h1>
-        <section className="container">
-          {this.state.photos
-            ? this.state.photos.map((photo, i) => (
-                <Photo src={photo} key={i} alt={`${photo}img`} />
-              ))
-            : "Loading..."}
-          {/* <Gallery /> */}
-          {/* Here is where I append all of my photos */}
-        </section>
+      <div>
+        <Navbar />
+        <div id="photography">
+          <Container>
+            <Row>
+              <Col className='m-5'>
+                <h2>Photography</h2>
+              </Col>
+            </Row>
+            {this.state.loading ? (
+              <Row>
+                <Col>
+                  <p style={{ textAlign: "center" }}>Loading...</p>
+                </Col>
+              </Row>
+            ) : (
+              <Row>
+                {this.state.photos.map((photo, i) => (
+                  <Photo src={photo.url} key={i} alt={photo.name} />
+                ))}
+              </Row>
+            )}
+          </Container>
+          {/* <Footer /> */}
+        </div>
       </div>
     );
   }

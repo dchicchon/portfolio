@@ -1,4 +1,4 @@
-.featured {
+#featured {
     height: 100vh;
     padding: 3rem 5rem;
     background: rgb(36, 35, 35);
@@ -9,13 +9,14 @@
 }
 
 @media only screen and (max-width: 414px) {
-    h3 {
-        font-size: 3rem;
-    }
-
-    .featured {
+    #featured {
         padding: 0;
         height: 50vh
+    }
+
+    .featured-title {
+        font-size: 2rem;
+        margin-top:3rem;
     }
 
     .featured-carousel {

@@ -1,50 +1,48 @@
 #contact {
-    scroll-snap-align: start;
-    scroll-snap-stop: normal;
-    /* scroll-margin: 10px; */
-    height: 100vh;
-    /* border: 1px solid black; */
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)),url('../../Assets/images/IMG_3437.JPG');
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
+  scroll-snap-align: start;
+  /* scroll-snap-stop: normal; */
+  height: 100vh;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)),
+    url("../../Assets/images/IMG_3437.JPG");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 .contact-area {
-    height: auto;
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* justify-content: center; */
-    overflow:auto;
+  height: auto;
+  overflow: auto;
 }
 
 @media only screen and (max-width: 600px) {
-    .img-float {
-        width: 95%;
-    }
+  .img-float {
+    width: 95%;
+  }
+
+  .contact-area {
+    overflow: none;
+  }
 }
 
-
-
 .link-rise {
-    transition: transform 0.5s;
+  transition: transform 0.5s;
 }
 
 .link-rise:hover {
-    transform: translateY(-15%);
+  transform: translateY(-15%);
 }
 
 .link {
-    text-decoration: none;
-    color:white;
-    transition: transform 0.5s;
+  text-decoration: none;
+  color: white;
+  transition: transform 0.5s;
 }
 
 .link:hover {
-    text-decoration: none;
-    color:white;
+  text-decoration: none;
+  color: white;
 }
 
 .icon {
-    margin-right: 1.5rem;
+  margin-right: 1.5rem;
 }

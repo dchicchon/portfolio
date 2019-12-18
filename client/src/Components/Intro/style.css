@@ -1,9 +1,10 @@
 #intro {
     scroll-snap-align: start;
-    scroll-snap-stop: normal;
+    /* scroll-snap-stop: normal; */
     height: 100vh;
-    padding: 1rem;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('../../Assets/images/introx1400.jpg');
+    /* padding: 1rem; */
+    /* background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('../../Assets/images/intro.JPG'); */
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('../../Assets/images/intro-background.jpg');
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;

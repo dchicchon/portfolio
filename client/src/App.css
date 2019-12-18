@@ -1,6 +1,44 @@
 .App {
-  color:white;
-  font-family: 'Lato', sans-serif;
+  color: white;
+  font-family: "Lato", sans-serif;
+  /* width: 100%; */
+}
+
+html {
+  height: 100%;
+  background: rgb(22, 22, 22);
+  /* background-color: white; */
+  /* background-color: rgb(41, 44, 48); */
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  color: rgb(25, 168, 216);
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 400px) {
+  ::-webkit-scrollbar {
+    width: 0;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    display: none;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: none;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: none;
+  }
 }
 
 /* width */

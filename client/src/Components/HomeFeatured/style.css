@@ -1,9 +1,18 @@
 #home-featured {
     scroll-snap-align: start;
-    background: url('../../Assets/images/shirtx1400.jpg');
+    background: url('../../Assets/images/featured-background.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-
     height:100vh;
+}
+
+.rise-f {
+    width: min-content;
+    transition: transform 0.5s
+}
+
+.rise-f:hover {
+    transform: translateY(-5%);
+    width: min-content;
 }

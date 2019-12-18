@@ -14,7 +14,6 @@ const CodeAbout = () => {
         <div id='code-about'>
             <Container>
                 <h1 id='code-title'>Technologies</h1>
-                {/* <h3>Skills</h3> */}
                 <FadeIn>
 
                     <Row className='justify-content-md-center m-4'>

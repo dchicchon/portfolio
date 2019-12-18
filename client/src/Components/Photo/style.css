@@ -1,3 +1,32 @@
 .photo {
-    width: 100%;
+  width: 47%;
+  margin: 1rem;
+  float: left;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0);
+  /* Might change this in the future */
+  transition: width 1s;
 }
+
+.photo-clicked {
+    /* width: 65%; */
+  /* background: rgba(90, 88, 88, 0.5); */
+}
+
+.photo-img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 420px) {
+  .photo {
+    width: 95%;
+    margin: 1rem;
+  }
+}
+
+/* @media only screen and (max-width: 420px) {
+    .photo {
+        width: 95%;
+        margin: 1rem;
+    }
+} */
