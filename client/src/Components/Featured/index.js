@@ -9,13 +9,11 @@ import Col from "react-bootstrap/Col";
 
 // Assets
 import gittrack from "../../Assets/images/gittrackLogo.png";
+import gittrackSmall from "../../Assets/images/gittrackLogox400.jpg";
 import plannit from "../../Assets/images/newplan.jpg";
+import plannitSmall from "../../Assets/images/newplanx400.jpg";
 import spaceTrivia from "../../Assets/images/spaceLogo.png";
-
-// Width 376px
-
-// Width 414px
-
+import spaceTriviaSmall from "../../Assets/images/spaceLogox400.jpg";
 
 class Featured extends React.Component {
   state = {
@@ -24,33 +22,7 @@ class Featured extends React.Component {
 
   componentDidMount() {
     const screenWidth = window.screen.width;
-    // const screenHeight = window.screen.height;
-
-    if (screenWidth > 414) {
-      this.setState({
-        projectList: [
-          {
-            image: gittrack,
-            link: "http://www.gittrack.ml/",
-            description:
-              " A commit tracking site for instructors to keep track of student progress.",
-            caption: "React.js, MySQL, Victory.js, Passport.js"
-          },
-          {
-            image: plannit,
-            link: "http://planit.ml/",
-            description: "A planner app that helps keep track of your day",
-            caption: "Firebase, APIs, JQuery, HTML5, CSS"
-          },
-          {
-            image: spaceTrivia,
-            link: "https://spacetrivia.herokuapp.com/",
-            description: "Test your knowledge of the Solar System!",
-            caption: "JQuery, HMTL5, CSS, MongoDB"
-          }
-        ]
-      });
-    } else if (screenWidth >= 375 && screenWidth < 414) {
+    if (screenWidth > 400) {
       this.setState({
         projectList: [
           {
@@ -78,20 +50,20 @@ class Featured extends React.Component {
       this.setState({
         projectList: [
           {
-            image: gittrack,
+            image: gittrackSmall,
             link: "http://www.gittrack.ml/",
             description:
               " A commit tracking site for instructors to keep track of student progress.",
             caption: "React.js, MySQL, Victory.js, Passport.js"
           },
           {
-            image: plannit,
+            image: plannitSmall,
             link: "http://planit.ml/",
             description: "A planner app that helps keep track of your day",
             caption: "Firebase, APIs, JQuery, HTML5, CSS"
           },
           {
-            image: spaceTrivia,
+            image: spaceTriviaSmall,
             link: "https://spacetrivia.herokuapp.com/",
             description: "Test your knowledge of the Solar System!",
             caption: "JQuery, HMTL5, CSS, MongoDB"
