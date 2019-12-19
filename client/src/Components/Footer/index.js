@@ -4,7 +4,7 @@ import "./style.css";
 
 let linkStyle = {
   color: "white",
-  marginTop: "1rem"
+  // marginTop: "1rem"
 };
 
 const Footer = props => {

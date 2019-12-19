@@ -3,7 +3,7 @@
   /* scroll-snap-stop: normal; */
   height: 100vh;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)),
-    url("../../Assets/images/IMG_3437.JPG");
+    url("../../Assets/images/contact-background.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -14,13 +14,40 @@
   overflow: auto;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 375px) and (max-height: 812px) {
+  #contact {
+    scroll-snap-align: start;
+    /* scroll-snap-stop: normal; */
+    height: 100vh;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)),
+      url("../../Assets/images/contact-backgroundx812.jpg");
+    /* background-size: cover; */
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+  }
+
   .img-float {
-    width: 95%;
+    width: 85%;
   }
 
   .contact-area {
     overflow: none;
+  }
+}
+
+@media only screen and (max-width: 414px) and (max-height: 736px) {
+  #contact {
+    scroll-snap-align: start;
+    height: 100vh;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)),
+      url("../../Assets/images/contact-backgroundx736.jpg");
+    /* background-size: cover; */
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+  }
+
+  .img-float {
+    width: 100%;
   }
 }
 

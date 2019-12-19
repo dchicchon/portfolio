@@ -1,7 +1,8 @@
 #photography {
     background: rgb(22, 22, 22);
-    height: initial;
+    /* height: initial; */
     width: 100%;
+    margin-bottom: 1rem;
     /* overflow: scroll; */
 }
 

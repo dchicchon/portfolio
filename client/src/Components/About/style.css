@@ -18,3 +18,27 @@ h2 {
     font: 1.50rem "Lato", sans-serif;
     text-align: center;
 }
+
+@media only screen and (max-width: 375px) and (max-height: 812px) {
+    #about {
+        scroll-snap-align: start;
+        position: relative;
+        height: 100vh;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url('../../Assets/images/about-backgroundx812.jpg');
+        /* background-size: cover; */
+        /* background-attachment: fixed; */
+        background-repeat: no-repeat;
+    }
+}
+
+@media only screen and (max-width: 414px) and (max-height:736px) {
+    #about {
+        scroll-snap-align: start;
+        position: relative;
+        height: 100vh;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url('../../Assets/images/about-backgroundx736.jpg');
+        /* background-size: cover; */
+        /* background-attachment: fixed; */
+        background-repeat: no-repeat;
+    }
+}

@@ -22,17 +22,17 @@ let linkStyle = {
 const HomeFeatured = () => {
   return (
     <div id="home-featured">
-      <section className="opaque-cover">
+      <div className="opaque-cover">
         <Row>
           <Col>
             <h2>Featured</h2>
           </Col>
         </Row>
         <Row className="justify-content-md-center">
-          <Col sm lg={3} className="rise-f">
+          <Col className="rise-f icon">
             <Link style={linkStyle} to="/code">
               <Row>
-                <Col className="pb-3">Code</Col>
+                <Col className="icon-title pb-3">Code</Col>
               </Row>
               <Row>
                 <Col>
@@ -41,10 +41,10 @@ const HomeFeatured = () => {
               </Row>
             </Link>
           </Col>
-          <Col sm lg={3} className="rise-f">
+          <Col className="rise-f icon">
             <Link style={linkStyle} to="/photography">
               <Row>
-                <Col className="pb-3">Photography</Col>
+                <Col className="icon-title pb-3">Photo</Col>
               </Row>
               <Row>
                 <Col>
@@ -53,10 +53,10 @@ const HomeFeatured = () => {
               </Row>
             </Link>
           </Col>
-          <Col sm lg={3} className="rise-f">
+          <Col className="rise-f icon">
             <Link style={linkStyle} to="/videography">
               <Row>
-                <Col className="pb-3">Videography</Col>
+                <Col className="icon-title pb-3">Video</Col>
               </Row>
               <Row>
                 <Col>
@@ -66,7 +66,7 @@ const HomeFeatured = () => {
             </Link>
           </Col>
         </Row>
-      </section>
+      </div>
     </div>
   );
 };

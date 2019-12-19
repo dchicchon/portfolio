@@ -1,6 +1,6 @@
 import React from "react";
 // import profileimg from '../../Assets/images/IMG_0045.JPG'
-import profileimg from "../../Assets/images/danny2.JPG";
+import profileimg from "../../Assets/images/danny.jpg";
 import "./style.css";
 
 const Contact = () => {

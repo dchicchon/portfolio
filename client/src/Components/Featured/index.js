@@ -11,89 +11,134 @@ import Col from "react-bootstrap/Col";
 import gittrack from "../../Assets/images/gittrackLogo.png";
 import plannit from "../../Assets/images/newplan.jpg";
 import spaceTrivia from "../../Assets/images/spaceLogo.png";
-// import zooLogo from '../../Assets/images/zooLogo.png';
 
-const Featured = () => {
-  return (
-    <div id="featured">
-      <Container>
-        <Row>
-          <Col>
-            <h3 className="featured-title">Featured Projects</h3>
-          </Col>
-        </Row>
-        <Row className="justify-content-md-center">
-          <Col xs lg="10">
-            <Carousel>
-              <Carousel.Item>
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="http://www.gittrack.ml/"
-                >
-                  <img
-                    className="d-block w-100"
-                    src={gittrack}
-                    alt="First slide"
-                  />
-                </a>
-                <Carousel.Caption>
-                  <h4 className="project-title">
-                    A commit tracking site for instructors to keep track of
-                    student progress.
-                  </h4>
-                  <p className="project-caption">
-                    React.js, MySQL, Victory.js, Passport.js
-                  </p>
-                </Carousel.Caption>
-              </Carousel.Item>
-              <Carousel.Item>
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://spacetrivia.herokuapp.com/"
-                >
-                  <img
-                    className="d-block w-100"
-                    src={spaceTrivia}
-                    alt="Third slide"
-                  />
-                </a>
+// Width 376px
 
-                <Carousel.Caption>
-                  <h4 className="project-title">
-                    Test your knowledge of the Solar System!
-                  </h4>
-                  <p className="project-caption">JQuery, HMTL5, CSS, MongoDB</p>
-                </Carousel.Caption>
-              </Carousel.Item>
-              <Carousel.Item>
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="http://planit.ml/"
-                >
-                  <img
-                    className="d-block w-100"
-                    src={plannit}
-                    alt="Third slide"
-                  />
-                </a>
-                <Carousel.Caption>
-                  <h4 className="project-title">
-                    A planner app that helps keep track of your day
-                  </h4>
-                  <p className="project-caption">
-                    Firebase, APIs, JQuery, HTML5, CSS
-                  </p>
-                </Carousel.Caption>
-              </Carousel.Item>
-            </Carousel>
-          </Col>
-        </Row>
-      </Container>
-    </div>
-  );
-};
+// Width 414px
+
+
+class Featured extends React.Component {
+  state = {
+    projectList: []
+  };
+
+  componentDidMount() {
+    const screenWidth = window.screen.width;
+    // const screenHeight = window.screen.height;
+
+    if (screenWidth > 414) {
+      this.setState({
+        projectList: [
+          {
+            image: gittrack,
+            link: "http://www.gittrack.ml/",
+            description:
+              " A commit tracking site for instructors to keep track of student progress.",
+            caption: "React.js, MySQL, Victory.js, Passport.js"
+          },
+          {
+            image: plannit,
+            link: "http://planit.ml/",
+            description: "A planner app that helps keep track of your day",
+            caption: "Firebase, APIs, JQuery, HTML5, CSS"
+          },
+          {
+            image: spaceTrivia,
+            link: "https://spacetrivia.herokuapp.com/",
+            description: "Test your knowledge of the Solar System!",
+            caption: "JQuery, HMTL5, CSS, MongoDB"
+          }
+        ]
+      });
+    } else if (screenWidth >= 375 && screenWidth < 414) {
+      this.setState({
+        projectList: [
+          {
+            image: gittrack,
+            link: "http://www.gittrack.ml/",
+            description:
+              " A commit tracking site for instructors to keep track of student progress.",
+            caption: "React.js, MySQL, Victory.js, Passport.js"
+          },
+          {
+            image: plannit,
+            link: "http://planit.ml/",
+            description: "A planner app that helps keep track of your day",
+            caption: "Firebase, APIs, JQuery, HTML5, CSS"
+          },
+          {
+            image: spaceTrivia,
+            link: "https://spacetrivia.herokuapp.com/",
+            description: "Test your knowledge of the Solar System!",
+            caption: "JQuery, HMTL5, CSS, MongoDB"
+          }
+        ]
+      });
+    } else {
+      this.setState({
+        projectList: [
+          {
+            image: gittrack,
+            link: "http://www.gittrack.ml/",
+            description:
+              " A commit tracking site for instructors to keep track of student progress.",
+            caption: "React.js, MySQL, Victory.js, Passport.js"
+          },
+          {
+            image: plannit,
+            link: "http://planit.ml/",
+            description: "A planner app that helps keep track of your day",
+            caption: "Firebase, APIs, JQuery, HTML5, CSS"
+          },
+          {
+            image: spaceTrivia,
+            link: "https://spacetrivia.herokuapp.com/",
+            description: "Test your knowledge of the Solar System!",
+            caption: "JQuery, HMTL5, CSS, MongoDB"
+          }
+        ]
+      });
+    }
+  }
+
+  render() {
+    return (
+      <div id="featured">
+        <Container>
+          <Row>
+            <Col>
+              <h3 className="featured-title">Featured Projects</h3>
+            </Col>
+          </Row>
+          <Row className="justify-content-md-center">
+            <Col xs lg="10">
+              <Carousel>
+                {this.state.projectList.map((project, i) => (
+                  <Carousel.Item key={i}>
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href={project.link}
+                    >
+                      <img
+                        className="d-block w-100"
+                        src={project.image}
+                        alt={`project`}
+                      />
+                    </a>
+                    <Carousel.Caption>
+                      <h4 className="project-title">{project.description}</h4>
+                      <p className="project-caption">{project.caption}</p>
+                    </Carousel.Caption>
+                  </Carousel.Item>
+                ))}
+              </Carousel>
+            </Col>
+          </Row>
+        </Container>
+      </div>
+    );
+  }
+}
 
 export default Featured;

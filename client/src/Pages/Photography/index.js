@@ -1,10 +1,14 @@
 import React from "react";
+
+// Firebase
 import { storage } from "../../Utils/firebaseConfig";
 import "./style.css";
 
+// Bootstrap stuff
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import Spinner from "react-bootstrap/Spinner";
 
 // https://firebase.google.com/docs/storage/web/list-files
 // https://stackoverflow.com/questions/37335102/how-to-get-a-list-of-all-files-in-cloud-storage-in-a-firebase-app
@@ -14,7 +18,6 @@ import Navbar from "../../Components/Navbar";
 import Photo from "../../Components/Photo";
 // import Footer from "../../Components/Footer";
 
-// This Page will have to make a call to the server to serve up the images that I send it from my unsplash account
 class Photography extends React.Component {
   state = {
     photos: [],
@@ -60,31 +63,29 @@ class Photography extends React.Component {
 
   render() {
     return (
-      <div>
+      <div id="photography">
         <Navbar />
-        <div id="photography">
-          <Container>
+        <Container>
+          <Row>
+            <Col className="m-5">
+              <h2>Photography</h2>
+            </Col>
+          </Row>
+          {this.state.loading ? (
             <Row>
-              <Col className='m-5'>
-                <h2>Photography</h2>
+              <Col>
+                <Spinner animation="border" variant="info" />
               </Col>
             </Row>
-            {this.state.loading ? (
-              <Row>
-                <Col>
-                  <p style={{ textAlign: "center" }}>Loading...</p>
-                </Col>
-              </Row>
-            ) : (
-              <Row>
-                {this.state.photos.map((photo, i) => (
-                  <Photo src={photo.url} key={i} alt={photo.name} />
-                ))}
-              </Row>
-            )}
-          </Container>
-          {/* <Footer /> */}
-        </div>
+          ) : (
+            <Row>
+              {this.state.photos.map((photo, i) => (
+                <Photo src={photo.url} key={i} alt={photo.name} />
+              ))}
+            </Row>
+          )}
+        </Container>
+        {/* <Footer /> */}
       </div>
     );
   }

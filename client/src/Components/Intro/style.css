@@ -1,35 +1,58 @@
 #intro {
-    scroll-snap-align: start;
-    /* scroll-snap-stop: normal; */
-    height: 100vh;
-    /* padding: 1rem; */
-    /* background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('../../Assets/images/intro.JPG'); */
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('../../Assets/images/intro-background.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
+  scroll-snap-align: start;
+  /* scroll-snap-stop: normal; */
+  height: 100vh;
+  /* padding: 1rem; */
+  /* background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('../../Assets/images/intro.JPG'); */
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)),
+    url("../../Assets/images/intro-background.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 .content {
-    transform: translateY(100%);
+  transform: translateY(100%);
 }
 
 h1 {
-    text-align: center;
-    font-size: 4rem;
-    font-weight: 100;
-    letter-spacing: 0.5rem;
-    margin-bottom: 2rem;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 100;
+  letter-spacing: 0.5rem;
+  margin-bottom: 2rem;
 }
 
 .rise {
-    transition: transform 0.5s;
-    width: min-content;
+  transition: transform 0.5s;
+  width: min-content;
 }
 
 .rise:hover {
-    transform: translateY(-15%)
+  transform: translateY(-15%);
 }
 
-/* minified */
-/* #intro{scroll-snap-align:start;scroll-snap-stop:normal;height:100vh;padding:1rem;background:linear-gradient(0deg,rgba(0,0,0,.1),rgba(0,0,0,.2)),url(../../Assets/images/IMG_3902.JPG);background-size:cover;background-attachment:fixed;background-repeat:no-repeat}.content{transform:translateY(100%)}h1{text-align:center;font-size:4rem;font-weight:100;letter-spacing:.5rem;margin-bottom:2rem}.rise{transition:transform .5s;width:min-content}.rise:hover{transform:translateY(-15%)} */
+@media only screen and (max-width: 375px) and (max-height: 812px) {
+  #intro {
+    scroll-snap-align: start;
+    height: 100vh;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)),
+      url("../../Assets/images/intro-backgroundx812.jpg");
+    /* background-size: cover; */
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+  }
+}
+
+@media only screen and (max-width: 414px) and (max-height: 736px) {
+  #intro {
+    scroll-snap-align: start;
+    height: 100vh;
+    /* background: blue; */
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)),
+      url("../../Assets/images/intro-backgroundx736.jpg");
+    /* background-size: cover; */
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+  }
+}
