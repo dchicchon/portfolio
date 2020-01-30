@@ -66,8 +66,8 @@
 }
 
 .link:hover {
+  color: rgb(14, 145, 233);
   text-decoration: none;
-  color: white;
 }
 
 .icon {

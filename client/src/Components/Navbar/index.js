@@ -24,7 +24,7 @@ class Navbar extends Component {
     const { scrollPos } = this.state;
     this.setState({
       scrollPos: document.body.getBoundingClientRect().top,
-      show: document.body.getBoundingClientRect().top < scrollPos
+      show: document.body.getBoundingClientRect().top > scrollPos
     });
   };
   render() {

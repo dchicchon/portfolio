@@ -1,6 +1,8 @@
 import React from "react";
 // import profileimg from '../../Assets/images/IMG_0045.JPG'
 import profileimg from "../../Assets/images/danny.jpg";
+
+import resume from "../../Assets/docs/Daniel_Chicchon_Resume.pdf";
 import "./style.css";
 
 const Contact = () => {
@@ -18,6 +20,15 @@ const Contact = () => {
             href="mailto:danielchicchon@gmail.com"
           >
             Email: danielchicchon@gmail.com
+          </a>
+          <br />
+          <a
+            className="link"
+            rel="noopener noreferrer"
+            target="_blank"
+            href={resume}
+          >
+            Resume
           </a>
         </div>
         <br />

@@ -1,7 +1,6 @@
 import React from "react";
 
 // Firebase
-import { storage } from "../../Utils/firebaseConfig";
 import "./style.css";
 
 // Bootstrap stuff
@@ -9,6 +8,9 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Spinner from "react-bootstrap/Spinner";
+
+// Utils
+import API from "../../Utils/API";
 
 // https://firebase.google.com/docs/storage/web/list-files
 // https://stackoverflow.com/questions/37335102/how-to-get-a-list-of-all-files-in-cloud-storage-in-a-firebase-app
@@ -21,44 +23,30 @@ import Photo from "../../Components/Photo";
 class Photography extends React.Component {
   state = {
     photos: [],
-    loading: true
+    loading: true,
+    phone: false
   };
 
   // Listing all the urls
-  listAllFiles = () => {
-    let unsplashRef = storage.ref("Unsplash");
-    let urlsList = [];
-    unsplashRef
-      .listAll()
-      .then(result => {
-        result.items.forEach(imageRef => {
-          imageRef.getDownloadURL().then(url => {
-            // If the url exists, push the url to the urlList
-            if (url) {
-              let image = {
-                url,
-                name: imageRef.name
-              };
-              urlsList.push(image);
-            }
 
-            // Have a better way of doing this in the future
-            if (urlsList.length > 5) {
-              this.setState({
-                photos: urlsList,
-                loading: false
-              });
-            }
-          });
+  componentDidMount() {
+    console.log("Getting photos");
+
+    API.getAllPhotos()
+      .then(res => {
+        console.log("Got Photos");
+        console.log(res.data);
+        // Depending on whether the user is using an phone or a
+        this.setState({
+          loading: false,
+          photos: res.data,
+          phone: window.screen.width < 400
         });
       })
       .catch(err => {
         console.error(err);
+        // res.status(500).json({ error: err.code });
       });
-  };
-
-  componentDidMount() {
-    this.listAllFiles();
   }
 
   render() {
@@ -79,9 +67,21 @@ class Photography extends React.Component {
             </Row>
           ) : (
             <Row>
-              {this.state.photos.map((photo, i) => (
-                <Photo src={photo.url} key={i} alt={photo.name} />
-              ))}
+              {this.state.phone
+                ? this.state.photos.map((photo, i) => (
+                    <Photo
+                      src={photo.urls.small}
+                      key={i}
+                      alt={photo.description}
+                    />
+                  ))
+                : this.state.photos.map((photo, i) => (
+                    <Photo
+                      src={photo.urls.regular}
+                      key={i}
+                      alt={photo.description}
+                    />
+                  ))}
             </Row>
           )}
         </Container>
