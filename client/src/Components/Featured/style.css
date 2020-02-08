@@ -7,6 +7,7 @@
 @media only screen and (max-width: 414px) {
   #featured {
     padding: 0;
+    margin-bottom: 1rem;
   }
 
   .featured-title {
