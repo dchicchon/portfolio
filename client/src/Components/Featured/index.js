@@ -125,7 +125,7 @@ class Featured extends React.Component {
           </Row>
           <Row>
             {this.state.projectList.map((project, i) => (
-              <Col xs lg="6" style={{ marginTop: "1rem" }} key={i}>
+              <Col xs ="12" lg="6" style={{ marginTop: "1rem" }} key={i}>
                 <Card style={{ border: "none" }}>
                   <Card.Img variant="top" src={project.image} />
                   <Card.Body>
