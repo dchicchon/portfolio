@@ -6,19 +6,31 @@ class Photo extends React.Component {
     clicked: false
   };
 
-  inspectPhoto = () => {
-    this.setState({
-      clicked: !this.state.clicked
-    });
-  };
+  // This works sort-of, looks weird though
+  // inspectPhoto = () => {
+  // this.setState({
+  // clicked: !this.state.clicked
+  // });
+  // };
 
   render() {
-    const divStyle = this.state.clicked ? "photo-clicked" : "photo";
+    // const divStyle = this.state.clicked ? "photo-clicked" : "photo";
     return (
-      <div className={divStyle} onClick={this.inspectPhoto}>
+      // onClick={this.inspectPhoto}
+      <figure className="photo">
         <img src={this.props.src} alt={this.props.alt} className="photo-img" />
-        <div className="screen"></div>
-      </div>
+        <div className="photo-overlay">
+          <a
+            className="photo-download"
+            title="Download photo"
+            href={`${this.props.download}?force=true`}
+            download
+            rel="nofollow"
+          >
+            <i className="fas fa-arrow-circle-down fa-w-8 fa-2x"></i>
+          </a>
+        </div>
+      </figure>
     );
   }
 }

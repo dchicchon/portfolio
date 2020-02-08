@@ -29,11 +29,8 @@ class Photography extends React.Component {
 
   // Listing all the urls
   componentDidMount() {
-    console.log("Getting photos");
-
     API.getAllPhotos()
       .then(res => {
-        console.log("Got Photos");
         console.log(res.data);
         this.setState({
           loading: false,
@@ -71,6 +68,7 @@ class Photography extends React.Component {
                       src={photo.urls.small}
                       key={i}
                       alt={photo.description}
+                      download={photo.links.download}
                     />
                   ))
                 : this.state.photos.map((photo, i) => (
@@ -78,6 +76,7 @@ class Photography extends React.Component {
                       src={photo.urls.regular}
                       key={i}
                       alt={photo.description}
+                      download={photo.links.download}
                     />
                   ))}
             </Row>

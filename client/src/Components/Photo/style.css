@@ -2,20 +2,39 @@
   width: 47%;
   margin: 1rem;
   float: left;
-  cursor: pointer;
-  background: rgba(0, 0, 0, 0);
-  /* Might change this in the future */
-  transition: width 1s;
-}
-
-.photo-clicked {
-    /* width: 65%; */
-  /* background: rgba(90, 88, 88, 0.5); */
+  display: block;
+  position: relative;
 }
 
 .photo-img {
   width: 100%;
+  transition: 0.5s ease;
 }
+
+.photo-overlay {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+}
+
+.photo-download:hover {
+  cursor: pointer;
+}
+
+.photo:hover .photo-img {
+  opacity: 0.75;
+}
+
+.photo:hover .photo-overlay {
+  opacity: 1;
+}
+
+/* .photo-clicked { */
+/* width: 65%; */
+/* background: rgba(90, 88, 88, 0.5); */
+/* } */
 
 @media only screen and (max-width: 420px) {
   .photo {
@@ -23,10 +42,3 @@
     margin: 1rem;
   }
 }
-
-/* @media only screen and (max-width: 420px) {
-    .photo {
-        width: 95%;
-        margin: 1rem;
-    }
-} */
