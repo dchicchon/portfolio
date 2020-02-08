@@ -28,7 +28,6 @@ class Photography extends React.Component {
   };
 
   // Listing all the urls
-
   componentDidMount() {
     console.log("Getting photos");
 
@@ -36,16 +35,15 @@ class Photography extends React.Component {
       .then(res => {
         console.log("Got Photos");
         console.log(res.data);
-        // Depending on whether the user is using an phone or a
         this.setState({
           loading: false,
           photos: res.data,
+          // Test for Phone
           phone: window.screen.width < 400
         });
       })
       .catch(err => {
         console.error(err);
-        // res.status(500).json({ error: err.code });
       });
   }
 
