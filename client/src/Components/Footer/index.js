@@ -2,11 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./style.css";
 
-let linkStyle = {
-  color: "white",
-  // marginTop: "1rem"
-};
-
 const Footer = props => {
   const text = props.text ? props.text : "Back Home";
   const link = props.link ? props.link : "/";
@@ -14,11 +9,11 @@ const Footer = props => {
   return (
     <div id="footer">
       {props.link ? (
-        <a style={linkStyle} href={link}>
+        <a style={{ color: "white", marginTop: "1rem" }} href={link}>
           {text}
         </a>
       ) : (
-        <Link style={linkStyle} to={link}>
+        <Link style={{ color: "white", marginTop: "1rem" }} to={link}>
           {text}
         </Link>
       )}

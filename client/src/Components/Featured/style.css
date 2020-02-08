@@ -1,33 +1,33 @@
 #featured {
-    /* height: 100vh; */
-    padding: 3rem 5rem;
-    background: rgb(36, 35, 35);
+  /* height: 100vh; */
+  padding: 3rem 5rem;
+  background: rgb(36, 35, 35);
+  color: black;
 }
 
 .featured-carousel {
-    width: 60%;
+  width: 60%;
 }
 
 @media only screen and (max-width: 414px) {
-    #featured {
-        padding: 0;
-        height: 50vh
-    }
+  #featured {
+    padding: 0;
+    height: 50vh;
+  }
 
-    .featured-title {
-        font-size: 2rem;
-        margin-top:3rem;
-    }
+  .featured-title {
+    font-size: 2rem;
+    margin-top: 3rem;
+  }
 
-    .featured-carousel {
-        width: 100%;
-    }
+  .featured-carousel {
+    width: 100%;
+  }
 
-    .project-caption {
-        display:none;
-    }
-    .project-title {
-        display: none;
-    }
-
+  .project-caption {
+    display: none;
+  }
+  .project-title {
+    display: none;
+  }
 }

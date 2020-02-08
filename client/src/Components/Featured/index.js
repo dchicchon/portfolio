@@ -7,6 +7,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
+import Button from "react-bootstrap/Button";
 
 // Assets
 import gittrack from "../../Assets/images/gittrackLogo.png";
@@ -22,61 +23,51 @@ class Featured extends React.Component {
   };
 
   componentDidMount() {
-    const screenWidth = window.screen.width;
+    // const screenWidth = window.screen.width;
     // Change photo used depending on the screen size
-    if (screenWidth > 400) {
-      this.setState({
-        projectList: [
-          {
-            image: gittrack,
-            name: "GitTrack",
-            link: "http://www.gittrack.ml/",
-            description:
-              " A commit tracking site for instructors to keep track of student progress.",
-            caption: "React.js, MySQL, Victory.js, Passport.js"
-          },
-          {
-            image: plannit,
-            name: "PlanIt",
-            link: "http://planit.ml/",
-            description: "A planner app that helps keep track of your day",
-            caption: "Firebase, APIs, JQuery, HTML5, CSS"
-          },
-          {
-            image: spaceTrivia,
-            name: "Space Trivia",
-            link: "https://spacetrivia.herokuapp.com/",
-            description: "Test your knowledge of the Solar System!",
-            caption: "JQuery, HMTL5, CSS, MongoDB"
-          },
-          { name: "Planner" }
-        ]
-      });
-    } else {
-      this.setState({
-        projectList: [
-          {
-            image: gittrackSmall,
-            link: "http://www.gittrack.ml/",
-            description:
-              " A commit tracking site for instructors to keep track of student progress.",
-            caption: "React.js, MySQL, Victory.js, Passport.js"
-          },
-          {
-            image: plannitSmall,
-            link: "http://planit.ml/",
-            description: "A planner app that helps keep track of your day",
-            caption: "Firebase, APIs, JQuery, HTML5, CSS"
-          },
-          {
-            image: spaceTriviaSmall,
-            link: "https://spacetrivia.herokuapp.com/",
-            description: "Test your knowledge of the Solar System!",
-            caption: "JQuery, HMTL5, CSS, MongoDB"
-          }
-        ]
-      });
-    }
+    // if (screenWidth > 400) {
+    this.setState({
+      projectList: [
+        {
+          image: gittrack,
+          name: "GitTrack",
+          link: "http://www.gittrack.ml/",
+          authors: "dchicchon",
+          repo: "https://github.com/dchicchon/GitTrack",
+          description:
+            " A commit tracking site for instructors to keep track of student progress.",
+          caption: "React.js, MySQL, Victory.js, Passport.js"
+        },
+        {
+          image: plannit,
+          name: "PlanIt",
+          link: "http://planit.ml/",
+          authors: "esarnb, minalk24, matkuh, dchicchon",
+          repo: "https://github.com/dchicchon/Plan-It",
+          description: "A planner app that helps keep track of your day",
+          caption: "Firebase, APIs, JQuery, HTML5, CSS"
+        },
+        {
+          image: spaceTrivia,
+          name: "Space Trivia",
+          link: "https://spacetrivia.herokuapp.com/",
+          authors: "dchicchon",
+          repo: "",
+          description: "Test your knowledge of the Solar System!",
+          caption: "JQuery, HMTL5, CSS, MongoDB"
+        },
+        {
+          image: "",
+          name: "Planner",
+          link:
+            "https://chrome.google.com/webstore/detail/planner/meajimhgfmioppbkoppphhkbcmapfngh",
+          authors: "dchicchon",
+          repo: "https://github.com/dchicchon/planner_extension",
+          description: "A planner to help plan your future!",
+          caption: "HTML5, CSS, Chrome Dev Tools"
+        }
+      ]
+    });
   }
 
   render() {
@@ -85,65 +76,32 @@ class Featured extends React.Component {
         <Container>
           <Row>
             <Col>
-              <h2 style={{ marginBottom: "3rem" }}>Featured</h2>
+              <h2 style={{ marginBottom: "3rem", color: "white" }}>Featured</h2>
             </Col>
           </Row>
-          {this.state.projectList.map((project, i) => (
-            <Row key={i}>
-              <Col xs lg="6">
-                <Card>
-                  <Card.Title style={{ color: "black" }}>
-                    {project.name}
-                  </Card.Title>
-                  <Card.Text style={{ color: "black" }}>Description</Card.Text>
-                  <Card.Link
-                    style={{ color: "black" }}
-                    href="#"
-                    target="_blank"
-                  >
-                    Site Link
-                  </Card.Link>
-                  <Card.Link
-                    style={{ color: "black" }}
-                    href="#"
-                    target="_blank"
-                  >
-                    GitHub Repo
-                  </Card.Link>
+          <Row>
+            {this.state.projectList.map((project, i) => (
+              <Col xs lg="6" style={{ marginTop: "1rem" }} key={i}>
+                <Card style={{ border: "none" }}>
+                  <Card.Img variant="top" src={project.image} />
+                  <Card.Body>
+                    <Card.Title>{project.name}</Card.Title>
+                    <Card.Subtitle style={{color: 'grey'}}>
+                      By {project.authors}
+                    </Card.Subtitle>
+                    <Card.Text>{project.description}</Card.Text>
+                    <Card.Link href={project.link} target="_blank">
+                      <Button variant="primary">Site</Button>
+                    </Card.Link>
+
+                    <Card.Link href="#" target="_blank">
+                      <Button variant="primary">GitHub</Button>
+                    </Card.Link>
+                  </Card.Body>
                 </Card>
               </Col>
-            </Row>
-          ))}
-          {/* <Row className="justify-content-md-center"> */}
-          {/* <Col xs lg="10"> */}
-          {/* ========== */}
-          {/* 01/29/2020 */}
-          {/* Changing carousel view to cards so that the links are available to show */}
-          {/* ========== */}
-
-          {/* <Carousel>
-                {this.state.projectList.map((project, i) => (
-                  <Carousel.Item key={i}>
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      href={project.link}
-                    >
-                      <img
-                        className="d-block w-100"
-                        src={project.image}
-                        alt={`project`}
-                      />
-                    </a>
-                    <Carousel.Caption>
-                      <h4 className="project-title">{project.description}</h4>
-                      <p className="project-caption">{project.caption}</p>
-                    </Carousel.Caption>
-                  </Carousel.Item>
-                ))}
-              </Carousel> */}
-          {/* </Col> */}
-          {/* </Row> */}
+            ))}
+          </Row>
         </Container>
       </div>
     );
