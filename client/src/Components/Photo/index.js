@@ -25,9 +25,19 @@ class Photo extends React.Component {
             title="Download photo"
             href={`${this.props.download}?force=true`}
             download
-            rel="nofollow"
+            rel="noopenner noreferrer"
           >
             <i className="fas fa-arrow-circle-down fa-w-8 fa-2x"></i>
+          </a>
+          <a
+            className="photo-user"
+            title="User"
+            href={this.props.userProfile}
+            rel="noopenner noreferrer"
+            target="_blank"
+          >
+            <img src={this.props.userImage} />
+            {this.props.user}
           </a>
         </div>
       </figure>

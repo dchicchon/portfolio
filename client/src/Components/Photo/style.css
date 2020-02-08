@@ -14,9 +14,28 @@
 .photo-overlay {
   transition: 0.5s ease;
   opacity: 0;
+}
+
+.photo-download {
   position: absolute;
   bottom: 5%;
   right: 5%;
+}
+
+.photo-user {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  /* color: white; */
+}
+
+.photo-user img {
+  margin-right: 0.5rem;
+  border-radius: 50%;
+}
+
+.photo-user:hover {
+  cursor: pointer;
 }
 
 .photo-download:hover {

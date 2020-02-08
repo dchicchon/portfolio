@@ -69,6 +69,7 @@ class Photography extends React.Component {
                       key={i}
                       alt={photo.description}
                       download={photo.links.download}
+                      user={photo.user.name}
                     />
                   ))
                 : this.state.photos.map((photo, i) => (
@@ -77,6 +78,9 @@ class Photography extends React.Component {
                       key={i}
                       alt={photo.description}
                       download={photo.links.download}
+                      user={photo.user.name}
+                      userProfile={photo.user.links.html}
+                      userImage={photo.user.profile_image.small}
                     />
                   ))}
             </Row>
