@@ -5,14 +5,14 @@
   color: black;
 }
 
-.featured-carousel {
+/* .featured-carousel {
   width: 60%;
-}
+} */
 
 @media only screen and (max-width: 414px) {
   #featured {
     padding: 0;
-    height: 50vh;
+    /* height: 50vh; */
   }
 
   .featured-title {
@@ -20,9 +20,9 @@
     margin-top: 3rem;
   }
 
-  .featured-carousel {
+  /* .featured-carousel {
     width: 100%;
-  }
+  } */
 
   .project-caption {
     display: none;
