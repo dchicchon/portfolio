@@ -1,19 +1,16 @@
 #photography {
-    background: rgb(22, 22, 22);
-    /* height: initial; */
-    width: 100%;
-    margin-bottom: 1rem;
-    /* overflow: scroll; */
+  background: rgb(22, 22, 22);
+  width: 100%;
+  margin: 1rem 0;
 }
 
 #photography-title {
-    letter-spacing: normal;
-    font-size: 3rem;
+  /* letter-spacing: normal; */
+  font-size: 3rem;
 }
 
-
 @media only screen and (max-width: 420px) {
-    #photography-title {
-        font-size: 2rem;
-    }
+  #photography-title {
+    font-size: 2rem;
+  }
 }

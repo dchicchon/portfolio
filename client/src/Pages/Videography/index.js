@@ -43,7 +43,7 @@ class Videography extends React.Component {
           <Container>
             <Row>
               <Col className="m-5">
-                <h2>Videography</h2>
+                <h2 style={{letterSpacing: '8px'}}>Videography</h2>
               </Col>
             </Row>
             <Row>
