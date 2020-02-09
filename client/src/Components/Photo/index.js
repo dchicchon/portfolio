@@ -33,10 +33,10 @@ class Photo extends React.Component {
             className="photo-user"
             title="User"
             href={this.props.userProfile}
-            rel="noopenner noreferrer"
+            rel="noopener noreferrer"
             target="_blank"
           >
-            <img src={this.props.userImage} />
+            <img src={this.props.userImage} alt="user" />
             {this.props.user}
           </a>
         </div>

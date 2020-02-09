@@ -22,11 +22,13 @@ const Contact = () => {
             Email: danielchicchon@gmail.com
           </a>
           <br />
+          {/* <iframe src={resume}></iframe> */}
           <a
             className="link"
             rel="noopener noreferrer"
             target="_blank"
             href={resume}
+            type="application/pdf"
           >
             Resume
           </a>
