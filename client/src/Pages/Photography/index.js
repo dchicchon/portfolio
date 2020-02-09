@@ -70,6 +70,8 @@ class Photography extends React.Component {
                       alt={photo.description}
                       download={photo.links.download}
                       user={photo.user.name}
+                      userProfile={photo.user.links.html}
+                      userImage={photo.user.profile_image.small}
                     />
                   ))
                 : this.state.photos.map((photo, i) => (

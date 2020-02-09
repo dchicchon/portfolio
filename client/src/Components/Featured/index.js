@@ -52,7 +52,7 @@ class Featured extends React.Component {
             name: "Space Trivia",
             link: "https://spacetrivia.herokuapp.com/",
             authors: "dchicchon",
-            repo: "",
+            repo: "https://github.com/dchicchon/TriviaGame",
             description: "Test your knowledge of the Solar System!",
             caption: "JQuery, HMTL5, CSS, MongoDB"
           },
@@ -95,7 +95,7 @@ class Featured extends React.Component {
             name: "Space Trivia",
             link: "https://spacetrivia.herokuapp.com/",
             authors: "dchicchon",
-            repo: "",
+            repo: "https://github.com/dchicchon/TriviaGame",
             description: "Test your knowledge of the Solar System!",
             caption: "JQuery, HMTL5, CSS, MongoDB"
           },
@@ -125,7 +125,7 @@ class Featured extends React.Component {
           </Row>
           <Row>
             {this.state.projectList.map((project, i) => (
-              <Col xs ="12" lg="6" style={{ marginTop: "1rem" }} key={i}>
+              <Col xs="12" lg="6" style={{ marginTop: "1rem" }} key={i}>
                 <Card style={{ border: "none" }}>
                   <Card.Img variant="top" src={project.image} />
                   <Card.Body>
@@ -138,7 +138,7 @@ class Featured extends React.Component {
                       <Button variant="primary">Site</Button>
                     </Card.Link>
 
-                    <Card.Link href="#" target="_blank">
+                    <Card.Link href={project.repo} target="_blank">
                       <Button variant="primary">GitHub</Button>
                     </Card.Link>
                   </Card.Body>
