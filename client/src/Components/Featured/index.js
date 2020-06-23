@@ -16,10 +16,11 @@ import plannit from "../../Assets/images/newplan.jpg";
 import plannitSmall from "../../Assets/images/newplanx400.jpg";
 import spaceTrivia from "../../Assets/images/spaceLogo.png";
 import spaceTriviaSmall from "../../Assets/images/spaceLogox400.jpg";
+import polus from "../../Assets/images/polus_tile.png";
 
 class Featured extends React.Component {
   state = {
-    projectList: []
+    projectList: [],
   };
 
   componentDidMount() {
@@ -36,7 +37,7 @@ class Featured extends React.Component {
             repo: "https://github.com/dchicchon/GitTrack",
             description:
               " A commit tracking site for instructors to keep track of student progress.",
-            caption: "React.js, MySQL, Victory.js, Passport.js"
+            caption: "React.js, MySQL, Victory.js, Passport.js",
           },
           {
             image: plannit,
@@ -45,7 +46,7 @@ class Featured extends React.Component {
             authors: "esarnb, minalk24, matkuh, dchicchon",
             repo: "https://github.com/dchicchon/Plan-It",
             description: "A planner app that helps keep track of your day",
-            caption: "Firebase, APIs, JQuery, HTML5, CSS"
+            caption: "Firebase, APIs, JQuery, HTML5, CSS",
           },
           {
             image: spaceTrivia,
@@ -54,19 +55,19 @@ class Featured extends React.Component {
             authors: "dchicchon",
             repo: "https://github.com/dchicchon/TriviaGame",
             description: "Test your knowledge of the Solar System!",
-            caption: "JQuery, HMTL5, CSS, MongoDB"
+            caption: "JQuery, HMTL5, CSS, MongoDB",
           },
           {
-            image: "",
-            name: "Planner",
+            image: polus,
+            name: "Polus",
             link:
               "https://chrome.google.com/webstore/detail/planner/meajimhgfmioppbkoppphhkbcmapfngh",
             authors: "dchicchon",
             repo: "https://github.com/dchicchon/planner_extension",
-            description: "A planner to help plan your future!",
-            caption: "HTML5, CSS, Chrome Dev Tools"
-          }
-        ]
+            description: "A planner to help plan your day, week, and month",
+            caption: "HTML5, CSS, Chrome Dev Tools",
+          },
+        ],
       });
     } else {
       this.setState({
@@ -79,7 +80,7 @@ class Featured extends React.Component {
             repo: "https://github.com/dchicchon/GitTrack",
             description:
               " A commit tracking site for instructors to keep track of student progress.",
-            caption: "React.js, MySQL, Victory.js, Passport.js"
+            caption: "React.js, MySQL, Victory.js, Passport.js",
           },
           {
             image: plannitSmall,
@@ -88,7 +89,7 @@ class Featured extends React.Component {
             authors: "esarnb, minalk24, matkuh, dchicchon",
             repo: "https://github.com/dchicchon/Plan-It",
             description: "A planner app that helps keep track of your day",
-            caption: "Firebase, APIs, JQuery, HTML5, CSS"
+            caption: "Firebase, APIs, JQuery, HTML5, CSS",
           },
           {
             image: spaceTriviaSmall,
@@ -97,19 +98,18 @@ class Featured extends React.Component {
             authors: "dchicchon",
             repo: "https://github.com/dchicchon/TriviaGame",
             description: "Test your knowledge of the Solar System!",
-            caption: "JQuery, HMTL5, CSS, MongoDB"
+            caption: "JQuery, HMTL5, CSS, MongoDB",
           },
           {
             image: "",
             name: "Planner",
-            link:
-              "https://chrome.google.com/webstore/detail/planner/meajimhgfmioppbkoppphhkbcmapfngh",
+            link: "https://danielchicchon.io/code/polus",
             authors: "dchicchon",
             repo: "https://github.com/dchicchon/planner_extension",
             description: "A planner to help plan your future!",
-            caption: "HTML5, CSS, Chrome Dev Tools"
-          }
-        ]
+            caption: "HTML5, CSS, Chrome Dev Tools",
+          },
+        ],
       });
     }
   }

@@ -1,0 +1,134 @@
+#polus {
+  color: white;
+  background: url("../../Assets/images/mountain_range.jpg");
+  overflow: hidden;
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+#nav {
+  list-style-type: none;
+  top: 0;
+  height: 3rem;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#nav li {
+  /* padding-left: 0.5rem; */
+  /* font-size: 1.5rem; */
+}
+
+#app-info {
+  padding: 0.5rem 1rem 0;
+  float: left;
+  display: grid;
+  font-size: 1.5rem;
+}
+
+#app-intro {
+  grid-column: 1;
+  grid-row: 1;
+  display: inline-block;
+  animation-name: fadeIn;
+  animation-duration: 0.75s;
+  animation-fill-mode: forwards;
+  color: white;
+}
+
+#app-logo {
+  width: 35px;
+  height: 35px;
+}
+
+#app-title {
+  display: inline-block;
+  font-weight: 200;
+  transform: translateY(10%);
+  letter-spacing: 0.1rem;
+  text-shadow: 0 0 15px rgba(0, 0, 0, 1);
+}
+
+#app-items {
+  display: none;
+  grid-column: 1;
+  grid-row: 1;
+  animation-name: fadeIn;
+  animation-duration: 0.75s;
+  animation-fill-mode: forwards;
+}
+
+.app-item {
+  text-decoration: underline;
+  transition: background 0.25s;
+  font-size: 60%;
+  padding: 0.5rem;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.app-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+main {
+  /* margin: 1rem auto; */
+}
+
+main section {
+  display: flex;
+  /* border: 1px solid black; */
+  /* width: 35%; */
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 100;
+  justify-content: center;
+}
+
+#date {
+  font-size: 2rem;
+  width: 100%;
+  font-weight: 100;
+  text-shadow: 0 0 0 rgba(0, 0, 0, 0.3);
+}
+
+#clock {
+  width: 100%;
+  font-size: 4.75rem;
+  text-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+}
+
+#link {
+  width: 25%;
+  border-radius: 25px;
+  padding: 0.5rem;
+  font-weight: 300;
+  background-color: white;
+  transition: 0.25s padding;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+#link:hover {
+  padding: 0.75rem;
+}
+#link-tag {
+  color: black;
+}
+
+#slideshow {
+  width: 50%;
+  /* height: 200px;  */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

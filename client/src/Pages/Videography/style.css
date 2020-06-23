@@ -1,11 +1,15 @@
 #videography {
   background: rgb(22, 22, 22);
   width: 100%;
-  margin: 1rem 0;
+  /* margin: 1rem 0; */
 }
 
 .video-margin {
   margin-bottom: 4rem;
+}
+
+.video-title {
+  color: white;
 }
 
 @media only screen and (max-width: 450px) {
@@ -19,8 +23,5 @@
 
   .video-title {
     font-size: 1.5rem;
-  }
-
-  .video-title {
   }
 }

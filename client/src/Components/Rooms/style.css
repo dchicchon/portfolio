@@ -1,0 +1,19 @@
+.room-page {
+  padding: 4rem 1rem;
+}
+
+.room-item {
+  width: 10rem;
+  height: 5rem;
+  /* background: rgb(22, 22, 22); */
+  background: rgb(11, 57, 78);
+  /* background: rgb(32, 35, 42); */
+  border-radius: 10px;
+  border: 1px solid white;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.25s;
+}
+.room-item:hover {
+  background: rgb(22, 102, 139);
+}

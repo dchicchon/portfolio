@@ -1,0 +1,27 @@
+.log {
+}
+
+.messages {
+  width: 30rem;
+  height: 25rem;
+}
+
+@media only screen and (max-width: 500px) {
+  .messages {
+    height: 15rem;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+.message {
+  background: rgb(11, 57, 78);
+  margin-top: 1rem;
+  padding: 0.5rem;
+  width: 15rem;
+  border-radius: 10px;
+}
+
+.message-timestamp {
+  font-size: 0.75rem;
+}

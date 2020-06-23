@@ -11,12 +11,12 @@ import Navbar from "../../Components/Navbar";
 class Code extends Component {
   render() {
     return (
-      <div id='code'>
+      <div id="code">
         <Navbar />
         <Featured />
         <Services />
         <CodeAbout />
-        <Footer text='Back to top' link='#featured' />
+        <Footer text="Back to top" link="#featured" />
       </div>
     );
   }

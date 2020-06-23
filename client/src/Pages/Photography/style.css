@@ -1,7 +1,11 @@
 #photography {
   background: rgb(22, 22, 22);
   width: 100%;
-  margin: 1rem 0;
+  /* margin: 1rem 0; */
+}
+
+h2 {
+  color:white
 }
 
 #photography-title {

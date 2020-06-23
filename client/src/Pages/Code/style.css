@@ -1,4 +1,21 @@
 #code {
- height: 100vh;
- /* background: white; */
+  height: 100vh;
+  /* background: white; */
+}
+
+.fun-input {
+  box-shadow: none;
+  background: white;
+  border-radius: 25px;
+  padding: 2px 5px;
+  border: 1px solid white;
+}
+
+.fun-button {
+  padding: 0.25rem;
+  border-radius: 10px;
+  border: none;
+  background: rgb(11, 57, 78);
+  /* background: rgb(40, 44, 52); */
+  color: white;
 }
