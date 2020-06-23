@@ -24,9 +24,20 @@ class Polus extends React.Component {
     items.style.display = "none";
   };
 
-  clock = () => {
-    let currentTime = new Date();
-    return currentTime.toLocaleTimeString();
+  hideItems2 = () => {};
+
+  showItems2 = () => {};
+
+  date = () => {
+    let currentDate = new Date();
+    let options = {
+      weekday: "long",
+      year: "numeric",
+      month: "numeric",
+      day: "numeric",
+    };
+    let date = `${currentDate.toLocaleDateString(undefined, options)}`;
+    return date;
   };
 
   render() {
@@ -53,20 +64,40 @@ class Polus extends React.Component {
               </div>
             </div>
           </li>
+          <li id="background-info" style={{ float: "right" }}>
+            <span id="background-location">
+              Frenchman Mountain, Sunrise Manor
+            </span>
+            <span id="background-source">
+              Photo By{" "}
+              <a id="photo-link" target="_blank" rel="noopener noreferrer">
+                Daniel Chicchon
+              </a>{" "}
+              on
+              <a
+                id="site-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://unsplash.com/?utm_source=Planner&utm_medium=referral"
+              >
+                {" "}
+                Unsplash
+              </a>
+            </span>
+          </li>
         </ul>
         <main>
-          <section id="date">Monday, 6/22/2020</section>
+          <section id="date">{this.date()}</section>
           <section id="clock">
             <Clock />
           </section>
-        
+
           <section id="slideshow">
             <Carousel>
               <Carousel.Item>
                 <img className="d-block w-100" src={slide1} alt="First Slide" />
                 <Carousel.Caption>
                   <h3>Plan Your Day</h3>
-                  {/* <p>Stuff!</p> */}
                 </Carousel.Caption>
               </Carousel.Item>
               <Carousel.Item>
@@ -77,18 +108,18 @@ class Polus extends React.Component {
                 />
                 <Carousel.Caption>
                   <h3>Plan Your Week</h3>
-                  {/* <p>Stuff!</p> */}
                 </Carousel.Caption>
               </Carousel.Item>
               <Carousel.Item>
                 <img className="d-block w-100" src={slide3} alt="Third Slide" />
                 <Carousel.Caption>
                   <h3>Plan your Month</h3>
-                  {/* <p>Stuff!</p> */}
                 </Carousel.Caption>
               </Carousel.Item>
             </Carousel>
           </section>
+          <section id="polus-intro">Make your plans today</section>
+
           <section id="link">
             <a
               id="link-tag"

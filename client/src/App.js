@@ -41,12 +41,12 @@ class App extends Component {
   componentDidMount() {
     auth().onAuthStateChanged((user) => {
       if (user) {
-        console.log("Logged In");
+        // console.log("Logged In");
         this.setState({
           authenticated: true,
         });
       } else {
-        console.log("Not logged in");
+        // console.log("Not logged in");
         this.setState({
           authenticated: false,
         });

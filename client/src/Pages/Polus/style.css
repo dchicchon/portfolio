@@ -46,6 +46,7 @@
 
 #app-title {
   display: inline-block;
+  margin-left: 0.5rem;
   font-weight: 200;
   transform: translateY(10%);
   letter-spacing: 0.1rem;
@@ -74,6 +75,27 @@
   background-color: rgba(255, 255, 255, 0.1);
 }
 
+#background-info {
+  padding: 1rem;
+  display: grid;
+  text-align: center;
+}
+
+#background-location {
+  display: inline-block;
+  grid-column: 1;
+  grid-row: 1;
+  opacity: 0.75;
+  font-size: 1rem;
+}
+
+#background-source {
+  display: none;
+  font-size: 1rem;
+  grid-column: 1;
+  grid-row: 1;
+}
+
 main {
   /* margin: 1rem auto; */
 }
@@ -96,6 +118,8 @@ main section {
 }
 
 #clock {
+  height: 6rem;
+  line-height: 5.5rem;
   width: 100%;
   font-size: 4.75rem;
   text-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
@@ -103,7 +127,7 @@ main section {
 
 #link {
   width: 25%;
-  border-radius: 25px;
+  border-radius: 10px;
   padding: 0.5rem;
   font-weight: 300;
   background-color: white;
@@ -119,8 +143,13 @@ main section {
   color: black;
 }
 
+#polus-intro {
+  font-size: 3rem;
+  text-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+}
 #slideshow {
-  width: 50%;
+  width: 40%;
+  /* margin-top: 4rem; */
   /* height: 200px;  */
 }
 
