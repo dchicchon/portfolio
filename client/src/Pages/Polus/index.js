@@ -24,9 +24,19 @@ class Polus extends React.Component {
     items.style.display = "none";
   };
 
-  hideItems2 = () => {};
+  hideItems2 = () => {
+    let location = document.getElementById("background-location");
+    let source = document.getElementById("background-source");
+    location.style.display = "none";
+    source.style.display = "inline-block";
+  };
 
-  showItems2 = () => {};
+  showItems2 = () => {
+    let location = document.getElementById("background-location");
+    let source = document.getElementById("background-source");
+    location.style.display = "inline-block";
+    source.style.display = "none";
+  };
 
   date = () => {
     let currentDate = new Date();
@@ -64,18 +74,26 @@ class Polus extends React.Component {
               </div>
             </div>
           </li>
-          <li id="background-info" style={{ float: "right" }}>
+          <li
+            id="background-info"
+            style={{ float: "right" }}
+            onMouseOver={this.hideItems2}
+            onMouseLeave={this.showItems2}
+          >
             <span id="background-location">
               Frenchman Mountain, Sunrise Manor
             </span>
             <span id="background-source">
               Photo By{" "}
-              <a id="photo-link" target="_blank" rel="noopener noreferrer">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://unsplash.com/photos/JymOHokYI1w"
+              >
                 Daniel Chicchon
               </a>{" "}
               on
               <a
-                id="site-link"
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://unsplash.com/?utm_source=Planner&utm_medium=referral"
