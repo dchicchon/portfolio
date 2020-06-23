@@ -1,4 +1,5 @@
 import React from "react";
+import polusBackground from "../../Assets/images/mountain_range.jpg";
 import "./style.css";
 
 import Clock from "../../Components/Clock";
@@ -10,6 +11,13 @@ import slide2 from "../../Assets/images/slide2.png";
 import slide3 from "../../Assets/images/slide3.jpg";
 
 class Polus extends React.Component {
+  componentDidMount() {
+    const imageList = [polusBackground, slide1];
+    imageList.forEach((image) => {
+      new Image().src = image;
+    });
+  }
+
   hideItems = () => {
     let title = document.getElementById("app-intro");
     let items = document.getElementById("app-items");
@@ -52,7 +60,7 @@ class Polus extends React.Component {
 
   render() {
     return (
-      <div id="polus">
+      <div id="polus" style={{ backgroundImage: `url(${polusBackground})` }}>
         <ul id="nav">
           <li
             id="app-info"
