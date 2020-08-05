@@ -17,7 +17,7 @@ class Videography extends React.Component {
   state = {
     phone: false,
     videoWidth: null,
-    videoHeight: null
+    videoHeight: null,
   };
 
   // For responsiveness
@@ -25,12 +25,12 @@ class Videography extends React.Component {
     if (window.screen.width > 450) {
       this.setState({
         videoWidth: window.screen.width * 0.75,
-        videoHeight: window.screen.height * 0.75
+        videoHeight: window.screen.height * 0.75,
       });
     } else {
       this.setState({
         videoWidth: window.screen.width * 0.75,
-        videoHeight: window.screen.height * 0.35
+        videoHeight: window.screen.height * 0.35,
       });
     }
   }
@@ -43,7 +43,20 @@ class Videography extends React.Component {
           <Container>
             <Row>
               <Col className="m-5">
-                <h2 style={{letterSpacing: '8px'}}>Videography</h2>
+                <h2 style={{ letterSpacing: "8px" }}>Videography</h2>
+              </Col>
+            </Row>
+            <Row>
+              <Col className="video-margin">
+                <h3 className="video-title">I do</h3>
+                <iframe
+                  width={this.state.videoWidth}
+                  height={this.state.videoHeight}
+                  src="https://www.youtube.com/embed/dUQPWz8GEUg"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullScreen
+                ></iframe>
               </Col>
             </Row>
             <Row>

@@ -60,8 +60,7 @@ class Featured extends React.Component {
           {
             image: polus,
             name: "Polus",
-            link:
-              "https://chrome.google.com/webstore/detail/planner/meajimhgfmioppbkoppphhkbcmapfngh",
+            link: "https://danielchicchon.io/code/polus",
             authors: "dchicchon",
             repo: "https://github.com/dchicchon/planner_extension",
             description: "A planner to help plan your day, week, and month",

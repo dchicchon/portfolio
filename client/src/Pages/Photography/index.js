@@ -24,29 +24,35 @@ class Photography extends React.Component {
   state = {
     photos: [],
     loading: true,
-    phone: false
+    phone: false,
   };
 
   // Listing all the urls
   componentDidMount() {
     API.getAllPhotos()
-      .then(res => {
+      .then((res) => {
         console.log(res.data);
         this.setState({
           loading: false,
           photos: res.data,
           // Test for Phone
-          phone: window.screen.width < 400
+          phone: window.screen.width < 400,
         });
-      })
-      .catch(err => {
+      })  
+      .catch((err) => {
         console.error(err);
       });
   }
 
   render() {
+    let pageStyle = this.state.loading
+      ? {
+          height: "100vh",
+        }
+      : {};
+
     return (
-      <div id="photography">
+      <div id="photography" style={pageStyle}>
         <Navbar />
         <Container>
           <Row>

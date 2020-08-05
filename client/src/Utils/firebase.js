@@ -1,5 +1,5 @@
 import firebase from "firebase/app";
-import "firebase/auth";
+// import "firebase/auth";
 import "firebase/database";
 
 const firebaseConfig = {
@@ -15,7 +15,6 @@ const firebaseConfig = {
 
 firebase.initializeApp(firebaseConfig);
 
-export const auth = firebase.auth;
+// export const auth = firebase.auth;
 export const db = firebase.database();
-export const messagingRef = db.ref("/messaging");
-// export const messagesRef = ref.child("messages");
+// export const messagingRef = db.ref("/messaging");

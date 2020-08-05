@@ -8,8 +8,6 @@ import axios from "axios";
 import "./App.css";
 
 import ScrollTop from "./Components/ScrollToTop";
-import PrivateRoute from "./Components/PrivateRoute";
-import PublicRoute from "./Components/PublicRoute";
 
 // Pages
 import Home from "./Pages/Home";
@@ -19,10 +17,8 @@ import Videography from "./Pages/Videography";
 
 // In Progress Pages
 import Polus from "./Pages/Polus";
-import Login from "./Pages/Login";
-import Signup from "./Pages/Signup";
 import Messenger from "./Pages/Messenger";
-import { auth } from "firebase";
+import Board from "./Pages/Board";
 
 // https://medium.com/google-cloud/tracking-site-visits-on-react-app-hosted-in-google-cloud-using-google-analytics-f49c2411d398
 function initializeAnalytics() {
@@ -34,30 +30,9 @@ axios.defaults.baseURL =
   "https://us-central1-react-portfolio-f7e64.cloudfunctions.net/api";
 
 class App extends Component {
-  state = {
-    authenticated: false,
-  };
-
-  componentDidMount() {
-    auth().onAuthStateChanged((user) => {
-      if (user) {
-        // console.log("Logged In");
-        this.setState({
-          authenticated: true,
-        });
-      } else {
-        // console.log("Not logged in");
-        this.setState({
-          authenticated: false,
-        });
-      }
-    });
-  }
-
   render() {
     initializeAnalytics();
     return (
-      // If i move this into router, it gets confused
       <div className="App">
         <Router>
           <Switch>
@@ -68,45 +43,9 @@ class App extends Component {
               <Route exact path={ROUTES.PHOTOGRAPHY} component={Photography} />
               <Route exact path={ROUTES.VIDEOGRAPHY} component={Videography} />
 
-              {/* Sign in */}
-              <PublicRoute
-                path={ROUTES.LOGIN}
-                authenticated={this.state.authenticated}
-                component={Login}
-              />
-              <PublicRoute
-                path={ROUTES.SIGNUP}
-                authenticated={this.state.authenticated}
-                component={Signup}
-              />
-
-              <PrivateRoute
-                path={ROUTES.MESSENGER}
-                authenticated={this.state.authenticated}
-                component={Messenger}
-              />
-
-              {/* <Route path={ROUTES.LOGIN} component={Login} />
-                <Route path={ROUTES.SIGNUP} component={Signup} /> */}
-              {/* Authorized Routes */}
-              {/* {this.state.authenticated ? (
-                <Route
-                  path={ROUTES.MESSENGER}
-                  auth={this.state.authenticated}
-                  exact
-                  component={Messenger}
-                />
-              ) : (
-                ""
-              )} */}
-
-              {/* <Route
-                path={ROUTES.MESSENGER}
-                authenticated={this.state.authenticated}
-                exact
-                component={Messenger}
-              /> */}
-              {/* <Route path={ROUTES.GAME} NEEDS AUTH exact component={Game} /> */}
+              <Route exact path={ROUTES.MESSENGER} component={Messenger} />
+              <Route exact path={ROUTES.BOARD} component={Board} />
+              
             </ScrollTop>
           </Switch>
         </Router>
