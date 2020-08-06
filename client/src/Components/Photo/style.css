@@ -55,9 +55,9 @@
 /* background: rgba(90, 88, 88, 0.5); */
 /* } */
 
-/* @media only screen and (max-width: 420px) {
+@media only screen and (max-width: 420px) {
   .photo {
     width: 95%;
     margin: 1rem;
   }
-} */
+}
