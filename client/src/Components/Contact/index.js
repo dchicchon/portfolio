@@ -1,8 +1,7 @@
 import React from "react";
-// import profileimg from '../../Assets/images/IMG_0045.JPG'
 import profileimg from "../../Assets/images/danny.jpg";
-
 import resume from "../../Assets/docs/Daniel_Chicchon_Resume.pdf";
+import { analyticsClick } from "../../Utils/firebase";
 import "./style.css";
 
 const Contact = () => {
@@ -18,6 +17,7 @@ const Contact = () => {
             className="link"
             rel="noopener noreferrer"
             href="mailto:danielchicchon@gmail.com"
+            onClick={analyticsClick}
           >
             Email: danielchicchon@gmail.com
           </a>
@@ -29,6 +29,7 @@ const Contact = () => {
             target="_blank"
             href={resume}
             type="application/pdf"
+            onClick={analyticsClick}
           >
             Resume
           </a>
@@ -39,6 +40,7 @@ const Contact = () => {
           rel="noopener noreferrer"
           target="_blank"
           href="https://www.facebook.com/daniel.chicchon"
+          onClick={analyticsClick}
         >
           <i className="fab fa-facebook fa-w-16 fa-3x"></i>
         </a>
@@ -47,6 +49,7 @@ const Contact = () => {
           rel="noopener noreferrer"
           target="_blank"
           href="https://www.linkedin.com/in/dchicchon/"
+          onClick={analyticsClick}
         >
           <i className="fab fa-linkedin fa-w-16 fa-3x"></i>
         </a>
@@ -54,7 +57,8 @@ const Contact = () => {
           className="link icon"
           rel="noopener noreferrer"
           target="_blank"
-          href="https://www.instagram.com/danny_chicchon/"
+          href="https://www.instagram.com/chicchia_/"
+          onClick={analyticsClick}
         >
           <i className="fab fa-instagram fa-w-16 fa-3x"></i>
         </a>
@@ -63,6 +67,7 @@ const Contact = () => {
           rel="noopener noreferrer"
           target="_blank"
           href="https://github.com/dchicchon"
+          onClick={analyticsClick}
         >
           <i className="fab fa-github fa-w-16 fa-3x"></i>
         </a>
@@ -71,6 +76,7 @@ const Contact = () => {
           rel="noopener noreferrer"
           target="_blank"
           href="https://medium.com/@danielchicchon"
+          onClick={analyticsClick}
         >
           <i className="fab fa-medium fa-w-16 fa-3x"></i>
         </a>
@@ -79,6 +85,7 @@ const Contact = () => {
           rel="noopener noreferrer"
           target="_blank"
           href="https://www.youtube.com/channel/UC4PD6bhKv8QPWLjJktPMg_Q/"
+          onClick={analyticsClick}
         >
           <i className="fab fa-youtube fa-w-16 fa-3x"></i>
         </a>
@@ -87,6 +94,7 @@ const Contact = () => {
           rel="noopener noreferrer"
           target="_blank"
           href="https://unsplash.com/@dchicchon"
+          onClick={analyticsClick}
         >
           <i className="fas fa-camera fa-w-16 fa-3x"></i>
         </a>

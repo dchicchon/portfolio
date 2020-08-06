@@ -1,4 +1,5 @@
 import React from "react";
+import { analytics } from "../../Utils/firebase";
 import "./style.css";
 
 // Components
