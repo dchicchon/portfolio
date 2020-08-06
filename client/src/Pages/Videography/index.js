@@ -55,7 +55,7 @@ class Videography extends React.Component {
                   src="https://www.youtube.com/embed/dUQPWz8GEUg"
                   frameborder="0"
                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullScreen
+                  allowFullScreen
                 ></iframe>
               </Col>
             </Row>
