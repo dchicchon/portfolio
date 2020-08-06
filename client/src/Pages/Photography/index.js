@@ -1,16 +1,11 @@
 import React from "react";
 
-// Firebase
 import "./style.css";
 
 // Bootstrap stuff
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Spinner from "react-bootstrap/Spinner";
-
-// Utils
-import API from "../../Utils/API";
 
 // https://firebase.google.com/docs/storage/web/list-files
 // https://stackoverflow.com/questions/37335102/how-to-get-a-list-of-all-files-in-cloud-storage-in-a-firebase-app
@@ -20,39 +15,68 @@ import Navbar from "../../Components/Navbar";
 import Photo from "../../Components/Photo";
 // import Footer from "../../Components/Footer";
 
+const photoList = [
+  {
+    src: "https://source.unsplash.com/user/dchicchon/dM1YjxBmxV8",
+  },
+  {
+    src: "https://source.unsplash.com/user/dchicchon/9-_iuE6xi28",
+  },
+  {
+    src: "https://source.unsplash.com/user/dchicchon/_kunyq_qnyc",
+  },
+  {
+    src: "https://source.unsplash.com/user/dchicchon/prOftBoFtP8",
+  },
+  {
+    src: "https://source.unsplash.com/user/dchicchon/RHcIqgoXf_c",
+  },
+  {
+    src: "https://source.unsplash.com/user/dchicchon/t3iT_BWpcyk",
+  },
+  {
+    src: "https://source.unsplash.com/user/dchicchon/Fdb3UO6KJvI",
+  },
+  {
+    src: "https://source.unsplash.com/user/dchicchon/L-tb9VC4FCk",
+  },
+  {
+    src: "https://source.unsplash.com/user/dchicchon/b5xBp6_AXsQ",
+  },
+  {
+    src: "https://source.unsplash.com/user/dchicchon/b5OzPlT1K0M",
+  },
+  {
+    src: "https://source.unsplash.com/user/dchicchon/MNkYz6Lwpqo",
+  },
+  {
+    src: "https://source.unsplash.com/user/dchicchon/i2TGoTAc_lQ",
+  },
+  {
+    src: "https://source.unsplash.com/user/dchicchon/Oq-igb73pdE",
+  },
+  {
+    src: "https://source.unsplash.com/user/dchicchon/2X8oG3gmUPQ",
+  },
+  {
+    src: "https://source.unsplash.com/user/dchicchon/uoC6v67ZmoE",
+  },
+  {
+    src: "https://source.unsplash.com/user/dchicchon/IxdpVW2stJ8",
+  },
+];
+
 class Photography extends React.Component {
   state = {
-    photos: [],
+    photos: photoList,
     loading: true,
     phone: false,
   };
 
   // Listing all the urls
-  componentDidMount() {
-    API.getAllPhotos()
-      .then((res) => {
-        console.log(res.data);
-        this.setState({
-          loading: false,
-          photos: res.data,
-          // Test for Phone
-          phone: window.screen.width < 400,
-        });
-      })  
-      .catch((err) => {
-        console.error(err);
-      });
-  }
-
   render() {
-    let pageStyle = this.state.loading
-      ? {
-          height: "100vh",
-        }
-      : {};
-
     return (
-      <div id="photography" style={pageStyle}>
+      <div id="photography">
         <Navbar />
         <Container>
           <Row>
@@ -60,41 +84,12 @@ class Photography extends React.Component {
               <h2 style={{ letterSpacing: "8px" }}>Photography</h2>
             </Col>
           </Row>
-          {this.state.loading ? (
-            <Row>
-              <Col>
-                <Spinner animation="border" variant="info" />
-              </Col>
-            </Row>
-          ) : (
-            <Row>
-              {this.state.phone
-                ? this.state.photos.map((photo, i) => (
-                    <Photo
-                      src={photo.urls.small}
-                      key={i}
-                      alt={photo.description}
-                      download={photo.links.download}
-                      user={photo.user.name}
-                      userProfile={photo.user.links.html}
-                      userImage={photo.user.profile_image.small}
-                    />
-                  ))
-                : this.state.photos.map((photo, i) => (
-                    <Photo
-                      src={photo.urls.regular}
-                      key={i}
-                      alt={photo.description}
-                      download={photo.links.download}
-                      user={photo.user.name}
-                      userProfile={photo.user.links.html}
-                      userImage={photo.user.profile_image.small}
-                    />
-                  ))}
-            </Row>
-          )}
+          <Row>
+            {this.state.photos.map((photo, i) => (
+              <Photo src={photo.src} key={i} />
+            ))}
+          </Row>
         </Container>
-        {/* <Footer /> */}
       </div>
     );
   }

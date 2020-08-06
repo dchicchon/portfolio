@@ -34,17 +34,17 @@
   border-radius: 50%;
 }
 
-.photo-user:hover {
+/* .photo-user:hover {
   cursor: pointer;
 }
 
 .photo-download:hover {
   cursor: pointer;
-}
+} */
 
-.photo:hover .photo-img {
+/* .photo:hover .photo-img {
   opacity: 0.75;
-}
+} */
 
 .photo:hover .photo-overlay {
   opacity: 1;
@@ -55,9 +55,9 @@
 /* background: rgba(90, 88, 88, 0.5); */
 /* } */
 
-@media only screen and (max-width: 420px) {
+/* @media only screen and (max-width: 420px) {
   .photo {
     width: 95%;
     margin: 1rem;
   }
-}
+} */
