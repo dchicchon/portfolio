@@ -12,6 +12,7 @@ import slide3 from "../../Assets/images/slide3.jpg";
 
 class Polus extends React.Component {
   componentDidMount() {
+    document.title='Polus'
     const imageList = [polusBackground, slide1];
     imageList.forEach((image) => {
       new Image().src = image;

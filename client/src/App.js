@@ -24,8 +24,6 @@ import Board from "./Pages/Board";
 axios.defaults.baseURL =
   "https://us-central1-react-portfolio-f7e64.cloudfunctions.net/api";
 
-
-
 class App extends Component {
   render() {
     return (

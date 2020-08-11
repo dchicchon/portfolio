@@ -17,12 +17,13 @@ class Home extends React.Component {
   };
 
   componentDidMount() {
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener("click", function(e) {
+    document.title = "Home";
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+      anchor.addEventListener("click", function (e) {
         e.preventDefault();
 
         document.querySelector(this.getAttribute("href")).scrollIntoView({
-          behavior: "smooth"
+          behavior: "smooth",
         });
       });
     });

@@ -73,6 +73,10 @@ class Photography extends React.Component {
     phone: false,
   };
 
+  componentDidMount() {
+    document.title = "Photography";
+  }
+
   // Listing all the urls
   render() {
     return (

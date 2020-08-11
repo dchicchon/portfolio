@@ -9,6 +9,9 @@ import Footer from "../../Components/Footer";
 import Navbar from "../../Components/Navbar";
 
 class Code extends Component {
+  componentDidMount() {
+    document.title = "Code";
+  }
   render() {
     return (
       <div id="code">

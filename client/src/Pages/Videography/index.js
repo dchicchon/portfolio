@@ -22,6 +22,7 @@ class Videography extends React.Component {
 
   // For responsiveness
   componentDidMount() {
+    document.title="Videography"
     if (window.screen.width > 450) {
       this.setState({
         videoWidth: window.screen.width * 0.75,
