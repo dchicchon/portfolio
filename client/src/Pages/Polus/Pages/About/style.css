@@ -1,0 +1,19 @@
+.intro h2 {
+    margin: 0 -100px;
+    padding: 50px 0 0;
+    color: #222;
+    font-size: 3em;
+    font-weight: 300;
+    text-align: center;
+}
+
+#subheading {
+    font-size: 1.5em;
+    margin-top: 20px;
+    margin: 15px 0;
+    color: #a1a1a1;
+    font-size: 150%;
+    font-weight: 300;
+    line-height: 140%;
+    text-align: center;
+}

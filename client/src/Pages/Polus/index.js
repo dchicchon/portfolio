@@ -1,166 +1,165 @@
-import React from "react";
-import polusBackground from "../../Assets/images/mountain_range.jpg";
+import React, { useEffect } from "react";
+import {
+  BrowserRouter as Switch,
+  Route,
+  Link,
+  useRouteMatch,
+} from "react-router-dom";
+import Clock from "../../Components/Clock";
+import polusIcon from "../../Assets/images/polus_icon.png";
 import "./style.css";
 
-import Clock from "../../Components/Clock";
-import Carousel from "react-bootstrap/Carousel";
+import About from "./Pages/About";
+import Privacy from "./Pages/Privacy";
+import Terms from "./Pages/Terms";
 
-import polusIcon from "../../Assets/images/polus_icon.png";
-import slide1 from "../../Assets/images/slide1.png";
-import slide2 from "../../Assets/images/slide2.png";
-import slide3 from "../../Assets/images/slide3.jpg";
+const polusBackground =
+  "https://source.unsplash.com/user/dchicchon/JymOHokYI1w?";
 
-class Polus extends React.Component {
-  componentDidMount() {
+let hideItems2 = () => {
+  let location = document.getElementById("background-location");
+  let source = document.getElementById("background-source");
+  location.style.display = "none";
+  source.style.display = "inline-block";
+};
+
+let showItems2 = () => {
+  let location = document.getElementById("background-location");
+  let source = document.getElementById("background-source");
+  location.style.display = "inline-block";
+  source.style.display = "none";
+};
+
+let date = () => {
+  let currentDate = new Date();
+  let options = {
+    weekday: "long",
+    year: "numeric",
+    month: "numeric",
+    day: "numeric",
+  };
+  let date = `${currentDate.toLocaleDateString(undefined, options)}`;
+  return date;
+};
+
+function Polus() {
+  useEffect(() => {
     document.title = "Polus";
-    const imageList = [polusBackground, slide1];
-    imageList.forEach((image) => {
-      new Image().src = image;
-    });
-  }
+  }, []);
 
-  hideItems = () => {
-    let title = document.getElementById("app-intro");
-    let items = document.getElementById("app-items");
-    title.style.display = "none";
-    items.style.display = "inline-block";
-  };
-
-  showItems = () => {
-    let title = document.getElementById("app-intro");
-    let items = document.getElementById("app-items");
-    title.style.display = "inline-block";
-    items.style.display = "none";
-  };
-
-  hideItems2 = () => {
-    let location = document.getElementById("background-location");
-    let source = document.getElementById("background-source");
-    location.style.display = "none";
-    source.style.display = "inline-block";
-  };
-
-  showItems2 = () => {
-    let location = document.getElementById("background-location");
-    let source = document.getElementById("background-source");
-    location.style.display = "inline-block";
-    source.style.display = "none";
-  };
-
-  date = () => {
-    let currentDate = new Date();
-    let options = {
-      weekday: "long",
-      year: "numeric",
-      month: "numeric",
-      day: "numeric",
-    };
-    let date = `${currentDate.toLocaleDateString(undefined, options)}`;
-    return date;
-  };
-
-  render() {
-    return (
-      <div id="polus" style={{ backgroundImage: `url(${polusBackground})` }}>
-        <ul id="nav">
-          <li
-            id="app-info"
-            onMouseOver={this.hideItems}
-            onMouseLeave={this.showItems}
-          >
-            <div id="app-intro">
-              <img id="app-logo" src={polusIcon} alt="polus icon" />
-              <div id="app-title">Polus</div>
-            </div>
-            <div id="app-items">
-              <div className="app-item">
-                <a rel="noopener noreferrer" href="https://danielchicchon.io">
-                  Back to Site
-                </a>
+  let { path, url } = useRouteMatch();
+  return (
+    <Switch>
+      <Route exact path={path}>
+        <div id="polus" style={{ backgroundImage: `url(${polusBackground})` }}>
+          <ul id="nav">
+            <li id="app-info">
+              <div id="app-intro">
+                <Link to="/code/polus">
+                  <img id="app-logo" src={polusIcon} alt="polus icon" />
+                </Link>
+                <div id="app-title">{/* <a href="">Polus</a> */}</div>
               </div>
-              <div className="app-item">
-                <a href="mailto: danielchicchon@gmail.com">Contact Us</a>
+              <div id="app-items">
+                <div className="app-item">
+                  <Link style={{ color: "white" }} to={`${url}/about`}>
+                    About
+                  </Link>
+                </div>
               </div>
-            </div>
-          </li>
-          <li
-            id="background-info"
-            style={{ float: "right" }}
-            onMouseOver={this.hideItems2}
-            onMouseLeave={this.showItems2}
-          >
-            <span id="background-location">
-              Frenchman Mountain, Sunrise Manor
-            </span>
-            <span id="background-source">
-              Photo By{" "}
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://unsplash.com/photos/JymOHokYI1w"
-              >
-                Daniel Chicchon
-              </a>{" "}
-              on
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://unsplash.com/?utm_source=Planner&utm_medium=referral"
-              >
-                {" "}
-                Unsplash
-              </a>
-            </span>
-          </li>
-        </ul>
-        <main>
-          <section id="date">{this.date()}</section>
-          <section id="clock">
-            <Clock />
-          </section>
-
-          <section id="slideshow">
-            <Carousel>
-              <Carousel.Item>
-                <img className="d-block w-100" src={slide1} alt="First Slide" />
-                <Carousel.Caption>
-                  <h3>Plan Your Day</h3>
-                </Carousel.Caption>
-              </Carousel.Item>
-              <Carousel.Item>
-                <img
-                  className="d-block w-100"
-                  src={slide2}
-                  alt="Second Slide"
-                />
-                <Carousel.Caption>
-                  <h3>Plan Your Week</h3>
-                </Carousel.Caption>
-              </Carousel.Item>
-              <Carousel.Item>
-                <img className="d-block w-100" src={slide3} alt="Third Slide" />
-                <Carousel.Caption>
-                  <h3>Plan your Month</h3>
-                </Carousel.Caption>
-              </Carousel.Item>
-            </Carousel>
-          </section>
-          <section id="polus-intro">Make your plans today</section>
-
-          <section id="link">
-            <a
-              id="link-tag"
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://chrome.google.com/webstore/detail/polus/meajimhgfmioppbkoppphhkbcmapfngh?hl=en&authuser=0"
+            </li>
+            <li
+              id="background-info"
+              style={{ float: "right" }}
+              onMouseOver={hideItems2}
+              onMouseLeave={showItems2}
             >
-              + Add to Chrome
-            </a>
-          </section>
-        </main>
-      </div>
-    );
-  }
+              <span id="background-location">
+                Frenchman Mountain, Sunrise Manor
+              </span>
+              <span id="background-source">
+                Photo By{" "}
+                <a
+                  style={{ color: "white" }}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://unsplash.com/photos/JymOHokYI1w"
+                >
+                  Daniel Chicchon
+                </a>{" "}
+                on
+                <a
+                  style={{ color: "white" }}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://unsplash.com/?utm_source=Planner&utm_medium=referral"
+                >
+                  {" "}
+                  Unsplash
+                </a>
+              </span>
+            </li>
+          </ul>
+
+          <main>
+            <section id="date">{date()}</section>
+            <section id="clock">
+              <Clock />
+            </section>
+
+            <section id="polus-intro">Make your plans today</section>
+
+            <section id="link">
+              <a
+                id="link-tag"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://chrome.google.com/webstore/detail/polus/meajimhgfmioppbkoppphhkbcmapfngh?hl=en&authuser=0"
+              >
+                + Add Polus to Chrome
+              </a>
+            </section>
+          </main>
+          <div id="bottom"></div>
+          <div id="bottom-right">
+            <nav id="tertiary">
+              <Link style={{ color: "white" }} to={`/code/polus/privacy`}>
+                Privacy
+              </Link>
+              <Link style={{ color: "white" }} to="/code/polus/terms">
+                Terms
+              </Link>
+              {/* <a href="#">Help</a> */}
+              <a
+                style={{ color: "white" }}
+                href="mailto: danielchicchon@gmail.com"
+              >
+                Contact
+              </a>
+              {/* <Link style={{ color: "white" }} to="/code">
+                Back to site
+              </Link> */}
+              <a
+                style={{ color: "white" }}
+                href="https://www.danielchicchon.io"
+              >
+                Back to site
+              </a>
+            </nav>
+          </div>
+        </div>
+      </Route>
+      <Route exact path={`/code/polus/about`}>
+        <About />
+      </Route>
+      <Route exact path={`/code/polus/terms`}>
+        <Terms />
+      </Route>
+      <Route exact path={`/code/polus/privacy`}>
+        <Privacy />
+      </Route>
+    </Switch>
+  );
 }
 
 export default Polus;

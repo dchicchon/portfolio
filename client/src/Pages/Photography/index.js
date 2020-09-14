@@ -85,7 +85,9 @@ class Photography extends React.Component {
         <Container>
           <Row>
             <Col className="m-5">
-              <h2 style={{ letterSpacing: "8px" }}>Photography</h2>
+              <h2 style={{ color: "white", letterSpacing: "8px" }}>
+                Photography
+              </h2>
             </Col>
           </Row>
           <Row>

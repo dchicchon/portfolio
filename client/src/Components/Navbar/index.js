@@ -7,7 +7,7 @@ class Navbar extends Component {
     super(props);
     this.state = {
       show: true,
-      scrollPos: 0
+      scrollPos: 0,
     };
     this.handleScroll = this.handleScroll.bind(this);
   }
@@ -24,7 +24,7 @@ class Navbar extends Component {
     const { scrollPos } = this.state;
     this.setState({
       scrollPos: document.body.getBoundingClientRect().top,
-      show: document.body.getBoundingClientRect().top > scrollPos
+      show: document.body.getBoundingClientRect().top > scrollPos,
     });
   };
   render() {
@@ -35,16 +35,24 @@ class Navbar extends Component {
           <div className="nav-links">
             <ul>
               <li>
-                <Link to="/">Home</Link>
+                <Link style={{ color: "white" }} to="/">
+                  Home
+                </Link>
               </li>
               <li>
-                <Link to="/code">Code</Link>
+                <Link style={{ color: "white" }} to="/code">
+                  Code
+                </Link>
               </li>
               <li>
-                <Link to="/photography">Photography</Link>
+                <Link style={{ color: "white" }} to="/photography">
+                  Photography
+                </Link>
               </li>
               <li>
-                <Link to="/videography">Videography</Link>
+                <Link style={{ color: "white" }} to="/videography">
+                  Videography
+                </Link>
               </li>
             </ul>
           </div>

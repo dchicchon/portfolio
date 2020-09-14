@@ -6,14 +6,14 @@ html {
   height: 100%;
 }
 
-a {
+/* a {
   color: white;
 }
 
 a:hover {
   color: rgb(25, 168, 216);
   text-decoration: none;
-}
+} */
 
 @media only screen and (max-width: 400px) {
   ::-webkit-scrollbar {
@@ -38,7 +38,7 @@ a:hover {
 
 /* width */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 7px;
 }
 
 /* Track */
@@ -48,7 +48,7 @@ a:hover {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #888;
+  background: rgb(173, 170, 170);
 }
 
 /* Handle on hover */

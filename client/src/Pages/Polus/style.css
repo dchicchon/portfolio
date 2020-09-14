@@ -16,6 +16,16 @@
   padding: 0;
 }
 
+h4 {
+  margin: 2.7em 0 1.25em;
+  font-size: 140%;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 #nav li {
   /* padding-left: 0.5rem; */
   /* font-size: 1.5rem; */
@@ -39,8 +49,8 @@
 }
 
 #app-logo {
-  width: 35px;
-  height: 35px;
+  width: 50px;
+  /* height: 40px; */
 }
 
 #app-title {
@@ -53,8 +63,7 @@
 }
 
 #app-items {
-  display: none;
-  grid-column: 1;
+  grid-column: 2;
   grid-row: 1;
   animation-name: fadeIn;
   animation-duration: 0.75s;
@@ -62,7 +71,7 @@
 }
 
 .app-item {
-  text-decoration: underline;
+  /* text-decoration: underline; */
   transition: background 0.25s;
   font-size: 1rem;
   padding: 0.5rem;
@@ -106,10 +115,24 @@
 }
 
 #background-source a {
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 #background-source a:hover {
   color: white;
+}
+
+#bottom {
+  width: 50%;
+  bottom: 0;
+  left: 50%;
+  opacity: 0.95;
+}
+
+#bottom-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 100;
 }
 
 main {
@@ -159,14 +182,35 @@ main section {
   color: black;
 }
 
+#polus {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
 #polus-intro {
+  margin-top: 4rem;
   font-size: 3rem;
   text-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
 }
-#slideshow {
-  width: 40%;
-  /* margin-top: 4rem; */
-  /* height: 200px;  */
+
+#tertiary {
+  margin-right: 14px;
+  opacity: 1;
+  vertical-align: bottom;
+}
+
+#tertiary a {
+  height: 60px;
+  padding: 0 7px;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 0.8em;
+  line-height: 60px;
+  opacity: 0.75;
+  vertical-align: bottom;
 }
 
 @keyframes fadeIn {
@@ -176,4 +220,10 @@ main section {
   to {
     opacity: 1;
   }
+}
+
+.last-updated {
+  margin-top: 3em;
+  opacity: 0.65;
+  font-style: italic;
 }
