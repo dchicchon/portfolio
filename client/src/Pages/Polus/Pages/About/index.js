@@ -4,8 +4,7 @@ import NavBar from "../../Components/Navbar";
 import Carousel from "react-bootstrap/Carousel";
 import slide1 from "../../../../Assets/images/slide1.png";
 import slide2 from "../../../../Assets/images/slide2.png";
-import slide3 from "../../../../Assets/images/slide3.jpg";
-// import polusIcon from "../../../../Assets/images/polus_icon.png";
+import slide3 from "../../../../Assets/images/slide3.png";
 import "./style.css";
 
 function About() {
