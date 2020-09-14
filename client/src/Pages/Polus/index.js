@@ -7,14 +7,13 @@ import {
 } from "react-router-dom";
 import Clock from "../../Components/Clock";
 import polusIcon from "../../Assets/images/polus_icon.png";
+import polusBackground from "../../Assets/images/mountain_range.png";
 import "./style.css";
 
 import About from "./Pages/About";
 import Privacy from "./Pages/Privacy";
 import Terms from "./Pages/Terms";
 
-const polusBackground =
-  "https://source.unsplash.com/user/dchicchon/JymOHokYI1w?";
 
 let hideItems2 = () => {
   let location = document.getElementById("background-location");
