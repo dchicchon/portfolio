@@ -1,9 +1,6 @@
 import React from "react";
 import "./style.css";
 
-// Firebase
-// import { storage } from "../../Utils/firebaseConfig";
-
 // React bootstrap
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -22,7 +19,7 @@ class Videography extends React.Component {
 
   // For responsiveness
   componentDidMount() {
-    document.title="Videography"
+    document.title = "Videography";
     if (window.screen.width > 450) {
       this.setState({
         videoWidth: window.screen.width * 0.75,
@@ -44,7 +41,9 @@ class Videography extends React.Component {
           <Container>
             <Row>
               <Col className="m-5">
-                <h2 style={{ letterSpacing: "8px" }}>Videography</h2>
+                <h2 className="video-title" style={{ letterSpacing: "8px" }}>
+                  Videography
+                </h2>
               </Col>
             </Row>
             <Row>
