@@ -4,11 +4,19 @@ import resume from "../../Assets/docs/Daniel_Chicchon_Resume.pdf";
 import { analyticsClick } from "../../Utils/firebase";
 import "./style.css";
 
+let headStyle = {
+  letterSpacing: "5px",
+  textTransform: "uppercase",
+  font: "1.5rem Lato, sans-serif",
+  textAlign: "center",
+  color: "white",
+};
+
 const Contact = () => {
   return (
     <div id="contact">
       <section className="opaque-cover contact-area">
-        <h2>Contact</h2>
+        <h2 style={headStyle}>Contact</h2>
         {/* wow this picture sucks */}
         <img className="img-float" src={profileimg} alt="danielchicchon" />
 

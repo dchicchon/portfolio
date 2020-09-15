@@ -46,23 +46,6 @@ function Privacy() {
           within our extension and not shared with any other third parties,
           except as specified in this policy.
         </p>
-        {/* <h5> Data accessible through WebExtensions API</h5>
-        <p>
-          WebExtension APIs used within Chrome Extensions and Firefox Add-ons
-          have fine-grained permission levels that are enforced by the Web
-          Browser, restricting information that our extension has access to
-          within your Browser. The Polus extension can only access specific
-          information that you have explicitly granted permission for.{" "}
-          <strong> We can not and do not track your browsing history.</strong>
-        </p>
-        <p>
-          Additional optional permissions may be requested when you enable
-          specific features. When you enable a feature that requests an optional
-          permission, your Web Browser will make it clear what permission(s) are
-          being requested. The feature will be accessible once you choose to
-          allow the requested permission(s).
-        </p> */}
-
         <h5>Feature usage data</h5>
         <p>
           To improve the content, features and overall experience of the

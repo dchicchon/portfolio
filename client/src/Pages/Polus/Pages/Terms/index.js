@@ -40,9 +40,8 @@ function Terms() {
         </p>
         <p>
           (ii) "Effective Date" means the date on which a User first installs
-          the Licensed Software through Momentum’s website or through a
-          third-party application, extension, or add-on store such as the Chrome
-          Web Store
+          the Licensed Software through Polus' website or through a third-party
+          application, extension, or add-on store such as the Chrome Web Store
         </p>
         <p>
           (iii) “Licensed Software” means the web-based software extension

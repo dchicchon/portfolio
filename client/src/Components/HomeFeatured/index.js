@@ -15,7 +15,15 @@ let linkStyle = {
   transform: "translateY(0)",
   transition: "transform 0.5s",
   letterSpacing: "0.25rem",
-  padding: "0.25rem"
+  padding: "0.25rem",
+};
+
+let headStyle = {
+  letterSpacing: "5px",
+  textTransform: "uppercase",
+  font: "1.5rem Lato, sans-serif",
+  textAlign: "center",
+  color: "white",
 };
 
 // Here I will have featured works
@@ -25,7 +33,7 @@ const HomeFeatured = () => {
       <div className="opaque-cover">
         <Row>
           <Col>
-            <h2>Featured</h2>
+            <h2 style={headStyle}>Featured</h2>
           </Col>
         </Row>
         <Row className="justify-content-md-center">

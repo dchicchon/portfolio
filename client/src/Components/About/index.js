@@ -16,6 +16,7 @@ const About = () => {
             textTransform: "uppercase",
             font: "1.50rem Lato, sans-serif",
             textAlign: "center",
+            color: "white",
           }}
         >
           About

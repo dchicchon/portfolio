@@ -7,3 +7,8 @@ export const VIDEOGRAPHY = "/videography";
 export const POLUS = "/code/polus";
 export const MESSENGER = "/code/messenger";
 export const BOARD = "/code/board";
+
+// Polus
+export const PABOUT = "/code/polus/about";
+export const PPRIVACY = "/code/polus/privacy";
+export const PTERMS = "/code/polus/terms";
