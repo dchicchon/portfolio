@@ -1,6 +1,6 @@
 import React from "react";
 import profileimg from "../../Assets/images/danny.jpg";
-import resume from "../../Assets/docs/Daniel_Chicchon_Resume.pdf";
+import resume from "../../Assets/docs/Daniel_Chicchon_Stack_2020.pdf";
 import { analyticsClick } from "../../Utils/firebase";
 import "./style.css";
 
