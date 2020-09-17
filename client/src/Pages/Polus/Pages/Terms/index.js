@@ -204,8 +204,7 @@ function Terms() {
         <p>
           <strong>6.1</strong> Users can uninstall the Licensed Software at any
           time by following the process outlined in your browser’s help
-          documentation. You may also find instructions in Momentum’s How to
-          uninstall/remove Polus help article.
+          documentation.
         </p>
         <h4 id="7-term-and-termination">7. Term and Termination </h4>
         <p>
@@ -250,7 +249,7 @@ function Terms() {
           <strong>8.3 Assignment</strong>
           <br />
           The User may not transfer or assign this Agreement (whether
-          voluntarily, by operation of law, or otherwise) without Momentum’s
+          voluntarily, by operation of law, or otherwise) without Polus'
           prior written consent. Polus may assign this Agreement at any time
           without notice. This Agreement is binding upon and will inure to the
           benefit of both parties, and their respective successors and permitted
