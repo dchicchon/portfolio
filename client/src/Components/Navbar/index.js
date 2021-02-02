@@ -1,65 +1,59 @@
-import React, { Component } from "react";
+import React, { Component, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./style.css";
 
-class Navbar extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      show: true,
-      scrollPos: 0,
+const Navbar = () => {
+  // const [show, setShow] = useState("");
+  // const [scrollPos, setScrollPos] = useState(0);
+
+  useEffect(() => {
+    let prevScrollPos = window.pageYOffset;
+    window.onscroll = function () {
+      let currentScrollPos = window.pageYOffset;
+      if (prevScrollPos > currentScrollPos) {
+        document.getElementsByClassName("nav-show")[0].style.top = "0";
+      } else {
+        document.getElementsByClassName("nav-show")[0].style.top = "-50px";
+      }
+      prevScrollPos = currentScrollPos;
     };
-    this.handleScroll = this.handleScroll.bind(this);
-  }
+    return function cleanup() {
+      window.onscroll = function () {
+        console.log("Cleaned up scrolled nav");
+      };
+    };
+  }, []);
 
-  componentDidMount() {
-    window.addEventListener("scroll", this.handleScroll);
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener("scroll", this.handleScroll);
-  }
-
-  handleScroll = () => {
-    const { scrollPos } = this.state;
-    this.setState({
-      scrollPos: document.body.getBoundingClientRect().top,
-      show: document.body.getBoundingClientRect().top > scrollPos,
-    });
-  };
-  render() {
-    const headerClassName = this.state.show ? "nav-show nav-hide" : "nav-show";
-    return (
-      <header className={headerClassName}>
-        <nav className="nav-area">
-          <div className="nav-links">
-            <ul>
-              <li>
-                <Link style={{ color: "white" }} to="/">
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link style={{ color: "white" }} to="/code">
-                  Code
-                </Link>
-              </li>
-              <li>
-                <Link style={{ color: "white" }} to="/photography">
-                  Photography
-                </Link>
-              </li>
-              <li>
-                <Link style={{ color: "white" }} to="/videography">
-                  Videography
-                </Link>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </header>
-    );
-  }
-}
+  return (
+    <header className="nav-show">
+      <nav className="nav-area">
+        <div className="nav-links">
+          <ul>
+            <li>
+              <Link style={{ color: "white" }} to="/">
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link style={{ color: "white" }} to="/code">
+                Code
+              </Link>
+            </li>
+            <li>
+              <Link style={{ color: "white" }} to="/photography">
+                Photography
+              </Link>
+            </li>
+            <li>
+              <Link style={{ color: "white" }} to="/videography">
+                Videography
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+  );
+};
 
 export default Navbar;

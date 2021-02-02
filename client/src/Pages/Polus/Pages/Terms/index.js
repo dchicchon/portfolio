@@ -10,8 +10,8 @@ function Terms() {
     <>
       <Navbar />
       <nav className="legal-nav">
-        <Link to="/code/polus/terms">Terms of Use</Link>
-        <Link to="/code/polus/privacy">Privacy Policy</Link>
+        <Link to="/polus/terms">Terms of Use</Link>
+        <Link to="/polus/privacy">Privacy Policy</Link>
       </nav>
       <section className="legal legal-terms">
         <h2>Terms of Use</h2>

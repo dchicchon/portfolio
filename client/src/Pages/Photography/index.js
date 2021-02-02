@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 import "./style.css";
 
@@ -12,8 +12,8 @@ import Col from "react-bootstrap/Col";
 
 // Components
 import Navbar from "../../Components/Navbar";
-import Photo from "../../Components/Photo";
-// import Footer from "../../Components/Footer";
+import Photo from "./Components/Photo";
+import Footer from "../../Components/Footer";
 
 const photoList = [
   {
@@ -66,42 +66,39 @@ const photoList = [
   },
 ];
 
-class Photography extends React.Component {
-  state = {
-    photos: photoList,
-    loading: true,
-    phone: false,
-  };
+const Photography = () => {
+  const [photos, setPhotos] = useState(photoList);
+  const [load, setLoad] = useState(true);
+  const [phone, setPhone] = useState(false);
 
-  componentDidMount() {
+  useEffect(() => {
     document.title = "Photography";
-  }
+  }, []);
 
   // Listing all the urls
-  render() {
-    return (
-      <div id="photography">
-        <Navbar />
-        <Container>
-          <Row>
-            <Col className="m-5">
-              <h2
-                id="photography-title"
-                style={{ color: "white", letterSpacing: "8px" }}
-              >
-                Photography
-              </h2>
-            </Col>
-          </Row>
-          <Row>
-            {this.state.photos.map((photo, i) => (
-              <Photo src={photo.src} key={i} />
-            ))}
-          </Row>
-        </Container>
-      </div>
-    );
-  }
-}
+  return (
+    <div id="photography">
+      <Navbar />
+      <Container>
+        <Row>
+          <Col className="m-5">
+            <h2
+              id="photography-title"
+              style={{ color: "white", letterSpacing: "8px" }}
+            >
+              Photography
+            </h2>
+          </Col>
+        </Row>
+        <Row>
+          {photos.map((photo, i) => (
+            <Photo src={photo.src} key={i} />
+          ))}
+        </Row>
+      </Container>
+      <Footer color="#2f3d4a" />
+    </div>
+  );
+};
 
 export default Photography;

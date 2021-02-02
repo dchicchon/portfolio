@@ -1,0 +1,167 @@
+$breakpoint-phone: 480px;
+
+.home-intro-container {
+  text-align: center;
+  --custom-color: rgb(97, 218, 251);
+}
+
+.center-container {
+  z-index: 3;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background-color: rgb(40, 44, 52);
+  padding-top: 3.5rem;
+  padding-bottom: 4rem;
+  transform: translateY(125%);
+  width: fit-content;
+  @media (max-width: $breakpoint-phone) {
+    padding-top: 0.25rem;
+    padding-bottom: 1rem;
+    transform: translateY(185%);
+  }
+}
+
+.home-intro-header {
+  margin: 0 auto;
+  width: fit-content;
+  @media (max-width: $breakpoint-phone) {
+    margin: 0 auto;
+    font-size: 4rem;
+    width: fit-content;
+  }
+}
+
+.home-intro-page {
+  z-index: 5;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+  background-color: rgb(40, 44, 52);
+  width: fit-content;
+}
+
+.letter-btn {
+  background: none;
+  border: none;
+  transition: transform 0.5s, color 0.5s;
+  animation-name: jump;
+  animation-direction: normal;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  font-size: 4rem;
+  animation-iteration-count: 1;
+  @media (max-width: $breakpoint-phone) {
+    font-size: 3rem;
+    padding: 0.5rem;
+  }
+}
+
+@for $i from 1 through 5 {
+  .letter-btn:nth-child(#{$i}) {
+    animation-delay: $i * 0.1s;
+  }
+}
+
+.letter-btn:focus {
+  outline: none;
+}
+
+.letter-btn:hover {
+  transform: translateY(-15%);
+}
+
+.icon-list {
+  background-color: rgb(40, 44, 52);
+  z-index: 1;
+  position: absolute;
+  padding: 0;
+  top: 0;
+  left: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  // overflow: hidden;
+}
+
+.background-icon {
+  display: block;
+  position: absolute;
+  list-style: none;
+  width: 50px;
+  color: var(--custom-color);
+  transition: color 1s;
+  animation: moving 10s linear infinite;
+  @media (max-width: $breakpoint-phone) {
+    display: block;
+    position: absolute;
+    list-style: none;
+    width: 50px;
+    color: var(--custom-color);
+    transition: color 1s;
+    animation: moving 10s linear infinite;
+  }
+}
+
+@for $i from 1 through 10 {
+  $pos: (15 * $i - 7);
+  @for $k from 1 through 10 {
+    $randeg: random(20)-10;
+    $ranlift: random(15) + 5;
+    $randur: random(4) + 2;
+    .background-row:nth-child(#{$i}) .background-icon:nth-child(#{$k}) {
+      left: $k * 10% - 7%;
+      --rotation: #{$randeg}deg;
+      --lift: #{$ranlift}px;
+      --pos: #{$pos};
+      animation-duration: #{$randur}s;
+      top: #{$pos}vh;
+    }
+  }
+
+  @media (max-width: $breakpoint-phone) {
+    $pos: (15 * $i - 14);
+    @for $k from 1 through 10 {
+      $randeg: random(20)-10;
+      $ranlift: random(15) + 5;
+      $randur: random(4) + 2;
+      .background-row:nth-child(#{$i}) .background-icon:nth-child(#{$k}) {
+        --rotation: #{$randeg}deg;
+        --lift: #{$ranlift}px;
+        --pos: #{$pos};
+        animation-duration: #{$randur}s;
+        top: #{$pos}vh;
+        left: $k * 25% - 19%;
+      }
+    }
+  }
+}
+
+@keyframes moving {
+  0% {
+    transform: translateY(0) rotate(0);
+  }
+  50% {
+    transform: translateY(var(--lift)) rotate(var(--rotation));
+  }
+  100% {
+    transform: translateY(0) rotate(0);
+  }
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

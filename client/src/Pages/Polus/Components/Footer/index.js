@@ -7,13 +7,9 @@ function Footer() {
   return (
     <footer id="polus-footer">
       <nav className="footer-nav">
-        {/* <div className="footer-nav-col">
-          <h4>Polus</h4>
-          <a></a>
-        </div> */}
         <div className="footer-nav-col">
           <h4>Company</h4>
-          <Link to="/code/polus/about">About</Link>
+          <Link to="/polus/about">About</Link>
           {/* <a>Careers</a> */}
         </div>
         <div className="footer-nav-col">
@@ -23,7 +19,7 @@ function Footer() {
       </nav>
       <img className="footer-logo" src={polusIcon} alt="Polus Icon" />
       <div className="footer-legal">
-        <Link to={`/code/polus/terms`}>Privacy and Legal</Link>
+        <Link to={`/polus/terms`}>Privacy and Legal</Link>
       </div>
     </footer>
   );

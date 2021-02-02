@@ -2,19 +2,6 @@
   font-family: "Lato", sans-serif;
 }
 
-html {
-  height: 100%;
-}
-
-/* a {
-  color: white;
-}
-
-a:hover {
-  color: rgb(25, 168, 216);
-  text-decoration: none;
-} */
-
 @media only screen and (max-width: 400px) {
   ::-webkit-scrollbar {
     width: 0;

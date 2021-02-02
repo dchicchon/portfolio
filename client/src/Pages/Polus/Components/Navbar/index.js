@@ -14,11 +14,11 @@ function Navbar() {
     <header className="header">
       <div className="wrapper header-wrapper">
         <h1 className="logo">
-          <Link className="accent-bg-img" to="/code/polus"></Link>
+          <Link className="accent-bg-img" to="/polus"></Link>
           <img src={polusIcon} alt="polus icon" />
         </h1>
         <nav className="main-nav">
-          <Link style={{ color: "#999" }} to="/code/polus/about">
+          <Link style={{ color: "#999" }} to="/polus/about">
             About
           </Link>
         </nav>

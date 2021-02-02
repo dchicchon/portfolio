@@ -5,7 +5,7 @@ import {
   Link,
   useRouteMatch,
 } from "react-router-dom";
-import Clock from "../../Components/Clock";
+import Clock from "./Components/Clock";
 import polusIcon from "../../Assets/images/polus_icon.png";
 import polusBackground from "../../Assets/images/mountain_range.png";
 import "./style.css";
@@ -51,14 +51,14 @@ function Polus() {
       <ul id="nav">
         <li id="app-info">
           <div id="app-intro">
-            <Link to="/code/polus">
+            <Link to="/polus">
               <img id="app-logo" src={polusIcon} alt="polus icon" />
             </Link>
             <div id="app-title">{/* <a href="">Polus</a> */}</div>
           </div>
           <div id="app-items">
             <div className="app-item">
-              <Link style={{ color: "white" }} to={`${url}/about`}>
+              <Link style={{ color: "white" }} to={`/polus/about`}>
                 About
               </Link>
             </div>
@@ -119,10 +119,10 @@ function Polus() {
       <div id="bottom"></div>
       <div id="bottom-right">
         <nav id="tertiary">
-          <Link style={{ color: "white" }} to="/code/polus/privacy">
+          <Link style={{ color: "white" }} to="/polus/privacy">
             Privacy
           </Link>
-          <Link style={{ color: "white" }} to="/code/polus/terms">
+          <Link style={{ color: "white" }} to="/polus/terms">
             Terms
           </Link>
           {/* <a href="#">Help</a> */}

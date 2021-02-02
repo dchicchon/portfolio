@@ -39,7 +39,8 @@
   vertical-align: top;
 }
 
-.legal th, .legal td {
+.legal th,
+.legal td {
   padding: 14px 12px;
 }
 
@@ -53,7 +54,7 @@
   padding: 50px 0 0;
 }
 
-h2 {
+.legal-h2 {
   margin: 0;
   color: #222;
   font-size: 3em;
@@ -77,7 +78,7 @@ h2 {
   line-height: 1.6;
 }
 
-p {
+.legal-p {
   margin: 1em 0 1.5em;
   font-weight: 400;
 }

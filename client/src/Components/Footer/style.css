@@ -1,12 +1,21 @@
 #footer {
+  color: white;
+  padding: 5rem 0 1.5rem;
+  position: relative;
+  z-index: 1;
   width: 100%;
-  background: rgb(36, 35, 35);
-  height: 10vh;
-  /* position: absolute; */
-  /* bottom: 0; */
-  /* margin-top: 5rem; */
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: ; */
+  /* background: linear-gradient(to top, hsl(210, 60%, 40%), hsl(210, 40%, 50%)); */
+}
+
+.footer-sub {
+  opacity: 0.8;
+  font-size: 0.75rem;
+  text-align: center;
+  position: relative;
 }
 
 @media only screen and (max-width: 414px) {
