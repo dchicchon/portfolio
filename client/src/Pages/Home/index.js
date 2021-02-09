@@ -56,8 +56,8 @@ function Home() {
               {page}
             </h3>
           ) : (
-            ""
-          )}
+              ""
+            )}
         </div>
         <Background setPage={setPage} color={color} width={width} />
       </div>
