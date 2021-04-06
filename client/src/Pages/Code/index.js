@@ -97,32 +97,20 @@ const Code = () => {
                 A chrome extension planner to help keep track of your calendar
               </p>
             </div>
+
             <div className="code-project-link">
               <a
-                href="http://planit.ml/"
+                href="https://chatty-app-chicchon.web.app/"
                 target="_blank"
                 rel="noopenner noreferrer"
               >
-                Plan-it
+                Chat
               </a>
               <p>
-                A planner app that helps keep track of weather, nearby food
-                locations, BART Schedule, and saved notes
+                A live chat application that uses Socket.IO, React, Material UI, Postgres, and Heroku
               </p>
             </div>
-            <div className="code-project-link">
-              <a
-                href="http://www.gittrack.ml/"
-                target="_blank"
-                rel="noopenner noreferrer"
-              >
-                GitTrack
-              </a>
-              <p>
-                A git commit tracking site for instructors to keep track of
-                student coding progress.
-              </p>
-            </div>
+           
           </div>
         </section>
         <section id="code-experience">
