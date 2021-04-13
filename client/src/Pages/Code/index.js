@@ -5,7 +5,6 @@ import "./style.scss";
 import { Link } from "react-router-dom";
 import Footer from "../../Components/Footer";
 import pic from "../../Assets/images/dannypic.jpg";
-import resume from '../../Assets/docs/Daniel_Chicchon_Stack_2020.pdf'
 import Navbar from "../../Components/Navbar";
 
 const Code = () => {
@@ -59,7 +58,7 @@ const Code = () => {
                 </li>
                 <li className="code-social-item">
                   <a
-                    href={resume}
+                    href="https://docs.google.com/document/d/1jVAI2RC4xCXs8ngQA_tRuio-J_F5lO9MKZzjclvs_OM/edit?usp=sharing"
                     target="_blank"
                     rel="noopenner noreferrer"
                   >
