@@ -19,8 +19,8 @@ const Videography = () => {
   useEffect(() => {
     document.title = "Videography";
     if (window.screen.width > 450) {
-      setVideoWidth(window.screen.width * 0.75);
-      setVideoHeight(window.screen.height * 0.75);
+      setVideoWidth(window.screen.width * 0.5);
+      setVideoHeight(window.screen.height * 0.5);
     } else {
       setVideoWidth(window.screen.width * 0.75);
       setVideoHeight(window.screen.height * 0.35);
@@ -42,56 +42,67 @@ const Videography = () => {
           <Row>
             <Col className="video-margin">
               <h3 className="video-title">I do</h3>
-              <iframe
-                width={videoWidth}
-                height={videoHeight}
-                src="https://www.youtube.com/embed/dUQPWz8GEUg"
-                frameBorder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
+              <div style={{ display: 'flex', justifyContent: 'center' }}>
+                <iframe
+                  width={videoWidth}
+                  height={videoHeight}
+                  src="https://www.youtube.com/embed/dUQPWz8GEUg"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              </div>
             </Col>
           </Row>
           <Row>
             <Col className="video-margin">
               <h3 className="video-title">Olivia</h3>
-              <iframe
-                title="Olivia"
-                width={videoWidth}
-                height={videoHeight}
-                src="https://www.youtube.com/embed/nnliap1VOXw"
-                frameBorder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
+              <div style={{ display: 'flex', justifyContent: 'center' }}>
+
+                <iframe
+                  title="Olivia"
+                  width={videoWidth}
+                  height={videoHeight}
+                  src="https://www.youtube.com/embed/nnliap1VOXw"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              </div>
             </Col>
           </Row>
           <Row>
             <Col className="video-margin">
               <h3 className="video-title">Ray</h3>
-              <iframe
-                title="Ray"
-                width={videoWidth}
-                height={videoHeight}
-                src="https://www.youtube.com/embed/CzLZTGRMTRw"
-                frameBorder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
+              <div style={{ display: 'flex', justifyContent: 'center' }}>
+
+                <iframe
+                  title="Ray"
+                  width={videoWidth}
+                  height={videoHeight}
+                  src="https://www.youtube.com/embed/CzLZTGRMTRw"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              </div>
             </Col>
           </Row>
           <Row>
             <Col className="video-margin">
               <h3 className="video-title">Ray 2</h3>
-              <iframe
-                title="Ray 2"
-                width={videoWidth}
-                height={videoHeight}
-                src="https://www.youtube.com/embed/jnyjZxYKnPU"
-                frameBorder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
+              <div style={{ display: 'flex', justifyContent: 'center' }}>
+
+                <iframe
+                  title="Ray 2"
+                  width={videoWidth}
+                  height={videoHeight}
+                  src="https://www.youtube.com/embed/jnyjZxYKnPU"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              </div>
             </Col>
           </Row>
         </Container>
