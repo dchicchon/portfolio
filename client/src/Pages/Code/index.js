@@ -106,10 +106,20 @@ const Code = () => {
                 Chat
               </a>
               <p>
-                A live chat application that uses Socket.IO, React, Material UI, Postgres, and Heroku
+                A live chat application that uses Socket.IO, React, Material UI,
+                Postgres, and Heroku
               </p>
             </div>
-           
+            <div className="code-project-link">
+              <a
+                href="https://github.com/dchicchon/mobile-app"
+                target="_blank"
+                rel="noopenner noreferrer"
+              >
+                Profile App
+              </a>
+              <p>A basic template app made with Flutter</p>
+            </div>
           </div>
         </section>
         <section id="code-experience">
