@@ -58,7 +58,7 @@ const Code = () => {
                 </li>
                 <li className="code-social-item">
                   <a
-                    href="https://docs.google.com/document/d/1jVAI2RC4xCXs8ngQA_tRuio-J_F5lO9MKZzjclvs_OM/edit?usp=sharing"
+                    href="https://docs.google.com/document/d/188EDNZg5EFBsL72Lol_IyzfRagmP8BmMeiB1b739aZ8/edit#heading=h.wjk1jgtb8hin"
                     target="_blank"
                     rel="noopenner noreferrer"
                   >

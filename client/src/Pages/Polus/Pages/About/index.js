@@ -31,7 +31,7 @@ function About() {
           {/* Maybe make this scrollable? */}
           <ul className='col list-group align-items-center overflow-auto ' style={{ height: '500px' }}>
 
-            <div className='card mb-3 w-50'>
+            <div className='card mb-3 card-width'>
               <div className="card-body">
                 <h5 className='card-title'>Mahathy Sathesh</h5>
                 <h6 className='card-subtitle text-muted mb-2'>  <i className="fas fa-star"></i>
@@ -45,7 +45,7 @@ function About() {
                   Though it would be nice if there was option in which I could customize the background.That's all!</p>
               </div>
             </div>
-            <div className='card mb-3 w-50'>
+            <div className='card mb-3 card-width'>
               <div className="card-body">
                 <h5 className='card-title'>Caroline Mai</h5>
                 <h6 className='card-subtitle text-muted mb-2'>  <i className="fas fa-star"></i>
@@ -58,7 +58,7 @@ function About() {
                 <p className='card-text'>Love this extension! I use it every day.</p>
               </div>
             </div>
-            <div className='card mb-3 w-50'>
+            <div className='card mb-3 card-width'>
               <div className="card-body">
                 <h5 className='card-title'> Bárbara Sánchez Palomino</h5>
                 <h6 className='card-subtitle text-muted mb-2'>  <i className="fas fa-star"></i>
@@ -71,7 +71,7 @@ function About() {
                 <p className='card-text'>  Me encanto!</p>
               </div>
             </div>
-            <div className='card mb-3 w-50'>
+            <div className='card mb-3 card-width'>
               <div className="card-body">
                 <h5 className='card-title'>  Patricia Fernández</h5>
                 <h6 className='card-subtitle text-muted mb-2'>  <i className="fas fa-star"></i>
@@ -86,7 +86,7 @@ function About() {
               </div>
             </div>
 
-            <div className='card mb-3 w-50'>
+            <div className='card mb-3 card-width'>
               <div className="card-body">
                 <h5 className='card-title'>    Rethabile Ncheke</h5>
                 <h6 className='card-subtitle text-muted mb-2'>  <i className="fas fa-star"></i>
