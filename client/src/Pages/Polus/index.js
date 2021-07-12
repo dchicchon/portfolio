@@ -58,14 +58,14 @@ function Polus() {
           </div>
           <div id="app-items">
             <div className="app-item">
-              <Link style={{ color: "white", textShadow:'0 0 25px rgb(0 0 0 / 60%)' }} to={`/polus/about`}>
+              <Link style={{ color: "white", textShadow: '0 0 25px rgb(0 0 0 / 60%)' }} to={`/polus/about`}>
                 About
               </Link>
             </div>
             <div className="app-item">
-              <a style={{ color: 'white',textShadow:'0 0 25px rgb(0 0 0 / 60%)'}} href='https://bit.ly/2N6RPEk' rel='noopener noreferrer' >
+              <a style={{ color: 'white', textShadow: '0 0 25px rgb(0 0 0 / 60%)' }} href='https://bit.ly/2N6RPEk' rel='noopener noreferrer' >
                 Youtube
-            </a>
+              </a>
             </div>
           </div>
         </li>
@@ -110,6 +110,12 @@ function Polus() {
 
         <section id="polus-intro">Make your plans today</section>
 
+        {/* VIDEO */}
+        <section >
+          <iframe width="700" height="450" src="https://www.youtube.com/embed/25f_hLEdLds" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+
+
         <section id="link">
           <a
             id="link-tag"
@@ -130,8 +136,7 @@ function Polus() {
           <Link style={{ color: "white" }} to="/polus/terms">
             Terms
           </Link>
-          {/* <a href="#">Help</a> */}
-          <a style={{ color: "white" }} href="mailto: danielchicchon@gmail.com">
+          <a style={{ color: "white" }} href="mailto: danielchicchon@gmail.com" rel='noopener noreferrer'>
             Contact
           </a>
           <Link style={{ color: "white" }} to="/">

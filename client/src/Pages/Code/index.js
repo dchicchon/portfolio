@@ -110,7 +110,20 @@ const Code = () => {
                 A live chat application that uses Socket.IO, React, Material UI, Postgres, and Heroku
               </p>
             </div>
-           
+
+            <div className="code-project-link">
+              <a
+                href="https://github.com/dchicchon/flutter-mobile-app"
+                target="_blank"
+                rel="noopenner noreferrer"
+              >
+                Flutter Mobile App
+              </a>
+              <p>
+                A Mobile App template made with Flutter
+              </p>
+            </div>
+
           </div>
         </section>
         <section id="code-experience">
