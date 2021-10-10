@@ -2,11 +2,7 @@ import React from "react";
 import "./style.css";
 import polusIcon from "../../../../Assets/images/polus_icon.png";
 import {
-  BrowserRouter as Switch,
-  Route,
   Link,
-  useRouteMatch,
-  useHistory,
 } from "react-router-dom";
 
 function Navbar() {

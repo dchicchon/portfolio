@@ -7,7 +7,7 @@
     text-align: center;
 }
 
-#subheading {
+.subheading {
     font-size: 1.5em;
     margin-top: 20px;
     margin: 15px 0;
@@ -17,3 +17,20 @@
     line-height: 140%;
     text-align: center;
 }
+
+.card-width {
+    width: 50%
+}
+
+
+@media only screen and (max-width: 600px) {
+    .subheading {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+    .card-width {
+        width: 75%
+    }
+    
+}
+  
