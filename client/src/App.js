@@ -52,7 +52,7 @@ class App extends Component {
             />
             <Route
               exact
-              path={ROUTES.GITTRACK_PRIVACY}
+              path={ROUTES.GITTRACK_TERMS}
               component={GitTrack_Terms}
             />
             {/* <Route exact path={ROUTES.BOARD} component={Board} /> */}
