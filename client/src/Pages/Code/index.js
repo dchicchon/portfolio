@@ -128,13 +128,25 @@ const Code = () => {
           </div>
           <div className="code-right">
             <div className="mb-6">
-              <h5>Trilogy Education</h5>
+              <a
+                href="https://www.trilogyed.com/"
+                target="_blank"
+                rel="noopenner noreferrer"
+              >
+                <h5>Trilogy Education</h5>
+              </a>
               <p className="code-p">
                 Full Stack Software Engineering Tutor, October 2020 - Present
               </p>
             </div>
             <div className="mb-6">
-              <h5>Trilogy Education</h5>
+              <a
+                href="https://www.trilogyed.com/"
+                target="_blank"
+                rel="noopenner noreferrer"
+              >
+                <h5>Trilogy Education</h5>
+              </a>
               <p className="code-p">
                 Full Stack Teaching Assistant, August 2019 - November 2019
               </p>

@@ -9,6 +9,11 @@ export const MESSENGER = "/code/messenger";
 export const BOARD = "/code/board";
 
 // Polus
-export const PABOUT = "/polus/about";
-export const PPRIVACY = "/polus/privacy";
-export const PTERMS = "/polus/terms";
+export const POLUS_ABOUT = "/polus/about";
+export const POLUS_PRIVACY = "/polus/privacy";
+export const POLUS_TERMS = "/polus/terms";
+
+// GitTrack
+export const GITTRACK_HOME = '/GitTrack'
+export const GITTRACK_PRIVACY = '/GitTrack/privacy'
+export const GITTRACK_TERMS = '/GitTrack/terms'
