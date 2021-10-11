@@ -1,11 +1,14 @@
 import React from "react";
-import './style.css'
+import { Footer } from "../Footer";
+import { Nav } from "../Nav";
+import "./style.css";
 
 export const Privacy = () => {
   return (
-    <div id="gittrack-privacy">
-      <h1>GitTrack Privacy</h1>
-      <div data-custom-class="body">
+    <div>
+      <Nav />
+      <div id="gittrack-privacy" data-custom-class="body">
+        <h1>GitTrack Privacy</h1>
         <div>
           <strong>
             <span style={{ fontSize: "26px" }}>
@@ -9450,6 +9453,7 @@ export const Privacy = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

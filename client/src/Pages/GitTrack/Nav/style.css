@@ -1,0 +1,17 @@
+#nav {
+  color: white;
+  height: 75px;
+  background: rgb(0, 65, 139);
+}
+
+#nav-list {
+  padding: 0px;
+  display: flex;
+  height: 100%;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav-link a {
+  color: white;
+}
