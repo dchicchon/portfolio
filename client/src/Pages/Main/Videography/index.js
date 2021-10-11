@@ -7,8 +7,8 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
 // Components
-import Navbar from "../../Components/Navbar";
-import Footer from "../../Components/Footer";
+import Navbar from "../../../Components/Navbar";
+import Footer from "../../../Components/Footer";
 
 const Videography = () => {
   const [phone, setPhone] = useState(false);

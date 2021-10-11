@@ -9,7 +9,6 @@ import Video from "../Icons/Video";
 function Background({ color, setPage, width }) {
   return (
     <ul className="icon-list">
-      {console.log(width)}
       {width > 480 ? (
         <>
           <div className="background-row">

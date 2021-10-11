@@ -19,7 +19,7 @@ const Navbar = () => {
     };
     return function cleanup() {
       window.onscroll = function () {
-        console.log("Cleaned up scrolled nav");
+        // console.log("Cleaned up scrolled nav");
       };
     };
   }, []);

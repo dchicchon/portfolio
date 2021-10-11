@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Background from "./Components/Background";
-import "./style.scss";
+import "./style.css";
 
 function Home() {
   const [color, setColor] = useState("rgb(97, 218, 251)");
@@ -56,8 +56,8 @@ function Home() {
               {page}
             </h3>
           ) : (
-              ""
-            )}
+            ""
+          )}
         </div>
         <Background setPage={setPage} color={color} width={width} />
       </div>

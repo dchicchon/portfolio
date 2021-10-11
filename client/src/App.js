@@ -6,10 +6,10 @@ import axios from "axios";
 import "./App.css";
 
 // Pages
-import Home from "./Pages/Home";
+import Home from "./Pages/Main/Home";
 import Code from "./Pages/Code";
-import Photography from "./Pages/Photography";
-import Videography from "./Pages/Videography";
+import Photography from "./Pages/Main/Photography";
+import Videography from "./Pages/Main/Videography";
 
 // In Progress Pages
 import Polus from "./Pages/Polus";

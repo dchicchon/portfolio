@@ -11,9 +11,9 @@ import Col from "react-bootstrap/Col";
 // https://stackoverflow.com/questions/37335102/how-to-get-a-list-of-all-files-in-cloud-storage-in-a-firebase-app
 
 // Components
-import Navbar from "../../Components/Navbar";
+import Navbar from "../../../Components/Navbar";
 import Photo from "./Components/Photo";
-import Footer from "../../Components/Footer";
+import Footer from "../../../Components/Footer";
 
 const photoList = [
   {
@@ -68,8 +68,6 @@ const photoList = [
 
 const Photography = () => {
   const [photos, setPhotos] = useState(photoList);
-  const [load, setLoad] = useState(true);
-  const [phone, setPhone] = useState(false);
 
   useEffect(() => {
     document.title = "Photography";
