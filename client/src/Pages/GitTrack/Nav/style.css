@@ -1,7 +1,12 @@
-#nav {
-  color: white;
+#gittrack-nav {
+  color: #85ceff;
   height: 75px;
-  background: rgb(0, 65, 139);
+  background: #0e1525;
+}
+
+.gittrack-logo {
+  color: white;
+  width: 10%;
 }
 
 #nav-list {
@@ -13,5 +18,7 @@
 }
 
 .nav-link a {
-  color: white;
+  color: #85ceff;
 }
+
+

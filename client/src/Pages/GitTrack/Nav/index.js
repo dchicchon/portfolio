@@ -1,13 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import logo from "../../../Assets/images/logo.png";
 import "./style.css";
 
 export const Nav = () => {
   return (
-    <div id="nav">
+    <div id="gittrack-nav">
       <ul id="nav-list">
         <li className="nav-link">
-          <h2>GitTrack</h2>
+          {/* image here */}
+          <Link to="/GitTrack">
+            <img className="gittrack-logo" src={logo} />
+          </Link>
         </li>
         <li className="nav-link">
           <Link to="/GitTrack">Home</Link>
@@ -17,6 +21,12 @@ export const Nav = () => {
         </li>
         <li className="nav-link">
           <Link to="/GitTrack/privacy">Privacy</Link>
+        </li>
+        <li className="nav-link">
+          <Link to="/GitTrack/support">Support</Link>
+        </li>
+        <li className="nav-link">
+          <Link to="/code">Return to Code</Link>
         </li>
       </ul>
     </div>

@@ -14,6 +14,7 @@ export const POLUS_PRIVACY = "/polus/privacy";
 export const POLUS_TERMS = "/polus/terms";
 
 // GitTrack
-export const GITTRACK_HOME = '/GitTrack'
-export const GITTRACK_PRIVACY = '/GitTrack/privacy'
-export const GITTRACK_TERMS = '/GitTrack/terms'
+export const GITTRACK_HOME = "/GitTrack";
+export const GITTRACK_PRIVACY = "/GitTrack/privacy";
+export const GITTRACK_TERMS = "/GitTrack/terms";
+export const GITTRACK_SUPPORT = "/GitTrack/support";

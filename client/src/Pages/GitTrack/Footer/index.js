@@ -17,6 +17,22 @@ export const Footer = () => {
             Back to Top
           </a>
         </li>
+        <li>
+          <div>
+            Icons made by{" "}
+            <a href="https://www.flaticon.com/authors/freepik" title="Freepik">
+              Freepik
+            </a>{" "}
+            and{" "}
+            <a href="https://www.flaticon.com/authors/becris" title="Becris">
+              Becris
+            </a>{" "}
+            from{" "}
+            <a href="https://www.flaticon.com/" title="Flaticon">
+              www.flaticon.com
+            </a>
+          </div>
+        </li>
       </ul>
     </div>
   );

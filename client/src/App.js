@@ -7,7 +7,7 @@ import "./App.css";
 
 // Pages
 import Home from "./Pages/Main/Home";
-import Code from "./Pages/Code";
+import Code from "./Pages/Main/Code";
 import Photography from "./Pages/Main/Photography";
 import Videography from "./Pages/Main/Videography";
 
@@ -20,7 +20,9 @@ import Terms from "./Pages/Polus/Pages/Terms";
 import { Home as GitTrack_Home } from "./Pages/GitTrack/Home";
 import { Privacy as GitTrack_Privacy } from "./Pages/GitTrack/Privacy";
 import { Terms as GitTrack_Terms } from "./Pages/GitTrack/Terms";
+import { Support as GitTrack_Support } from "./Pages/GitTrack/Support";
 
+import { Error } from "./Pages/Error";
 // https://medium.com/google-cloud/tracking-site-visits-on-react-app-hosted-in-google-cloud-using-google-analytics-f49c2411d398
 
 axios.defaults.baseURL =
@@ -55,6 +57,12 @@ class App extends Component {
               path={ROUTES.GITTRACK_TERMS}
               component={GitTrack_Terms}
             />
+            <Route
+              exact
+              path={ROUTES.GITTRACK_SUPPORT}
+              component={GitTrack_Support}
+            />
+            <Route component={Error} />
             {/* <Route exact path={ROUTES.BOARD} component={Board} /> */}
             {/* <Route exact path={ROUTES.MESSENGER} component={Messenger} /> */}
           </Switch>

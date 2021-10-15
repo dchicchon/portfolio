@@ -3,9 +3,9 @@ import "./style.css";
 
 // Components
 import { Link } from "react-router-dom";
-import Footer from "../../Components/Footer";
-import pic from "../../Assets/images/dannypic.jpg";
-import Navbar from "../../Components/Navbar";
+import Footer from "../../../Components/Footer";
+import Navbar from "../../../Components/Navbar";
+import pic from "../../../Assets/images/dannypic.jpg";
 
 const Code = () => {
   const [width, setWidth] = useState(0);
@@ -75,13 +75,10 @@ const Code = () => {
           </div>
           <div className="code-right">
             <p className="code-p">
-              I'm a motivated full-stack engineer who has experience building
+              I'm a full-stack engineer who has experience building
               and scaling web applications and services in various domains.
             </p>
             <p className="code-p">
-              I'm also passionate about open source contributions, working in
-              high impact environments with frequent deployments, and helping
-              growing development teams build great products.
             </p>
           </div>
         </section>
@@ -94,6 +91,12 @@ const Code = () => {
               <Link to="/polus">Polus</Link>
               <p>
                 A chrome extension planner to help keep track of your calendar
+              </p>
+            </div>
+            <div className="code-project-link">
+              <Link to="/GitTrack">GitTrack</Link>
+              <p>
+                A slack application to keep track of the Github contributions in your workspace
               </p>
             </div>
 

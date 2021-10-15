@@ -5,7 +5,7 @@ import "./style.css";
 function Home() {
   const [color, setColor] = useState("rgb(97, 218, 251)");
   const [width, setWidth] = useState("");
-  const [page, setPage] = useState("");
+  const [page, setPage] = useState("Click any icon!");
   useEffect(() => {
     document.title = "Home";
     setWidth(window.screen.width);

@@ -1,13 +1,13 @@
 #gittrack-footer {
-  color: white;
-  height: 75px;
-  background: rgb(0, 65, 139);
+  color: #85ceff;
+  height: 100px;
+  background: #0e1525;
 }
 
 #footer-list {
   padding: 0px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   height: 100%;
   margin: 0 auto;
   width: 25%;
@@ -16,4 +16,6 @@
   list-style-type: none;
 }
 
-
+#footer-list li {
+  text-align: center;
+}
