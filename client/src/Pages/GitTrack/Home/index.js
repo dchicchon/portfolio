@@ -11,7 +11,7 @@ export const Home = () => {
       <Nav />
       <div id="gittrack-home">
         <div className="panels">
-          <section className="panel-md">
+          <section className="panel panel-md">
             <h1>GitTrack</h1>
             <p>Track Github Contributions</p>
             <a href="https://slack.com/oauth/v2/authorize?client_id=2557512756422.2598233471089&scope=channels:history,chat:write,commands,groups:history,users:read,files:write&user_scope=">
@@ -24,7 +24,7 @@ export const Home = () => {
               />
             </a>
           </section>
-          <section className="panel-md panel-image">
+          <section className="panel panel-md panel-image">
             <img
               className="panel-image-full"
               src={pic}
@@ -33,10 +33,10 @@ export const Home = () => {
           </section>
         </div>
         <div className="panels">
-          <section className="panel-white panel-md">
+          <section className="panel-white panel panel-md">
             <img className="panel-image-md" src={graph} alt="Graph Icon" />
           </section>
-          <section className="panel-description md">
+          <section className="panel panel-description md">
             <ul className="gittrack-list">
               <li>
                 {">"}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Get graphical data for the
