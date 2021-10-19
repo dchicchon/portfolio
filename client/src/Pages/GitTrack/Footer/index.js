@@ -10,6 +10,7 @@ export const Footer = () => {
         <li>
           {/* back to top button here? */}
           <a
+            href="#"
             style={{ cursor: "pointer" }}
             onClick={() => backToTop()}
             id="back-to-top"
@@ -20,15 +21,15 @@ export const Footer = () => {
         <li>
           <div>
             Icons made by{" "}
-            <a href="https://www.flaticon.com/authors/freepik" title="Freepik">
+            <a rel='noopener noreferrer' target='_blank' href="https://www.flaticon.com/authors/freepik" title="Freepik">
               Freepik
             </a>{" "}
             and{" "}
-            <a href="https://www.flaticon.com/authors/becris" title="Becris">
+            <a rel='noopener noreferrer' target='_blank' href="https://www.flaticon.com/authors/becris" title="Becris">
               Becris
             </a>{" "}
             from{" "}
-            <a href="https://www.flaticon.com/" title="Flaticon">
+            <a rel='noopener noreferrer' target='_blank' href="https://www.flaticon.com/" title="Flaticon">
               www.flaticon.com
             </a>
           </div>

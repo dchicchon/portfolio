@@ -36,19 +36,21 @@ export const Home = () => {
           <section className="panel-white panel panel-md">
             <img className="panel-image-md" src={graph} alt="Graph Icon" />
           </section>
-          <section className="panel panel-description md">
+          <section className="panel panel-description panel-md">
             <ul className="gittrack-list">
               <li>
                 {">"}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Get graphical data for the
                 contributions by users in your workspace weekly and monthly
               </li>
+              <br/>
               <li>
                 {">"}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Manage the users in the
                 slack workspace through Slack user interfaces
               </li>
+              <br/>
+
               <li>
-                {">"}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Manage the users in the
-                slack workspace through Slack user interfaces
+                {">"}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Check the most recent commit messages and repositories of your users
               </li>
             </ul>
           </section>

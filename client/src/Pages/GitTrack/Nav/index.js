@@ -37,6 +37,9 @@ export const Nav = () => {
           <Link to="/GitTrack">Home</Link>
         </li>
         <li className="nav-link">
+          <Link to="/GitTrack/docs">Docs</Link>
+        </li>
+        <li className="nav-link">
           <Link to="/GitTrack/terms">Terms</Link>
         </li>
         <li className="nav-link">
@@ -44,6 +47,11 @@ export const Nav = () => {
         </li>
         <li className="nav-link">
           <Link to="/GitTrack/support">Support</Link>
+        </li>
+        <li className='nav-link'>
+          <a target='_blank' rel='noopener noreferrer' href='https://github.com/dchicchon/gittrack-slack-app'>
+            Github
+          </a>
         </li>
         <li className="nav-link">
           <Link to="/code">Return to Code</Link>

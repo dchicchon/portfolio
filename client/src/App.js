@@ -21,6 +21,7 @@ import { Home as GitTrack_Home } from "./Pages/GitTrack/Home";
 import { Privacy as GitTrack_Privacy } from "./Pages/GitTrack/Privacy";
 import { Terms as GitTrack_Terms } from "./Pages/GitTrack/Terms";
 import { Support as GitTrack_Support } from "./Pages/GitTrack/Support";
+import { Docs as GitTrack_Docs } from "./Pages/GitTrack/Docs";
 
 import { Error } from "./Pages/Error";
 // https://medium.com/google-cloud/tracking-site-visits-on-react-app-hosted-in-google-cloud-using-google-analytics-f49c2411d398
@@ -61,6 +62,11 @@ class App extends Component {
               exact
               path={ROUTES.GITTRACK_SUPPORT}
               component={GitTrack_Support}
+            />
+            <Route
+              exact
+              path={ROUTES.GITTRACK_DOCS}
+              component={GitTrack_Docs}
             />
             <Route component={Error} />
             {/* <Route exact path={ROUTES.BOARD} component={Board} /> */}

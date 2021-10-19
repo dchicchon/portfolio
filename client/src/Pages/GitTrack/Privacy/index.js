@@ -106,6 +106,7 @@ export const Privacy = () => {
                 <span data-custom-class="body_text">
                   Visit our website at{" "}
                   <a
+                    rel='noopener noreferrer'
                     href="http://www.danielchicchon.io/GitTrack/privacy"
                     target="_blank"
                     data-custom-class="link"
@@ -380,7 +381,7 @@ export const Privacy = () => {
               </div>
               <div style={{ lineHeight: "1.5" }}>
                 <span style={{ fontSize: "15px" }}>
-                  <a data-custom-class="link" href="#infocollect">
+                  <a rel='noopener noreferrer' data-custom-class="link" href="#infocollect">
                     <span >
                       1. WHAT INFORMATION DO WE COLLECT?
                     </span>
@@ -396,7 +397,7 @@ export const Privacy = () => {
               </div>
               <div style={{ lineHeight: "1.5" }}>
                 <span style={{ fontSize: "15px" }}>
-                  <a data-custom-class="link" href="#infouse">
+                  <a rel='noopener noreferrer' data-custom-class="link" href="#infouse">
                     <span >
                       2. HOW DO WE USE YOUR INFORMATION?
                     </span>
@@ -415,7 +416,7 @@ export const Privacy = () => {
               <div style={{ lineHeight: "1.5" }}>
                 <span style={{ fontSize: "15px" }}>
                   <span >
-                    <a data-custom-class="link" href="#infoshare">
+                    <a rel='noopener noreferrer' data-custom-class="link" href="#infoshare">
                       3. WILL YOUR INFORMATION BE SHARED WITH ANYONE?
                     </a>
                   </span>
@@ -443,7 +444,7 @@ export const Privacy = () => {
               </div>
               <div style={{ lineHeight: "1.5" }}>
                 <span style={{ fontSize: "15px" }}>
-                  <a data-custom-class="link" href="#inforetain">
+                  <a rel='noopener noreferrer' data-custom-class="link" href="#inforetain">
                     <span >
                       4. HOW LONG DO WE KEEP YOUR INFORMATION?
                     </span>
@@ -461,7 +462,7 @@ export const Privacy = () => {
               </div>
               <div style={{ lineHeight: "1.5" }}>
                 <span style={{ fontSize: "15px" }}>
-                  <a data-custom-class="link" href="#infosafe">
+                  <a rel='noopener noreferrer' data-custom-class="link" href="#infosafe">
                     <span >
                       5. HOW DO WE KEEP YOUR INFORMATION SAFE?
                     </span>
@@ -478,7 +479,7 @@ export const Privacy = () => {
               <div style={{ lineHeight: "1.5" }}>
                 <span style={{ fontSize: "15px" }}>
                   <span >
-                    <a data-custom-class="link" href="#privacyrights">
+                    <a rel='noopener noreferrer' data-custom-class="link" href="#privacyrights">
                       6. WHAT ARE YOUR PRIVACY RIGHTS?
                     </a>
                   </span>
@@ -486,7 +487,7 @@ export const Privacy = () => {
               </div>
               <div style={{ lineHeight: "1.5" }}>
                 <span style={{ fontSize: "15px" }}>
-                  <a data-custom-class="link" href="#DNT">
+                  <a rel='noopener noreferrer' data-custom-class="link" href="#DNT">
                     <span >
                       7. CONTROLS FOR DO-NOT-TRACK FEATURES
                     </span>
@@ -495,7 +496,7 @@ export const Privacy = () => {
               </div>
               <div style={{ lineHeight: "1.5" }}>
                 <span style={{ fontSize: "15px" }}>
-                  <a data-custom-class="link" href="#caresidents">
+                  <a rel='noopener noreferrer' data-custom-class="link" href="#caresidents">
                     <span >
                       8. DO CALIFORNIA RESIDENTS HAVE SPECIFIC PRIVACY RIGHTS?
                     </span>
@@ -504,7 +505,7 @@ export const Privacy = () => {
               </div>
               <div style={{ lineHeight: "1.5" }}>
                 <span style={{ fontSize: "15px" }}>
-                  <a data-custom-class="link" href="#policyupdates">
+                  <a rel='noopener noreferrer' data-custom-class="link" href="#policyupdates">
                     <span >
                       9. DO WE MAKE UPDATES TO THIS NOTICE?
                     </span>
@@ -512,7 +513,7 @@ export const Privacy = () => {
                 </span>
               </div>
               <div style={{ lineHeight: "1.5" }}>
-                <a data-custom-class="link" href="#contact">
+                <a rel='noopener noreferrer' data-custom-class="link" href="#contact">
                   <span style={{ fontSize: "15px" }}>
                     10. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?
                   </span>
@@ -2827,7 +2828,7 @@ export const Privacy = () => {
                                                           To make such a
                                                           request, please use
                                                           the{" "}
-                                                          <a
+                                                          <a rel='noopener noreferrer'
                                                             data-custom-class="link"
                                                             href="#contact"
                                                           >
@@ -8611,7 +8612,7 @@ export const Privacy = () => {
                                                   This privacy policy was
                                                   created using Termly's{" "}
                                                   <a
-
+                                                    rel='noopener noreferrer'
                                                     href="https://termly.io/products/privacy-policy-generator/?ftseo"
                                                   >
                                                     Privacy Policy Generator
