@@ -14,15 +14,8 @@ export const Home = () => {
           <section className="panel panel-md">
             <h1>GitTrack</h1>
             <p>Track Github Contributions</p>
-            <a href="https://slack.com/oauth/v2/authorize?client_id=2557512756422.2598233471089&scope=channels:history,chat:write,commands,groups:history,users:read,files:write&user_scope=">
-              <img
-                alt="Add to Slack"
-                height="40"
-                width="139"
-                src="https://platform.slack-edge.com/img/add_to_slack.png"
-                srcSet="https://platform.slack-edge.com/img/add_to_slack.png 1x, https://platform.slack-edge.com/img/add_to_slack@2x.png 2x"
-              />
-            </a>
+            <a href="https://slack.com/oauth/v2/authorize?client_id=2557512756422.2598233471089&scope=channels:history,chat:write,commands,groups:history,users:read,files:write&user_scope="><img alt="Add to Slack" height="40" width="139" src="https://platform.slack-edge.com/img/add_to_slack.png" srcSet="https://platform.slack-edge.com/img/add_to_slack.png 1x, https://platform.slack-edge.com/img/add_to_slack@2x.png 2x" /></a>
+
           </section>
           <section className="panel panel-md panel-image">
             <img
@@ -42,12 +35,12 @@ export const Home = () => {
                 {">"}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Get graphical data for the
                 contributions by users in your workspace weekly and monthly
               </li>
-              <br/>
+              <br />
               <li>
                 {">"}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Manage the users in the
                 slack workspace through Slack user interfaces
               </li>
-              <br/>
+              <br />
 
               <li>
                 {">"}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Check the most recent commit messages and repositories of your users
