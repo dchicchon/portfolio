@@ -14,8 +14,9 @@ export const Home = () => {
           <section className="panel panel-md">
             <h1>GitTrack</h1>
             <p>Track Github Contributions</p>
-            <a href="https://slack.com/oauth/v2/authorize?client_id=2557512756422.2598233471089&scope=channels:history,chat:write,commands,groups:history,users:read,files:write&user_scope="><img alt="Add to Slack" height="40" width="139" src="https://platform.slack-edge.com/img/add_to_slack.png" srcSet="https://platform.slack-edge.com/img/add_to_slack.png 1x, https://platform.slack-edge.com/img/add_to_slack@2x.png 2x" /></a>
-
+            <a href="https://slack.com/oauth/v2/authorize?scope=chat%3Awrite%2Ccommands%2Cchannels%3Ahistory%2Cgroups%3Ahistory%2Cusers%3Aread&state=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpbnN0YWxsT3B0aW9ucyI6eyJzY29wZXMiOlsiY2hhdDp3cml0ZSIsImNvbW1hbmRzIiwiY2hhbm5lbHM6aGlzdG9yeSIsImdyb3VwczpoaXN0b3J5IiwidXNlcnM6cmVhZCJdfSwibm93IjoiMjAyMS0xMC0yM1QwMjo1NTowNy4zMDdaIiwiaWF0IjoxNjM0OTU3NzA3fQ.0PhXjwCgh4qAoJgFRS_zuS130I0qX31VpoY8BIULn4M&client_id=2557512756422.2598233471089">
+              <img alt="Add to Slack" height="40" width="139" src="https://platform.slack-edge.com/img/add_to_slack.png" srcset="https://platform.slack-edge.com/img/add_to_slack.png 1x, https://platform.slack-edge.com/img/add_to_slack@2x.png 2x"/>
+            </a>
           </section>
           <section className="panel panel-md panel-image">
             <img
