@@ -108,7 +108,7 @@ function Polus() {
         {/* VIDEO */}
         <section className='polus-video'>
           <div className='embed-responsive embed-responsive-16by9'>
-            <iframe className='embed-responsive-item' src="https://www.youtube.com/embed/25f_hLEdLds" allowFullScreen></iframe>
+            <iframe title='polus_video' className='embed-responsive-item' src="https://www.youtube.com/embed/25f_hLEdLds" allowFullScreen></iframe>
           </div>
         </section>
 

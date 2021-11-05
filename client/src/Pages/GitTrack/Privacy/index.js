@@ -20,7 +20,7 @@ export const Privacy = () => {
           <br />
         </div>
         <div>
-          <span style={{ color: "rgb(127, 127, 127)" }}>
+          <span >
             <strong>
               <span style={{ fontSize: "15px" }}>
                 <span data-custom-class="subtitle">
@@ -40,23 +40,23 @@ export const Privacy = () => {
           <br />
         </div>
         <div style={{ lineHeight: "1.5" }}>
-          <span style={{ color: "rgb(127, 127, 127)" }}>
-            <span style={{ color: "rgb(89, 89, 89)", fontSize: "15px" }}>
+          <span >
+            <span style={{ fontSize: "15px" }}>
               <span data-custom-class="body_text">
                 Thank you for choosing to be part of our community at GitTrack
-                <span style={{ color: "rgb(89, 89, 89)" }}>
+                <span >
                   <span data-custom-class="body_text"></span>
                 </span>{" "}
                 ("
-                <span style={{ color: "rgb(89, 89, 89)" }}>
+                <span >
                   <span data-custom-class="body_text"></span>
                 </span>
                 <strong>Company</strong>
               </span>
-              <span style={{ color: "rgb(127, 127, 127)" }}>
-                <span style={{ color: "rgb(89, 89, 89)" }}>
+              <span >
+                <span >
                   <span data-custom-class="body_text">
-                    <span style={{ color: "rgb(89, 89, 89)" }}>
+                    <span >
                       <span data-custom-class="body_text">
                         <span data-custom-class="body_text"></span>
                       </span>
@@ -70,7 +70,7 @@ export const Privacy = () => {
                 personal information and your right to privacy. If you have any
                 questions or concerns about this privacy notice or our practices
                 with regard to your personal information, please contact us at
-                danielchicchon@gmail.com
+                danielchicchon@gmail.com &nbsp;
               </span>
             </span>
           </span>
@@ -82,7 +82,7 @@ export const Privacy = () => {
         </div>
         <div style={{ lineHeight: "1.5" }}>
           <span style={{ fontSize: "15px" }}>
-            <span style={{ color: "rgb(127, 127, 127)" }}>
+            <span >
               <span data-custom-class="body_text">
                 This privacy notice describes how we might use your information
                 if you:
@@ -90,9 +90,9 @@ export const Privacy = () => {
             </span>
           </span>
           <span style={{ fontSize: "15px" }}>
-            <span style={{ color: "rgb(127, 127, 127)" }}>
+            <span >
               <span data-custom-class="body_text">
-                <span style={{ color: "rgb(89, 89, 89)" }}>
+                <span >
                   <span data-custom-class="body_text"></span>
                 </span>
               </span>
@@ -101,11 +101,12 @@ export const Privacy = () => {
         </div>
         <ul>
           <li style={{ lineHeight: "1.5" }}>
-            <span style={{ fontSize: "15px color: rgb(89, 89, 89)" }}>
-              <span style={{ fontSize: "15px color: rgb(89, 89, 89)" }}>
+            <span style={{ fontSize: "15px" }}>
+              <span style={{ fontSize: "15px" }}>
                 <span data-custom-class="body_text">
                   Visit our website at{" "}
                   <a
+                    rel='noopener noreferrer'
                     href="http://www.danielchicchon.io/GitTrack/privacy"
                     target="_blank"
                     data-custom-class="link"
@@ -113,10 +114,10 @@ export const Privacy = () => {
                     http://www.danielchicchon.io/GitTrack/privacy
                   </a>
                   <span style={{ fontSize: "15px" }}>
-                    <span style={{ color: "rgb(89, 89, 89)" }}>
+                    <span >
                       <span data-custom-class="body_text">
                         <span style={{ fontSize: "15px" }}>
-                          <span style={{ color: "rgb(89, 89, 89)" }}></span>
+                          <span ></span>
                         </span>
                       </span>
                     </span>
@@ -129,9 +130,9 @@ export const Privacy = () => {
         <div>
           <span style={{ fontSize: "15px" }}>
             <span style={{ fontSize: "15px" }}>
-              <span style={{ color: "rgb(127, 127, 127)" }}>
+              <span >
                 <span data-custom-class="body_text">
-                  <span style={{ color: "rgb(89, 89, 89)" }}>
+                  <span >
                     <span data-custom-class="body_text"></span>
                   </span>
                 </span>
@@ -141,9 +142,9 @@ export const Privacy = () => {
           <div>
             <span style={{ fontSize: "15px" }}>
               <span style={{ fontSize: "15px" }}>
-                <span style={{ color: "rgb(127, 127, 127)" }}>
+                <span >
                   <span data-custom-class="body_text">
-                    <span style={{ color: "rgb(89, 89, 89)" }}>
+                    <span >
                       <span data-custom-class="body_text"></span>
                     </span>
                   </span>
@@ -152,9 +153,9 @@ export const Privacy = () => {
             </span>
             <div style={{ lineHeight: "1.5" }}>
               <span style={{ fontSize: "15px" }}>
-                <span style={{ color: "rgb(127, 127, 127)" }}>
+                <span >
                   <span data-custom-class="body_text">
-                    <span style={{ color: "rgb(89, 89, 89)" }}>
+                    <span >
                       <span data-custom-class="body_text"></span>
                     </span>
                   </span>
@@ -163,16 +164,16 @@ export const Privacy = () => {
             </div>
             <ul>
               <li style={{ lineHeight: "1.5" }}>
-                <span style={{ fontSize: "15px", color: "rgb(89, 89, 89)" }}>
-                  <span style={{ fontSize: "15px", color: "rgb(89, 89, 89)" }}>
+                <span style={{ fontSize: "15px", }}>
+                  <span style={{ fontSize: "15px", }}>
                     <span data-custom-class="body_text">
                       Engage with us in other related ways ― including any
                       sales, marketing, or events
                       <span style={{ fontSize: "15px" }}>
-                        <span style={{ color: "rgb(89, 89, 89)" }}>
+                        <span >
                           <span data-custom-class="body_text">
                             <span style={{ fontSize: "15px" }}>
-                              <span style={{ color: "rgb(89, 89, 89)" }}></span>
+                              <span ></span>
                             </span>
                           </span>
                         </span>
@@ -184,16 +185,16 @@ export const Privacy = () => {
             </ul>
             <div style={{ lineHeight: "1.5" }}>
               <span style={{ fontSize: "15px" }}>
-                <span style={{ color: "rgb(127, 127, 127)" }}>
+                <span >
                   <span data-custom-class="body_text">
                     In this privacy notice, if we refer to:
                   </span>
                 </span>
               </span>
               <span style={{ fontSize: "15px" }}>
-                <span style={{ color: "rgb(127, 127, 127)" }}>
+                <span >
                   <span data-custom-class="body_text">
-                    <span style={{ color: "rgb(89, 89, 89)" }}>
+                    <span >
                       <span data-custom-class="body_text"></span>
                     </span>
                   </span>
@@ -202,16 +203,16 @@ export const Privacy = () => {
             </div>
             <ul>
               <li style={{ lineHeight: "1.5" }}>
-                <span style={{ fontSize: "15px color: rgb(89, 89, 89)" }}>
-                  <span style={{ fontSize: "15px color: rgb(89, 89, 89)" }}>
+                <span style={{ fontSize: "15px" }}>
+                  <span style={{ fontSize: "15px" }}>
                     <span data-custom-class="body_text">
                       "<strong>Website</strong>," we are referring to any
                       website of ours that references or links to this policy
                       <span style={{ fontSize: "15px" }}>
-                        <span style={{ color: "rgb(89, 89, 89)" }}>
+                        <span >
                           <span data-custom-class="body_text">
                             <span style={{ fontSize: "15px" }}>
-                              <span style={{ color: "rgb(89, 89, 89)" }}></span>
+                              <span ></span>
                             </span>
                           </span>
                         </span>
@@ -224,9 +225,9 @@ export const Privacy = () => {
             <div>
               <span style={{ fontSize: "15px" }}>
                 <span style={{ fontSize: "15px" }}>
-                  <span style={{ color: "rgb(127, 127, 127)" }}>
+                  <span >
                     <span data-custom-class="body_text">
-                      <span style={{ color: "rgb(89, 89, 89)" }}>
+                      <span >
                         <span data-custom-class="body_text"></span>
                       </span>
                     </span>
@@ -236,9 +237,9 @@ export const Privacy = () => {
               <div>
                 <span style={{ fontSize: "15px" }}>
                   <span style={{ fontSize: "15px" }}>
-                    <span style={{ color: "rgb(127, 127, 127)" }}>
+                    <span >
                       <span data-custom-class="body_text">
-                        <span style={{ color: "rgb(89, 89, 89)" }}>
+                        <span >
                           <span data-custom-class="body_text"></span>
                         </span>
                       </span>
@@ -248,14 +249,14 @@ export const Privacy = () => {
               </div>
               <ul>
                 <li style={{ lineHeight: "1.5" }}>
-                  <span style={{ fontSize: "15px color: rgb(89, 89, 89)" }}>
-                    <span style={{ fontSize: "15px color: rgb(89, 89, 89)" }}>
+                  <span style={{ fontSize: "15px" }}>
+                    <span style={{ fontSize: "15px" }}>
                       <span data-custom-class="body_text">
                         "<strong>Services</strong>," we are referring to our
                         <span style={{ fontSize: "15px" }}>
-                          <span style={{ color: "rgb(127, 127, 127)" }}>
+                          <span >
                             <span data-custom-class="body_text">
-                              <span style={{ color: "rgb(89, 89, 89)" }}>
+                              <span >
                                 <span data-custom-class="body_text"></span>
                               </span>
                             </span>
@@ -263,20 +264,20 @@ export const Privacy = () => {
                         </span>{" "}
                         Website,
                         <span
-                          style={{ fontSize: "15px color: rgb(89, 89, 89)" }}
+                          style={{ fontSize: "15px" }}
                         >
                           <span
                             style={{
-                              fontSize: "15px color: rgb(89, 89, 89)",
+                              fontSize: "15px",
                             }}
                           >
                             <span data-custom-class="body_text">
                               <span style={{ fontSize: "15px" }}>
-                                <span style={{ color: "rgb(89, 89, 89)" }}>
+                                <span >
                                   <span data-custom-class="body_text">
                                     <span style={{ fontSize: "15px" }}>
                                       <span
-                                        style={{ color: "rgb(89, 89, 89)" }}
+
                                       ></span>
                                     </span>
                                   </span>
@@ -289,25 +290,25 @@ export const Privacy = () => {
                     </span>
                   </span>
                   <span style={{ fontSize: "15px" }}>
-                    <span style={{ color: "rgb(127, 127, 127)" }}>
+                    <span >
                       <span data-custom-class="body_text">
                         and other related services, including any sales,
                         marketing, or events
                         <span
-                          style={{ fontSize: "15px color: rgb(89, 89, 89)" }}
+                          style={{ fontSize: "15px" }}
                         >
                           <span
                             style={{
-                              fontSize: "15px color: rgb(89, 89, 89)",
+                              fontSize: "15px",
                             }}
                           >
                             <span data-custom-class="body_text">
                               <span style={{ fontSize: "15px" }}>
-                                <span style={{ color: "rgb(89, 89, 89)" }}>
+                                <span >
                                   <span data-custom-class="body_text">
                                     <span style={{ fontSize: "15px" }}>
                                       <span
-                                        style={{ color: "rgb(89, 89, 89)" }}
+
                                       ></span>
                                     </span>
                                   </span>
@@ -323,7 +324,7 @@ export const Privacy = () => {
               </ul>
               <div style={{ lineHeight: "1.5" }}>
                 <span style={{ fontSize: "15px" }}>
-                  <span style={{ color: "rgb(127, 127, 127)" }}>
+                  <span >
                     <span data-custom-class="body_text">
                       The purpose of this privacy notice is to explain to you in
                       the clearest way possible what information we collect, how
@@ -342,8 +343,8 @@ export const Privacy = () => {
               </div>
               <div style={{ lineHeight: "1.5" }}>
                 <span style={{ fontSize: "15px" }}>
-                  <span style={{ color: "rgb(127, 127, 127)" }}>
-                    <span style={{ color: "rgb(89, 89, 89)" }}>
+                  <span >
+                    <span >
                       <span data-custom-class="body_text">
                         <strong>
                           Please read this privacy notice carefully, as it will
@@ -362,8 +363,8 @@ export const Privacy = () => {
               </div>
               <div style={{ lineHeight: "1.5" }}>
                 <span style={{ fontSize: "15px" }}>
-                  <span style={{ color: "rgb(127, 127, 127)" }}>
-                    <span style={{ color: "rgb(0, 0, 0)" }}>
+                  <span >
+                    <span >
                       <strong>
                         <span data-custom-class="heading_1">
                           TABLE OF CONTENTS
@@ -380,15 +381,15 @@ export const Privacy = () => {
               </div>
               <div style={{ lineHeight: "1.5" }}>
                 <span style={{ fontSize: "15px" }}>
-                  <a data-custom-class="link" href="#infocollect">
-                    <span style={{ color: "rgb(89, 89, 89)" }}>
+                  <a rel='noopener noreferrer' data-custom-class="link" href="#infocollect">
+                    <span >
                       1. WHAT INFORMATION DO WE COLLECT?
                     </span>
                   </a>
-                  <span style={{ color: "rgb(127, 127, 127)" }}>
-                    <span style={{ color: "rgb(89, 89, 89)" }}>
+                  <span >
+                    <span >
                       <span data-custom-class="body_text">
-                        <span style={{ color: "rgb(89, 89, 89)" }}></span>
+                        <span ></span>
                       </span>
                     </span>
                   </span>
@@ -396,16 +397,16 @@ export const Privacy = () => {
               </div>
               <div style={{ lineHeight: "1.5" }}>
                 <span style={{ fontSize: "15px" }}>
-                  <a data-custom-class="link" href="#infouse">
-                    <span style={{ color: "rgb(89, 89, 89)" }}>
+                  <a rel='noopener noreferrer' data-custom-class="link" href="#infouse">
+                    <span >
                       2. HOW DO WE USE YOUR INFORMATION?
                     </span>
                   </a>
-                  <span style={{ color: "rgb(127, 127, 127)" }}>
-                    <span style={{ color: "rgb(89, 89, 89)" }}>
+                  <span >
+                    <span >
                       <span data-custom-class="body_text">
-                        <span style={{ color: "rgb(89, 89, 89)" }}>
-                          <span style={{ color: "rgb(89, 89, 89)" }}></span>
+                        <span >
+                          <span ></span>
                         </span>
                       </span>
                     </span>
@@ -414,26 +415,26 @@ export const Privacy = () => {
               </div>
               <div style={{ lineHeight: "1.5" }}>
                 <span style={{ fontSize: "15px" }}>
-                  <span style={{ color: "rgb(89, 89, 89)" }}>
-                    <a data-custom-class="link" href="#infoshare">
+                  <span >
+                    <a rel='noopener noreferrer' data-custom-class="link" href="#infoshare">
                       3. WILL YOUR INFORMATION BE SHARED WITH ANYONE?
                     </a>
                   </span>
-                  <span style={{ color: "rgb(127, 127, 127)" }}>
-                    <span style={{ color: "rgb(89, 89, 89)" }}>
+                  <span >
+                    <span >
                       <span data-custom-class="body_text">
-                        <span style={{ color: "rgb(89, 89, 89)" }}></span>
+                        <span ></span>
                       </span>
                     </span>
                   </span>
                 </span>
                 <span style={{ fontSize: "15px" }}>
-                  <span style={{ color: "rgb(127, 127, 127)" }}>
-                    <span style={{ color: "rgb(89, 89, 89)" }}>
+                  <span >
+                    <span >
                       <span data-custom-class="body_text">
-                        <span style={{ color: "rgb(89, 89, 89)" }}>
-                          <span style={{ color: "rgb(89, 89, 89)" }}>
-                            <span style={{ color: "rgb(89, 89, 89)" }}></span>
+                        <span >
+                          <span >
+                            <span ></span>
                           </span>
                         </span>
                       </span>
@@ -443,16 +444,16 @@ export const Privacy = () => {
               </div>
               <div style={{ lineHeight: "1.5" }}>
                 <span style={{ fontSize: "15px" }}>
-                  <a data-custom-class="link" href="#inforetain">
-                    <span style={{ color: "rgb(89, 89, 89)" }}>
+                  <a rel='noopener noreferrer' data-custom-class="link" href="#inforetain">
+                    <span >
                       4. HOW LONG DO WE KEEP YOUR INFORMATION?
                     </span>
                   </a>
-                  <span style={{ color: "rgb(127, 127, 127)" }}>
-                    <span style={{ color: "rgb(89, 89, 89)" }}>
+                  <span >
+                    <span >
                       <span data-custom-class="body_text">
-                        <span style={{ color: "rgb(89, 89, 89)" }}>
-                          <span style={{ color: "rgb(89, 89, 89)" }}>\</span>
+                        <span >
+                          <span >\</span>
                         </span>
                       </span>
                     </span>
@@ -461,15 +462,15 @@ export const Privacy = () => {
               </div>
               <div style={{ lineHeight: "1.5" }}>
                 <span style={{ fontSize: "15px" }}>
-                  <a data-custom-class="link" href="#infosafe">
-                    <span style={{ color: "rgb(89, 89, 89)" }}>
+                  <a rel='noopener noreferrer' data-custom-class="link" href="#infosafe">
+                    <span >
                       5. HOW DO WE KEEP YOUR INFORMATION SAFE?
                     </span>
                   </a>
-                  <span style={{ color: "rgb(127, 127, 127)" }}>
-                    <span style={{ color: "rgb(89, 89, 89)" }}>
+                  <span >
+                    <span >
                       <span data-custom-class="body_text">
-                        <span style={{ color: "rgb(89, 89, 89)" }}></span>
+                        <span ></span>
                       </span>
                     </span>
                   </span>
@@ -477,8 +478,8 @@ export const Privacy = () => {
               </div>
               <div style={{ lineHeight: "1.5" }}>
                 <span style={{ fontSize: "15px" }}>
-                  <span style={{ color: "rgb(89, 89, 89)" }}>
-                    <a data-custom-class="link" href="#privacyrights">
+                  <span >
+                    <a rel='noopener noreferrer' data-custom-class="link" href="#privacyrights">
                       6. WHAT ARE YOUR PRIVACY RIGHTS?
                     </a>
                   </span>
@@ -486,8 +487,8 @@ export const Privacy = () => {
               </div>
               <div style={{ lineHeight: "1.5" }}>
                 <span style={{ fontSize: "15px" }}>
-                  <a data-custom-class="link" href="#DNT">
-                    <span style={{ color: "rgb(89, 89, 89)" }}>
+                  <a rel='noopener noreferrer' data-custom-class="link" href="#DNT">
+                    <span >
                       7. CONTROLS FOR DO-NOT-TRACK FEATURES
                     </span>
                   </a>
@@ -495,8 +496,8 @@ export const Privacy = () => {
               </div>
               <div style={{ lineHeight: "1.5" }}>
                 <span style={{ fontSize: "15px" }}>
-                  <a data-custom-class="link" href="#caresidents">
-                    <span style={{ color: "rgb(89, 89, 89)" }}>
+                  <a rel='noopener noreferrer' data-custom-class="link" href="#caresidents">
+                    <span >
                       8. DO CALIFORNIA RESIDENTS HAVE SPECIFIC PRIVACY RIGHTS?
                     </span>
                   </a>
@@ -504,25 +505,17 @@ export const Privacy = () => {
               </div>
               <div style={{ lineHeight: "1.5" }}>
                 <span style={{ fontSize: "15px" }}>
-                  <a data-custom-class="link" href="#policyupdates">
-                    <span style={{ color: "rgb(89, 89, 89)" }}>
+                  <a rel='noopener noreferrer' data-custom-class="link" href="#policyupdates">
+                    <span >
                       9. DO WE MAKE UPDATES TO THIS NOTICE?
                     </span>
                   </a>
                 </span>
               </div>
               <div style={{ lineHeight: "1.5" }}>
-                <a data-custom-class="link" href="#contact">
-                  <span style={{ color: "rgb(89, 89, 89)", fontSize: "15px" }}>
+                <a rel='noopener noreferrer' data-custom-class="link" href="#contact">
+                  <span style={{ fontSize: "15px" }}>
                     10. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?
-                  </span>
-                </a>
-              </div>
-              <div style={{ lineHeight: "1.5" }}>
-                <a data-custom-class="link" href="#request">
-                  <span style={{ color: "rgb(89, 89, 89)" }}>
-                    11. HOW CAN YOU REVIEW, UPDATE OR DELETE THE DATA WE COLLECT
-                    FROM YOU?
                   </span>
                 </a>
               </div>
@@ -530,11 +523,11 @@ export const Privacy = () => {
                 <br />
               </div>
               <div id="infocollect" style={{ lineHeight: "1.5" }}>
-                <span style={{ color: "rgb(127, 127, 127)" }}>
-                  <span style={{ color: "rgb(89, 89, 89)", fontSize: "15px" }}>
-                    <span style={{ fontSize: "15px color: rgb(89, 89, 89)" }}>
-                      <span style={{ fontSize: "15px color: rgb(89, 89, 89)" }}>
-                        <span id="control" style={{ color: "rgb(0, 0, 0)" }}>
+                <span >
+                  <span style={{ fontSize: "15px" }}>
+                    <span style={{ fontSize: "15px" }}>
+                      <span style={{ fontSize: "15px" }}>
+                        <span id="control" >
                           <strong>
                             <span data-custom-class="heading_1">
                               1. WHAT INFORMATION DO WE COLLECT?
@@ -549,7 +542,7 @@ export const Privacy = () => {
               <div style={{ lineHeight: "1.5" }}>
                 <span
                   data-custom-class="heading_2"
-                  style={{ color: "rgb(0, 0, 0)" }}
+
                 >
                   <span style={{ fontSize: "15px" }}>
                     <strong>
@@ -566,17 +559,17 @@ export const Privacy = () => {
                   <br />
                 </div>
                 <div style={{ lineHeight: "1.5" }}>
-                  <span style={{ color: "rgb(127, 127, 127)" }}>
+                  <span >
                     <span
-                      style={{ color: "rgb(89, 89, 89)", fontSize: "15px" }}
+                      style={{ fontSize: "15px" }}
                     >
                       <span data-custom-class="body_text">
                         <span
-                          style={{ fontSize: "15px color: rgb(89, 89, 89)" }}
+                          style={{ fontSize: "15px" }}
                         >
                           <span
                             style={{
-                              fontSize: "15px color: rgb(89, 89, 89)",
+                              fontSize: "15px",
                             }}
                           >
                             <span data-custom-class="body_text">
@@ -589,11 +582,11 @@ export const Privacy = () => {
                       </span>
                       <span data-custom-class="body_text">
                         <span
-                          style={{ fontSize: "15px color: rgb(89, 89, 89)" }}
+                          style={{ fontSize: "15px" }}
                         >
                           <span
                             style={{
-                              fontSize: "15px color: rgb(89, 89, 89)",
+                              fontSize: "15px",
                             }}
                           >
                             <span data-custom-class="body_text">
@@ -616,8 +609,8 @@ export const Privacy = () => {
                 <br />
               </div>
               <div style={{ lineHeight: "1.5" }}>
-                <span style={{ fontSize: "15px color: rgb(89, 89, 89)" }}>
-                  <span style={{ fontSize: "15px color: rgb(89, 89, 89)" }}>
+                <span style={{ fontSize: "15px" }}>
+                  <span style={{ fontSize: "15px" }}>
                     <span data-custom-class="body_text">
                       We collect personal information that you voluntarily
                       provide to us when you{" "}
@@ -641,8 +634,8 @@ export const Privacy = () => {
                 <br />
               </div>
               <div style={{ lineHeight: "1.5" }}>
-                <span style={{ fontSize: "15px color: rgb(89, 89, 89)" }}>
-                  <span style={{ fontSize: "15px color: rgb(89, 89, 89)" }}>
+                <span style={{ fontSize: "15px" }}>
+                  <span style={{ fontSize: "15px" }}>
                     <span data-custom-class="body_text">
                       The personal information that we collect depends on the
                       context of your interactions with us and the{" "}
@@ -660,8 +653,8 @@ export const Privacy = () => {
                 <br />
               </div>
               <div style={{ lineHeight: "1.5" }}>
-                <span style={{ fontSize: "15px color: rgb(89, 89, 89)" }}>
-                  <span style={{ fontSize: "15px color: rgb(89, 89, 89)" }}>
+                <span style={{ fontSize: "15px" }}>
+                  <span style={{ fontSize: "15px" }}>
                     <span data-custom-class="body_text">
                       <strong>Personal Information Provided by You.</strong> We
                       collect{" "}
@@ -680,8 +673,8 @@ export const Privacy = () => {
                 <br />
               </div>
               <div style={{ lineHeight: "1.5" }}>
-                <span style={{ fontSize: "15px color: rgb(89, 89, 89)" }}>
-                  <span style={{ fontSize: "15px color: rgb(89, 89, 89)" }}>
+                <span style={{ fontSize: "15px" }}>
+                  <span style={{ fontSize: "15px" }}>
                     <span data-custom-class="body_text">
                       All personal information that you provide to us must be
                       true, complete and accurate, and you must notify us of any
@@ -697,14 +690,14 @@ export const Privacy = () => {
                           </span>
                           <span
                             style={{
-                              color: "rgb(89, 89, 89)",
+
                               fontSize: "15px",
                             }}
                           >
                             <span data-custom-class="body_text">
                               <span
                                 style={{
-                                  color: "rgb(89, 89, 89)",
+
                                   fontSize: "15px",
                                 }}
                               >
@@ -721,7 +714,7 @@ export const Privacy = () => {
               <div style={{ lineHeight: "1.5" }}>
                 <span
                   data-custom-class="heading_2"
-                  style={{ color: "rgb(0, 0, 0)" }}
+
                 >
                   <span style={{ fontSize: "15px" }}>
                     <strong>
@@ -738,17 +731,17 @@ export const Privacy = () => {
                   <br />
                 </div>
                 <div style={{ lineHeight: "1.5" }}>
-                  <span style={{ color: "rgb(127, 127, 127)" }}>
+                  <span >
                     <span
-                      style={{ color: "rgb(89, 89, 89)", fontSize: "15px" }}
+                      style={{ fontSize: "15px" }}
                     >
                       <span data-custom-class="body_text">
                         <span
-                          style={{ fontSize: "15px color: rgb(89, 89, 89)" }}
+                          style={{ fontSize: "15px" }}
                         >
                           <span
                             style={{
-                              fontSize: "15px color: rgb(89, 89, 89)",
+                              fontSize: "15px",
                             }}
                           >
                             <span data-custom-class="body_text">
@@ -758,7 +751,7 @@ export const Privacy = () => {
                               <em>
                                 We may collect limited data from public
                                 databases, marketing partners,{" "}
-                                <span style={{ color: "rgb(89, 89, 89)" }}>
+                                <span >
                                   <span style={{ fontSize: "15px" }}>
                                     <em>
                                       <span data-custom-class="body_text"></span>
@@ -779,15 +772,15 @@ export const Privacy = () => {
                 <br />
               </div>
               <div style={{ lineHeight: "1.5" }}>
-                <span style={{ fontSize: "15px color: rgb(89, 89, 89)" }}>
-                  <span style={{ fontSize: "15px color: rgb(89, 89, 89)" }}>
+                <span style={{ fontSize: "15px" }}>
+                  <span style={{ fontSize: "15px" }}>
                     <span data-custom-class="body_text">
                       In order to enhance our ability to provide relevant
                       marketing, offers and services to you and update our
                       records, we may obtain information about you from other
                       sources, such as public databases, joint marketing
                       partners, affiliate programs, data providers,
-                      <span style={{ color: "rgb(89, 89, 89)" }}>
+                      <span >
                         <span style={{ fontSize: "15px" }}>
                           <span data-custom-class="body_text"></span>
                         </span>
@@ -798,27 +791,27 @@ export const Privacy = () => {
                       Internet Protocol (IP) addresses, social media profiles,
                       social media URLs and custom profiles, for purposes of
                       targeted advertising and event promotion.
-                      <span style={{ color: "rgb(89, 89, 89)" }}>
+                      <span >
                         <span style={{ fontSize: "15px" }}>
                           <span data-custom-class="body_text">
-                            <span style={{ color: "rgb(89, 89, 89)" }}>
+                            <span >
                               <span style={{ fontSize: "15px" }}>
                                 <span data-custom-class="body_text"></span>
                               </span>
                             </span>
                           </span>
                         </span>
-                        <span style={{ color: "rgb(89, 89, 89)" }}>
+                        <span >
                           <span
                             style={{
-                              color: "rgb(89, 89, 89)",
+
                               fontSize: "15px",
                             }}
                           >
                             <span data-custom-class="body_text">
                               <span
                                 style={{
-                                  color: "rgb(89, 89, 89)",
+
                                   fontSize: "15px",
                                 }}
                               >
@@ -836,11 +829,11 @@ export const Privacy = () => {
                 <br />
               </div>
               <div id="infouse" style={{ lineHeight: "1.5" }}>
-                <span style={{ color: "rgb(127, 127, 127)" }}>
-                  <span style={{ color: "rgb(89, 89, 89)", fontSize: "15px" }}>
-                    <span style={{ fontSize: "15px color: rgb(89, 89, 89)" }}>
-                      <span style={{ fontSize: "15px color: rgb(89, 89, 89)" }}>
-                        <span id="control" style={{ color: "rgb(0, 0, 0)" }}>
+                <span >
+                  <span style={{ fontSize: "15px" }}>
+                    <span style={{ fontSize: "15px" }}>
+                      <span style={{ fontSize: "15px" }}>
+                        <span id="control" >
                           <strong>
                             <span data-custom-class="heading_1">
                               2. HOW DO WE USE YOUR INFORMATION?
@@ -857,17 +850,17 @@ export const Privacy = () => {
                   <br />
                 </div>
                 <div style={{ lineHeight: "1.5" }}>
-                  <span style={{ color: "rgb(127, 127, 127)" }}>
+                  <span >
                     <span
-                      style={{ color: "rgb(89, 89, 89)", fontSize: "15px" }}
+                      style={{ fontSize: "15px" }}
                     >
                       <span data-custom-class="body_text">
                         <span
-                          style={{ fontSize: "15px color: rgb(89, 89, 89)" }}
+                          style={{ fontSize: "15px" }}
                         >
                           <span
                             style={{
-                              fontSize: "15px color: rgb(89, 89, 89)",
+                              fontSize: "15px",
                             }}
                           >
                             <span data-custom-class="body_text">
@@ -892,8 +885,8 @@ export const Privacy = () => {
                 <br />
               </div>
               <div style={{ lineHeight: "1.5" }}>
-                <span style={{ fontSize: "15px color: rgb(89, 89, 89)" }}>
-                  <span style={{ fontSize: "15px color: rgb(89, 89, 89)" }}>
+                <span style={{ fontSize: "15px" }}>
+                  <span style={{ fontSize: "15px" }}>
                     <span data-custom-class="body_text">
                       We use personal information collected via our{" "}
                       <span style={{ fontSize: "15px" }}>
@@ -914,40 +907,40 @@ export const Privacy = () => {
                 <br />
               </div>
               <div style={{ lineHeight: "1.5" }}>
-                <span style={{ fontSize: "15px color: rgb(89, 89, 89)" }}>
-                  <span style={{ fontSize: "15px color: rgb(89, 89, 89)" }}>
+                <span style={{ fontSize: "15px" }}>
+                  <span style={{ fontSize: "15px" }}>
                     <span data-custom-class="body_text">
                       We use the information we collect or receive:
                     </span>
                   </span>
                 </span>
                 <div>
-                  <span style={{ fontSize: "15px color: rgb(89, 89, 89)" }}>
-                    <span style={{ fontSize: "15px color: rgb(89, 89, 89)" }}>
+                  <span style={{ fontSize: "15px" }}>
+                    <span style={{ fontSize: "15px" }}>
                       <span data-custom-class="body_text"></span>
                     </span>
                   </span>
                   <div>
-                    <span style={{ fontSize: "15px color: rgb(89, 89, 89)" }}>
-                      <span style={{ fontSize: "15px color: rgb(89, 89, 89)" }}>
+                    <span style={{ fontSize: "15px" }}>
+                      <span style={{ fontSize: "15px" }}>
                         <span data-custom-class="body_text"></span>
                       </span>
                     </span>
                     <div>
-                      <span style={{ fontSize: "15px color: rgb(89, 89, 89)" }}>
+                      <span style={{ fontSize: "15px" }}>
                         <span
-                          style={{ fontSize: "15px color: rgb(89, 89, 89)" }}
+                          style={{ fontSize: "15px" }}
                         >
                           <span data-custom-class="body_text"></span>
                         </span>
                       </span>
                       <div>
                         <span
-                          style={{ fontSize: "15px color: rgb(89, 89, 89)" }}
+                          style={{ fontSize: "15px" }}
                         >
                           <span
                             style={{
-                              fontSize: "15px color: rgb(89, 89, 89)",
+                              fontSize: "15px",
                             }}
                           >
                             <span data-custom-class="body_text"></span>
@@ -962,10 +955,10 @@ export const Privacy = () => {
                                   <li style={{ lineHeight: "1.5" }}>
                                     <span style={{ fontSize: "15px" }}>
                                       <span
-                                        style={{ color: "rgb(89, 89, 89)" }}
+
                                       >
                                         <span
-                                          style={{ color: "rgb(89, 89, 89)" }}
+
                                         >
                                           <span data-custom-class="body_text">
                                             <strong>
@@ -978,7 +971,7 @@ export const Privacy = () => {
                                             <span style={{ fontSize: "15px" }}>
                                               <span
                                                 style={{
-                                                  color: "rgb(89, 89, 89)",
+
                                                 }}
                                               >
                                                 <span data-custom-class="body_text">
@@ -988,10 +981,7 @@ export const Privacy = () => {
                                                     }}
                                                   >
                                                     <span
-                                                      style={{
-                                                        color:
-                                                          "rgb(89, 89, 89)",
-                                                      }}
+
                                                     >
                                                       <span data-custom-class="body_text">
                                                         Website .
@@ -1003,26 +993,23 @@ export const Privacy = () => {
                                             </span>
                                             <span
                                               style={{
-                                                color: "rgb(89, 89, 89)",
+
                                               }}
                                             >
                                               <span
                                                 style={{
-                                                  color: "rgb(89, 89, 89)",
+
                                                 }}
                                               >
                                                 <span data-custom-class="body_text">
                                                   <span
                                                     style={{
-                                                      color: "rgb(89, 89, 89)",
+
                                                     }}
                                                   >
                                                     <span data-custom-class="body_text">
                                                       <span
-                                                        style={{
-                                                          color:
-                                                            "rgb(89, 89, 89)",
-                                                        }}
+
                                                       >
                                                         <span data-custom-class="body_text"></span>
                                                       </span>
@@ -1042,10 +1029,10 @@ export const Privacy = () => {
                                   <li style={{ lineHeight: "1.5" }}>
                                     <span style={{ fontSize: "15px" }}>
                                       <span
-                                        style={{ color: "rgb(89, 89, 89)" }}
+
                                       >
                                         <span
-                                          style={{ color: "rgb(89, 89, 89)" }}
+
                                         >
                                           <span data-custom-class="body_text">
                                             <strong>
@@ -1058,26 +1045,23 @@ export const Privacy = () => {
                                             participate in our competitions.
                                             <span
                                               style={{
-                                                color: "rgb(89, 89, 89)",
+
                                               }}
                                             >
                                               <span
                                                 style={{
-                                                  color: "rgb(89, 89, 89)",
+
                                                 }}
                                               >
                                                 <span data-custom-class="body_text">
                                                   <span
                                                     style={{
-                                                      color: "rgb(89, 89, 89)",
+
                                                     }}
                                                   >
                                                     <span data-custom-class="body_text">
                                                       <span
-                                                        style={{
-                                                          color:
-                                                            "rgb(89, 89, 89)",
-                                                        }}
+
                                                       >
                                                         <span data-custom-class="body_text"></span>
                                                       </span>
@@ -1097,10 +1081,10 @@ export const Privacy = () => {
                                   <li style={{ lineHeight: "1.5" }}>
                                     <span style={{ fontSize: "15px" }}>
                                       <span
-                                        style={{ color: "rgb(89, 89, 89)" }}
+
                                       >
                                         <span
-                                          style={{ color: "rgb(89, 89, 89)" }}
+
                                         >
                                           <span data-custom-class="body_text">
                                             <strong>
@@ -1112,26 +1096,23 @@ export const Privacy = () => {
                                             service.
                                             <span
                                               style={{
-                                                color: "rgb(89, 89, 89)",
+
                                               }}
                                             >
                                               <span
                                                 style={{
-                                                  color: "rgb(89, 89, 89)",
+
                                                 }}
                                               >
                                                 <span data-custom-class="body_text">
                                                   <span
                                                     style={{
-                                                      color: "rgb(89, 89, 89)",
+
                                                     }}
                                                   >
                                                     <span data-custom-class="body_text">
                                                       <span
-                                                        style={{
-                                                          color:
-                                                            "rgb(89, 89, 89)",
-                                                        }}
+
                                                       >
                                                         <span data-custom-class="body_text"></span>
                                                       </span>
@@ -1151,10 +1132,10 @@ export const Privacy = () => {
                                   <li style={{ lineHeight: "1.5" }}>
                                     <span style={{ fontSize: "15px" }}>
                                       <span
-                                        style={{ color: "rgb(89, 89, 89)" }}
+
                                       >
                                         <span
-                                          style={{ color: "rgb(89, 89, 89)" }}
+
                                         >
                                           <span data-custom-class="body_text">
                                             <strong>
@@ -1167,26 +1148,23 @@ export const Privacy = () => {
                                             with the use of our Services.
                                             <span
                                               style={{
-                                                color: "rgb(89, 89, 89)",
+
                                               }}
                                             >
                                               <span
                                                 style={{
-                                                  color: "rgb(89, 89, 89)",
+
                                                 }}
                                               >
                                                 <span data-custom-class="body_text">
                                                   <span
                                                     style={{
-                                                      color: "rgb(89, 89, 89)",
+
                                                     }}
                                                   >
                                                     <span data-custom-class="body_text">
                                                       <span
-                                                        style={{
-                                                          color:
-                                                            "rgb(89, 89, 89)",
-                                                        }}
+
                                                       >
                                                         <span data-custom-class="body_text"></span>
                                                       </span>
@@ -1227,33 +1205,29 @@ export const Privacy = () => {
                                         style={{ lineHeight: "1.5" }}
                                       >
                                         <span
-                                          style={{
-                                            color: "rgb(127, 127, 127)",
-                                          }}
+
                                         >
                                           <span
                                             style={{
-                                              color: "rgb(89, 89, 89)",
+
                                               fontSize: "15px",
                                             }}
                                           >
                                             <span
                                               style={{
                                                 fontSize: "15px",
-                                                color: "rgb(89, 89, 89)",
+
                                               }}
                                             >
                                               <span
                                                 style={{
                                                   fontSize:
-                                                    "15px color: rgb(89, 89, 89)",
+                                                    "15px",
                                                 }}
                                               >
                                                 <span
                                                   id="control"
-                                                  style={{
-                                                    color: "rgb(0, 0, 0)",
-                                                  }}
+
                                                 >
                                                   <strong>
                                                     <span data-custom-class="heading_1">
@@ -1274,13 +1248,13 @@ export const Privacy = () => {
                                         <span
                                           style={{
                                             fontSize:
-                                              "15px color: rgb(89, 89, 89)",
+                                              "15px",
                                           }}
                                         >
                                           <span
                                             style={{
                                               fontSize:
-                                                "15px color: rgb(89, 89, 89)",
+                                                "15px",
                                             }}
                                           >
                                             <span data-custom-class="body_text">
@@ -1306,13 +1280,13 @@ export const Privacy = () => {
                                         <span
                                           style={{
                                             fontSize:
-                                              "15px color: rgb(89, 89, 89)",
+                                              "15px",
                                           }}
                                         >
                                           <span
                                             style={{
                                               fontSize:
-                                                "15px color: rgb(89, 89, 89)",
+                                                "15px",
                                             }}
                                           >
                                             <span data-custom-class="body_text">
@@ -1328,13 +1302,13 @@ export const Privacy = () => {
                                           <span
                                             style={{
                                               fontSize:
-                                                "15px color: rgb(89, 89, 89)",
+                                                "15px",
                                             }}
                                           >
                                             <span
                                               style={{
                                                 fontSize:
-                                                  "15px color: rgb(89, 89, 89)",
+                                                  "15px",
                                               }}
                                             >
                                               <span data-custom-class="body_text">
@@ -1346,13 +1320,13 @@ export const Privacy = () => {
                                                 <span
                                                   style={{
                                                     fontSize:
-                                                      "15px color: rgb(89, 89, 89)",
+                                                      "15px",
                                                   }}
                                                 >
                                                   <span
                                                     style={{
                                                       fontSize:
-                                                        "15px color: rgb(89, 89, 89)",
+                                                        "15px",
                                                     }}
                                                   >
                                                     <span data-custom-class="body_text"></span>
@@ -1367,39 +1341,39 @@ export const Privacy = () => {
                                         <span
                                           style={{
                                             fontSize:
-                                              "15px color: rgb(89, 89, 89)",
+                                              "15px",
                                           }}
                                         >
                                           <span
                                             style={{
                                               fontSize:
-                                                "15px color: rgb(89, 89, 89)",
+                                                "15px",
                                             }}
                                           >
                                             <span data-custom-class="body_text">
                                               <span
                                                 style={{
                                                   fontSize:
-                                                    "15px color: rgb(89, 89, 89)",
+                                                    "15px",
                                                 }}
                                               >
                                                 <span
                                                   style={{
                                                     fontSize:
-                                                      "15px color: rgb(89, 89, 89)",
+                                                      "15px",
                                                   }}
                                                 >
                                                   <span data-custom-class="body_text">
                                                     <span
                                                       style={{
                                                         fontSize:
-                                                          "15px color: rgb(89, 89, 89)",
+                                                          "15px",
                                                       }}
                                                     >
                                                       <span
                                                         style={{
                                                           fontSize:
-                                                            "15px color: rgb(89, 89, 89)",
+                                                            "15px",
                                                         }}
                                                       >
                                                         <span data-custom-class="body_text"></span>
@@ -1417,13 +1391,13 @@ export const Privacy = () => {
                                           <span
                                             style={{
                                               fontSize:
-                                                "15px color: rgb(89, 89, 89)",
+                                                "15px",
                                             }}
                                           >
                                             <span
                                               style={{
                                                 fontSize:
-                                                  "15px color: rgb(89, 89, 89)",
+                                                  "15px",
                                               }}
                                             >
                                               <span data-custom-class="body_text">
@@ -1437,26 +1411,26 @@ export const Privacy = () => {
                                                 <span
                                                   style={{
                                                     fontSize:
-                                                      "15px color: rgb(89, 89, 89)",
+                                                      "15px",
                                                   }}
                                                 >
                                                   <span
                                                     style={{
                                                       fontSize:
-                                                        "15px color: rgb(89, 89, 89)",
+                                                        "15px",
                                                     }}
                                                   >
                                                     <span data-custom-class="body_text">
                                                       <span
                                                         style={{
                                                           fontSize:
-                                                            "15px color: rgb(89, 89, 89)",
+                                                            "15px",
                                                         }}
                                                       >
                                                         <span
                                                           style={{
                                                             fontSize:
-                                                              "15px color: rgb(89, 89, 89)",
+                                                              "15px",
                                                           }}
                                                         >
                                                           <span data-custom-class="body_text"></span>
@@ -1474,26 +1448,26 @@ export const Privacy = () => {
                                         <span
                                           style={{
                                             fontSize:
-                                              "15px color: rgb(89, 89, 89)",
+                                              "15px",
                                           }}
                                         >
                                           <span
                                             style={{
                                               fontSize:
-                                                "15px color: rgb(89, 89, 89)",
+                                                "15px",
                                             }}
                                           >
                                             <span data-custom-class="body_text">
                                               <span
                                                 style={{
                                                   fontSize:
-                                                    "15px color: rgb(89, 89, 89)",
+                                                    "15px",
                                                 }}
                                               >
                                                 <span
                                                   style={{
                                                     fontSize:
-                                                      "15px color: rgb(89, 89, 89)",
+                                                      "15px",
                                                   }}
                                                 >
                                                   <span data-custom-class="body_text"></span>
@@ -1508,13 +1482,13 @@ export const Privacy = () => {
                                           <span
                                             style={{
                                               fontSize:
-                                                "15px color: rgb(89, 89, 89)",
+                                                "15px",
                                             }}
                                           >
                                             <span
                                               style={{
                                                 fontSize:
-                                                  "15px color: rgb(89, 89, 89)",
+                                                  "15px",
                                               }}
                                             >
                                               <span data-custom-class="body_text">
@@ -1529,26 +1503,26 @@ export const Privacy = () => {
                                                 <span
                                                   style={{
                                                     fontSize:
-                                                      "15px color: rgb(89, 89, 89)",
+                                                      "15px",
                                                   }}
                                                 >
                                                   <span
                                                     style={{
                                                       fontSize:
-                                                        "15px color: rgb(89, 89, 89)",
+                                                        "15px",
                                                     }}
                                                   >
                                                     <span data-custom-class="body_text">
                                                       <span
                                                         style={{
                                                           fontSize:
-                                                            "15px color: rgb(89, 89, 89)",
+                                                            "15px",
                                                         }}
                                                       >
                                                         <span
                                                           style={{
                                                             fontSize:
-                                                              "15px color: rgb(89, 89, 89)",
+                                                              "15px",
                                                           }}
                                                         >
                                                           <span data-custom-class="body_text"></span>
@@ -1566,26 +1540,26 @@ export const Privacy = () => {
                                         <span
                                           style={{
                                             fontSize:
-                                              "15px color: rgb(89, 89, 89)",
+                                              "15px",
                                           }}
                                         >
                                           <span
                                             style={{
                                               fontSize:
-                                                "15px color: rgb(89, 89, 89)",
+                                                "15px",
                                             }}
                                           >
                                             <span data-custom-class="body_text">
                                               <span
                                                 style={{
                                                   fontSize:
-                                                    "15px color: rgb(89, 89, 89)",
+                                                    "15px",
                                                 }}
                                               >
                                                 <span
                                                   style={{
                                                     fontSize:
-                                                      "15px color: rgb(89, 89, 89)",
+                                                      "15px",
                                                   }}
                                                 >
                                                   <span data-custom-class="body_text"></span>
@@ -1600,13 +1574,13 @@ export const Privacy = () => {
                                           <span
                                             style={{
                                               fontSize:
-                                                "15px color: rgb(89, 89, 89)",
+                                                "15px",
                                             }}
                                           >
                                             <span
                                               style={{
                                                 fontSize:
-                                                  "15px color: rgb(89, 89, 89)",
+                                                  "15px",
                                               }}
                                             >
                                               <span data-custom-class="body_text">
@@ -1628,26 +1602,26 @@ export const Privacy = () => {
                                                 <span
                                                   style={{
                                                     fontSize:
-                                                      "15px color: rgb(89, 89, 89)",
+                                                      "15px",
                                                   }}
                                                 >
                                                   <span
                                                     style={{
                                                       fontSize:
-                                                        "15px color: rgb(89, 89, 89)",
+                                                        "15px",
                                                     }}
                                                   >
                                                     <span data-custom-class="body_text">
                                                       <span
                                                         style={{
                                                           fontSize:
-                                                            "15px color: rgb(89, 89, 89)",
+                                                            "15px",
                                                         }}
                                                       >
                                                         <span
                                                           style={{
                                                             fontSize:
-                                                              "15px color: rgb(89, 89, 89)",
+                                                              "15px",
                                                           }}
                                                         >
                                                           <span data-custom-class="body_text"></span>
@@ -1665,26 +1639,26 @@ export const Privacy = () => {
                                         <span
                                           style={{
                                             fontSize:
-                                              "15px color: rgb(89, 89, 89)",
+                                              "15px",
                                           }}
                                         >
                                           <span
                                             style={{
                                               fontSize:
-                                                "15px color: rgb(89, 89, 89)",
+                                                "15px",
                                             }}
                                           >
                                             <span data-custom-class="body_text">
                                               <span
                                                 style={{
                                                   fontSize:
-                                                    "15px color: rgb(89, 89, 89)",
+                                                    "15px",
                                                 }}
                                               >
                                                 <span
                                                   style={{
                                                     fontSize:
-                                                      "15px color: rgb(89, 89, 89)",
+                                                      "15px",
                                                   }}
                                                 >
                                                   <span data-custom-class="body_text"></span>
@@ -1699,13 +1673,13 @@ export const Privacy = () => {
                                           <span
                                             style={{
                                               fontSize:
-                                                "15px color: rgb(89, 89, 89)",
+                                                "15px",
                                             }}
                                           >
                                             <span
                                               style={{
                                                 fontSize:
-                                                  "15px color: rgb(89, 89, 89)",
+                                                  "15px",
                                               }}
                                             >
                                               <span data-custom-class="body_text">
@@ -1726,26 +1700,26 @@ export const Privacy = () => {
                                                 <span
                                                   style={{
                                                     fontSize:
-                                                      "15px color: rgb(89, 89, 89)",
+                                                      "15px",
                                                   }}
                                                 >
                                                   <span
                                                     style={{
                                                       fontSize:
-                                                        "15px color: rgb(89, 89, 89)",
+                                                        "15px",
                                                     }}
                                                   >
                                                     <span data-custom-class="body_text">
                                                       <span
                                                         style={{
                                                           fontSize:
-                                                            "15px color: rgb(89, 89, 89)",
+                                                            "15px",
                                                         }}
                                                       >
                                                         <span
                                                           style={{
                                                             fontSize:
-                                                              "15px color: rgb(89, 89, 89)",
+                                                              "15px",
                                                           }}
                                                         >
                                                           <span data-custom-class="body_text"></span>
@@ -1763,13 +1737,13 @@ export const Privacy = () => {
                                         <span
                                           style={{
                                             fontSize:
-                                              "15px color: rgb(89, 89, 89)",
+                                              "15px",
                                           }}
                                         >
                                           <span
                                             style={{
                                               fontSize:
-                                                "15px color: rgb(89, 89, 89)",
+                                                "15px",
                                             }}
                                           >
                                             <span data-custom-class="body_text">
@@ -1786,13 +1760,13 @@ export const Privacy = () => {
                                           <span
                                             style={{
                                               fontSize:
-                                                "15px color: rgb(89, 89, 89)",
+                                                "15px",
                                             }}
                                           >
                                             <span
                                               style={{
                                                 fontSize:
-                                                  "15px color: rgb(89, 89, 89)",
+                                                  "15px",
                                               }}
                                             >
                                               <span data-custom-class="body_text">
@@ -1815,26 +1789,26 @@ export const Privacy = () => {
                                         <span
                                           style={{
                                             fontSize: "15px",
-                                            color: "rgb(89, 89, 89)",
+
                                           }}
                                         >
                                           <span
                                             style={{
                                               fontSize: "15px",
-                                              color: "rgb(89, 89, 89)",
+
                                             }}
                                           >
                                             <span data-custom-class="body_text">
                                               <span
                                                 style={{
                                                   fontSize: "15px",
-                                                  color: "rgb(89, 89, 89)",
+
                                                 }}
                                               >
                                                 <span
                                                   style={{
                                                     fontSize: "15px",
-                                                    color: "rgb(89, 89, 89)",
+
                                                   }}
                                                 >
                                                   <span data-custom-class="body_text"></span>
@@ -1847,7 +1821,7 @@ export const Privacy = () => {
                                           <span style={{ fontSize: "15px" }}>
                                             <span
                                               style={{
-                                                color: "rgb(89, 89, 89)",
+
                                               }}
                                             >
                                               <span data-custom-class="body_text"></span>
@@ -1857,7 +1831,7 @@ export const Privacy = () => {
                                             <span style={{ fontSize: "15px" }}>
                                               <span
                                                 style={{
-                                                  color: "rgb(89, 89, 89)",
+
                                                 }}
                                               >
                                                 <span data-custom-class="body_text"></span>
@@ -1869,7 +1843,7 @@ export const Privacy = () => {
                                               >
                                                 <span
                                                   style={{
-                                                    color: "rgb(89, 89, 89)",
+
                                                   }}
                                                 >
                                                   <span
@@ -1878,10 +1852,7 @@ export const Privacy = () => {
                                                     }}
                                                   >
                                                     <span
-                                                      style={{
-                                                        color:
-                                                          "rgb(89, 89, 89)",
-                                                      }}
+
                                                     >
                                                       <span data-custom-class="body_text"></span>
                                                     </span>
@@ -1894,7 +1865,7 @@ export const Privacy = () => {
                                                 >
                                                   <span
                                                     style={{
-                                                      color: "rgb(89, 89, 89)",
+
                                                     }}
                                                   >
                                                     <span data-custom-class="body_text"></span>
@@ -1907,10 +1878,7 @@ export const Privacy = () => {
                                                     }}
                                                   >
                                                     <span
-                                                      style={{
-                                                        color:
-                                                          "rgb(89, 89, 89)",
-                                                      }}
+
                                                     >
                                                       <span data-custom-class="body_text"></span>
                                                     </span>
@@ -1925,15 +1893,13 @@ export const Privacy = () => {
                                                     <span
                                                       style={{
                                                         fontSize: "15px",
-                                                        color:
-                                                          "rgb(89, 89, 89)",
+
                                                       }}
                                                     >
                                                       <span
                                                         style={{
                                                           fontSize: "15px",
-                                                          color:
-                                                            "rgb(89, 89, 89)",
+
                                                         }}
                                                       >
                                                         <span data-custom-class="body_text">
@@ -1948,10 +1914,7 @@ export const Privacy = () => {
                                                             }}
                                                           >
                                                             <span
-                                                              style={{
-                                                                color:
-                                                                  "rgb(89, 89, 89)",
-                                                              }}
+
                                                             >
                                                               <span data-custom-class="body_text"></span>
                                                             </span>
@@ -1965,10 +1928,7 @@ export const Privacy = () => {
                                                             }}
                                                           >
                                                             <span
-                                                              style={{
-                                                                color:
-                                                                  "rgb(89, 89, 89)",
-                                                              }}
+
                                                             >
                                                               <span data-custom-class="body_text">
                                                                 <span
@@ -1978,10 +1938,7 @@ export const Privacy = () => {
                                                                   }}
                                                                 >
                                                                   <span
-                                                                    style={{
-                                                                      color:
-                                                                        "rgb(89, 89, 89)",
-                                                                    }}
+
                                                                   >
                                                                     <span data-custom-class="body_text">
                                                                       Website
@@ -2003,10 +1960,7 @@ export const Privacy = () => {
                                                             }}
                                                           >
                                                             <span
-                                                              style={{
-                                                                color:
-                                                                  "rgb(89, 89, 89)",
-                                                              }}
+
                                                             >
                                                               <span data-custom-class="body_text">
                                                                 <span
@@ -2016,10 +1970,7 @@ export const Privacy = () => {
                                                                   }}
                                                                 >
                                                                   <span
-                                                                    style={{
-                                                                      color:
-                                                                        "rgb(89, 89, 89)",
-                                                                    }}
+
                                                                   >
                                                                     <span data-custom-class="body_text">
                                                                       Website
@@ -2036,10 +1987,7 @@ export const Privacy = () => {
                                                             }}
                                                           >
                                                             <span
-                                                              style={{
-                                                                color:
-                                                                  "rgb(89, 89, 89)",
-                                                              }}
+
                                                             >
                                                               <span data-custom-class="body_text"></span>
                                                             </span>
@@ -2055,10 +2003,7 @@ export const Privacy = () => {
                                                             }}
                                                           >
                                                             <span
-                                                              style={{
-                                                                color:
-                                                                  "rgb(89, 89, 89)",
-                                                              }}
+
                                                             >
                                                               <span data-custom-class="body_text">
                                                                 <span
@@ -2068,10 +2013,7 @@ export const Privacy = () => {
                                                                   }}
                                                                 >
                                                                   <span
-                                                                    style={{
-                                                                      color:
-                                                                        "rgb(89, 89, 89)",
-                                                                    }}
+
                                                                   >
                                                                     <span data-custom-class="body_text">
                                                                       Website
@@ -2089,10 +2031,7 @@ export const Privacy = () => {
                                                             }}
                                                           >
                                                             <span
-                                                              style={{
-                                                                color:
-                                                                  "rgb(89, 89, 89)",
-                                                              }}
+
                                                             >
                                                               <span data-custom-class="body_text">
                                                                 <span
@@ -2102,10 +2041,7 @@ export const Privacy = () => {
                                                                   }}
                                                                 >
                                                                   <span
-                                                                    style={{
-                                                                      color:
-                                                                        "rgb(89, 89, 89)",
-                                                                    }}
+
                                                                   ></span>
                                                                 </span>
                                                               </span>
@@ -2123,10 +2059,7 @@ export const Privacy = () => {
                                                     }}
                                                   >
                                                     <span
-                                                      style={{
-                                                        color:
-                                                          "rgb(89, 89, 89)",
-                                                      }}
+
                                                     >
                                                       <span
                                                         style={{
@@ -2143,18 +2076,12 @@ export const Privacy = () => {
                                                     }}
                                                   >
                                                     <span
-                                                      style={{
-                                                        color:
-                                                          "rgb(89, 89, 89)",
-                                                      }}
+
                                                     ></span>
                                                   </div>
                                                   <div>
                                                     <span
-                                                      style={{
-                                                        color:
-                                                          "rgb(89, 89, 89) fontSize: 15px",
-                                                      }}
+
                                                     >
                                                       <span
                                                         style={{
@@ -2162,10 +2089,7 @@ export const Privacy = () => {
                                                         }}
                                                       >
                                                         <span
-                                                          style={{
-                                                            color:
-                                                              "rgb(89, 89, 89)",
-                                                          }}
+
                                                         >
                                                           <span
                                                             style={{
@@ -2173,10 +2097,7 @@ export const Privacy = () => {
                                                             }}
                                                           >
                                                             <span
-                                                              style={{
-                                                                color:
-                                                                  "rgb(89, 89, 89)",
-                                                              }}
+
                                                             >
                                                               <span data-custom-class="heading_1"></span>
                                                             </span>
@@ -2187,35 +2108,24 @@ export const Privacy = () => {
                                                     <span
                                                       style={{
                                                         fontSize: "15px",
-                                                        color:
-                                                          "rgb(89, 89, 89)",
+
                                                       }}
                                                     >
                                                       <span
                                                         style={{
                                                           fontSize: "15px",
-                                                          color:
-                                                            "rgb(89, 89, 89)",
+
                                                         }}
                                                       >
                                                         <span data-custom-class="body_text">
                                                           <span
-                                                            style={{
-                                                              color:
-                                                                "rgb(89, 89, 89) fontSize: 15px",
-                                                            }}
+
                                                           >
                                                             <span
-                                                              style={{
-                                                                color:
-                                                                  "rgb(89, 89, 89) fontSize: 15px",
-                                                              }}
+
                                                             >
                                                               <span
-                                                                style={{
-                                                                  color:
-                                                                    "rgb(89, 89, 89) fontSize: 15px",
-                                                                }}
+
                                                               >
                                                                 <span
                                                                   style={{
@@ -2224,10 +2134,7 @@ export const Privacy = () => {
                                                                   }}
                                                                 >
                                                                   <span
-                                                                    style={{
-                                                                      color:
-                                                                        "rgb(89, 89, 89)",
-                                                                    }}
+
                                                                   >
                                                                     <span
                                                                       style={{
@@ -2236,55 +2143,31 @@ export const Privacy = () => {
                                                                       }}
                                                                     >
                                                                       <span
-                                                                        style={{
-                                                                          color:
-                                                                            "rgb(89, 89, 89)",
-                                                                        }}
+
                                                                       >
                                                                         <span data-custom-class="body_text"></span>
 
                                                                         <span data-custom-class="body_text">
                                                                           <span
-                                                                            style={{
-                                                                              color:
-                                                                                "rgb(89, 89, 89) fontSize: 15px",
-                                                                            }}
+
                                                                           >
                                                                             <span
-                                                                              style={{
-                                                                                color:
-                                                                                  "rgb(89, 89, 89) fontSize: 15px",
-                                                                              }}
+
                                                                             >
                                                                               <span
-                                                                                style={{
-                                                                                  color:
-                                                                                    "rgb(89, 89, 89) fontSize: 15px",
-                                                                                }}
+
                                                                               >
                                                                                 <span
-                                                                                  style={{
-                                                                                    color:
-                                                                                      "rgb(89, 89, 89) fontSize: 15px",
-                                                                                  }}
+
                                                                                 >
                                                                                   <span
-                                                                                    style={{
-                                                                                      color:
-                                                                                        "rgb(89, 89, 89) fontSize: 15px",
-                                                                                    }}
+
                                                                                   >
                                                                                     <span
-                                                                                      style={{
-                                                                                        fontSize:
-                                                                                          "15px",
-                                                                                      }}
+
                                                                                     >
                                                                                       <span
-                                                                                        style={{
-                                                                                          color:
-                                                                                            "rgb(89, 89, 89)",
-                                                                                        }}
+
                                                                                       >
                                                                                         <span
                                                                                           style={{
@@ -2293,10 +2176,7 @@ export const Privacy = () => {
                                                                                           }}
                                                                                         >
                                                                                           <span
-                                                                                            style={{
-                                                                                              color:
-                                                                                                "rgb(89, 89, 89)",
-                                                                                            }}
+
                                                                                           >
                                                                                             <span data-custom-class="body_text"></span>
                                                                                           </span>
@@ -2334,37 +2214,26 @@ export const Privacy = () => {
                                                     }}
                                                   >
                                                     <span
-                                                      style={{
-                                                        color:
-                                                          "rgb(127, 127, 127)",
-                                                      }}
+
                                                     >
                                                       <span
-                                                        style={{
-                                                          color:
-                                                            "rgb(89, 89, 89) fontSize: 15px",
-                                                        }}
+
                                                       >
                                                         <span
                                                           style={{
                                                             fontSize: "15px",
-                                                            color:
-                                                              "rgb(89, 89, 89)",
+
                                                           }}
                                                         >
                                                           <span
                                                             style={{
                                                               fontSize: "15px",
-                                                              color:
-                                                                "rgb(89, 89, 89)",
+
                                                             }}
                                                           >
                                                             <span
                                                               id="control"
-                                                              style={{
-                                                                color:
-                                                                  "rgb(0, 0, 0)",
-                                                              }}
+
                                                             >
                                                               <strong>
                                                                 <span data-custom-class="heading_1">
@@ -2394,15 +2263,13 @@ export const Privacy = () => {
                                                     <span
                                                       style={{
                                                         fontSize: "15px",
-                                                        color:
-                                                          "rgb(89, 89, 89)",
+
                                                       }}
                                                     >
                                                       <span
                                                         style={{
                                                           fontSize: "15px",
-                                                          color:
-                                                            "rgb(89, 89, 89)",
+
                                                         }}
                                                       >
                                                         <span data-custom-class="body_text">
@@ -2438,15 +2305,13 @@ export const Privacy = () => {
                                                     <span
                                                       style={{
                                                         fontSize: "15px",
-                                                        color:
-                                                          "rgb(89, 89, 89)",
+
                                                       }}
                                                     >
                                                       <span
                                                         style={{
                                                           fontSize: "15px",
-                                                          color:
-                                                            "rgb(89, 89, 89)",
+
                                                         }}
                                                       >
                                                         <span data-custom-class="body_text">
@@ -2473,10 +2338,7 @@ export const Privacy = () => {
                                                             }}
                                                           >
                                                             <span
-                                                              style={{
-                                                                color:
-                                                                  "rgb(89, 89, 89)",
-                                                              }}
+
                                                             >
                                                               <span data-custom-class="body_text">
                                                                 1 year
@@ -2503,15 +2365,13 @@ export const Privacy = () => {
                                                     <span
                                                       style={{
                                                         fontSize: "15px",
-                                                        color:
-                                                          "rgb(89, 89, 89)",
+
                                                       }}
                                                     >
                                                       <span
                                                         style={{
                                                           fontSize: "15px",
-                                                          color:
-                                                            "rgb(89, 89, 89)",
+
                                                         }}
                                                       >
                                                         <span data-custom-class="body_text">
@@ -2538,8 +2398,7 @@ export const Privacy = () => {
                                                           possible.
                                                           <span
                                                             style={{
-                                                              color:
-                                                                "rgb(89, 89, 89)",
+
                                                             }}
                                                           ></span>
                                                         </span>
@@ -2560,37 +2419,26 @@ export const Privacy = () => {
                                                     }}
                                                   >
                                                     <span
-                                                      style={{
-                                                        color:
-                                                          "rgb(127, 127, 127)",
-                                                      }}
+
                                                     >
                                                       <span
-                                                        style={{
-                                                          color:
-                                                            "rgb(89, 89, 89) fontSize: 15px",
-                                                        }}
+
                                                       >
                                                         <span
                                                           style={{
                                                             fontSize: "15px",
-                                                            color:
-                                                              "rgb(89, 89, 89)",
+
                                                           }}
                                                         >
                                                           <span
                                                             style={{
                                                               fontSize: "15px",
-                                                              color:
-                                                                "rgb(89, 89, 89)",
+
                                                             }}
                                                           >
                                                             <span
                                                               id="control"
-                                                              style={{
-                                                                color:
-                                                                  "rgb(0, 0, 0)",
-                                                              }}
+
                                                             >
                                                               <strong>
                                                                 <span data-custom-class="heading_1">
@@ -2621,15 +2469,13 @@ export const Privacy = () => {
                                                     <span
                                                       style={{
                                                         fontSize: "15px",
-                                                        color:
-                                                          "rgb(89, 89, 89)",
+
                                                       }}
                                                     >
                                                       <span
                                                         style={{
                                                           fontSize: "15px",
-                                                          color:
-                                                            "rgb(89, 89, 89)",
+
                                                         }}
                                                       >
                                                         <span data-custom-class="body_text">
@@ -2664,15 +2510,13 @@ export const Privacy = () => {
                                                     <span
                                                       style={{
                                                         fontSize: "15px",
-                                                        color:
-                                                          "rgb(89, 89, 89)",
+
                                                       }}
                                                     >
                                                       <span
                                                         style={{
                                                           fontSize: "15px",
-                                                          color:
-                                                            "rgb(89, 89, 89)",
+
                                                         }}
                                                       >
                                                         <span data-custom-class="body_text">
@@ -2712,10 +2556,7 @@ export const Privacy = () => {
                                                           personal information
                                                           to and from our{" "}
                                                           <span
-                                                            style={{
-                                                              color:
-                                                                "rgb(89, 89, 89) fontSize: 15px",
-                                                            }}
+
                                                           >
                                                             <span data-custom-class="body_text">
                                                               <span
@@ -2725,10 +2566,7 @@ export const Privacy = () => {
                                                                 }}
                                                               >
                                                                 <span
-                                                                  style={{
-                                                                    color:
-                                                                      "rgb(89, 89, 89)",
-                                                                  }}
+
                                                                 >
                                                                   <span data-custom-class="body_text">
                                                                     <span
@@ -2738,10 +2576,7 @@ export const Privacy = () => {
                                                                       }}
                                                                     >
                                                                       <span
-                                                                        style={{
-                                                                          color:
-                                                                            "rgb(89, 89, 89)",
-                                                                        }}
+
                                                                       >
                                                                         <span data-custom-class="body_text">
                                                                           Website
@@ -2757,10 +2592,7 @@ export const Privacy = () => {
                                                           You should only access
                                                           the{" "}
                                                           <span
-                                                            style={{
-                                                              color:
-                                                                "rgb(89, 89, 89) fontSize: 15px",
-                                                            }}
+
                                                           >
                                                             <span data-custom-class="body_text">
                                                               <span
@@ -2770,10 +2602,7 @@ export const Privacy = () => {
                                                                 }}
                                                               >
                                                                 <span
-                                                                  style={{
-                                                                    color:
-                                                                      "rgb(89, 89, 89)",
-                                                                  }}
+
                                                                 >
                                                                   <span data-custom-class="body_text">
                                                                     <span
@@ -2783,10 +2612,7 @@ export const Privacy = () => {
                                                                       }}
                                                                     >
                                                                       <span
-                                                                        style={{
-                                                                          color:
-                                                                            "rgb(89, 89, 89)",
-                                                                        }}
+
                                                                       >
                                                                         <span data-custom-class="body_text">
                                                                           Website
@@ -2802,15 +2628,11 @@ export const Privacy = () => {
                                                           environment.
                                                           <span
                                                             style={{
-                                                              color:
-                                                                "rgb(89, 89, 89)",
+
                                                             }}
                                                           ></span>
                                                           <span
-                                                            style={{
-                                                              color:
-                                                                "rgb(89, 89, 89) fontSize: 15px",
-                                                            }}
+
                                                           >
                                                             <span data-custom-class="body_text"></span>
                                                           </span>
@@ -2832,37 +2654,26 @@ export const Privacy = () => {
                                                     }}
                                                   >
                                                     <span
-                                                      style={{
-                                                        color:
-                                                          "rgb(127, 127, 127)",
-                                                      }}
+
                                                     >
                                                       <span
-                                                        style={{
-                                                          color:
-                                                            "rgb(89, 89, 89) fontSize: 15px",
-                                                        }}
+
                                                       >
                                                         <span
                                                           style={{
                                                             fontSize: "15px",
-                                                            color:
-                                                              "rgb(89, 89, 89)",
+
                                                           }}
                                                         >
                                                           <span
                                                             style={{
                                                               fontSize: "15px",
-                                                              color:
-                                                                "rgb(89, 89, 89)",
+
                                                             }}
                                                           >
                                                             <span
                                                               id="control"
-                                                              style={{
-                                                                color:
-                                                                  "rgb(0, 0, 0)",
-                                                              }}
+
                                                             >
                                                               <strong>
                                                                 <span data-custom-class="heading_1">
@@ -2892,15 +2703,13 @@ export const Privacy = () => {
                                                     <span
                                                       style={{
                                                         fontSize: "15px",
-                                                        color:
-                                                          "rgb(89, 89, 89)",
+
                                                       }}
                                                     >
                                                       <span
                                                         style={{
                                                           fontSize: "15px",
-                                                          color:
-                                                            "rgb(89, 89, 89)",
+
                                                         }}
                                                       >
                                                         <span data-custom-class="body_text">
@@ -2910,10 +2719,7 @@ export const Privacy = () => {
                                                           <em>
                                                             {" "}
                                                             <span
-                                                              style={{
-                                                                color:
-                                                                  "rgb(89, 89, 89)",
-                                                              }}
+
                                                             >
                                                               <span
                                                                 style={{
@@ -2937,10 +2743,7 @@ export const Privacy = () => {
                                                             your personal
                                                             information.{" "}
                                                             <span
-                                                              style={{
-                                                                color:
-                                                                  "rgb(89, 89, 89)",
-                                                              }}
+
                                                             >
                                                               <span
                                                                 style={{
@@ -2960,8 +2763,7 @@ export const Privacy = () => {
                                                           </em>
                                                           <span
                                                             style={{
-                                                              color:
-                                                                "rgb(89, 89, 89)",
+
                                                             }}
                                                           >
                                                             <span
@@ -2990,15 +2792,13 @@ export const Privacy = () => {
                                                     <span
                                                       style={{
                                                         fontSize: "15px",
-                                                        color:
-                                                          "rgb(89, 89, 89)",
+
                                                       }}
                                                     >
                                                       <span
                                                         style={{
                                                           fontSize: "15px",
-                                                          color:
-                                                            "rgb(89, 89, 89)",
+
                                                         }}
                                                       >
                                                         <span data-custom-class="body_text">
@@ -3028,7 +2828,7 @@ export const Privacy = () => {
                                                           To make such a
                                                           request, please use
                                                           the{" "}
-                                                          <a
+                                                          <a rel='noopener noreferrer'
                                                             data-custom-class="link"
                                                             href="#contact"
                                                           >
@@ -3039,10 +2839,7 @@ export const Privacy = () => {
                                                               }}
                                                             >
                                                               <span
-                                                                style={{
-                                                                  color:
-                                                                    "rgb(48, 48, 241)",
-                                                                }}
+
                                                               >
                                                                 contact details
                                                               </span>
@@ -3073,15 +2870,13 @@ export const Privacy = () => {
                                                     <span
                                                       style={{
                                                         fontSize: "15px",
-                                                        color:
-                                                          "rgb(89, 89, 89)",
+
                                                       }}
                                                     >
                                                       <span
                                                         style={{
                                                           fontSize: "15px",
-                                                          color:
-                                                            "rgb(89, 89, 89)",
+
                                                         }}
                                                       >
                                                         <span data-custom-class="body_text">
@@ -3110,17 +2905,11 @@ export const Privacy = () => {
                                                             }}
                                                           >
                                                             <span
-                                                              style={{
-                                                                color:
-                                                                  "rgb(89, 89, 89)",
-                                                              }}
+
                                                             >
                                                               <span data-custom-class="body_text">
                                                                 <span
-                                                                  style={{
-                                                                    color:
-                                                                      "rgb(89, 89, 89)",
-                                                                  }}
+
                                                                 >
                                                                   <span
                                                                     style={{
@@ -3144,8 +2933,7 @@ export const Privacy = () => {
                                                     <span
                                                       style={{
                                                         fontSize: "15px",
-                                                        color:
-                                                          "rgb(89, 89, 89)",
+
                                                       }}
                                                     ></span>
                                                   </div>
@@ -3157,15 +2945,13 @@ export const Privacy = () => {
                                                     <span
                                                       style={{
                                                         fontSize: "15px",
-                                                        color:
-                                                          "rgb(89, 89, 89)",
+
                                                       }}
                                                     >
                                                       <span
                                                         style={{
                                                           fontSize: "15px",
-                                                          color:
-                                                            "rgb(89, 89, 89)",
+
                                                         }}
                                                       >
                                                         <span data-custom-class="body_text">
@@ -3187,17 +2973,11 @@ export const Privacy = () => {
                                                             }}
                                                           >
                                                             <span
-                                                              style={{
-                                                                color:
-                                                                  "rgb(89, 89, 89)",
-                                                              }}
+
                                                             >
                                                               <span data-custom-class="body_text">
                                                                 <span
-                                                                  style={{
-                                                                    color:
-                                                                      "rgb(48, 48, 241)",
-                                                                  }}
+
                                                                 >
                                                                   <span data-custom-class="body_text">
                                                                     <a
@@ -3240,15 +3020,13 @@ export const Privacy = () => {
                                                     <span
                                                       style={{
                                                         fontSize: "15px",
-                                                        color:
-                                                          "rgb(89, 89, 89)",
+
                                                       }}
                                                     >
                                                       <span
                                                         style={{
                                                           fontSize: "15px",
-                                                          color:
-                                                            "rgb(89, 89, 89)",
+
                                                         }}
                                                       >
                                                         <span data-custom-class="body_text">
@@ -3264,17 +3042,11 @@ export const Privacy = () => {
                                                             }}
                                                           >
                                                             <span
-                                                              style={{
-                                                                color:
-                                                                  "rgb(89, 89, 89)",
-                                                              }}
+
                                                             >
                                                               <span data-custom-class="body_text">
                                                                 <span
-                                                                  style={{
-                                                                    color:
-                                                                      "rgb(48, 48, 241)",
-                                                                  }}
+
                                                                 >
                                                                   <span data-custom-class="body_text">
                                                                     <span
@@ -3317,37 +3089,26 @@ export const Privacy = () => {
                                                     }}
                                                   >
                                                     <span
-                                                      style={{
-                                                        color:
-                                                          "rgb(127, 127, 127)",
-                                                      }}
+
                                                     >
                                                       <span
-                                                        style={{
-                                                          color:
-                                                            "rgb(89, 89, 89) fontSize: 15px",
-                                                        }}
+
                                                       >
                                                         <span
                                                           style={{
                                                             fontSize: "15px",
-                                                            color:
-                                                              "rgb(89, 89, 89)",
+
                                                           }}
                                                         >
                                                           <span
                                                             style={{
                                                               fontSize: "15px",
-                                                              color:
-                                                                "rgb(89, 89, 89)",
+
                                                             }}
                                                           >
                                                             <span
                                                               id="control"
-                                                              style={{
-                                                                color:
-                                                                  "rgb(0, 0, 0)",
-                                                              }}
+
                                                             >
                                                               <strong>
                                                                 <span data-custom-class="heading_1">
@@ -3378,15 +3139,13 @@ export const Privacy = () => {
                                                     <span
                                                       style={{
                                                         fontSize: "15px",
-                                                        color:
-                                                          "rgb(89, 89, 89)",
+
                                                       }}
                                                     >
                                                       <span
                                                         style={{
                                                           fontSize: "15px",
-                                                          color:
-                                                            "rgb(89, 89, 89)",
+
                                                         }}
                                                       >
                                                         <span data-custom-class="body_text">
@@ -3443,37 +3202,26 @@ export const Privacy = () => {
                                                     }}
                                                   >
                                                     <span
-                                                      style={{
-                                                        color:
-                                                          "rgb(127, 127, 127)",
-                                                      }}
+
                                                     >
                                                       <span
-                                                        style={{
-                                                          color:
-                                                            "rgb(89, 89, 89) fontSize: 15px",
-                                                        }}
+
                                                       >
                                                         <span
                                                           style={{
                                                             fontSize: "15px",
-                                                            color:
-                                                              "rgb(89, 89, 89)",
+
                                                           }}
                                                         >
                                                           <span
                                                             style={{
                                                               fontSize: "15px",
-                                                              color:
-                                                                "rgb(89, 89, 89)",
+
                                                             }}
                                                           >
                                                             <span
                                                               id="control"
-                                                              style={{
-                                                                color:
-                                                                  "rgb(0, 0, 0)",
-                                                              }}
+
                                                             >
                                                               <strong>
                                                                 <span data-custom-class="heading_1">
@@ -3506,15 +3254,13 @@ export const Privacy = () => {
                                                     <span
                                                       style={{
                                                         fontSize: "15px",
-                                                        color:
-                                                          "rgb(89, 89, 89)",
+
                                                       }}
                                                     >
                                                       <span
                                                         style={{
                                                           fontSize: "15px",
-                                                          color:
-                                                            "rgb(89, 89, 89)",
+
                                                         }}
                                                       >
                                                         <span data-custom-class="body_text">
@@ -3550,15 +3296,13 @@ export const Privacy = () => {
                                                     <span
                                                       style={{
                                                         fontSize: "15px",
-                                                        color:
-                                                          "rgb(89, 89, 89)",
+
                                                       }}
                                                     >
                                                       <span
                                                         style={{
                                                           fontSize: "15px",
-                                                          color:
-                                                            "rgb(89, 89, 89)",
+
                                                         }}
                                                       >
                                                         <span data-custom-class="body_text">
@@ -3612,15 +3356,13 @@ export const Privacy = () => {
                                                     <span
                                                       style={{
                                                         fontSize: "15px",
-                                                        color:
-                                                          "rgb(89, 89, 89)",
+
                                                       }}
                                                     >
                                                       <span
                                                         style={{
                                                           fontSize: "15px",
-                                                          color:
-                                                            "rgb(89, 89, 89)",
+
                                                         }}
                                                       >
                                                         <span data-custom-class="body_text">
@@ -3630,17 +3372,11 @@ export const Privacy = () => {
                                                           have a registered
                                                           account with{" "}
                                                           <span
-                                                            style={{
-                                                              color:
-                                                                "rgb(89, 89, 89) fontSize: 15px",
-                                                            }}
+
                                                           >
                                                             <span data-custom-class="body_text">
                                                               <span
-                                                                style={{
-                                                                  color:
-                                                                    "rgb(89, 89, 89) fontSize: 15px",
-                                                                }}
+
                                                               >
                                                                 <span data-custom-class="body_text">
                                                                   <span
@@ -3650,10 +3386,7 @@ export const Privacy = () => {
                                                                     }}
                                                                   >
                                                                     <span
-                                                                      style={{
-                                                                        color:
-                                                                          "rgb(89, 89, 89)",
-                                                                      }}
+
                                                                     >
                                                                       <span data-custom-class="body_text">
                                                                         the
@@ -3670,17 +3403,11 @@ export const Privacy = () => {
                                                           unwanted data that you
                                                           publicly post on the{" "}
                                                           <span
-                                                            style={{
-                                                              color:
-                                                                "rgb(89, 89, 89) fontSize: 15px",
-                                                            }}
+
                                                           >
                                                             <span data-custom-class="body_text">
                                                               <span
-                                                                style={{
-                                                                  color:
-                                                                    "rgb(89, 89, 89) fontSize: 15px",
-                                                                }}
+
                                                               >
                                                                 <span data-custom-class="body_text">
                                                                   <span
@@ -3690,10 +3417,7 @@ export const Privacy = () => {
                                                                     }}
                                                                   >
                                                                     <span
-                                                                      style={{
-                                                                        color:
-                                                                          "rgb(89, 89, 89)",
-                                                                      }}
+
                                                                     >
                                                                       <span data-custom-class="body_text">
                                                                         Website
@@ -3718,17 +3442,11 @@ export const Privacy = () => {
                                                           data is not publicly
                                                           displayed on the{" "}
                                                           <span
-                                                            style={{
-                                                              color:
-                                                                "rgb(89, 89, 89) fontSize: 15px",
-                                                            }}
+
                                                           >
                                                             <span data-custom-class="body_text">
                                                               <span
-                                                                style={{
-                                                                  color:
-                                                                    "rgb(89, 89, 89) fontSize: 15px",
-                                                                }}
+
                                                               >
                                                                 <span data-custom-class="body_text">
                                                                   <span
@@ -3738,10 +3456,7 @@ export const Privacy = () => {
                                                                     }}
                                                                   >
                                                                     <span
-                                                                      style={{
-                                                                        color:
-                                                                          "rgb(89, 89, 89)",
-                                                                      }}
+
                                                                     >
                                                                       <span data-custom-class="body_text">
                                                                         Website
@@ -3760,10 +3475,7 @@ export const Privacy = () => {
                                                           systems (e.g. backups,
                                                           etc.).
                                                           <span
-                                                            style={{
-                                                              color:
-                                                                "rgb(89, 89, 89) fontSize: 15px",
-                                                            }}
+
                                                           >
                                                             <span data-custom-class="body_text"></span>
                                                           </span>
@@ -3778,9 +3490,7 @@ export const Privacy = () => {
                                                   >
                                                     <span
                                                       data-custom-class="heading_2"
-                                                      style={{
-                                                        color: "rgb(0, 0, 0)",
-                                                      }}
+
                                                     >
                                                       <span
                                                         style={{
@@ -3808,32 +3518,24 @@ export const Privacy = () => {
                                                       }}
                                                     >
                                                       <span
-                                                        style={{
-                                                          color:
-                                                            "rgb(127, 127, 127)",
-                                                        }}
+
                                                       >
                                                         <span
-                                                          style={{
-                                                            color:
-                                                              "rgb(89, 89, 89) fontSize: 15px",
-                                                          }}
+
                                                         >
                                                           <span data-custom-class="body_text">
                                                             <span
                                                               style={{
                                                                 fontSize:
                                                                   "15px",
-                                                                color:
-                                                                  "rgb(89, 89, 89)",
+
                                                               }}
                                                             >
                                                               <span
                                                                 style={{
                                                                   fontSize:
                                                                     "15px",
-                                                                  color:
-                                                                    "rgb(89, 89, 89)",
+
                                                                 }}
                                                               >
                                                                 <span data-custom-class="body_text">
@@ -3866,15 +3568,13 @@ export const Privacy = () => {
                                                     <span
                                                       style={{
                                                         fontSize: "15px",
-                                                        color:
-                                                          "rgb(89, 89, 89)",
+
                                                       }}
                                                     >
                                                       <span
                                                         style={{
                                                           fontSize: "15px",
-                                                          color:
-                                                            "rgb(89, 89, 89)",
+
                                                         }}
                                                       >
                                                         <span data-custom-class="body_text">
@@ -3896,15 +3596,13 @@ export const Privacy = () => {
                                                     <span
                                                       style={{
                                                         fontSize: "15px",
-                                                        color:
-                                                          "rgb(89, 89, 89)",
+
                                                       }}
                                                     >
                                                       <span
                                                         style={{
                                                           fontSize: "15px",
-                                                          color:
-                                                            "rgb(89, 89, 89)",
+
                                                         }}
                                                       >
                                                         <span data-custom-class="body_text">
@@ -3935,15 +3633,13 @@ export const Privacy = () => {
                                                     <span
                                                       style={{
                                                         fontSize: "15px",
-                                                        color:
-                                                          "rgb(89, 89, 89)",
+
                                                       }}
                                                     >
                                                       <span
                                                         style={{
                                                           fontSize: "15px",
-                                                          color:
-                                                            "rgb(89, 89, 89)",
+
                                                         }}
                                                       >
                                                         <span data-custom-class="body_text">
@@ -3969,15 +3665,13 @@ export const Privacy = () => {
                                                     <span
                                                       style={{
                                                         fontSize: "15px",
-                                                        color:
-                                                          "rgb(89, 89, 89)",
+
                                                       }}
                                                     >
                                                       <span
                                                         style={{
                                                           fontSize: "15px",
-                                                          color:
-                                                            "rgb(89, 89, 89)",
+
                                                         }}
                                                       >
                                                         <span data-custom-class="body_text">
@@ -4007,15 +3701,13 @@ export const Privacy = () => {
                                                     <span
                                                       style={{
                                                         fontSize: "15px",
-                                                        color:
-                                                          "rgb(89, 89, 89)",
+
                                                       }}
                                                     >
                                                       <span
                                                         style={{
                                                           fontSize: "15px",
-                                                          color:
-                                                            "rgb(89, 89, 89)",
+
                                                         }}
                                                       >
                                                         <span data-custom-class="body_text">
@@ -4043,15 +3735,13 @@ export const Privacy = () => {
                                                     <span
                                                       style={{
                                                         fontSize: "15px",
-                                                        color:
-                                                          "rgb(89, 89, 89)",
+
                                                       }}
                                                     >
                                                       <span
                                                         style={{
                                                           fontSize: "15px",
-                                                          color:
-                                                            "rgb(89, 89, 89)",
+
                                                         }}
                                                       >
                                                         <span data-custom-class="body_text">
@@ -4062,10 +3752,7 @@ export const Privacy = () => {
                                                           past twelve (12)
                                                           months:
                                                           <span
-                                                            style={{
-                                                              color:
-                                                                "rgb(89, 89, 89) fontSize: 15px",
-                                                            }}
+
                                                           >
                                                             <span data-custom-class="body_text"></span>
                                                           </span>
@@ -4100,16 +3787,14 @@ export const Privacy = () => {
                                                           <span
                                                             style={{
                                                               fontSize: "15px",
-                                                              color:
-                                                                "rgb(89, 89, 89)",
+
                                                             }}
                                                           >
                                                             <span
                                                               style={{
                                                                 fontSize:
                                                                   "15px",
-                                                                color:
-                                                                  "rgb(89, 89, 89)",
+
                                                               }}
                                                             >
                                                               <span data-custom-class="body_text">
@@ -4135,16 +3820,14 @@ export const Privacy = () => {
                                                           <span
                                                             style={{
                                                               fontSize: "15px",
-                                                              color:
-                                                                "rgb(89, 89, 89)",
+
                                                             }}
                                                           >
                                                             <span
                                                               style={{
                                                                 fontSize:
                                                                   "15px",
-                                                                color:
-                                                                  "rgb(89, 89, 89)",
+
                                                               }}
                                                             >
                                                               <span data-custom-class="body_text">
@@ -4170,16 +3853,14 @@ export const Privacy = () => {
                                                           <span
                                                             style={{
                                                               fontSize: "15px",
-                                                              color:
-                                                                "rgb(89, 89, 89)",
+
                                                             }}
                                                           >
                                                             <span
                                                               style={{
                                                                 fontSize:
                                                                   "15px",
-                                                                color:
-                                                                  "rgb(89, 89, 89)",
+
                                                               }}
                                                             >
                                                               <span data-custom-class="body_text">
@@ -4214,16 +3895,14 @@ export const Privacy = () => {
                                                               style={{
                                                                 fontSize:
                                                                   "15px",
-                                                                color:
-                                                                  "rgb(89, 89, 89)",
+
                                                               }}
                                                             >
                                                               <span
                                                                 style={{
                                                                   fontSize:
                                                                     "15px",
-                                                                  color:
-                                                                    "rgb(89, 89, 89)",
+
                                                                 }}
                                                               >
                                                                 <span data-custom-class="body_text">
@@ -4251,16 +3930,14 @@ export const Privacy = () => {
                                                               style={{
                                                                 fontSize:
                                                                   "15px",
-                                                                color:
-                                                                  "rgb(89, 89, 89)",
+
                                                               }}
                                                             >
                                                               <span
                                                                 style={{
                                                                   fontSize:
                                                                     "15px",
-                                                                  color:
-                                                                    "rgb(89, 89, 89)",
+
                                                                 }}
                                                               >
                                                                 <span data-custom-class="body_text">
@@ -4314,16 +3991,14 @@ export const Privacy = () => {
                                                               style={{
                                                                 fontSize:
                                                                   "15px",
-                                                                color:
-                                                                  "rgb(89, 89, 89)",
+
                                                               }}
                                                             >
                                                               <span
                                                                 style={{
                                                                   fontSize:
                                                                     "15px",
-                                                                  color:
-                                                                    "rgb(89, 89, 89)",
+
                                                                 }}
                                                               >
                                                                 <span data-custom-class="body_text">
@@ -4362,16 +4037,14 @@ export const Privacy = () => {
                                                               style={{
                                                                 fontSize:
                                                                   "15px",
-                                                                color:
-                                                                  "rgb(89, 89, 89)",
+
                                                               }}
                                                             >
                                                               <span
                                                                 style={{
                                                                   fontSize:
                                                                     "15px",
-                                                                  color:
-                                                                    "rgb(89, 89, 89)",
+
                                                                 }}
                                                               >
                                                                 <span data-custom-class="body_text">
@@ -4406,16 +4079,14 @@ export const Privacy = () => {
                                                               style={{
                                                                 fontSize:
                                                                   "15px",
-                                                                color:
-                                                                  "rgb(89, 89, 89)",
+
                                                               }}
                                                             >
                                                               <span
                                                                 style={{
                                                                   fontSize:
                                                                     "15px",
-                                                                  color:
-                                                                    "rgb(89, 89, 89)",
+
                                                                 }}
                                                               >
                                                                 <span data-custom-class="body_text">
@@ -4458,152 +4129,14 @@ export const Privacy = () => {
                                                               style={{
                                                                 fontSize:
                                                                   "15px",
-                                                                color:
-                                                                  "rgb(89, 89, 89)",
+
                                                               }}
                                                             >
                                                               <span
                                                                 style={{
                                                                   fontSize:
                                                                     "15px",
-                                                                  color:
-                                                                    "rgb(89, 89, 89)",
-                                                                }}
-                                                              >
-                                                                <span data-custom-class="body_text">
-                                                                  YES
-                                                                </span>
-                                                              </span>
-                                                            </span>
-                                                          </div>
-                                                          <div
-                                                            style={{
-                                                              lineHeight: "1.5",
-                                                            }}
-                                                          >
-                                                            <br />
-                                                          </div>
-                                                        </td>
-                                                      </tr>
-                                                      <tr>
-                                                        <td
-                                                          style={{
-                                                            width: "33.8274%",
-                                                            borderLeft:
-                                                              "1px solid black",
-                                                            borderRight:
-                                                              "1px solid black",
-                                                            borderTop:
-                                                              "1px solid black",
-                                                          }}
-                                                        >
-                                                          <div
-                                                            style={{
-                                                              lineHeight: "1.5",
-                                                            }}
-                                                          >
-                                                            <span
-                                                              style={{
-                                                                fontSize:
-                                                                  "15px",
-                                                                color:
-                                                                  "rgb(89, 89, 89)",
-                                                              }}
-                                                            >
-                                                              <span
-                                                                style={{
-                                                                  fontSize:
-                                                                    "15px",
-                                                                  color:
-                                                                    "rgb(89, 89, 89)",
-                                                                }}
-                                                              >
-                                                                <span data-custom-class="body_text">
-                                                                  C. Protected
-                                                                  classification
-                                                                  characteristics
-                                                                  under
-                                                                  California or
-                                                                  federal law
-                                                                </span>
-                                                              </span>
-                                                            </span>
-                                                          </div>
-                                                        </td>
-                                                        <td
-                                                          style={{
-                                                            width: "51.4385%",
-                                                            borderRight:
-                                                              "1px solid black",
-                                                            borderTop:
-                                                              "1px solid black",
-                                                          }}
-                                                        >
-                                                          <div
-                                                            style={{
-                                                              lineHeight: "1.5",
-                                                            }}
-                                                          >
-                                                            <span
-                                                              style={{
-                                                                fontSize:
-                                                                  "15px",
-                                                                color:
-                                                                  "rgb(89, 89, 89)",
-                                                              }}
-                                                            >
-                                                              <span
-                                                                style={{
-                                                                  fontSize:
-                                                                    "15px",
-                                                                  color:
-                                                                    "rgb(89, 89, 89)",
-                                                                }}
-                                                              >
-                                                                <span data-custom-class="body_text">
-                                                                  Gender and
-                                                                  date of birth
-                                                                </span>
-                                                              </span>
-                                                            </span>
-                                                          </div>
-                                                        </td>
-                                                        <td
-                                                          style={{
-                                                            width: "14.9084%",
-                                                            textAlign: "center",
-                                                            borderRight:
-                                                              "1px solid black",
-                                                            borderTop:
-                                                              "1px solid black",
-                                                          }}
-                                                        >
-                                                          <div
-                                                            style={{
-                                                              lineHeight: "1.5",
-                                                            }}
-                                                          >
-                                                            <br />
-                                                          </div>
-                                                          <div
-                                                            style={{
-                                                              lineHeight: "1.5",
-                                                            }}
-                                                          >
-                                                            <span
-                                                              style={{
-                                                                fontSize:
-                                                                  "15px",
-                                                                color:
-                                                                  "rgb(89, 89, 89)",
-                                                              }}
-                                                            >
-                                                              <span
-                                                                style={{
-                                                                  fontSize:
-                                                                    "15px",
-                                                                  color:
-                                                                    "rgb(89, 89, 89)",
+
                                                                 }}
                                                               >
                                                                 <span data-custom-class="body_text">
@@ -4642,16 +4175,144 @@ export const Privacy = () => {
                                                               style={{
                                                                 fontSize:
                                                                   "15px",
-                                                                color:
-                                                                  "rgb(89, 89, 89)",
+
                                                               }}
                                                             >
                                                               <span
                                                                 style={{
                                                                   fontSize:
                                                                     "15px",
-                                                                  color:
-                                                                    "rgb(89, 89, 89)",
+
+                                                                }}
+                                                              >
+                                                                <span data-custom-class="body_text">
+                                                                  C. Protected
+                                                                  classification
+                                                                  characteristics
+                                                                  under
+                                                                  California or
+                                                                  federal law
+                                                                </span>
+                                                              </span>
+                                                            </span>
+                                                          </div>
+                                                        </td>
+                                                        <td
+                                                          style={{
+                                                            width: "51.4385%",
+                                                            borderRight:
+                                                              "1px solid black",
+                                                            borderTop:
+                                                              "1px solid black",
+                                                          }}
+                                                        >
+                                                          <div
+                                                            style={{
+                                                              lineHeight: "1.5",
+                                                            }}
+                                                          >
+                                                            <span
+                                                              style={{
+                                                                fontSize:
+                                                                  "15px",
+
+                                                              }}
+                                                            >
+                                                              <span
+                                                                style={{
+                                                                  fontSize:
+                                                                    "15px",
+
+                                                                }}
+                                                              >
+                                                                <span data-custom-class="body_text">
+                                                                  Gender and
+                                                                  date of birth
+                                                                </span>
+                                                              </span>
+                                                            </span>
+                                                          </div>
+                                                        </td>
+                                                        <td
+                                                          style={{
+                                                            width: "14.9084%",
+                                                            textAlign: "center",
+                                                            borderRight:
+                                                              "1px solid black",
+                                                            borderTop:
+                                                              "1px solid black",
+                                                          }}
+                                                        >
+                                                          <div
+                                                            style={{
+                                                              lineHeight: "1.5",
+                                                            }}
+                                                          >
+                                                            <br />
+                                                          </div>
+                                                          <div
+                                                            style={{
+                                                              lineHeight: "1.5",
+                                                            }}
+                                                          >
+                                                            <span
+                                                              style={{
+                                                                fontSize:
+                                                                  "15px",
+
+                                                              }}
+                                                            >
+                                                              <span
+                                                                style={{
+                                                                  fontSize:
+                                                                    "15px",
+
+                                                                }}
+                                                              >
+                                                                <span data-custom-class="body_text">
+                                                                  NO
+                                                                </span>
+                                                              </span>
+                                                            </span>
+                                                          </div>
+                                                          <div
+                                                            style={{
+                                                              lineHeight: "1.5",
+                                                            }}
+                                                          >
+                                                            <br />
+                                                          </div>
+                                                        </td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td
+                                                          style={{
+                                                            width: "33.8274%",
+                                                            borderLeft:
+                                                              "1px solid black",
+                                                            borderRight:
+                                                              "1px solid black",
+                                                            borderTop:
+                                                              "1px solid black",
+                                                          }}
+                                                        >
+                                                          <div
+                                                            style={{
+                                                              lineHeight: "1.5",
+                                                            }}
+                                                          >
+                                                            <span
+                                                              style={{
+                                                                fontSize:
+                                                                  "15px",
+
+                                                              }}
+                                                            >
+                                                              <span
+                                                                style={{
+                                                                  fontSize:
+                                                                    "15px",
+
                                                                 }}
                                                               >
                                                                 <span data-custom-class="body_text">
@@ -4680,16 +4341,14 @@ export const Privacy = () => {
                                                               style={{
                                                                 fontSize:
                                                                   "15px",
-                                                                color:
-                                                                  "rgb(89, 89, 89)",
+
                                                               }}
                                                             >
                                                               <span
                                                                 style={{
                                                                   fontSize:
                                                                     "15px",
-                                                                  color:
-                                                                    "rgb(89, 89, 89)",
+
                                                                 }}
                                                               >
                                                                 <span data-custom-class="body_text">
@@ -4732,16 +4391,14 @@ export const Privacy = () => {
                                                               style={{
                                                                 fontSize:
                                                                   "15px",
-                                                                color:
-                                                                  "rgb(89, 89, 89)",
+
                                                               }}
                                                             >
                                                               <span
                                                                 style={{
                                                                   fontSize:
                                                                     "15px",
-                                                                  color:
-                                                                    "rgb(89, 89, 89)",
+
                                                                 }}
                                                               >
                                                                 <span data-custom-class="body_text">
@@ -4780,14 +4437,13 @@ export const Privacy = () => {
                                                               style={{
                                                                 fontSize:
                                                                   "15px",
-                                                                color:
-                                                                  "rgb(89, 89, 89)",
+
                                                               }}
                                                             >
                                                               <span
                                                                 style={{
                                                                   fontSize:
-                                                                    "15px color: rgb(89, 89, 89)",
+                                                                    "15px",
                                                                 }}
                                                               >
                                                                 <span data-custom-class="body_text">
@@ -4815,13 +4471,13 @@ export const Privacy = () => {
                                                             <span
                                                               style={{
                                                                 fontSize:
-                                                                  "15px color: rgb(89, 89, 89)",
+                                                                  "15px",
                                                               }}
                                                             >
                                                               <span
                                                                 style={{
                                                                   fontSize:
-                                                                    "15px color: rgb(89, 89, 89)",
+                                                                    "15px",
                                                                 }}
                                                               >
                                                                 <span data-custom-class="body_text">
@@ -4858,13 +4514,13 @@ export const Privacy = () => {
                                                             <span
                                                               style={{
                                                                 fontSize:
-                                                                  "15px color: rgb(89, 89, 89)",
+                                                                  "15px",
                                                               }}
                                                             >
                                                               <span
                                                                 style={{
                                                                   fontSize:
-                                                                    "15px color: rgb(89, 89, 89)",
+                                                                    "15px",
                                                                 }}
                                                               >
                                                                 <span data-custom-class="body_text">
@@ -4902,13 +4558,13 @@ export const Privacy = () => {
                                                             <span
                                                               style={{
                                                                 fontSize:
-                                                                  "15px color: rgb(89, 89, 89)",
+                                                                  "15px",
                                                               }}
                                                             >
                                                               <span
                                                                 style={{
                                                                   fontSize:
-                                                                    "15px color: rgb(89, 89, 89)",
+                                                                    "15px",
                                                                 }}
                                                               >
                                                                 <span data-custom-class="body_text">
@@ -4938,13 +4594,13 @@ export const Privacy = () => {
                                                             <span
                                                               style={{
                                                                 fontSize:
-                                                                  "15px color: rgb(89, 89, 89)",
+                                                                  "15px",
                                                               }}
                                                             >
                                                               <span
                                                                 style={{
                                                                   fontSize:
-                                                                    "15px color: rgb(89, 89, 89)",
+                                                                    "15px",
                                                                 }}
                                                               >
                                                                 <span data-custom-class="body_text">
@@ -4993,13 +4649,13 @@ export const Privacy = () => {
                                                             <span
                                                               style={{
                                                                 fontSize:
-                                                                  "15px color: rgb(89, 89, 89)",
+                                                                  "15px",
                                                               }}
                                                             >
                                                               <span
                                                                 style={{
                                                                   fontSize:
-                                                                    "15px color: rgb(89, 89, 89)",
+                                                                    "15px",
                                                                 }}
                                                               >
                                                                 <span data-custom-class="body_text">
@@ -5016,13 +4672,13 @@ export const Privacy = () => {
                                                             <span
                                                               style={{
                                                                 fontSize:
-                                                                  "15px color: rgb(89, 89, 89)",
+                                                                  "15px",
                                                               }}
                                                             >
                                                               <span
                                                                 style={{
                                                                   fontSize:
-                                                                    "15px color: rgb(89, 89, 89)",
+                                                                    "15px",
                                                                 }}
                                                               >
                                                                 <span data-custom-class="body_text">
@@ -5053,13 +4709,13 @@ export const Privacy = () => {
                                                             <span
                                                               style={{
                                                                 fontSize:
-                                                                  "15px color: rgb(89, 89, 89)",
+                                                                  "15px",
                                                               }}
                                                             >
                                                               <span
                                                                 style={{
                                                                   fontSize:
-                                                                    "15px color: rgb(89, 89, 89)",
+                                                                    "15px",
                                                                 }}
                                                               >
                                                                 <span data-custom-class="body_text">
@@ -5087,13 +4743,13 @@ export const Privacy = () => {
                                                             <span
                                                               style={{
                                                                 fontSize:
-                                                                  "15px color: rgb(89, 89, 89)",
+                                                                  "15px",
                                                               }}
                                                             >
                                                               <span
                                                                 style={{
                                                                   fontSize:
-                                                                    "15px color: rgb(89, 89, 89)",
+                                                                    "15px",
                                                                 }}
                                                               >
                                                                 <span data-custom-class="body_text">
@@ -5129,13 +4785,13 @@ export const Privacy = () => {
                                                             <span
                                                               style={{
                                                                 fontSize:
-                                                                  "15px color: rgb(89, 89, 89)",
+                                                                  "15px",
                                                               }}
                                                             >
                                                               <span
                                                                 style={{
                                                                   fontSize:
-                                                                    "15px color: rgb(89, 89, 89)",
+                                                                    "15px",
                                                                 }}
                                                               >
                                                                 <span data-custom-class="body_text">
@@ -5173,13 +4829,13 @@ export const Privacy = () => {
                                                             <span
                                                               style={{
                                                                 fontSize:
-                                                                  "15px color: rgb(89, 89, 89)",
+                                                                  "15px",
                                                               }}
                                                             >
                                                               <span
                                                                 style={{
                                                                   fontSize:
-                                                                    "15px color: rgb(89, 89, 89)",
+                                                                    "15px",
                                                                 }}
                                                               >
                                                                 <span data-custom-class="body_text">
@@ -5212,13 +4868,13 @@ export const Privacy = () => {
                                                             <span
                                                               style={{
                                                                 fontSize:
-                                                                  "15px color: rgb(89, 89, 89)",
+                                                                  "15px",
                                                               }}
                                                             >
                                                               <span
                                                                 style={{
                                                                   fontSize:
-                                                                    "15px color: rgb(89, 89, 89)",
+                                                                    "15px",
                                                                 }}
                                                               >
                                                                 <span data-custom-class="body_text">
@@ -5261,13 +4917,13 @@ export const Privacy = () => {
                                                             <span
                                                               style={{
                                                                 fontSize:
-                                                                  "15px color: rgb(89, 89, 89)",
+                                                                  "15px",
                                                               }}
                                                             >
                                                               <span
                                                                 style={{
                                                                   fontSize:
-                                                                    "15px color: rgb(89, 89, 89)",
+                                                                    "15px",
                                                                 }}
                                                               >
                                                                 <span data-custom-class="body_text">
@@ -5305,13 +4961,13 @@ export const Privacy = () => {
                                                             <span
                                                               style={{
                                                                 fontSize:
-                                                                  "15px color: rgb(89, 89, 89)",
+                                                                  "15px",
                                                               }}
                                                             >
                                                               <span
                                                                 style={{
                                                                   fontSize:
-                                                                    "15px color: rgb(89, 89, 89)",
+                                                                    "15px",
                                                                 }}
                                                               >
                                                                 <span data-custom-class="body_text">
@@ -5342,13 +4998,13 @@ export const Privacy = () => {
                                                             <span
                                                               style={{
                                                                 fontSize:
-                                                                  "15px color: rgb(89, 89, 89)",
+                                                                  "15px",
                                                               }}
                                                             >
                                                               <span
                                                                 style={{
                                                                   fontSize:
-                                                                    "15px color: rgb(89, 89, 89)",
+                                                                    "15px",
                                                                 }}
                                                               >
                                                                 <span data-custom-class="body_text">
@@ -5398,13 +5054,13 @@ export const Privacy = () => {
                                                             <span
                                                               style={{
                                                                 fontSize:
-                                                                  "15px color: rgb(89, 89, 89)",
+                                                                  "15px",
                                                               }}
                                                             >
                                                               <span
                                                                 style={{
                                                                   fontSize:
-                                                                    "15px color: rgb(89, 89, 89)",
+                                                                    "15px",
                                                                 }}
                                                               >
                                                                 <span data-custom-class="body_text">
@@ -5442,13 +5098,13 @@ export const Privacy = () => {
                                                             <span
                                                               style={{
                                                                 fontSize:
-                                                                  "15px color: rgb(89, 89, 89)",
+                                                                  "15px",
                                                               }}
                                                             >
                                                               <span
                                                                 style={{
                                                                   fontSize:
-                                                                    "15px color: rgb(89, 89, 89)",
+                                                                    "15px",
                                                                 }}
                                                               >
                                                                 <span data-custom-class="body_text">
@@ -5476,13 +5132,13 @@ export const Privacy = () => {
                                                             <span
                                                               style={{
                                                                 fontSize:
-                                                                  "15px color: rgb(89, 89, 89)",
+                                                                  "15px",
                                                               }}
                                                             >
                                                               <span
                                                                 style={{
                                                                   fontSize:
-                                                                    "15px color: rgb(89, 89, 89)",
+                                                                    "15px",
                                                                 }}
                                                               >
                                                                 <span data-custom-class="body_text">
@@ -5520,13 +5176,13 @@ export const Privacy = () => {
                                                             <span
                                                               style={{
                                                                 fontSize:
-                                                                  "15px color: rgb(89, 89, 89)",
+                                                                  "15px",
                                                               }}
                                                             >
                                                               <span
                                                                 style={{
                                                                   fontSize:
-                                                                    "15px color: rgb(89, 89, 89)",
+                                                                    "15px",
                                                                 }}
                                                               >
                                                                 <span data-custom-class="body_text">
@@ -5563,13 +5219,13 @@ export const Privacy = () => {
                                                             <span
                                                               style={{
                                                                 fontSize:
-                                                                  "15px color: rgb(89, 89, 89)",
+                                                                  "15px",
                                                               }}
                                                             >
                                                               <span
                                                                 style={{
                                                                   fontSize:
-                                                                    "15px color: rgb(89, 89, 89)",
+                                                                    "15px",
                                                                 }}
                                                               >
                                                                 <span data-custom-class="body_text">
@@ -5601,13 +5257,13 @@ export const Privacy = () => {
                                                             <span
                                                               style={{
                                                                 fontSize:
-                                                                  "15px color: rgb(89, 89, 89)",
+                                                                  "15px",
                                                               }}
                                                             >
                                                               <span
                                                                 style={{
                                                                   fontSize:
-                                                                    "15px color: rgb(89, 89, 89)",
+                                                                    "15px",
                                                                 }}
                                                               >
                                                                 <span data-custom-class="body_text">
@@ -5659,13 +5315,13 @@ export const Privacy = () => {
                                                             <span
                                                               style={{
                                                                 fontSize:
-                                                                  "15px color: rgb(89, 89, 89)",
+                                                                  "15px",
                                                               }}
                                                             >
                                                               <span
                                                                 style={{
                                                                   fontSize:
-                                                                    "15px color: rgb(89, 89, 89)",
+                                                                    "15px",
                                                                 }}
                                                               >
                                                                 <span data-custom-class="body_text">
@@ -5706,13 +5362,13 @@ export const Privacy = () => {
                                                     <span
                                                       style={{
                                                         fontSize:
-                                                          "15px color: rgb(89, 89, 89)",
+                                                          "15px",
                                                       }}
                                                     >
                                                       <span
                                                         style={{
                                                           fontSize:
-                                                            "15px color: rgb(89, 89, 89)",
+                                                            "15px",
                                                         }}
                                                       >
                                                         <span data-custom-class="body_text">
@@ -5728,20 +5384,19 @@ export const Privacy = () => {
                                                           <span
                                                             style={{
                                                               fontSize:
-                                                                "15px color: rgb(89, 89, 89)",
+                                                                "15px",
                                                             }}
                                                           >
                                                             <span
                                                               style={{
                                                                 fontSize:
-                                                                  "15px color: rgb(89, 89, 89)",
+                                                                  "15px",
                                                               }}
                                                             >
                                                               <span data-custom-class="body_text">
                                                                 <span
                                                                   style={{
-                                                                    color:
-                                                                      "rgb(89, 89, 89)",
+
                                                                     fontSize:
                                                                       "15px",
                                                                   }}
@@ -5764,13 +5419,13 @@ export const Privacy = () => {
                                                       <span
                                                         style={{
                                                           fontSize:
-                                                            "15px color: rgb(89, 89, 89)",
+                                                            "15px",
                                                         }}
                                                       >
                                                         <span
                                                           style={{
                                                             fontSize:
-                                                              "15px color: rgb(89, 89, 89)",
+                                                              "15px",
                                                           }}
                                                         >
                                                           <span data-custom-class="body_text">
@@ -5782,27 +5437,26 @@ export const Privacy = () => {
                                                         <span
                                                           style={{
                                                             fontSize:
-                                                              "15px color: rgb(89, 89, 89)",
+                                                              "15px",
                                                           }}
                                                         >
                                                           <span data-custom-class="body_text">
                                                             <span
                                                               style={{
                                                                 fontSize:
-                                                                  "15px color: rgb(89, 89, 89)",
+                                                                  "15px",
                                                               }}
                                                             >
                                                               <span
                                                                 style={{
                                                                   fontSize:
-                                                                    "15px color: rgb(89, 89, 89)",
+                                                                    "15px",
                                                                 }}
                                                               >
                                                                 <span data-custom-class="body_text">
                                                                   <span
                                                                     style={{
-                                                                      color:
-                                                                        "rgb(89, 89, 89)",
+
                                                                       fontSize:
                                                                         "15px",
                                                                     }}
@@ -5810,8 +5464,7 @@ export const Privacy = () => {
                                                                     <span data-custom-class="body_text">
                                                                       <span
                                                                         style={{
-                                                                          color:
-                                                                            "rgb(89, 89, 89)",
+
                                                                           fontSize:
                                                                             "15px",
                                                                         }}
@@ -5824,10 +5477,7 @@ export const Privacy = () => {
                                                                             }}
                                                                           >
                                                                             <span
-                                                                              style={{
-                                                                                color:
-                                                                                  "rgb(89, 89, 89)",
-                                                                              }}
+
                                                                             >
                                                                               <span data-custom-class="body_text"></span>
                                                                             </span>
@@ -5848,33 +5498,32 @@ export const Privacy = () => {
                                                     <span
                                                       style={{
                                                         fontSize:
-                                                          "15px color: rgb(89, 89, 89)",
+                                                          "15px",
                                                       }}
                                                     >
                                                       <span
                                                         style={{
                                                           fontSize:
-                                                            "15px color: rgb(89, 89, 89)",
+                                                            "15px",
                                                         }}
                                                       >
                                                         <span data-custom-class="body_text">
                                                           <span
                                                             style={{
                                                               fontSize:
-                                                                "15px color: rgb(89, 89, 89)",
+                                                                "15px",
                                                             }}
                                                           >
                                                             <span
                                                               style={{
                                                                 fontSize:
-                                                                  "15px color: rgb(89, 89, 89)",
+                                                                  "15px",
                                                               }}
                                                             >
                                                               <span data-custom-class="body_text">
                                                                 <span
                                                                   style={{
-                                                                    color:
-                                                                      "rgb(89, 89, 89)",
+
                                                                     fontSize:
                                                                       "15px",
                                                                   }}
@@ -5897,13 +5546,13 @@ export const Privacy = () => {
                                                       <span
                                                         style={{
                                                           fontSize:
-                                                            "15px color: rgb(89, 89, 89)",
+                                                            "15px",
                                                         }}
                                                       >
                                                         <span
                                                           style={{
                                                             fontSize:
-                                                              "15px color: rgb(89, 89, 89)",
+                                                              "15px",
                                                           }}
                                                         >
                                                           <span data-custom-class="body_text">
@@ -5915,27 +5564,26 @@ export const Privacy = () => {
                                                         <span
                                                           style={{
                                                             fontSize:
-                                                              "15px color: rgb(89, 89, 89)",
+                                                              "15px",
                                                           }}
                                                         >
                                                           <span data-custom-class="body_text">
                                                             <span
                                                               style={{
                                                                 fontSize:
-                                                                  "15px color: rgb(89, 89, 89)",
+                                                                  "15px",
                                                               }}
                                                             >
                                                               <span
                                                                 style={{
                                                                   fontSize:
-                                                                    "15px color: rgb(89, 89, 89)",
+                                                                    "15px",
                                                                 }}
                                                               >
                                                                 <span data-custom-class="body_text">
                                                                   <span
                                                                     style={{
-                                                                      color:
-                                                                        "rgb(89, 89, 89)",
+
                                                                       fontSize:
                                                                         "15px",
                                                                     }}
@@ -5943,8 +5591,7 @@ export const Privacy = () => {
                                                                     <span data-custom-class="body_text">
                                                                       <span
                                                                         style={{
-                                                                          color:
-                                                                            "rgb(89, 89, 89)",
+
                                                                           fontSize:
                                                                             "15px",
                                                                         }}
@@ -5957,10 +5604,7 @@ export const Privacy = () => {
                                                                             }}
                                                                           >
                                                                             <span
-                                                                              style={{
-                                                                                color:
-                                                                                  "rgb(89, 89, 89)",
-                                                                              }}
+
                                                                             >
                                                                               <span data-custom-class="body_text"></span>
                                                                             </span>
@@ -5981,33 +5625,32 @@ export const Privacy = () => {
                                                     <span
                                                       style={{
                                                         fontSize:
-                                                          "15px color: rgb(89, 89, 89)",
+                                                          "15px",
                                                       }}
                                                     >
                                                       <span
                                                         style={{
                                                           fontSize:
-                                                            "15px color: rgb(89, 89, 89)",
+                                                            "15px",
                                                         }}
                                                       >
                                                         <span data-custom-class="body_text">
                                                           <span
                                                             style={{
                                                               fontSize:
-                                                                "15px color: rgb(89, 89, 89)",
+                                                                "15px",
                                                             }}
                                                           >
                                                             <span
                                                               style={{
                                                                 fontSize:
-                                                                  "15px color: rgb(89, 89, 89)",
+                                                                  "15px",
                                                               }}
                                                             >
                                                               <span data-custom-class="body_text">
                                                                 <span
                                                                   style={{
-                                                                    color:
-                                                                      "rgb(89, 89, 89)",
+
                                                                     fontSize:
                                                                       "15px",
                                                                   }}
@@ -6030,13 +5673,13 @@ export const Privacy = () => {
                                                       <span
                                                         style={{
                                                           fontSize:
-                                                            "15px color: rgb(89, 89, 89)",
+                                                            "15px",
                                                         }}
                                                       >
                                                         <span
                                                           style={{
                                                             fontSize:
-                                                              "15px color: rgb(89, 89, 89)",
+                                                              "15px",
                                                           }}
                                                         >
                                                           <span data-custom-class="body_text">
@@ -6050,8 +5693,7 @@ export const Privacy = () => {
                                                         <span
                                                           style={{
                                                             fontSize: "15px",
-                                                            color:
-                                                              "rgb(89, 89, 89)",
+
                                                           }}
                                                         >
                                                           <span data-custom-class="body_text">
@@ -6059,23 +5701,20 @@ export const Privacy = () => {
                                                               style={{
                                                                 fontSize:
                                                                   "15px",
-                                                                color:
-                                                                  "rgb(89, 89, 89)",
+
                                                               }}
                                                             >
                                                               <span
                                                                 style={{
                                                                   fontSize:
                                                                     "15px",
-                                                                  color:
-                                                                    "rgb(89, 89, 89)",
+
                                                                 }}
                                                               >
                                                                 <span data-custom-class="body_text">
                                                                   <span
                                                                     style={{
-                                                                      color:
-                                                                        "rgb(89, 89, 89)",
+
                                                                       fontSize:
                                                                         "15px",
                                                                     }}
@@ -6083,8 +5722,7 @@ export const Privacy = () => {
                                                                     <span data-custom-class="body_text">
                                                                       <span
                                                                         style={{
-                                                                          color:
-                                                                            "rgb(89, 89, 89)",
+
                                                                           fontSize:
                                                                             "15px",
                                                                         }}
@@ -6097,10 +5735,7 @@ export const Privacy = () => {
                                                                             }}
                                                                           >
                                                                             <span
-                                                                              style={{
-                                                                                color:
-                                                                                  "rgb(89, 89, 89)",
-                                                                              }}
+
                                                                             >
                                                                               <span data-custom-class="body_text"></span>
                                                                             </span>
@@ -6125,15 +5760,13 @@ export const Privacy = () => {
                                                     <span
                                                       style={{
                                                         fontSize: "15px",
-                                                        color:
-                                                          "rgb(89, 89, 89)",
+
                                                       }}
                                                     >
                                                       <span
                                                         style={{
                                                           fontSize: "15px",
-                                                          color:
-                                                            "rgb(89, 89, 89)",
+
                                                         }}
                                                       >
                                                         <span data-custom-class="body_text">
@@ -6161,22 +5794,19 @@ export const Privacy = () => {
                                                     <span
                                                       style={{
                                                         fontSize: "15px",
-                                                        color:
-                                                          "rgb(89, 89, 89)",
+
                                                       }}
                                                     >
                                                       <span
                                                         style={{
                                                           fontSize: "15px",
-                                                          color:
-                                                            "rgb(89, 89, 89)",
+
                                                         }}
                                                       >
                                                         <span data-custom-class="body_text">
                                                           <span
                                                             style={{
-                                                              color:
-                                                                "rgb(89, 89, 89)",
+
                                                               fontSize: "15px",
                                                             }}
                                                           >
@@ -6188,15 +5818,13 @@ export const Privacy = () => {
                                                     <span
                                                       style={{
                                                         fontSize: "15px",
-                                                        color:
-                                                          "rgb(89, 89, 89)",
+
                                                       }}
                                                     >
                                                       <span
                                                         style={{
                                                           fontSize: "15px",
-                                                          color:
-                                                            "rgb(89, 89, 89)",
+
                                                         }}
                                                       >
                                                         <span data-custom-class="body_text">
@@ -6210,16 +5838,14 @@ export const Privacy = () => {
                                                     </span>
                                                     <span
                                                       style={{
-                                                        color:
-                                                          "rgb(89, 89, 89)",
+
                                                         fontSize: "15px",
                                                       }}
                                                     >
                                                       <span data-custom-class="body_text">
                                                         <span
                                                           style={{
-                                                            color:
-                                                              "rgb(89, 89, 89)",
+
                                                             fontSize: "15px",
                                                           }}
                                                         >
@@ -6230,16 +5856,14 @@ export const Privacy = () => {
                                                     .
                                                     <span
                                                       style={{
-                                                        color:
-                                                          "rgb(89, 89, 89)",
+
                                                         fontSize: "15px",
                                                       }}
                                                     >
                                                       <span data-custom-class="body_text">
                                                         <span
                                                           style={{
-                                                            color:
-                                                              "rgb(89, 89, 89)",
+
                                                             fontSize: "15px",
                                                           }}
                                                         >
@@ -6263,23 +5887,20 @@ export const Privacy = () => {
                                                     <span
                                                       style={{
                                                         fontSize: "15px",
-                                                        color:
-                                                          "rgb(89, 89, 89)",
+
                                                       }}
                                                     >
                                                       <span
                                                         style={{
                                                           fontSize: "15px",
-                                                          color:
-                                                            "rgb(89, 89, 89)",
+
                                                         }}
                                                       >
                                                         <span data-custom-class="body_text">
                                                           You may contact us{" "}
                                                           <span
                                                             style={{
-                                                              color:
-                                                                "rgb(89, 89, 89)",
+
                                                               fontSize: "15px",
                                                             }}
                                                           >
@@ -6289,8 +5910,7 @@ export const Privacy = () => {
                                                         </span>
                                                         <span
                                                           style={{
-                                                            color:
-                                                              "rgb(89, 89, 89)",
+
                                                             fontSize: "15px",
                                                           }}
                                                         >
@@ -6325,15 +5945,13 @@ export const Privacy = () => {
                                                     <span
                                                       style={{
                                                         fontSize: "15px",
-                                                        color:
-                                                          "rgb(89, 89, 89)",
+
                                                       }}
                                                     >
                                                       <span
                                                         style={{
                                                           fontSize: "15px",
-                                                          color:
-                                                            "rgb(89, 89, 89)",
+
                                                         }}
                                                       >
                                                         <span data-custom-class="body_text">
@@ -6366,15 +5984,13 @@ export const Privacy = () => {
                                                     <span
                                                       style={{
                                                         fontSize: "15px",
-                                                        color:
-                                                          "rgb(89, 89, 89)",
+
                                                       }}
                                                     >
                                                       <span
                                                         style={{
                                                           fontSize: "15px",
-                                                          color:
-                                                            "rgb(89, 89, 89)",
+
                                                         }}
                                                       >
                                                         <span data-custom-class="body_text">
@@ -6403,15 +6019,13 @@ export const Privacy = () => {
                                                     <span
                                                       style={{
                                                         fontSize: "15px",
-                                                        color:
-                                                          "rgb(89, 89, 89)",
+
                                                       }}
                                                     >
                                                       <span
                                                         style={{
                                                           fontSize: "15px",
-                                                          color:
-                                                            "rgb(89, 89, 89)",
+
                                                         }}
                                                       >
                                                         <span data-custom-class="body_text">
@@ -6446,15 +6060,13 @@ export const Privacy = () => {
                                                     <span
                                                       style={{
                                                         fontSize: "15px",
-                                                        color:
-                                                          "rgb(89, 89, 89)",
+
                                                       }}
                                                     >
                                                       <span
                                                         style={{
                                                           fontSize: "15px",
-                                                          color:
-                                                            "rgb(89, 89, 89)",
+
                                                         }}
                                                       >
                                                         <span data-custom-class="body_text">
@@ -6472,8 +6084,7 @@ export const Privacy = () => {
                                                           personal data.
                                                           <span
                                                             style={{
-                                                              color:
-                                                                "rgb(89, 89, 89)",
+
                                                               fontSize: "15px",
                                                             }}
                                                           >
@@ -6498,15 +6109,13 @@ export const Privacy = () => {
                                                     <span
                                                       style={{
                                                         fontSize: "15px",
-                                                        color:
-                                                          "rgb(89, 89, 89)",
+
                                                       }}
                                                     >
                                                       <span
                                                         style={{
                                                           fontSize: "15px",
-                                                          color:
-                                                            "rgb(89, 89, 89)",
+
                                                         }}
                                                       >
                                                         <span data-custom-class="body_text">
@@ -6522,15 +6131,11 @@ export const Privacy = () => {
                                                           months.{" "}
                                                           <span
                                                             style={{
-                                                              color:
-                                                                "rgb(89, 89, 89)",
+
                                                             }}
                                                           >
                                                             <span
-                                                              style={{
-                                                                color:
-                                                                  "rgb(89, 89, 89)",
-                                                              }}
+
                                                             >
                                                               <span data-custom-class="body_text">
                                                                 GitTrack
@@ -6545,23 +6150,18 @@ export const Privacy = () => {
                                                           consumers.
                                                           <span
                                                             style={{
-                                                              color:
-                                                                "rgb(89, 89, 89)",
+
                                                             }}
                                                           >
                                                             <span data-custom-class="body_text">
                                                               <span
                                                                 style={{
-                                                                  color:
-                                                                    "rgb(89, 89, 89)",
+
                                                                 }}
                                                               >
                                                                 <span data-custom-class="body_text">
                                                                   <span
-                                                                    style={{
-                                                                      color:
-                                                                        "rgb(89, 89, 89)",
-                                                                    }}
+
                                                                   >
                                                                     <span data-custom-class="body_text"></span>
                                                                   </span>
@@ -6574,8 +6174,7 @@ export const Privacy = () => {
                                                     </span>
                                                     <span
                                                       style={{
-                                                        color:
-                                                          "rgb(89, 89, 89)",
+
                                                         fontSize: "15px",
                                                       }}
                                                     >
@@ -6583,9 +6182,7 @@ export const Privacy = () => {
                                                     </span>
                                                     <span data-custom-class="body_text">
                                                       <span
-                                                        style={{
-                                                          color: "rgb(0, 0, 0)",
-                                                        }}
+
                                                       >
                                                         <span data-custom-class="body_text"></span>
                                                       </span>
@@ -6606,15 +6203,13 @@ export const Privacy = () => {
                                                     <span
                                                       style={{
                                                         fontSize: "15px",
-                                                        color:
-                                                          "rgb(89, 89, 89)",
+
                                                       }}
                                                     >
                                                       <span
                                                         style={{
                                                           fontSize: "15px",
-                                                          color:
-                                                            "rgb(89, 89, 89)",
+
                                                         }}
                                                       >
                                                         <span data-custom-class="body_text">
@@ -6642,15 +6237,13 @@ export const Privacy = () => {
                                                     <span
                                                       style={{
                                                         fontSize: "15px",
-                                                        color:
-                                                          "rgb(89, 89, 89)",
+
                                                       }}
                                                     >
                                                       <span
                                                         style={{
                                                           fontSize: "15px",
-                                                          color:
-                                                            "rgb(89, 89, 89)",
+
                                                         }}
                                                       >
                                                         <span data-custom-class="body_text">
@@ -6678,15 +6271,13 @@ export const Privacy = () => {
                                                     <span
                                                       style={{
                                                         fontSize: "15px",
-                                                        color:
-                                                          "rgb(89, 89, 89)",
+
                                                       }}
                                                     >
                                                       <span
                                                         style={{
                                                           fontSize: "15px",
-                                                          color:
-                                                            "rgb(89, 89, 89)",
+
                                                         }}
                                                       >
                                                         <span data-custom-class="body_text">
@@ -6733,15 +6324,13 @@ export const Privacy = () => {
                                                     <span
                                                       style={{
                                                         fontSize: "15px",
-                                                        color:
-                                                          "rgb(89, 89, 89)",
+
                                                       }}
                                                     >
                                                       <span
                                                         style={{
                                                           fontSize: "15px",
-                                                          color:
-                                                            "rgb(89, 89, 89)",
+
                                                         }}
                                                       >
                                                         <span data-custom-class="body_text">
@@ -6768,15 +6357,13 @@ export const Privacy = () => {
                                                     <span
                                                       style={{
                                                         fontSize: "15px",
-                                                        color:
-                                                          "rgb(89, 89, 89)",
+
                                                       }}
                                                     >
                                                       <span
                                                         style={{
                                                           fontSize: "15px",
-                                                          color:
-                                                            "rgb(89, 89, 89)",
+
                                                         }}
                                                       >
                                                         <span data-custom-class="body_text">
@@ -6786,16 +6373,14 @@ export const Privacy = () => {
                                                           <span
                                                             style={{
                                                               fontSize: "15px",
-                                                              color:
-                                                                "rgb(89, 89, 89)",
+
                                                             }}
                                                           >
                                                             <span
                                                               style={{
                                                                 fontSize:
                                                                   "15px",
-                                                                color:
-                                                                  "rgb(89, 89, 89)",
+
                                                               }}
                                                             >
                                                               <span data-custom-class="body_text">
@@ -6803,23 +6388,20 @@ export const Privacy = () => {
                                                                   style={{
                                                                     fontSize:
                                                                       "15px",
-                                                                    color:
-                                                                      "rgb(89, 89, 89)",
+
                                                                   }}
                                                                 >
                                                                   <span
                                                                     style={{
                                                                       fontSize:
                                                                         "15px",
-                                                                      color:
-                                                                        "rgb(89, 89, 89)",
+
                                                                     }}
                                                                   >
                                                                     <span data-custom-class="body_text">
                                                                       <span
                                                                         style={{
-                                                                          color:
-                                                                            "rgb(89, 89, 89)",
+
                                                                           fontSize:
                                                                             "15px",
                                                                         }}
@@ -6845,15 +6427,13 @@ export const Privacy = () => {
                                                       <span
                                                         style={{
                                                           fontSize: "15px",
-                                                          color:
-                                                            "rgb(89, 89, 89)",
+
                                                         }}
                                                       >
                                                         <span
                                                           style={{
                                                             fontSize: "15px",
-                                                            color:
-                                                              "rgb(89, 89, 89)",
+
                                                           }}
                                                         >
                                                           <span data-custom-class="body_text">
@@ -6861,10 +6441,7 @@ export const Privacy = () => {
                                                             and use your
                                                             personal information
                                                             <span
-                                                              style={{
-                                                                color:
-                                                                  "rgb(0, 0, 0)",
-                                                              }}
+
                                                             >
                                                               <span
                                                                 style={{
@@ -6874,10 +6451,7 @@ export const Privacy = () => {
                                                               >
                                                                 <span data-custom-class="body_text">
                                                                   <span
-                                                                    style={{
-                                                                      color:
-                                                                        "rgb(0, 0, 0)",
-                                                                    }}
+
                                                                   >
                                                                     <span
                                                                       style={{
@@ -6900,31 +6474,27 @@ export const Privacy = () => {
                                                     <span
                                                       style={{
                                                         fontSize: "15px",
-                                                        color:
-                                                          "rgb(89, 89, 89)",
+
                                                       }}
                                                     >
                                                       <span
                                                         style={{
                                                           fontSize: "15px",
-                                                          color:
-                                                            "rgb(89, 89, 89)",
+
                                                         }}
                                                       >
                                                         <span data-custom-class="body_text">
                                                           <span
                                                             style={{
                                                               fontSize: "15px",
-                                                              color:
-                                                                "rgb(89, 89, 89)",
+
                                                             }}
                                                           >
                                                             <span
                                                               style={{
                                                                 fontSize:
                                                                   "15px",
-                                                                color:
-                                                                  "rgb(89, 89, 89)",
+
                                                               }}
                                                             >
                                                               <span data-custom-class="body_text">
@@ -6932,23 +6502,20 @@ export const Privacy = () => {
                                                                   style={{
                                                                     fontSize:
                                                                       "15px",
-                                                                    color:
-                                                                      "rgb(89, 89, 89)",
+
                                                                   }}
                                                                 >
                                                                   <span
                                                                     style={{
                                                                       fontSize:
                                                                         "15px",
-                                                                      color:
-                                                                        "rgb(89, 89, 89)",
+
                                                                     }}
                                                                   >
                                                                     <span data-custom-class="body_text">
                                                                       <span
                                                                         style={{
-                                                                          color:
-                                                                            "rgb(89, 89, 89)",
+
                                                                           fontSize:
                                                                             "15px",
                                                                         }}
@@ -6974,15 +6541,13 @@ export const Privacy = () => {
                                                       <span
                                                         style={{
                                                           fontSize: "15px",
-                                                          color:
-                                                            "rgb(89, 89, 89)",
+
                                                         }}
                                                       >
                                                         <span
                                                           style={{
                                                             fontSize: "15px",
-                                                            color:
-                                                              "rgb(89, 89, 89)",
+
                                                           }}
                                                         >
                                                           <span data-custom-class="body_text">
@@ -6990,10 +6555,7 @@ export const Privacy = () => {
                                                             personal information
                                                             that we collect
                                                             <span
-                                                              style={{
-                                                                color:
-                                                                  "rgb(0, 0, 0)",
-                                                              }}
+
                                                             >
                                                               <span
                                                                 style={{
@@ -7003,10 +6565,7 @@ export const Privacy = () => {
                                                               >
                                                                 <span data-custom-class="body_text">
                                                                   <span
-                                                                    style={{
-                                                                      color:
-                                                                        "rgb(0, 0, 0)",
-                                                                    }}
+
                                                                   >
                                                                     <span
                                                                       style={{
@@ -7029,31 +6588,27 @@ export const Privacy = () => {
                                                     <span
                                                       style={{
                                                         fontSize: "15px",
-                                                        color:
-                                                          "rgb(89, 89, 89)",
+
                                                       }}
                                                     >
                                                       <span
                                                         style={{
                                                           fontSize: "15px",
-                                                          color:
-                                                            "rgb(89, 89, 89)",
+
                                                         }}
                                                       >
                                                         <span data-custom-class="body_text">
                                                           <span
                                                             style={{
                                                               fontSize: "15px",
-                                                              color:
-                                                                "rgb(89, 89, 89)",
+
                                                             }}
                                                           >
                                                             <span
                                                               style={{
                                                                 fontSize:
                                                                   "15px",
-                                                                color:
-                                                                  "rgb(89, 89, 89)",
+
                                                               }}
                                                             >
                                                               <span data-custom-class="body_text">
@@ -7061,23 +6616,20 @@ export const Privacy = () => {
                                                                   style={{
                                                                     fontSize:
                                                                       "15px",
-                                                                    color:
-                                                                      "rgb(89, 89, 89)",
+
                                                                   }}
                                                                 >
                                                                   <span
                                                                     style={{
                                                                       fontSize:
                                                                         "15px",
-                                                                      color:
-                                                                        "rgb(89, 89, 89)",
+
                                                                     }}
                                                                   >
                                                                     <span data-custom-class="body_text">
                                                                       <span
                                                                         style={{
-                                                                          color:
-                                                                            "rgb(89, 89, 89)",
+
                                                                           fontSize:
                                                                             "15px",
                                                                         }}
@@ -7103,15 +6655,13 @@ export const Privacy = () => {
                                                       <span
                                                         style={{
                                                           fontSize: "15px",
-                                                          color:
-                                                            "rgb(89, 89, 89)",
+
                                                         }}
                                                       >
                                                         <span
                                                           style={{
                                                             fontSize: "15px",
-                                                            color:
-                                                              "rgb(89, 89, 89)",
+
                                                           }}
                                                         >
                                                           <span data-custom-class="body_text">
@@ -7120,10 +6670,7 @@ export const Privacy = () => {
                                                             personal information
                                                             is used
                                                             <span
-                                                              style={{
-                                                                color:
-                                                                  "rgb(0, 0, 0)",
-                                                              }}
+
                                                             >
                                                               <span
                                                                 style={{
@@ -7133,10 +6680,7 @@ export const Privacy = () => {
                                                               >
                                                                 <span data-custom-class="body_text">
                                                                   <span
-                                                                    style={{
-                                                                      color:
-                                                                        "rgb(0, 0, 0)",
-                                                                    }}
+
                                                                   >
                                                                     <span
                                                                       style={{
@@ -7159,31 +6703,27 @@ export const Privacy = () => {
                                                     <span
                                                       style={{
                                                         fontSize: "15px",
-                                                        color:
-                                                          "rgb(89, 89, 89)",
+
                                                       }}
                                                     >
                                                       <span
                                                         style={{
                                                           fontSize: "15px",
-                                                          color:
-                                                            "rgb(89, 89, 89)",
+
                                                         }}
                                                       >
                                                         <span data-custom-class="body_text">
                                                           <span
                                                             style={{
                                                               fontSize: "15px",
-                                                              color:
-                                                                "rgb(89, 89, 89)",
+
                                                             }}
                                                           >
                                                             <span
                                                               style={{
                                                                 fontSize:
                                                                   "15px",
-                                                                color:
-                                                                  "rgb(89, 89, 89)",
+
                                                               }}
                                                             >
                                                               <span data-custom-class="body_text">
@@ -7191,23 +6731,20 @@ export const Privacy = () => {
                                                                   style={{
                                                                     fontSize:
                                                                       "15px",
-                                                                    color:
-                                                                      "rgb(89, 89, 89)",
+
                                                                   }}
                                                                 >
                                                                   <span
                                                                     style={{
                                                                       fontSize:
                                                                         "15px",
-                                                                      color:
-                                                                        "rgb(89, 89, 89)",
+
                                                                     }}
                                                                   >
                                                                     <span data-custom-class="body_text">
                                                                       <span
                                                                         style={{
-                                                                          color:
-                                                                            "rgb(89, 89, 89)",
+
                                                                           fontSize:
                                                                             "15px",
                                                                         }}
@@ -7233,15 +6770,13 @@ export const Privacy = () => {
                                                       <span
                                                         style={{
                                                           fontSize: "15px",
-                                                          color:
-                                                            "rgb(89, 89, 89)",
+
                                                         }}
                                                       >
                                                         <span
                                                           style={{
                                                             fontSize: "15px",
-                                                            color:
-                                                              "rgb(89, 89, 89)",
+
                                                           }}
                                                         >
                                                           <span data-custom-class="body_text">
@@ -7249,10 +6784,7 @@ export const Privacy = () => {
                                                             personal information
                                                             to third parties
                                                             <span
-                                                              style={{
-                                                                color:
-                                                                  "rgb(0, 0, 0)",
-                                                              }}
+
                                                             >
                                                               <span
                                                                 style={{
@@ -7262,10 +6794,7 @@ export const Privacy = () => {
                                                               >
                                                                 <span data-custom-class="body_text">
                                                                   <span
-                                                                    style={{
-                                                                      color:
-                                                                        "rgb(0, 0, 0)",
-                                                                    }}
+
                                                                   >
                                                                     <span
                                                                       style={{
@@ -7288,31 +6817,27 @@ export const Privacy = () => {
                                                     <span
                                                       style={{
                                                         fontSize: "15px",
-                                                        color:
-                                                          "rgb(89, 89, 89)",
+
                                                       }}
                                                     >
                                                       <span
                                                         style={{
                                                           fontSize: "15px",
-                                                          color:
-                                                            "rgb(89, 89, 89)",
+
                                                         }}
                                                       >
                                                         <span data-custom-class="body_text">
                                                           <span
                                                             style={{
                                                               fontSize: "15px",
-                                                              color:
-                                                                "rgb(89, 89, 89)",
+
                                                             }}
                                                           >
                                                             <span
                                                               style={{
                                                                 fontSize:
                                                                   "15px",
-                                                                color:
-                                                                  "rgb(89, 89, 89)",
+
                                                               }}
                                                             >
                                                               <span data-custom-class="body_text">
@@ -7320,23 +6845,20 @@ export const Privacy = () => {
                                                                   style={{
                                                                     fontSize:
                                                                       "15px",
-                                                                    color:
-                                                                      "rgb(89, 89, 89)",
+
                                                                   }}
                                                                 >
                                                                   <span
                                                                     style={{
                                                                       fontSize:
                                                                         "15px",
-                                                                      color:
-                                                                        "rgb(89, 89, 89)",
+
                                                                     }}
                                                                   >
                                                                     <span data-custom-class="body_text">
                                                                       <span
                                                                         style={{
-                                                                          color:
-                                                                            "rgb(89, 89, 89)",
+
                                                                           fontSize:
                                                                             "15px",
                                                                         }}
@@ -7362,15 +6884,13 @@ export const Privacy = () => {
                                                       <span
                                                         style={{
                                                           fontSize: "15px",
-                                                          color:
-                                                            "rgb(89, 89, 89)",
+
                                                         }}
                                                       >
                                                         <span
                                                           style={{
                                                             fontSize: "15px",
-                                                            color:
-                                                              "rgb(89, 89, 89)",
+
                                                           }}
                                                         >
                                                           <span data-custom-class="body_text">
@@ -7380,10 +6900,7 @@ export const Privacy = () => {
                                                             disclosed for a
                                                             business purpose
                                                             <span
-                                                              style={{
-                                                                color:
-                                                                  "rgb(0, 0, 0)",
-                                                              }}
+
                                                             >
                                                               <span
                                                                 style={{
@@ -7393,10 +6910,7 @@ export const Privacy = () => {
                                                               >
                                                                 <span data-custom-class="body_text">
                                                                   <span
-                                                                    style={{
-                                                                      color:
-                                                                        "rgb(0, 0, 0)",
-                                                                    }}
+
                                                                   >
                                                                     <span
                                                                       style={{
@@ -7419,31 +6933,27 @@ export const Privacy = () => {
                                                     <span
                                                       style={{
                                                         fontSize: "15px",
-                                                        color:
-                                                          "rgb(89, 89, 89)",
+
                                                       }}
                                                     >
                                                       <span
                                                         style={{
                                                           fontSize: "15px",
-                                                          color:
-                                                            "rgb(89, 89, 89)",
+
                                                         }}
                                                       >
                                                         <span data-custom-class="body_text">
                                                           <span
                                                             style={{
                                                               fontSize: "15px",
-                                                              color:
-                                                                "rgb(89, 89, 89)",
+
                                                             }}
                                                           >
                                                             <span
                                                               style={{
                                                                 fontSize:
                                                                   "15px",
-                                                                color:
-                                                                  "rgb(89, 89, 89)",
+
                                                               }}
                                                             >
                                                               <span data-custom-class="body_text">
@@ -7451,23 +6961,20 @@ export const Privacy = () => {
                                                                   style={{
                                                                     fontSize:
                                                                       "15px",
-                                                                    color:
-                                                                      "rgb(89, 89, 89)",
+
                                                                   }}
                                                                 >
                                                                   <span
                                                                     style={{
                                                                       fontSize:
                                                                         "15px",
-                                                                      color:
-                                                                        "rgb(89, 89, 89)",
+
                                                                     }}
                                                                   >
                                                                     <span data-custom-class="body_text">
                                                                       <span
                                                                         style={{
-                                                                          color:
-                                                                            "rgb(89, 89, 89)",
+
                                                                           fontSize:
                                                                             "15px",
                                                                         }}
@@ -7493,15 +7000,13 @@ export const Privacy = () => {
                                                       <span
                                                         style={{
                                                           fontSize: "15px",
-                                                          color:
-                                                            "rgb(89, 89, 89)",
+
                                                         }}
                                                       >
                                                         <span
                                                           style={{
                                                             fontSize: "15px",
-                                                            color:
-                                                              "rgb(89, 89, 89)",
+
                                                           }}
                                                         >
                                                           <span data-custom-class="body_text">
@@ -7512,10 +7017,7 @@ export const Privacy = () => {
                                                             or disclosed for a
                                                             business purpose and
                                                             <span
-                                                              style={{
-                                                                color:
-                                                                  "rgb(0, 0, 0)",
-                                                              }}
+
                                                             >
                                                               <span
                                                                 style={{
@@ -7525,10 +7027,7 @@ export const Privacy = () => {
                                                               >
                                                                 <span data-custom-class="body_text">
                                                                   <span
-                                                                    style={{
-                                                                      color:
-                                                                        "rgb(0, 0, 0)",
-                                                                    }}
+
                                                                   >
                                                                     <span
                                                                       style={{
@@ -7551,31 +7050,27 @@ export const Privacy = () => {
                                                     <span
                                                       style={{
                                                         fontSize: "15px",
-                                                        color:
-                                                          "rgb(89, 89, 89)",
+
                                                       }}
                                                     >
                                                       <span
                                                         style={{
                                                           fontSize: "15px",
-                                                          color:
-                                                            "rgb(89, 89, 89)",
+
                                                         }}
                                                       >
                                                         <span data-custom-class="body_text">
                                                           <span
                                                             style={{
                                                               fontSize: "15px",
-                                                              color:
-                                                                "rgb(89, 89, 89)",
+
                                                             }}
                                                           >
                                                             <span
                                                               style={{
                                                                 fontSize:
                                                                   "15px",
-                                                                color:
-                                                                  "rgb(89, 89, 89)",
+
                                                               }}
                                                             >
                                                               <span data-custom-class="body_text">
@@ -7583,23 +7078,20 @@ export const Privacy = () => {
                                                                   style={{
                                                                     fontSize:
                                                                       "15px",
-                                                                    color:
-                                                                      "rgb(89, 89, 89)",
+
                                                                   }}
                                                                 >
                                                                   <span
                                                                     style={{
                                                                       fontSize:
                                                                         "15px",
-                                                                      color:
-                                                                        "rgb(89, 89, 89)",
+
                                                                     }}
                                                                   >
                                                                     <span data-custom-class="body_text">
                                                                       <span
                                                                         style={{
-                                                                          color:
-                                                                            "rgb(89, 89, 89)",
+
                                                                           fontSize:
                                                                             "15px",
                                                                         }}
@@ -7625,15 +7117,13 @@ export const Privacy = () => {
                                                       <span
                                                         style={{
                                                           fontSize: "15px",
-                                                          color:
-                                                            "rgb(89, 89, 89)",
+
                                                         }}
                                                       >
                                                         <span
                                                           style={{
                                                             fontSize: "15px",
-                                                            color:
-                                                              "rgb(89, 89, 89)",
+
                                                           }}
                                                         >
                                                           <span data-custom-class="body_text">
@@ -7643,10 +7133,7 @@ export const Privacy = () => {
                                                             selling personal
                                                             information.
                                                             <span
-                                                              style={{
-                                                                color:
-                                                                  "rgb(0, 0, 0)",
-                                                              }}
+
                                                             >
                                                               <span
                                                                 style={{
@@ -7656,10 +7143,7 @@ export const Privacy = () => {
                                                               >
                                                                 <span data-custom-class="body_text">
                                                                   <span
-                                                                    style={{
-                                                                      color:
-                                                                        "rgb(0, 0, 0)",
-                                                                    }}
+
                                                                   >
                                                                     <span
                                                                       style={{
@@ -7686,15 +7170,13 @@ export const Privacy = () => {
                                                     <span
                                                       style={{
                                                         fontSize: "15px",
-                                                        color:
-                                                          "rgb(89, 89, 89)",
+
                                                       }}
                                                     >
                                                       <span
                                                         style={{
                                                           fontSize: "15px",
-                                                          color:
-                                                            "rgb(89, 89, 89)",
+
                                                         }}
                                                       >
                                                         <span data-custom-class="body_text">
@@ -7728,15 +7210,13 @@ export const Privacy = () => {
                                                     <span
                                                       style={{
                                                         fontSize: "15px",
-                                                        color:
-                                                          "rgb(89, 89, 89)",
+
                                                       }}
                                                     >
                                                       <span
                                                         style={{
                                                           fontSize: "15px",
-                                                          color:
-                                                            "rgb(89, 89, 89)",
+
                                                         }}
                                                       >
                                                         <span data-custom-class="body_text">
@@ -7766,15 +7246,13 @@ export const Privacy = () => {
                                                     <span
                                                       style={{
                                                         fontSize: "15px",
-                                                        color:
-                                                          "rgb(89, 89, 89)",
+
                                                       }}
                                                     >
                                                       <span
                                                         style={{
                                                           fontSize: "15px",
-                                                          color:
-                                                            "rgb(89, 89, 89)",
+
                                                         }}
                                                       >
                                                         <span data-custom-class="body_text">
@@ -7801,15 +7279,13 @@ export const Privacy = () => {
                                                     <span
                                                       style={{
                                                         fontSize: "15px",
-                                                        color:
-                                                          "rgb(89, 89, 89)",
+
                                                       }}
                                                     >
                                                       <span
                                                         style={{
                                                           fontSize: "15px",
-                                                          color:
-                                                            "rgb(89, 89, 89)",
+
                                                         }}
                                                       >
                                                         <span data-custom-class="body_text">
@@ -7835,15 +7311,13 @@ export const Privacy = () => {
                                                     <span
                                                       style={{
                                                         fontSize: "15px",
-                                                        color:
-                                                          "rgb(89, 89, 89)",
+
                                                       }}
                                                     >
                                                       <span
                                                         style={{
                                                           fontSize: "15px",
-                                                          color:
-                                                            "rgb(89, 89, 89)",
+
                                                         }}
                                                       >
                                                         <span data-custom-class="body_text">
@@ -7901,15 +7375,13 @@ export const Privacy = () => {
                                                     <span
                                                       style={{
                                                         fontSize: "15px",
-                                                        color:
-                                                          "rgb(89, 89, 89)",
+
                                                       }}
                                                     >
                                                       <span
                                                         style={{
                                                           fontSize: "15px",
-                                                          color:
-                                                            "rgb(89, 89, 89)",
+
                                                         }}
                                                       >
                                                         <span data-custom-class="body_text">
@@ -7963,15 +7435,13 @@ export const Privacy = () => {
                                                     <span
                                                       style={{
                                                         fontSize: "15px",
-                                                        color:
-                                                          "rgb(89, 89, 89)",
+
                                                       }}
                                                     >
                                                       <span
                                                         style={{
                                                           fontSize: "15px",
-                                                          color:
-                                                            "rgb(89, 89, 89)",
+
                                                         }}
                                                       >
                                                         <span data-custom-class="body_text">
@@ -7986,31 +7456,27 @@ export const Privacy = () => {
                                                     <span
                                                       style={{
                                                         fontSize: "15px",
-                                                        color:
-                                                          "rgb(89, 89, 89)",
+
                                                       }}
                                                     >
                                                       <span
                                                         style={{
                                                           fontSize: "15px",
-                                                          color:
-                                                            "rgb(89, 89, 89)",
+
                                                         }}
                                                       >
                                                         <span data-custom-class="body_text">
                                                           <span
                                                             style={{
                                                               fontSize: "15px",
-                                                              color:
-                                                                "rgb(89, 89, 89)",
+
                                                             }}
                                                           >
                                                             <span
                                                               style={{
                                                                 fontSize:
                                                                   "15px",
-                                                                color:
-                                                                  "rgb(89, 89, 89)",
+
                                                               }}
                                                             >
                                                               <span data-custom-class="body_text">
@@ -8018,23 +7484,20 @@ export const Privacy = () => {
                                                                   style={{
                                                                     fontSize:
                                                                       "15px",
-                                                                    color:
-                                                                      "rgb(89, 89, 89)",
+
                                                                   }}
                                                                 >
                                                                   <span
                                                                     style={{
                                                                       fontSize:
                                                                         "15px",
-                                                                      color:
-                                                                        "rgb(89, 89, 89)",
+
                                                                     }}
                                                                   >
                                                                     <span data-custom-class="body_text">
                                                                       <span
                                                                         style={{
-                                                                          color:
-                                                                            "rgb(89, 89, 89)",
+
                                                                           fontSize:
                                                                             "15px",
                                                                         }}
@@ -8060,15 +7523,13 @@ export const Privacy = () => {
                                                       <span
                                                         style={{
                                                           fontSize: "15px",
-                                                          color:
-                                                            "rgb(89, 89, 89)",
+
                                                         }}
                                                       >
                                                         <span
                                                           style={{
                                                             fontSize: "15px",
-                                                            color:
-                                                              "rgb(89, 89, 89)",
+
                                                           }}
                                                         >
                                                           <span data-custom-class="body_text">
@@ -8079,24 +7540,19 @@ export const Privacy = () => {
                                                               style={{
                                                                 fontSize:
                                                                   "15px",
-                                                                color:
-                                                                  "rgb(89, 89, 89)",
+
                                                               }}
                                                             >
                                                               <span
                                                                 style={{
                                                                   fontSize:
                                                                     "15px",
-                                                                  color:
-                                                                    "rgb(89, 89, 89)",
+
                                                                 }}
                                                               >
                                                                 <span data-custom-class="body_text">
                                                                   <span
-                                                                    style={{
-                                                                      color:
-                                                                        "rgb(0, 0, 0)",
-                                                                    }}
+
                                                                   >
                                                                     <span
                                                                       style={{
@@ -8106,10 +7562,7 @@ export const Privacy = () => {
                                                                     >
                                                                       <span data-custom-class="body_text">
                                                                         <span
-                                                                          style={{
-                                                                            color:
-                                                                              "rgb(0, 0, 0)",
-                                                                          }}
+
                                                                         >
                                                                           <span
                                                                             style={{
@@ -8135,31 +7588,27 @@ export const Privacy = () => {
                                                     <span
                                                       style={{
                                                         fontSize: "15px",
-                                                        color:
-                                                          "rgb(89, 89, 89)",
+
                                                       }}
                                                     >
                                                       <span
                                                         style={{
                                                           fontSize: "15px",
-                                                          color:
-                                                            "rgb(89, 89, 89)",
+
                                                         }}
                                                       >
                                                         <span data-custom-class="body_text">
                                                           <span
                                                             style={{
                                                               fontSize: "15px",
-                                                              color:
-                                                                "rgb(89, 89, 89)",
+
                                                             }}
                                                           >
                                                             <span
                                                               style={{
                                                                 fontSize:
                                                                   "15px",
-                                                                color:
-                                                                  "rgb(89, 89, 89)",
+
                                                               }}
                                                             >
                                                               <span data-custom-class="body_text">
@@ -8167,23 +7616,20 @@ export const Privacy = () => {
                                                                   style={{
                                                                     fontSize:
                                                                       "15px",
-                                                                    color:
-                                                                      "rgb(89, 89, 89)",
+
                                                                   }}
                                                                 >
                                                                   <span
                                                                     style={{
                                                                       fontSize:
                                                                         "15px",
-                                                                      color:
-                                                                        "rgb(89, 89, 89)",
+
                                                                     }}
                                                                   >
                                                                     <span data-custom-class="body_text">
                                                                       <span
                                                                         style={{
-                                                                          color:
-                                                                            "rgb(89, 89, 89)",
+
                                                                           fontSize:
                                                                             "15px",
                                                                         }}
@@ -8209,15 +7655,13 @@ export const Privacy = () => {
                                                       <span
                                                         style={{
                                                           fontSize: "15px",
-                                                          color:
-                                                            "rgb(89, 89, 89)",
+
                                                         }}
                                                       >
                                                         <span
                                                           style={{
                                                             fontSize: "15px",
-                                                            color:
-                                                              "rgb(89, 89, 89)",
+
                                                           }}
                                                         >
                                                           <span data-custom-class="body_text">
@@ -8233,24 +7677,19 @@ export const Privacy = () => {
                                                               style={{
                                                                 fontSize:
                                                                   "15px",
-                                                                color:
-                                                                  "rgb(89, 89, 89)",
+
                                                               }}
                                                             >
                                                               <span
                                                                 style={{
                                                                   fontSize:
                                                                     "15px",
-                                                                  color:
-                                                                    "rgb(89, 89, 89)",
+
                                                                 }}
                                                               >
                                                                 <span data-custom-class="body_text">
                                                                   <span
-                                                                    style={{
-                                                                      color:
-                                                                        "rgb(0, 0, 0)",
-                                                                    }}
+
                                                                   >
                                                                     <span
                                                                       style={{
@@ -8260,10 +7699,7 @@ export const Privacy = () => {
                                                                     >
                                                                       <span data-custom-class="body_text">
                                                                         <span
-                                                                          style={{
-                                                                            color:
-                                                                              "rgb(0, 0, 0)",
-                                                                          }}
+
                                                                         >
                                                                           <span
                                                                             style={{
@@ -8289,31 +7725,27 @@ export const Privacy = () => {
                                                     <span
                                                       style={{
                                                         fontSize: "15px",
-                                                        color:
-                                                          "rgb(89, 89, 89)",
+
                                                       }}
                                                     >
                                                       <span
                                                         style={{
                                                           fontSize: "15px",
-                                                          color:
-                                                            "rgb(89, 89, 89)",
+
                                                         }}
                                                       >
                                                         <span data-custom-class="body_text">
                                                           <span
                                                             style={{
                                                               fontSize: "15px",
-                                                              color:
-                                                                "rgb(89, 89, 89)",
+
                                                             }}
                                                           >
                                                             <span
                                                               style={{
                                                                 fontSize:
                                                                   "15px",
-                                                                color:
-                                                                  "rgb(89, 89, 89)",
+
                                                               }}
                                                             >
                                                               <span data-custom-class="body_text">
@@ -8321,23 +7753,20 @@ export const Privacy = () => {
                                                                   style={{
                                                                     fontSize:
                                                                       "15px",
-                                                                    color:
-                                                                      "rgb(89, 89, 89)",
+
                                                                   }}
                                                                 >
                                                                   <span
                                                                     style={{
                                                                       fontSize:
                                                                         "15px",
-                                                                      color:
-                                                                        "rgb(89, 89, 89)",
+
                                                                     }}
                                                                   >
                                                                     <span data-custom-class="body_text">
                                                                       <span
                                                                         style={{
-                                                                          color:
-                                                                            "rgb(89, 89, 89)",
+
                                                                           fontSize:
                                                                             "15px",
                                                                         }}
@@ -8363,15 +7792,13 @@ export const Privacy = () => {
                                                       <span
                                                         style={{
                                                           fontSize: "15px",
-                                                          color:
-                                                            "rgb(89, 89, 89)",
+
                                                         }}
                                                       >
                                                         <span
                                                           style={{
                                                             fontSize: "15px",
-                                                            color:
-                                                              "rgb(89, 89, 89)",
+
                                                           }}
                                                         >
                                                           <span data-custom-class="body_text">
@@ -8393,24 +7820,19 @@ export const Privacy = () => {
                                                               style={{
                                                                 fontSize:
                                                                   "15px",
-                                                                color:
-                                                                  "rgb(89, 89, 89)",
+
                                                               }}
                                                             >
                                                               <span
                                                                 style={{
                                                                   fontSize:
                                                                     "15px",
-                                                                  color:
-                                                                    "rgb(89, 89, 89)",
+
                                                                 }}
                                                               >
                                                                 <span data-custom-class="body_text">
                                                                   <span
-                                                                    style={{
-                                                                      color:
-                                                                        "rgb(0, 0, 0)",
-                                                                    }}
+
                                                                   >
                                                                     <span
                                                                       style={{
@@ -8420,10 +7842,7 @@ export const Privacy = () => {
                                                                     >
                                                                       <span data-custom-class="body_text">
                                                                         <span
-                                                                          style={{
-                                                                            color:
-                                                                              "rgb(0, 0, 0)",
-                                                                          }}
+
                                                                         >
                                                                           <span
                                                                             style={{
@@ -8449,31 +7868,27 @@ export const Privacy = () => {
                                                     <span
                                                       style={{
                                                         fontSize: "15px",
-                                                        color:
-                                                          "rgb(89, 89, 89)",
+
                                                       }}
                                                     >
                                                       <span
                                                         style={{
                                                           fontSize: "15px",
-                                                          color:
-                                                            "rgb(89, 89, 89)",
+
                                                         }}
                                                       >
                                                         <span data-custom-class="body_text">
                                                           <span
                                                             style={{
                                                               fontSize: "15px",
-                                                              color:
-                                                                "rgb(89, 89, 89)",
+
                                                             }}
                                                           >
                                                             <span
                                                               style={{
                                                                 fontSize:
                                                                   "15px",
-                                                                color:
-                                                                  "rgb(89, 89, 89)",
+
                                                               }}
                                                             >
                                                               <span data-custom-class="body_text">
@@ -8481,23 +7896,20 @@ export const Privacy = () => {
                                                                   style={{
                                                                     fontSize:
                                                                       "15px",
-                                                                    color:
-                                                                      "rgb(89, 89, 89)",
+
                                                                   }}
                                                                 >
                                                                   <span
                                                                     style={{
                                                                       fontSize:
                                                                         "15px",
-                                                                      color:
-                                                                        "rgb(89, 89, 89)",
+
                                                                     }}
                                                                   >
                                                                     <span data-custom-class="body_text">
                                                                       <span
                                                                         style={{
-                                                                          color:
-                                                                            "rgb(89, 89, 89)",
+
                                                                           fontSize:
                                                                             "15px",
                                                                         }}
@@ -8523,15 +7935,13 @@ export const Privacy = () => {
                                                       <span
                                                         style={{
                                                           fontSize: "15px",
-                                                          color:
-                                                            "rgb(89, 89, 89)",
+
                                                         }}
                                                       >
                                                         <span
                                                           style={{
                                                             fontSize: "15px",
-                                                            color:
-                                                              "rgb(89, 89, 89)",
+
                                                           }}
                                                         >
                                                           <span data-custom-class="body_text">
@@ -8553,24 +7963,19 @@ export const Privacy = () => {
                                                               style={{
                                                                 fontSize:
                                                                   "15px",
-                                                                color:
-                                                                  "rgb(89, 89, 89)",
+
                                                               }}
                                                             >
                                                               <span
                                                                 style={{
                                                                   fontSize:
                                                                     "15px",
-                                                                  color:
-                                                                    "rgb(89, 89, 89)",
+
                                                                 }}
                                                               >
                                                                 <span data-custom-class="body_text">
                                                                   <span
-                                                                    style={{
-                                                                      color:
-                                                                        "rgb(0, 0, 0)",
-                                                                    }}
+
                                                                   >
                                                                     <span
                                                                       style={{
@@ -8580,10 +7985,7 @@ export const Privacy = () => {
                                                                     >
                                                                       <span data-custom-class="body_text">
                                                                         <span
-                                                                          style={{
-                                                                            color:
-                                                                              "rgb(0, 0, 0)",
-                                                                          }}
+
                                                                         >
                                                                           <span
                                                                             style={{
@@ -8613,15 +8015,13 @@ export const Privacy = () => {
                                                     <span
                                                       style={{
                                                         fontSize: "15px",
-                                                        color:
-                                                          "rgb(89, 89, 89)",
+
                                                       }}
                                                     >
                                                       <span
                                                         style={{
                                                           fontSize: "15px",
-                                                          color:
-                                                            "rgb(89, 89, 89)",
+
                                                         }}
                                                       >
                                                         <span data-custom-class="body_text">
@@ -8631,16 +8031,14 @@ export const Privacy = () => {
                                                         </span>
                                                         <span
                                                           style={{
-                                                            color:
-                                                              "rgb(89, 89, 89)",
+
                                                             fontSize: "15px",
                                                           }}
                                                         >
                                                           <span data-custom-class="body_text">
                                                             <span
                                                               style={{
-                                                                color:
-                                                                  "rgb(89, 89, 89)",
+
                                                                 fontSize:
                                                                   "15px",
                                                               }}
@@ -8669,8 +8067,7 @@ export const Privacy = () => {
                                                     </span>
                                                     <span
                                                       style={{
-                                                        color:
-                                                          "rgb(89, 89, 89)",
+
                                                         fontSize: "15px",
                                                       }}
                                                     >
@@ -8679,20 +8076,18 @@ export const Privacy = () => {
                                                         <span
                                                           style={{
                                                             fontSize: "15px",
-                                                            color:
-                                                              "rgb(89, 89, 89)",
+
                                                           }}
                                                         >
                                                           <span
                                                             style={{
                                                               fontSize:
-                                                                "15px color: rgb(89, 89, 89)",
+                                                                "15px",
                                                             }}
                                                           >
                                                             <span
                                                               style={{
-                                                                color:
-                                                                  "rgb(89, 89, 89)",
+
                                                                 fontSize:
                                                                   "15px",
                                                               }}
@@ -8700,8 +8095,7 @@ export const Privacy = () => {
                                                               <span data-custom-class="body_text">
                                                                 <span
                                                                   style={{
-                                                                    color:
-                                                                      "rgb(89, 89, 89)",
+
                                                                     fontSize:
                                                                       "15px",
                                                                   }}
@@ -8709,8 +8103,7 @@ export const Privacy = () => {
                                                                   <span data-custom-class="body_text">
                                                                     <span
                                                                       style={{
-                                                                        color:
-                                                                          "rgb(89, 89, 89)",
+
                                                                         fontSize:
                                                                           "15px",
                                                                       }}
@@ -8718,8 +8111,7 @@ export const Privacy = () => {
                                                                       <span data-custom-class="body_text">
                                                                         <span
                                                                           style={{
-                                                                            color:
-                                                                              "rgb(89, 89, 89)",
+
                                                                             fontSize:
                                                                               "15px",
                                                                           }}
@@ -8751,36 +8143,29 @@ export const Privacy = () => {
                                                     }}
                                                   >
                                                     <span
-                                                      style={{
-                                                        color:
-                                                          "rgb(127, 127, 127)",
-                                                      }}
+
                                                     >
                                                       <span
                                                         style={{
-                                                          color:
-                                                            "rgb(89, 89, 89)",
+
                                                           fontSize: "15px",
                                                         }}
                                                       >
                                                         <span
                                                           style={{
                                                             fontSize:
-                                                              "15px color: rgb(89, 89, 89)",
+                                                              "15px",
                                                           }}
                                                         >
                                                           <span
                                                             style={{
                                                               fontSize:
-                                                                "15px color: rgb(89, 89, 89)",
+                                                                "15px",
                                                             }}
                                                           >
                                                             <span
                                                               id="control"
-                                                              style={{
-                                                                color:
-                                                                  "rgb(0, 0, 0)",
-                                                              }}
+
                                                             >
                                                               <strong>
                                                                 <span data-custom-class="heading_1">
@@ -8812,13 +8197,13 @@ export const Privacy = () => {
                                                     <span
                                                       style={{
                                                         fontSize:
-                                                          "15px color: rgb(89, 89, 89)",
+                                                          "15px",
                                                       }}
                                                     >
                                                       <span
                                                         style={{
                                                           fontSize:
-                                                            "15px color: rgb(89, 89, 89)",
+                                                            "15px",
                                                         }}
                                                       >
                                                         <span data-custom-class="body_text">
@@ -8851,13 +8236,13 @@ export const Privacy = () => {
                                                     <span
                                                       style={{
                                                         fontSize:
-                                                          "15px color: rgb(89, 89, 89)",
+                                                          "15px",
                                                       }}
                                                     >
                                                       <span
                                                         style={{
                                                           fontSize:
-                                                            "15px color: rgb(89, 89, 89)",
+                                                            "15px",
                                                         }}
                                                       >
                                                         <span data-custom-class="body_text">
@@ -8903,36 +8288,29 @@ export const Privacy = () => {
                                                     }}
                                                   >
                                                     <span
-                                                      style={{
-                                                        color:
-                                                          "rgb(127, 127, 127)",
-                                                      }}
+
                                                     >
                                                       <span
                                                         style={{
-                                                          color:
-                                                            "rgb(89, 89, 89)",
+
                                                           fontSize: "15px",
                                                         }}
                                                       >
                                                         <span
                                                           style={{
                                                             fontSize:
-                                                              "15px color: rgb(89, 89, 89)",
+                                                              "15px",
                                                           }}
                                                         >
                                                           <span
                                                             style={{
                                                               fontSize:
-                                                                "15px color: rgb(89, 89, 89)",
+                                                                "15px",
                                                             }}
                                                           >
                                                             <span
                                                               id="control"
-                                                              style={{
-                                                                color:
-                                                                  "rgb(0, 0, 0)",
-                                                              }}
+
                                                             >
                                                               <strong>
                                                                 <span data-custom-class="heading_1">
@@ -8963,13 +8341,13 @@ export const Privacy = () => {
                                                     <span
                                                       style={{
                                                         fontSize:
-                                                          "15px color: rgb(89, 89, 89)",
+                                                          "15px",
                                                       }}
                                                     >
                                                       <span
                                                         style={{
                                                           fontSize:
-                                                            "15px color: rgb(89, 89, 89)",
+                                                            "15px",
                                                         }}
                                                       >
                                                         <span data-custom-class="body_text">
@@ -8978,31 +8356,13 @@ export const Privacy = () => {
                                                           notice, you may{" "}
                                                           <span
                                                             style={{
-                                                              color:
-                                                                "rgb(89, 89, 89)",
+
                                                               fontSize: "15px",
                                                             }}
                                                           >
                                                             <span data-custom-class="body_text">
                                                               email us at{" "}
                                                               danielchicchon@gmail.com
-                                                            </span>
-                                                          </span>
-                                                          <span
-                                                            style={{
-                                                              fontSize:
-                                                                "15px color: rgb(89, 89, 89)",
-                                                            }}
-                                                          >
-                                                            <span
-                                                              style={{
-                                                                fontSize:
-                                                                  "15px color: rgb(89, 89, 89)",
-                                                              }}
-                                                            >
-                                                              <span data-custom-class="body_text">
-                                                                or by post to:
-                                                              </span>
                                                             </span>
                                                           </span>
                                                         </span>
@@ -9024,13 +8384,13 @@ export const Privacy = () => {
                                                     <span
                                                       style={{
                                                         fontSize:
-                                                          "15px color: rgb(89, 89, 89)",
+                                                          "15px",
                                                       }}
                                                     >
                                                       <span
                                                         style={{
                                                           fontSize:
-                                                            "15px color: rgb(89, 89, 89)",
+                                                            "15px",
                                                         }}
                                                       >
                                                         <span data-custom-class="body_text">
@@ -9040,15 +8400,11 @@ export const Privacy = () => {
                                                             }}
                                                           >
                                                             <span
-                                                              style={{
-                                                                color:
-                                                                  "rgb(89, 89, 89)",
-                                                              }}
+
                                                             >
                                                               <span
                                                                 style={{
-                                                                  color:
-                                                                    "rgb(89, 89, 89)",
+
                                                                 }}
                                                               >
                                                                 <span data-custom-class="body_text">
@@ -9061,8 +8417,7 @@ export const Privacy = () => {
                                                         <span data-custom-class="body_text">
                                                           <span
                                                             style={{
-                                                              color:
-                                                                "rgb(89, 89, 89)",
+
                                                             }}
                                                           >
                                                             <span data-custom-class="body_text"></span>
@@ -9082,12 +8437,8 @@ export const Privacy = () => {
                                                       }}
                                                     >
                                                       <span data-custom-class="body_text">
-                                                        __________
                                                         <span
-                                                          style={{
-                                                            color:
-                                                              "rgb(89, 89, 89)",
-                                                          }}
+
                                                         >
                                                           <span
                                                             style={{
@@ -9109,19 +8460,15 @@ export const Privacy = () => {
                                                       }}
                                                     >
                                                       <span data-custom-class="body_text">
-                                                        __________
                                                         <span
-                                                          style={{
-                                                            color:
-                                                              "rgb(89, 89, 89)",
-                                                          }}
+
                                                         >
                                                           <span
                                                             style={{
                                                               fontSize: "15px",
                                                             }}
                                                           >
-                                                            , NY
+                                                            NY
                                                           </span>
                                                           <span
                                                             style={{
@@ -9146,10 +8493,7 @@ export const Privacy = () => {
                                                       United States
                                                       <span data-custom-class="body_text">
                                                         <span
-                                                          style={{
-                                                            color:
-                                                              "rgb(89, 89, 89)",
-                                                          }}
+
                                                         >
                                                           <span
                                                             style={{
@@ -9159,8 +8503,7 @@ export const Privacy = () => {
                                                             <span data-custom-class="body_text">
                                                               <span
                                                                 style={{
-                                                                  color:
-                                                                    "rgb(89, 89, 89)",
+
                                                                 }}
                                                               >
                                                                 <span
@@ -9171,10 +8514,7 @@ export const Privacy = () => {
                                                                 >
                                                                   <span data-custom-class="body_text">
                                                                     <span
-                                                                      style={{
-                                                                        color:
-                                                                          "rgb(89, 89, 89)",
-                                                                      }}
+
                                                                     >
                                                                       <span
                                                                         style={{
@@ -9193,10 +8533,7 @@ export const Privacy = () => {
                                                     </span>
                                                     <span data-custom-class="body_text">
                                                       <span
-                                                        style={{
-                                                          color:
-                                                            "rgb(89, 89, 89)",
-                                                        }}
+
                                                       >
                                                         <span
                                                           style={{
@@ -9218,15 +8555,11 @@ export const Privacy = () => {
                                                         >
                                                           <span data-custom-class="body_text">
                                                             <span
-                                                              style={{
-                                                                color:
-                                                                  "rgb(89, 89, 89)",
-                                                              }}
+
                                                             >
                                                               <span
                                                                 style={{
-                                                                  color:
-                                                                    "rgb(89, 89, 89)",
+
                                                                 }}
                                                               >
                                                                 <span
@@ -9249,8 +8582,7 @@ export const Privacy = () => {
                                                           <span data-custom-class="body_text">
                                                             <span
                                                               style={{
-                                                                color:
-                                                                  "rgb(89, 89, 89)",
+
                                                                 fontSize:
                                                                   "15px",
                                                               }}
@@ -9269,151 +8601,9 @@ export const Privacy = () => {
                                                       </span>
                                                     </span>
                                                   </div>
-                                                  <div
-                                                    style={{
-                                                      lineHeight: "1.5",
-                                                    }}
-                                                  >
-                                                    <br />
-                                                  </div>
-                                                  <div
-                                                    id="request"
-                                                    style={{
-                                                      lineHeight: "1.5",
-                                                    }}
-                                                  >
-                                                    <span
-                                                      style={{
-                                                        color:
-                                                          "rgb(127, 127, 127)",
-                                                      }}
-                                                    >
-                                                      <span
-                                                        style={{
-                                                          color:
-                                                            "rgb(89, 89, 89)",
-                                                          fontSize: "15px",
-                                                        }}
-                                                      >
-                                                        <span
-                                                          style={{
-                                                            fontSize: "15px",
-                                                            color:
-                                                              "rgb(89, 89, 89)",
-                                                          }}
-                                                        >
-                                                          <span
-                                                            style={{
-                                                              fontSize: "15px",
-                                                              color:
-                                                                "rgb(89, 89, 89)",
-                                                            }}
-                                                          >
-                                                            <span
-                                                              id="control"
-                                                              style={{
-                                                                color:
-                                                                  "rgb(0, 0, 0)",
-                                                              }}
-                                                            >
-                                                              <strong>
-                                                                <span data-custom-class="heading_1">
-                                                                  11. HOW CAN
-                                                                  YOU REVIEW,
-                                                                  UPDATE, OR
-                                                                  DELETE THE
-                                                                  DATA WE
-                                                                  COLLECT FROM
-                                                                  YOU?
-                                                                </span>
-                                                              </strong>
-                                                            </span>
-                                                          </span>
-                                                        </span>
-                                                      </span>
-                                                    </span>
-                                                  </div>
-                                                  <div
-                                                    style={{
-                                                      lineHeight: "1.5",
-                                                    }}
-                                                  >
-                                                    <br />
-                                                  </div>
-                                                  <div
-                                                    style={{
-                                                      lineHeight: "1.5",
-                                                    }}
-                                                  >
-                                                    <span
-                                                      style={{
-                                                        fontSize: "15px",
-                                                        color:
-                                                          "rgb(89, 89, 89)",
-                                                      }}
-                                                    >
-                                                      <span
-                                                        style={{
-                                                          fontSize: "15px",
-                                                          color:
-                                                            "rgb(89, 89, 89)",
-                                                        }}
-                                                      >
-                                                        <span data-custom-class="body_text">
-                                                          Based on the
-                                                          applicable laws of
-                                                          your country, you may
-                                                          have the right to
-                                                          request access to the
-                                                          personal information
-                                                          we collect from you,
-                                                          change that
-                                                          information, or delete
-                                                          it in some
-                                                          circumstances. To
-                                                          request to review,
-                                                          update, or delete your
-                                                          personal information,
-                                                          please submit a
-                                                          request form by
-                                                          clicking
-                                                        </span>
-                                                        <span
-                                                          style={{
-                                                            color:
-                                                              "rgb(48, 48, 241)",
-                                                          }}
-                                                        >
-                                                          <span data-custom-class="body_text">
-                                                            <span
-                                                              style={{
-                                                                fontSize:
-                                                                  "15px",
-                                                              }}
-                                                            >
-                                                              <a
-                                                                data-custom-class="link"
-                                                                href="https://app.termly.io/notify/f7ab175f-2a2f-4256-acb0-fb0b08d8d437"
-                                                                rel="noopener noreferrer"
-                                                                target="_blank"
-                                                              >
-                                                                here
-                                                              </a>
-                                                            </span>
-                                                          </span>
-                                                        </span>
-
-                                                        <span data-custom-class="body_text"></span>
-                                                      </span>
-                                                    </span>
-                                                    <span data-custom-class="body_text">
-                                                      .
-                                                    </span>
-                                                  </div>
                                                 </div>
                                                 <div
                                                   style={{
-                                                    color: "#595959",
                                                     fontSize: "14px",
                                                     fontFamily:
                                                       "Arialpadding-top:16px",
@@ -9422,10 +8612,7 @@ export const Privacy = () => {
                                                   This privacy policy was
                                                   created using Termly's{" "}
                                                   <a
-                                                    style={{
-                                                      color:
-                                                        "rgb(48, 48, 241) !important",
-                                                    }}
+                                                    rel='noopener noreferrer'
                                                     href="https://termly.io/products/privacy-policy-generator/?ftseo"
                                                   >
                                                     Privacy Policy Generator

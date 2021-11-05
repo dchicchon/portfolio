@@ -1,0 +1,17 @@
+#gittrack-docs {
+    background: rgb(28, 35, 51);
+    color: #85ceff;
+    min-height: 85vh;
+    display: flex;
+    justify-content: center;
+}
+
+.doc-panel {
+    border: 1px solid #85ceff;
+    width: 50%;
+    padding: 0 50px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

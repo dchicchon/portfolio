@@ -21,6 +21,7 @@ import { Home as GitTrack_Home } from "./Pages/GitTrack/Home";
 import { Privacy as GitTrack_Privacy } from "./Pages/GitTrack/Privacy";
 import { Terms as GitTrack_Terms } from "./Pages/GitTrack/Terms";
 import { Support as GitTrack_Support } from "./Pages/GitTrack/Support";
+import { Docs as GitTrack_Docs } from "./Pages/GitTrack/Docs";
 
 import { Minesweeper } from "./Pages/Minesweeper";
 import { Error } from "./Pages/Error";
@@ -65,8 +66,13 @@ class App extends Component {
             />
             <Route
               exact
+<<<<<<< HEAD
               path={ROUTES.MINESWEEPER_HOME}
               component={Minesweeper}
+=======
+              path={ROUTES.GITTRACK_DOCS}
+              component={GitTrack_Docs}
+>>>>>>> d4d74782cf96e176ef58f1ec6176c24980e903a7
             />
             <Route component={Error} />
             {/* <Route exact path={ROUTES.BOARD} component={Board} /> */}

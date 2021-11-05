@@ -6,6 +6,8 @@
 #gittrack-home {
   background: rgb(28, 35, 51);
   color: #85ceff;
+  min-height: 85vh;
+
 }
 
 #gittrack-home * {
@@ -56,4 +58,13 @@
 }
 .panel-white {
   background: white;
+}
+
+@media only screen and (max-width: 1400px) {
+  .panels {
+    flex-direction: column;
+  }
+  .panel {
+    width: 100%;
+  }
 }
