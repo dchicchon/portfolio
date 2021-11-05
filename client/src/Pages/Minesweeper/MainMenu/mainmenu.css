@@ -1,0 +1,13 @@
+#main-menu {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: gold;
+  background: #2a3846;
+}
+
+#menu-items {
+  display: flex;
+  flex-direction: column;
+}

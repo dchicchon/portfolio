@@ -11,9 +11,9 @@ const Navbar = () => {
     window.onscroll = function () {
       let currentScrollPos = window.pageYOffset;
       if (prevScrollPos > currentScrollPos) {
-        document.getElementsByClassName("nav-show")[0].style.top = "0";
+        // document.getElementsByClassName("nav-show")[0].style.top = "0";
       } else {
-        document.getElementsByClassName("nav-show")[0].style.top = "-50px";
+        // document.getElementsByClassName("nav-show")[0].style.top = "-50px";
       }
       prevScrollPos = currentScrollPos;
     };

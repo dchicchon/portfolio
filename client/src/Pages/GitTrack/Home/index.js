@@ -7,7 +7,7 @@ import "./style.css";
 
 export const Home = () => {
   return (
-    <div>
+    <div id="gittrack-page">
       <Nav />
       <div id="gittrack-home">
         <div className="panels">

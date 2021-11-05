@@ -10,7 +10,12 @@ export const Nav = () => {
         <li className="nav-link">
           {/* image here */}
           <Link to="/GitTrack">
-            <img className="gittrack-logo" src={logo} />
+            <img
+              className="gittrack-logo"
+              height="50"
+              width="50"
+              src={logo}
+            />
           </Link>
         </li>
         <li className="nav-link">

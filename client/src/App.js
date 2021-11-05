@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import * as ROUTES from "./Constants/routes";
-import "bootstrap/dist/css/bootstrap.min.css";
+// import "bootstrap/dist/css/bootstrap.min.css";
 import axios from "axios";
 import "./App.css";
 
@@ -22,6 +22,7 @@ import { Privacy as GitTrack_Privacy } from "./Pages/GitTrack/Privacy";
 import { Terms as GitTrack_Terms } from "./Pages/GitTrack/Terms";
 import { Support as GitTrack_Support } from "./Pages/GitTrack/Support";
 
+import { Minesweeper } from "./Pages/Minesweeper";
 import { Error } from "./Pages/Error";
 // https://medium.com/google-cloud/tracking-site-visits-on-react-app-hosted-in-google-cloud-using-google-analytics-f49c2411d398
 
@@ -61,6 +62,11 @@ class App extends Component {
               exact
               path={ROUTES.GITTRACK_SUPPORT}
               component={GitTrack_Support}
+            />
+            <Route
+              exact
+              path={ROUTES.MINESWEEPER_HOME}
+              component={Minesweeper}
             />
             <Route component={Error} />
             {/* <Route exact path={ROUTES.BOARD} component={Board} /> */}

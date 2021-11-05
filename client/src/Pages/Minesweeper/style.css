@@ -1,0 +1,28 @@
+#minesweeper {
+  padding: 15px;
+  background: #2a3846;
+  min-height: 100vh;
+}
+
+#menu-items {
+  margin-top: 5%;
+}
+
+#minesweeper input,
+#minesweeper label {
+  display: block;
+}
+
+#minesweeper .button {
+  padding: 0.5rem;
+  color: gold;
+  background: #2a3846;
+  border: 1px solid gold;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 0.25rem;
+  transition: background 0.5s;
+}
+#minesweeper .button:hover {
+  background: #465d72;
+}

@@ -1,0 +1,9 @@
+.title {
+  color: gold;
+  text-align: center;
+}
+
+#main-game {
+  width: 50%;
+  margin: 0 auto;
+}

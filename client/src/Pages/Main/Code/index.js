@@ -75,11 +75,10 @@ const Code = () => {
           </div>
           <div className="code-right">
             <p className="code-p">
-              I'm a full-stack engineer who has experience building
-              and scaling web applications and services in various domains.
+              I'm a full-stack engineer who has experience building and scaling
+              web applications and services in various domains.
             </p>
-            <p className="code-p">
-            </p>
+            <p className="code-p"></p>
           </div>
         </section>
         <section id="code-projects">
@@ -96,8 +95,13 @@ const Code = () => {
             <div className="code-project-link">
               <Link to="/GitTrack">GitTrack</Link>
               <p>
-                A slack application to keep track of the Github contributions in your workspace
+                A slack application to keep track of the Github contributions in
+                your workspace
               </p>
+            </div>
+            <div className="code-project-link">
+              <Link to="/minesweeper">Minesweeper</Link>
+              <p>My version of minesweeper made in React</p>
             </div>
 
             <div className="code-project-link">

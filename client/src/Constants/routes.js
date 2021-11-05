@@ -18,3 +18,6 @@ export const GITTRACK_HOME = "/GitTrack";
 export const GITTRACK_PRIVACY = "/GitTrack/privacy";
 export const GITTRACK_TERMS = "/GitTrack/terms";
 export const GITTRACK_SUPPORT = "/GitTrack/support";
+
+// Minesweeper
+export const MINESWEEPER_HOME = "/minesweeper";

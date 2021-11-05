@@ -1,0 +1,10 @@
+
+#board {
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.mine-row {
+  display: flex;
+}
+

@@ -6,13 +6,4 @@ export default {
     return axios.get("/photos");
   },
 
-  // getMessages: () => {
-  //   console.log("Getting Messages");
-  //   return axios.get("/messenger");
-  // },
-
-  // sendMessage: (message) => {
-  //   console.log("Sending Message:", message);
-  //   return axios.post("/messenger", message);
-  // },
 };

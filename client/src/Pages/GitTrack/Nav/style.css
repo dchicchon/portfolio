@@ -1,24 +1,29 @@
 #gittrack-nav {
   color: #85ceff;
-  height: 75px;
+  height: 25px;
+  padding: 25px;
   background: #0e1525;
 }
 
 .gittrack-logo {
   color: white;
-  width: 10%;
+  /* width: 10%; */
 }
 
 #nav-list {
-  padding: 0px;
+  padding: 0;
+  float: left;
+  margin: 0 auto;
+  /* margin-right: 25px; */
   display: flex;
+  list-style-type: none;
+  width: 75%;
   height: 100%;
   flex-direction: row;
+  justify-content: space-between;
   align-items: center;
 }
 
 .nav-link a {
   color: #85ceff;
 }
-
-

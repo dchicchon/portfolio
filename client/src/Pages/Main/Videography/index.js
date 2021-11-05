@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 import "./style.css";
 
 // React bootstrap
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+// import Container from "react-bootstrap/Container";
+// import Row from "react-bootstrap/Row";
+// import Col from "react-bootstrap/Col";
 
 // Components
 import Navbar from "../../../Components/Navbar";
@@ -31,18 +31,18 @@ const Videography = () => {
     <div>
       <Navbar />
       <div id="videography">
-        <Container>
-          <Row>
-            <Col className="m-5">
+        <div>
+          <div>
+            <div className="m-5">
               <h2 className="video-title" style={{ letterSpacing: "8px" }}>
                 Videography
               </h2>
-            </Col>
-          </Row>
-          <Row>
-            <Col className="video-margin">
+            </div>
+          </div>
+          <div>
+            <div className="video-margin">
               <h3 className="video-title">I do</h3>
-              <div style={{ display: 'flex', justifyContent: 'center' }}>
+              <div style={{ display: "flex", justifyContent: "center" }}>
                 <iframe
                   width={videoWidth}
                   height={videoHeight}
@@ -52,13 +52,12 @@ const Videography = () => {
                   allowFullScreen
                 ></iframe>
               </div>
-            </Col>
-          </Row>
-          <Row>
-            <Col className="video-margin">
+            </div>
+          </div>
+          <div>
+            <div className="video-margin">
               <h3 className="video-title">Olivia</h3>
-              <div style={{ display: 'flex', justifyContent: 'center' }}>
-
+              <div style={{ display: "flex", justifyContent: "center" }}>
                 <iframe
                   title="Olivia"
                   width={videoWidth}
@@ -69,13 +68,12 @@ const Videography = () => {
                   allowFullScreen
                 ></iframe>
               </div>
-            </Col>
-          </Row>
-          <Row>
-            <Col className="video-margin">
+            </div>
+          </div>
+          <div>
+            <div className="video-margin">
               <h3 className="video-title">Ray</h3>
-              <div style={{ display: 'flex', justifyContent: 'center' }}>
-
+              <div style={{ display: "flex", justifyContent: "center" }}>
                 <iframe
                   title="Ray"
                   width={videoWidth}
@@ -86,13 +84,12 @@ const Videography = () => {
                   allowFullScreen
                 ></iframe>
               </div>
-            </Col>
-          </Row>
-          <Row>
-            <Col className="video-margin">
+            </div>
+          </div>
+          <div>
+            <div className="video-margin">
               <h3 className="video-title">Ray 2</h3>
-              <div style={{ display: 'flex', justifyContent: 'center' }}>
-
+              <div style={{ display: "flex", justifyContent: "center" }}>
                 <iframe
                   title="Ray 2"
                   width={videoWidth}
@@ -103,9 +100,9 @@ const Videography = () => {
                   allowFullScreen
                 ></iframe>
               </div>
-            </Col>
-          </Row>
-        </Container>
+            </div>
+          </div>
+        </div>
       </div>
       <Footer color="rgb(30,48,74)" />
     </div>

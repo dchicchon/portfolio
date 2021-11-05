@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Dog from "../Icons/Dog";
 import Camera from "../Icons/Camera";
 import Brackets from "../Icons/Brackets";

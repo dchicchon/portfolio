@@ -3,9 +3,9 @@ import React, { useState, useEffect } from "react";
 import "./style.css";
 
 // Bootstrap stuff
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+// import Container from "react-bootstrap/Container";
+// import Row from "react-bootstrap/Row";
+// import Col from "react-bootstrap/Col";
 
 // https://firebase.google.com/docs/storage/web/list-files
 // https://stackoverflow.com/questions/37335102/how-to-get-a-list-of-all-files-in-cloud-storage-in-a-firebase-app
@@ -77,23 +77,23 @@ const Photography = () => {
   return (
     <div id="photography">
       <Navbar />
-      <Container>
-        <Row>
-          <Col className="m-5">
+      <div>
+        <div>
+          <div className="m-5">
             <h2
               id="photography-title"
               style={{ color: "white", letterSpacing: "8px" }}
             >
               Photography
             </h2>
-          </Col>
-        </Row>
-        <Row>
+          </div>
+        </div>
+        <div>
           {photos.map((photo, i) => (
             <Photo src={photo.src} key={i} />
           ))}
-        </Row>
-      </Container>
+        </div>
+      </div>
       <Footer color="#2f3d4a" />
     </div>
   );

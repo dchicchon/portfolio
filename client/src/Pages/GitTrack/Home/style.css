@@ -1,3 +1,8 @@
+#gittrack-page {
+  /* padding-top: 25px; */
+  /* background: rgb(28, 35, 51); */
+}
+
 #gittrack-home {
   background: rgb(28, 35, 51);
   color: #85ceff;
@@ -14,7 +19,6 @@
 .gittrack-list {
   list-style-type: none;
 }
-
 
 .panel-sm {
   width: 25%;
@@ -52,4 +56,4 @@
 }
 .panel-white {
   background: white;
-} 
+}

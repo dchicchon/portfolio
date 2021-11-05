@@ -1,0 +1,9 @@
+#gameOverModal {
+    position: absolute;
+    transform: translate(50%, -216%);
+    background: #2a3846;
+    color: gold;
+    border: 1px solid gold;
+    padding: 1rem;
+  }
+  
