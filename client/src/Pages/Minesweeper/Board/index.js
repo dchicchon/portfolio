@@ -80,7 +80,7 @@ const Board = (props) => {
     return true;
   };
 
-  return <div id="board">{renderedBoard}</div>;
+  return <div style={props.gameStatus === 0 ? {} : { pointerEvents: 'none' }} id="board">{renderedBoard}</div>;
 };
 
 export default Board;
