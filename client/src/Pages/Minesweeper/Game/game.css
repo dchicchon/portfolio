@@ -8,3 +8,9 @@
   padding-top: 25px;
   margin: 0 auto;
 }
+@media (max-width: 600px) {
+  #main-game {
+    margin: 0;
+    width: 100%;
+  }
+}

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom'
 import "./mainmenu.css";
 const MainMenu = (props) => {
   return (
@@ -12,6 +13,11 @@ const MainMenu = (props) => {
           }}
         >
           Start Game
+        </button>
+        <button
+          className='button'
+        >
+          <Link to='/code' style={{ color: 'gold' }}>Back to Code</Link>
         </button>
       </div>
     </div>
