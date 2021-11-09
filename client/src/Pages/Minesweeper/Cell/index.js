@@ -94,7 +94,11 @@ const Cell = (props) => {
         props.endGame(true);
       }
 
-      setType(mineNum);
+      if (mineNum === 0) {
+        setType("");
+      } else {
+        setType(mineNum);
+      }
     }
     setChecked(true); // this will re-render the cell
   };

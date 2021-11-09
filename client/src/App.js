@@ -64,15 +64,17 @@ class App extends Component {
               path={ROUTES.GITTRACK_SUPPORT}
               component={GitTrack_Support}
             />
+
             <Route
               exact
-<<<<<<< HEAD
-              path={ROUTES.MINESWEEPER_HOME}
-              component={Minesweeper}
-=======
               path={ROUTES.GITTRACK_DOCS}
               component={GitTrack_Docs}
->>>>>>> d4d74782cf96e176ef58f1ec6176c24980e903a7
+            />
+
+            <Route
+              exact
+              path={ROUTES.MINESWEEPER_HOME}
+              component={Minesweeper}
             />
             <Route component={Error} />
             {/* <Route exact path={ROUTES.BOARD} component={Board} /> */}
