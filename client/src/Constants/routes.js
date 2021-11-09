@@ -18,7 +18,11 @@ export const GITTRACK_HOME = "/GitTrack";
 export const GITTRACK_PRIVACY = "/GitTrack/privacy";
 export const GITTRACK_TERMS = "/GitTrack/terms";
 export const GITTRACK_SUPPORT = "/GitTrack/support";
+export const GITTRACK_DOCS = "/GitTrack/docs";
 
 // Minesweeper
 export const MINESWEEPER_HOME = "/minesweeper";
-export const GITTRACK_DOCS = "/GitTrack/docs";
+
+
+// Topo
+export const TOPO = '/topo'

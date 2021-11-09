@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import * as ROUTES from "./Constants/routes";
 // import "bootstrap/dist/css/bootstrap.min.css";
-import axios from "axios";
 import "./App.css";
 
 // Pages
@@ -24,11 +23,11 @@ import { Support as GitTrack_Support } from "./Pages/GitTrack/Support";
 import { Docs as GitTrack_Docs } from "./Pages/GitTrack/Docs";
 
 import { Minesweeper } from "./Pages/Minesweeper";
+
+import { Topo } from './Pages/Topo'
+
 import { Error } from "./Pages/Error";
 // https://medium.com/google-cloud/tracking-site-visits-on-react-app-hosted-in-google-cloud-using-google-analytics-f49c2411d398
-
-axios.defaults.baseURL =
-  "https://us-central1-react-portfolio-f7e64.cloudfunctions.net/api";
 
 class App extends Component {
   render() {
@@ -75,6 +74,12 @@ class App extends Component {
               exact
               path={ROUTES.MINESWEEPER_HOME}
               component={Minesweeper}
+            />
+            <Route
+              exact
+              path={ROUTES.TOPO}
+              component={Topo}
+
             />
             <Route component={Error} />
             {/* <Route exact path={ROUTES.BOARD} component={Board} /> */}

@@ -1,0 +1,20 @@
+#main {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.map-container {
+    height: 100%;
+    width: 100%;
+}
+
+/* #box {
+    position: absolute;
+    user-select: none;
+    top: 35%;
+    left: 40%;
+    height: 400px;
+    width: 400px;
+    border: 1px solid white;
+} */
