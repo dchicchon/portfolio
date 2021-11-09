@@ -100,6 +100,10 @@ const Code = () => {
               </p>
             </div>
             <div className="code-project-link">
+              <Link to="/topo">Topo</Link>
+              <p>A map generated with mapbox with styling options to produce and artistic topographic map</p>
+            </div>
+            <div className="code-project-link">
               <Link to="/minesweeper">Minesweeper</Link>
               <p>My version of minesweeper made in React</p>
             </div>
