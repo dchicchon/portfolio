@@ -19,9 +19,41 @@
 }
 
 .card-width {
-    width: 50%
+    width: 50%;
 }
 
+.review-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;
+}
+
+.review-card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid grey;
+    padding: 10px;
+    margin: 5px auto;
+    border-radius: 10px;
+}
+
+.review-title {
+    display: flex;
+    justify-content: space-around;
+}
+
+.review-text {
+    text-align: center;
+}
+
+.container {
+    margin: 0 auto;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 @media only screen and (max-width: 600px) {
     .subheading {
@@ -29,8 +61,6 @@
         padding: 0 1rem;
     }
     .card-width {
-        width: 75%
+        width: 75%;
     }
-    
 }
-  

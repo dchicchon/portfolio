@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Link } from "react-router-dom";
 
 import "./style.css";
@@ -24,8 +24,58 @@ const Logo = (props) => {
 
 // consider adding hamburger menu
 export const Nav = () => {
+  const navRef = useRef(null)
+
+  const toggleNav = (e) => {
+
+    // if (navRef.current.style.left.length === 0) {
+    // navRef.current.style.left = '-10rem'
+    // }
+
+    if (navRef.current.style.left === '0rem') {
+      navRef.current.style.left = '-9rem'
+    } else {
+      navRef.current.style.left = '0rem'
+    }
+  }
+
   return (
     <div id="gittrack-nav">
+      <div ref={navRef} id='gittrack-nav-mobile'>
+        <ul className="mobile-nav-list">
+          <li className="nav-link">
+            {/* image here */}
+            <div style={{ height: '50px', width: '50px', position: 'relative' }}>
+              <Logo />
+            </div>
+          </li>
+          <li className="nav-link">
+            <Link to="/GitTrack">Home</Link>
+          </li>
+          <li className="nav-link">
+            <Link to="/GitTrack/docs">Docs</Link>
+          </li>
+          <li className="nav-link">
+            <Link to="/GitTrack/terms">Terms</Link>
+          </li>
+          <li className="nav-link">
+            <Link to="/GitTrack/privacy">Privacy</Link>
+          </li>
+          <li className="nav-link">
+            <Link to="/GitTrack/support">Support</Link>
+          </li>
+          <li className='nav-link'>
+            <a target='_blank' rel='noopener noreferrer' href='https://github.com/dchicchon/gittrack-slack-app'>
+              Github
+            </a>
+          </li>
+          <li className="nav-link">
+            <Link to="/code">Return to Code</Link>
+          </li>
+        </ul>
+        <span onClick={toggleNav} className='gittrack-menu-icon'>{'>'}</span>
+      </div>
+
       <ul id="nav-list">
         <li className="nav-link">
           {/* image here */}

@@ -6,27 +6,68 @@
 }
 
 .gittrack-logo {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
 }
 
 #nav-list {
-  padding: 0;
-  float: left;
-  margin: 0 auto;
-  /* margin-right: 25px; */
   display: flex;
   list-style-type: none;
+  padding: 0;
+  margin: 0;
   width: 75%;
   height: 100%;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 
+#gittrack-nav-mobile {
+  display: none;
+}
 .nav-link a {
   color: #85ceff;
+}
+
+@media screen and (max-width: 600px) {
+  #nav-list {
+    display: none;
+  }
+
+  #gittrack-nav-mobile {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: -9rem;
+    height: 100%;
+    transition: left 0.5s;
+  }
+
+  .mobile-nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    background-color: rgb(28, 35, 51);
+    list-style-type: none;
+    padding: 25px 0;
+    margin: 0;
+    width: 9rem;
+    height: 100%;
+    align-items: center;
+  }
+
+  .gittrack-menu-icon {
+    display: block;
+    font-size: 25px;
+    cursor: pointer;
+    height: fit-content;
+    width: fit-content;
+    padding: 10px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-color: rgb(28, 35, 51);
+    text-align: center;
+  }
 }

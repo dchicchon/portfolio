@@ -1,13 +1,6 @@
-#gittrack-page {
-  /* padding-top: 25px; */
-  /* background: rgb(28, 35, 51); */
-}
-
 #gittrack-home {
   background: rgb(28, 35, 51);
   color: #85ceff;
-  min-height: 85vh;
-
 }
 
 #gittrack-home * {
@@ -18,44 +11,26 @@
   display: flex;
 }
 
+.panel {
+  flex: 1 1 0px;
+}
+
+.panel-text {
+  padding: 5% 0;
+}
+
+.panel-img-lg {
+  width: 100%;
+}
+.panel-img-sm {
+  width: 50%;
+}
+
 .gittrack-list {
   list-style-type: none;
+  padding: 0;
 }
 
-.panel-sm {
-  width: 25%;
-}
-.panel-md-sm {
-  width: 37.5%;
-}
-.panel-md {
-  width: 50%;
-}
-.panel-lg {
-  width: 75%;
-}
-.panel-full {
-  width: 100%;
-}
-.panels section {
-  padding: 10%;
-}
-
-.panel-image {
-  padding: 0px !important;
-}
-.panel-image-sm {
-  width: 25%;
-}
-.panel-image-md {
-  width: 50%;
-}
-.panel-image-lg {
-  width: 75%;
-}
-.panel-image-full {
-  width: 100%;
-}
 .panel-white {
   background: white;
 }
@@ -63,8 +38,5 @@
 @media only screen and (max-width: 1400px) {
   .panels {
     flex-direction: column;
-  }
-  .panel {
-    width: 100%;
   }
 }
