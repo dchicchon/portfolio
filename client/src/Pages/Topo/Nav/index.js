@@ -87,7 +87,7 @@ const Nav = (props) => {
         var download = document.createElement('a')
         download.href = img
         download.target = '_blank'
-        download.download = 'map'
+        download.download = 'map.png'
         let evt = document.createEvent('MouseEvents')
         evt.initMouseEvent('click', true, true, window, 1, 0, 0, 0, 0,
             false, false, false, false, 0, null);
