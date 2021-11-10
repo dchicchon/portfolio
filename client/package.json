@@ -16,6 +16,7 @@
   },
   "scripts": {
     "start": "set PORT=3005 && react-scripts start",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "update-deps": "npx npm-check-updates -u && npm install",
@@ -26,14 +27,16 @@
   },
   "browserslist": {
     "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
+      "defaults",
+      "not ie 11"
     ],
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "serve": "^13.0.2"
   }
 }
