@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import Nav from './Nav'
 import "./Topo.css";
-import mapboxgl from "mapbox-gl";
+import mapboxgl from "!mapbox-gl";
 mapboxgl.accessToken =
   "pk.eyJ1IjoiZGNoaWNjaG9uIiwiYSI6ImNrdnNxd3Y4MTJrc2MydnVwdWp5aTN3NGoifQ.dN5x__Dpb7bqNisu6n-FFA";
 
