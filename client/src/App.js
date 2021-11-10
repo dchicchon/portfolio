@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import * as ROUTES from "./Constants/routes";
 // import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
@@ -34,57 +34,55 @@ class App extends Component {
     return (
       <div className="App">
         <Router>
-          <Switch>
-            <Route exact path={ROUTES.HOME} component={Home} />
-            <Route exact path={ROUTES.CODE} component={Code} />
-            <Route exact path={ROUTES.PHOTOGRAPHY} component={Photography} />
-            <Route exact path={ROUTES.VIDEOGRAPHY} component={Videography} />
-            <Route exact path={ROUTES.POLUS} component={Polus} />
-            <Route exact path={ROUTES.POLUS_ABOUT} component={About} />
-            <Route exact path={ROUTES.POLUS_PRIVACY} component={Privacy} />
-            <Route exact path={ROUTES.POLUS_TERMS} component={Terms} />
+          <Routes>
+            <Route path={ROUTES.HOME} element={<Home />} />
+            <Route path={ROUTES.CODE} element={<Code />} />
+            <Route path={ROUTES.PHOTOGRAPHY} element={<Photography />} />
+            <Route path={ROUTES.VIDEOGRAPHY} element={<Videography />} />
+            <Route path={ROUTES.POLUS} element={<Polus />} />
+            <Route path={ROUTES.POLUS_ABOUT} element={<About />} />
+            <Route path={ROUTES.POLUS_PRIVACY} element={<Privacy />} />
+            <Route path={ROUTES.POLUS_TERMS} element={<Terms />} />
             <Route
-              exact
               path={ROUTES.GITTRACK_HOME}
-              component={GitTrack_Home}
+              element={<GitTrack_Home />}
             />
             <Route
-              exact
+
               path={ROUTES.GITTRACK_PRIVACY}
-              component={GitTrack_Privacy}
+              element={<GitTrack_Privacy />}
             />
             <Route
-              exact
+
               path={ROUTES.GITTRACK_TERMS}
-              component={GitTrack_Terms}
+              element={<GitTrack_Terms />}
             />
             <Route
-              exact
+
               path={ROUTES.GITTRACK_SUPPORT}
-              component={GitTrack_Support}
+              element={<GitTrack_Support />}
             />
 
             <Route
-              exact
+
               path={ROUTES.GITTRACK_DOCS}
-              component={GitTrack_Docs}
+              element={<GitTrack_Docs />}
             />
 
             <Route
-              exact
+
               path={ROUTES.MINESWEEPER_HOME}
-              component={Minesweeper}
+              element={<Minesweeper />}
             />
             <Route
-              exact
               path={ROUTES.TOPO}
-              component={Topo}
+              element={<Topo />}
 
             />
-            <Route component={Error} />
-            {/* <Route exact path={ROUTES.BOARD} component={Board} /> */}
-            {/* <Route exact path={ROUTES.MESSENGER} component={Messenger} /> */}
-          </Switch>
+            <Route path='*' element={<Error />} />
+            {/* <Route  path={ROUTES.BOARD} component={Board} /> */}
+            {/* <Route  path={ROUTES.MESSENGER} component={Messenger} /> */}
+          </Routes>
         </Router>
       </div>
     );
