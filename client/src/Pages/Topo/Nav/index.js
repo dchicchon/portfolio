@@ -80,14 +80,30 @@ const Nav = (props) => {
         }
     }
 
+    const convertURIToImageData = (URI) => {
+        return new Promise((resolve, reject) => {
+            if (URI === null) return reject();
+            let image = new Image()
+            let canvas = document.createElement('canvas')
+            let context = canvas.getContext('2d')
+            image.addEventListener('load', function () {
+                canvas.width = image.width;
+                canvas.height = image.height;
+                context.drawImage(image, 0, 0, canvas.width, canvas.height)
+                resolve(context.getImageData(0, 0, canvas.width, canvas.height))
+            }, false)
+            image.src = URI
+        })
+    }
+
     const takePhoto = (e) => {
         // access map and get the dataurl
-        let img = props.map.getCanvas().toDataURL();
-        console.log(img);
+        let dataURL = props.map.getCanvas().toDataURL();
+        console.log(dataURL)
         var download = document.createElement('a')
-        download.href = img
-        download.target = '_blank'
         download.download = 'map.png'
+        download.href = dataURL
+        download.target = '_blank'
         let evt = document.createEvent('MouseEvents')
         evt.initMouseEvent('click', true, true, window, 1, 0, 0, 0, 0,
             false, false, false, false, 0, null);
@@ -105,7 +121,8 @@ const Nav = (props) => {
                     <li ref={docs} id='docs-container'>
                         <p>Welcome to Topo! This is a map where you can create photos of
                             contours on maps and edit the contour line colors and land color.
-                            Try editing this map using the options button below!</p>
+                            Try editing this map using the options button below!.</p>
+                            <p>If using mobile, check out the file in the Downloads and change the file to a '.png'</p>
                     </li>
                     <li onClick={toggleOptions}>Options</li>
                     <li ref={options} id='option-container'>
