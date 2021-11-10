@@ -3,7 +3,7 @@ import Nav from './Nav'
 import "./Topo.css";
 import mapboxgl from "mapbox-gl";
 mapboxgl.accessToken =
-  "pk.eyJ1IjoiZGNoaWNjaG9uIiwiYSI6ImNrMm5saGJsczB0emYzYm05dzV4c2lnMDMifQ.mHFtuW251o5kz5nKxKvc-A";
+  "pk.eyJ1IjoiZGNoaWNjaG9uIiwiYSI6ImNrdnNxd3Y4MTJrc2MydnVwdWp5aTN3NGoifQ.dN5x__Dpb7bqNisu6n-FFA";
 
 export const Topo = () => {
   const mapContainer = useRef(null);
