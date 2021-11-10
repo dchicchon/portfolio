@@ -122,7 +122,7 @@ const Nav = (props) => {
                         <p>Welcome to Topo! This is a map where you can create photos of
                             contours on maps and edit the contour line colors and land color.
                             Try editing this map using the options button below!.</p>
-                            <p>If using mobile, check out the file in the Downloads and change the file to a '.png'</p>
+                            <p>If using mobile, check out the file in Downloads and change the file to a '.png'</p>
                     </li>
                     <li onClick={toggleOptions}>Options</li>
                     <li ref={options} id='option-container'>
