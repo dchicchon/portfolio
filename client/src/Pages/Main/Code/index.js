@@ -104,7 +104,7 @@ const Code = () => {
               <p>A map generated with mapbox with styling options to produce and artistic topographic map</p>
             </div>
             <div className="code-project-link">
-              <Link to="/minesweeper">Minesweeper</Link>
+              <a href='https://minesweeper-indol.vercel.app/'>Minesweeper</a>
               <p>My version of minesweeper made in React</p>
             </div>
 

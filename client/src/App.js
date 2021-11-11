@@ -22,8 +22,6 @@ import { Terms as GitTrack_Terms } from "./Pages/GitTrack/Terms";
 import { Support as GitTrack_Support } from "./Pages/GitTrack/Support";
 import { Docs as GitTrack_Docs } from "./Pages/GitTrack/Docs";
 
-import { Minesweeper } from "./Pages/Minesweeper";
-
 import { Topo } from './Pages/Topo'
 
 import { Error } from "./Pages/Error";
@@ -69,11 +67,6 @@ class App extends Component {
               element={<GitTrack_Docs />}
             />
 
-            <Route
-
-              path={ROUTES.MINESWEEPER_HOME}
-              element={<Minesweeper />}
-            />
             <Route
               path={ROUTES.TOPO}
               element={<Topo />}
