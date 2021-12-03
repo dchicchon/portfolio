@@ -9,9 +9,9 @@ import pic from "../../../Assets/images/dannypic.jpg";
 
 const Code = () => {
   const [width, setWidth] = useState(0);
+  document.title = "Code";
 
   useEffect(() => {
-    document.title = "Code";
     setWidth(window.innerWidth);
   }, [width]);
   return (
@@ -104,10 +104,9 @@ const Code = () => {
               <p>A map generated with mapbox with styling options to produce and artistic topographic map</p>
             </div>
             <div className="code-project-link">
-              <a href='https://minesweeper-indol.vercel.app/'>Minesweeper</a>
+              <a href='https://minesweeper-ihwxmhkli-dchicchon.vercel.app/'>Minesweeper</a>
               <p>My version of minesweeper made in React</p>
             </div>
-
             <div className="code-project-link">
               <a
                 href="https://chatty-app-chicchon.web.app/"

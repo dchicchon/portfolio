@@ -46,12 +46,10 @@ class App extends Component {
               element={<GitTrack_Home />}
             />
             <Route
-
               path={ROUTES.GITTRACK_PRIVACY}
               element={<GitTrack_Privacy />}
             />
             <Route
-
               path={ROUTES.GITTRACK_TERMS}
               element={<GitTrack_Terms />}
             />
