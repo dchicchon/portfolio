@@ -108,6 +108,12 @@ const Code = () => {
               <p>My version of minesweeper made in React</p>
             </div>
             <div className="code-project-link">
+              <a href="https://colorfy-phi.vercel.app/">Colorfy</a>
+              <p>
+                A website to create color palettes using React and Next
+              </p>
+            </div>
+            <div className="code-project-link">
               <a
                 href="https://chatty-app-chicchon.web.app/"
                 target="_blank"
