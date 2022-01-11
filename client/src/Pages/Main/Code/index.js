@@ -93,8 +93,7 @@ const Code = () => {
               </p>
             </div>
             <div className="code-project-link">
-                <Link to="https://soda-machine-dchicchon.herokuapp.com/">Soda Machine</Link>
-                <Link to="https://soda-machine-server-dchicchon.herokuapp.com/">Soda Machine API Interface</Link>
+                <Link to="https://github.com/dchicchon/colaCo">Soda Machine</Link>
                 <p>A Full Stack application built with React, Express, SQL, and AWS</p>
             </div>
             <div className="code-project-link">
