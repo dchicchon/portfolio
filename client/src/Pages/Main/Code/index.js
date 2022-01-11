@@ -93,6 +93,11 @@ const Code = () => {
               </p>
             </div>
             <div className="code-project-link">
+                <Link to="https://soda-machine-dchicchon.herokuapp.com/">Soda Machine</Link>
+                <Link to="https://soda-machine-server-dchicchon.herokuapp.com/">Soda Machine API Interface</Link>
+                <p>A Full Stack application built with React, Express, SQL, and AWS</p>
+            </div>
+            <div className="code-project-link">
               <Link to="/GitTrack">GitTrack</Link>
               <p>
                 A slack application to keep track of the Github contributions in
