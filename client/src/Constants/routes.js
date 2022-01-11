@@ -5,7 +5,7 @@ export const VIDEOGRAPHY = "/videography";
 
 // Code
 export const POLUS = "/polus";
-export const MESSENGER = "/code/messenger";
+// export const MESSENGER = "/code/messenger";
 export const BOARD = "/code/board";
 
 // Polus

@@ -93,7 +93,7 @@ const Code = () => {
               </p>
             </div>
             <div className="code-project-link">
-                <Link to="https://github.com/dchicchon/colaCo">Soda Machine</Link>
+                <a href="https://github.com/dchicchon/colaCo">Soda Machine</a>
                 <p>A Full Stack application built with React, Express, SQL, and AWS</p>
             </div>
             <div className="code-project-link">
