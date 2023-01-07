@@ -1,10 +1,8 @@
-import React, { Component, useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./style.css";
 
 const Navbar = () => {
-  // const [show, setShow] = useState("");
-  // const [scrollPos, setScrollPos] = useState(0);
 
   useEffect(() => {
     let prevScrollPos = window.pageYOffset;
@@ -32,21 +30,6 @@ const Navbar = () => {
             <li>
               <Link style={{ color: "white" }} to="/">
                 Home
-              </Link>
-            </li>
-            <li>
-              <Link style={{ color: "white" }} to="/code">
-                Code
-              </Link>
-            </li>
-            <li>
-              <Link style={{ color: "white" }} to="/photography">
-                Photography
-              </Link>
-            </li>
-            <li>
-              <Link style={{ color: "white" }} to="/videography">
-                Videography
               </Link>
             </li>
           </ul>

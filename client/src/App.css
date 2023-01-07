@@ -2,43 +2,22 @@
   font-family: "Lato", sans-serif;
 }
 
-@media only screen and (max-width: 400px) {
-  ::-webkit-scrollbar {
-    width: 0;
-  }
-
-  /* Track */
-  ::-webkit-scrollbar-track {
-    display: none;
-  }
-
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: none;
-  }
-
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: none;
-  }
-}
-
 /* width */
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   width: 7px;
-}
+} */
 
 /* Track */
-::-webkit-scrollbar-track {
+/* ::-webkit-scrollbar-track {
   display: none;
-}
+} */
 
 /* Handle */
-::-webkit-scrollbar-thumb {
+/* ::-webkit-scrollbar-thumb {
   background: rgb(173, 170, 170);
-}
+} */
 
 /* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
+/* ::-webkit-scrollbar-thumb:hover {
   background: #555;
-}
+} */

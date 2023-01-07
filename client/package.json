@@ -6,6 +6,7 @@
     "@react-three/fiber": "^7.0.18",
     "firebase": "^9.4.0",
     "mapbox-gl": "^2.6.0",
+    "p5": "^1.5.0",
     "react": "^17.0.2",
     "react-color": "^2.19.3",
     "react-dom": "^17.0.2",

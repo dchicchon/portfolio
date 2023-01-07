@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.css";
-import polusIcon from "../../../../Assets/images/polus_icon.png";
+import polusIcon from "../../../../assets/images/polus_icon.png";
 import {
   Link,
 } from "react-router-dom";

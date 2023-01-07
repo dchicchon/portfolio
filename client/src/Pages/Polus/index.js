@@ -2,9 +2,9 @@ import React, { useEffect } from "react";
 import {
   Link,
 } from "react-router-dom";
-import Clock from "./Components/Clock";
-import polusIcon from "../../Assets/images/polus_icon.png";
-import polusBackground from "../../Assets/images/mountain_range.png";
+import Clock from "./components/Clock";
+import polusIcon from "../../assets/images/polus_icon.png";
+import polusBackground from "../../assets/images/mountain_range.png";
 import "./style.css";
 
 let hideItems2 = () => {
