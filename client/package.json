@@ -3,17 +3,19 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@react-three/fiber": "^7.0.18",
     "firebase": "^9.4.0",
     "mapbox-gl": "^2.6.0",
     "p5": "^1.5.0",
     "react": "^17.0.2",
     "react-color": "^2.19.3",
     "react-dom": "^17.0.2",
-    "react-ga": "^3.3.0",
     "react-router-dom": "^6.0.2",
+<<<<<<< HEAD
     "react-scripts": "^4.0.3",
     "three": "^0.137.0"
+=======
+    "react-scripts": "^4.0.3"
+>>>>>>> cbecaf8 (remove unused packages)
   },
   "scripts": {
     "start": "set PORT=3005 && react-scripts start",
