@@ -1,0 +1,12 @@
+.guide {
+  padding: 1rem;
+}
+
+.guide ul {
+  display: flex;
+  gap: 5px;
+}
+
+.guide ul li {
+    font-size: 1.5rem;
+}

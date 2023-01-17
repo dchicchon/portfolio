@@ -1,0 +1,20 @@
+
+#sketch_container {
+  display: flex;
+  flex-grow: 2;
+  flex-wrap: wrap;
+}
+
+#home {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+/* Make sure that the sketch is centered */
+.sketch {
+  /* border: 1px solid white; */
+  flex: 25%;
+  /* width: 200px; */
+  /* height: 200px; */
+}

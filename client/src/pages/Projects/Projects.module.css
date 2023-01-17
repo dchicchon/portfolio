@@ -1,0 +1,16 @@
+#projects {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#project_list {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 2;
+}
+.project {
+  height: 100px;
+  width: 100px;
+  padding: 1rem;
+}
