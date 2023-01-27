@@ -1,29 +1,31 @@
 import Guide from '../../components/Guide/Guide'
 import { Link } from 'react-router-dom'
 import { projectMap } from '../../utils/projectRoutes'
-import { HOME, ABOUT, PROJECTS } from '../../utils/routes'
-import styles from './Projects.module.css'
+import { HOME, ABOUT, PROJECTS } from '../../utils/mainRoutes'
+import styles from './Projects.module.css';
+import appStyles from '../../App.module.css';
 
-const ProjectCard = ({ route }) => {
+const ProjectCard = ({ project }) => {
+    const { description } = projectMap[project];
+    const title = project[0].toUpperCase() + project.slice(1);
     return (
         <div className={styles.project}>
-            <Link to={route}>
-                <h2>{route}</h2>
+            <Link to={project}>
+                <h2>{title}</h2>
             </Link>
+            <p className={styles.project_description}>{description}</p>
         </div>
     )
 }
 
 const Projects = () => {
     return (
-        <div id={styles.projects}>
+        <div className={appStyles.main_page}>
             <Guide links={[HOME]} />
             <div id={styles.project_list}>
-                {Object.keys(projectMap).map((route, i) => (
-                    <ProjectCard key={i} route={route} />
+                {Object.keys(projectMap).map((project, i) => (
+                    <ProjectCard key={i} project={project} />
                 ))}
-                {/* <Project link={POLUS} /> */}
-                {/* <Project link={LINEGRID} /> */}
             </div>
             <Guide links={[ABOUT, PROJECTS]} startRight />
         </div >

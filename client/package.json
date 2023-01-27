@@ -1,7 +1,6 @@
 {
   "name": "client",
   "version": "0.1.0",
-  "private": true,
   "type": "module",
   "dependencies": {
     "@types/react": "^18.0.26",
@@ -25,6 +24,8 @@
   "scripts": {
     "start": "vite --host",
     "loadProjects": "node ./utils",
+    "loadProjects:verbose": "node ./utils --verbose",
+    "loadProjects:installDeps": "node ./utils --installDeps",
     "build": "vite build",
     "serve": "vite preview",
     "update-deps": "npx npm-check-updates -u && npm install",
@@ -50,6 +51,6 @@
     "serve": "^13.0.2",
     "vite": "^4.0.4",
     "vite-plugin-svgr": "^2.4.0",
-    "vite-tsconfig-paths": "^4.0.3"
+    "vite-tsconfig-paths": "^4.0.5"
   }
 }

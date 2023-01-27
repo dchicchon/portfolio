@@ -1,7 +1,8 @@
 import React, { useEffect, useMemo } from 'react';
 import p5 from 'p5'
-import { HOME, ABOUT, PROJECTS } from '../../utils/routes';
+import { HOME, ABOUT, PROJECTS } from '../../utils/mainRoutes';
 import styles from './Home.module.css'
+import appStyles from '../../App.module.css';
 import Guide from '../../components/Guide/Guide';
 
 const colors = {
@@ -47,11 +48,12 @@ const Home = () => {
         const sketchDiv = document.getElementById(sketchId);
         const { width, height } = sketchDiv.getBoundingClientRect();
 
-        const gridNum = 5;
+        const gridNum = 5; // 5
+        const decimalPlace = 4; // 4
         const gridConst = isMobile ? gridNum * 3 : gridNum * 9;
         const iterConst = 5;
         const iterSketch = isMobile ? iterConst * 30 : iterConst * 50;
-        const iterPause = isMobile ? iterConst * 12 : iterConst * 12;
+        const iterPause = isMobile ? iterConst * 12 : iterConst * 30;
         const numAcross = s.floor(width / gridConst)
         const numDown = s.floor(height / gridConst)
         const strokeWeight = isMobile ? 3 : 7;
@@ -96,8 +98,8 @@ const Home = () => {
                 let outputY = s.noise(inputY);
 
                 // we randomly pick out 4 to use the seed
-                let addX = parseInt(outputX.toString()[4]);
-                let addY = parseInt(outputY.toString()[4]);
+                let addX = parseInt(outputX.toString()[decimalPlace]);
+                let addY = parseInt(outputY.toString()[decimalPlace]);
 
                 addX = s.floor(s.map(addX, 0, 9, -0.5, 1.5));
                 addY = s.floor(s.map(addY, 0, 9, -0.5, 1.5));
@@ -136,10 +138,8 @@ const Home = () => {
         }
     }
 
-
-
     return (
-        <div id={styles.home}>
+        <div className={appStyles.main_page}>
             <Guide links={[HOME]} />
             <div id={styles.sketch_container}>
                 {sketchArr.map((i) =>

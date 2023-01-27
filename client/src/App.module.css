@@ -1,0 +1,16 @@
+/* App Specific styles to apply across all things */
+.main_page {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: rgb(31, 33, 34);
+}
+
+.flex_end {
+  justify-content: flex-end;
+}
+
+.flex_start {
+  justify-content: flex-start;
+}

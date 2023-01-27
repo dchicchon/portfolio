@@ -1,16 +1,35 @@
 #projects {
   height: 100%;
+  background: rgb(31, 33, 34);
   display: flex;
   flex-direction: column;
 }
 
 #project_list {
   display: flex;
+  gap: 25px;
+  padding: 1rem;
   flex-direction: column;
+  align-items: center;
   flex-grow: 2;
 }
+
 .project {
   height: 100px;
-  width: 100px;
+  width: 25%;
+  padding: 1rem;
+  border: 3px solid white;
+  box-shadow: 5px 5px 0px 3px white;
+  border-radius: 10px;
+  transition: box-shadow 0.2s;
+
+}
+
+.project:hover {
+  box-shadow: 1px 1px 0px 3px white;
+  /* box-shadow: 1px 1px 0px 3px rgb(97, 218, 251); */
+}
+
+.project_description {
   padding: 1rem;
 }

@@ -28,12 +28,14 @@ const SadSVG = () => {
   );
 };
 
-export const Error = () => {
+const Error = ({ message }) => {
+
+  const errorMessage = message || "Oops! This page does not exist"
   return (
     <>
       {/* <Navbar /> */}
       <div className="errorPage">
-        <h2>Oops! This page does not exist</h2>
+        <h2>{errorMessage}</h2>
         <SadSVG />
 
         <Link to="/">
@@ -44,3 +46,5 @@ export const Error = () => {
     </>
   );
 };
+
+export default Error;

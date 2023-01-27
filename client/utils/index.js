@@ -7,111 +7,147 @@ import { execSync } from 'child_process'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const projectsPath = process.env.PROJECTS_DIR;
-const projectRoutesPath = path.join(__dirname, '..', 'src', 'utils', 'projectRoutes.js')
-const rootPackageJsonPath = path.join(__dirname, '..', 'package.json')
-const projectList = [];
+const projectRoutesDirPath = path.join(__dirname, '..', 'src', 'utils');
+const projectRoutesPath = path.join(__dirname, '..', 'src', 'utils', 'projectRoutes.jsx');
+const rootPackageJsonPath = path.join(__dirname, '..', 'package.json');
+// const sourcePath = path.join(__dirname, '..', 'src');
+// const projectList = [];
 const fileMap = {
     packageJson: 'package.json'
 }
+const runtimeOptions = process.argv.slice(2);
+const installDeps = runtimeOptions.includes('--installDeps');
+const verbose = runtimeOptions.includes('--verbose');
 // don't download things that are already in our root json. We reserve this for `npm
 const rootPackageJson = JSON.parse(fs.readFileSync(rootPackageJsonPath));
 const { dependencies: rootDependencies } = rootPackageJson;
 const depFilterList = ['react', 'react-dom', ...Object.keys(rootDependencies)]
 
-const quote = (text) => `"${text}"`
-const parseFile = (file, projectName, projectPath) => {
-    if (file !== fileMap.packageJson) return
-    const packageJsonPath = path.join(projectPath, file);
-    const packageJson = JSON.parse(fs.readFileSync(packageJsonPath))
-    if (!packageJson.reactProject || !packageJson.reactProject.ready) return;
+const isObject = (val) => {
+    return typeof val === 'object' && !Array.isArray(val) && val !== null
+}
 
-    // Lets do easier way first then figure it out later
-    // lets run an npm install in the directory to refresh
-    const options = {
-        encoding: 'utf-8'
+class Logger {
+    constructor(props) {
+        this.verbose = props.verbose;
     }
-    console.log({ projectPath, projectName })
-    console.log(chalk.yellow(`updating project:${projectName} dependencies`))
-    const installOutput = execSync(`cd ${projectPath} && npm i`, options);
-    // console.log(chalk.cyanBright(installOutput))
+    info(message) {
+        if (isObject(message)) {
+            return console.log(message);
+        }
+        console.log(chalk.yellow(message));
+    }
 
-    // Download all deps to this portfolio directory
+    log(message) {
+        if (this.verbose) {
+            if (isObject(message)) {
+                return console.log(message);
+            }
+            console.log(chalk.green(message));
+        }
+    }
+}
+
+const props = {
+    verbose
+}
+const loggy = new Logger(props)
+
+const quote = (text) => `"${text}"`
+
+const installDependencies = (projectPath, packageJson) => {
+    const execSyncOptions = { encoding: 'utf-8' };
+    const installOutput = execSync(`cd ${projectPath} && npm i`, execSyncOptions);
+    loggy.log(installOutput)
     const { dependencies, devDependencies } = packageJson;
-
-    // Install dependencies
     const filteredDeps = Object.keys(dependencies).filter((dep => !depFilterList.includes(dep)))
     const installDeps = filteredDeps.join(' ');
     const dependenciesInstall = execSync(`npm i ${installDeps}`);
-    // console.log(chalk.green(dependenciesInstall))
-
-    // Install dev dependencies
+    loggy.log(dependenciesInstall);
     const filteredDevDeps = Object.keys(devDependencies).filter((dep => !depFilterList.includes(dep)))
     const installDevDeps = filteredDevDeps.join(' ');
     const devDependenciesInstall = execSync(`npm i ${installDevDeps}`);
-    // console.log(chalk.green(devDependenciesInstall))
-
-    const { entry, name, description } = packageJson.reactProject;
-
-    // we should make a full url path to this package
-    // we should resolve to the package.json entry
-    const entryPath = path.resolve(projectPath, entry);
-    const insertProject = {
-        entry: quote(entryPath),
-        name: `${projectName}`,
-        export: name || (projectName[0].toUpperCase() + projectName.slice(1)).replace('-', ''),
-        description: quote(description),
-    }
-    projectList.push(insertProject);
-
-    // then make sure that the project either
-    // 1. Uses the deps from it's directory,
-    // Somehow redirect all projects to use the node_modules
-    // from their directory?
-    // or
-    // 2. We install it's deps here in this project then build it
-    // maybe by using a npm install --no-save?
+    loggy.log(devDependenciesInstall);
 }
 
-// pass options like --converse or whatever to show install logs
-const loadProjects = () => {
-    console.log({ projectRoutesPath });
-    // read all files at projectDir
-    const projects = fs.readdirSync(projectsPath)
+/**
+ * 
+ * @param {string} file Name of file being parsed
+ * @param {string} projectName  Project name
+ * @param {Path} projectPath Path to project directory
+ * @returns 
+ */
+const parseFile = async (file, projectName, projectPath) => {
+    const packageJsonPath = path.join(projectPath, file);
+
+    const packageJsonFile = await fs.promises.readFile(packageJsonPath);
+    const packageJson = JSON.parse(packageJsonFile)
+    if (!packageJson.reactProject || !packageJson.reactProject.ready) return;
+
+    if (installDeps) {
+        loggy.log(`updating project:${projectName} dependencies`);
+        installDependencies(projectName, projectPath, packageJson)
+    }
+
+    const { description } = packageJson;
+    const { entry } = packageJson.reactProject;
+
+    const entryPath = path.resolve(projectPath, entry);
+    const relativeRoute = path.relative(projectRoutesDirPath, entryPath)
+    const insertProject = {
+        entry: quote(relativeRoute),
+        name: projectName,
+        description: quote(description),
+    }
+    return insertProject;
+}
+
+const parseProjects = async (projects) => {
+    const promiseList = [];
     projects.forEach(projectName => {
-        // console.log(projectName);
         const projectPath = path.join(projectsPath, projectName);
         const isDir = fs.lstatSync(projectPath).isDirectory();
         try {
-            if (isDir) {
-                const projectFiles = fs.readdirSync(projectPath);
-                projectFiles.forEach((file) => parseFile(file, projectName, projectPath))
-            }
+            if (!isDir) return;
+            const projectFiles = fs.readdirSync(projectPath);
+            const packageJson = projectFiles.find(p => p === fileMap.packageJson);
+            if (!packageJson) return;
+            const promise = parseFile(packageJson, projectName, projectPath)
+            promiseList.push(promise);
         } catch (err) {
             console.log(err)
             console.log(chalk.yellow(`Skippping project: ${projectName}`))
         }
     })
+    const promiseResults = await Promise.allSettled(promiseList);
+    const projectList = promiseResults.filter(result => result.value).map(result => result.value);
+    return projectList
+}
 
-    console.log({ projectList })
+const lazyImport = (projectList) => {
     const lines = []
-    projectList.forEach((project => {
-        lines.push(`import ${project.export} from ${project.entry};`);
-    }))
-
-    // const projectNames = projectList.map((p) => p.name).join(',')
     lines.push('export const projectMap = {');
     projectList.forEach((p) => {
-        lines.push(`${quote(p.name)}:{
-        export: ${p.export},
-        description: ${p.description}
-    },`)
+        lines.push(`
+        ${quote(p.name)}:{
+            export: () => import(${p.entry}),
+            description: ${p.description}
+        },`)
 
     })
     lines.push('};')
     const content = lines.join('\n')
-
     fs.writeFileSync(projectRoutesPath, content)
+}
 
+const loadProjects = async () => {
+    loggy.info('Loading Projects...')
+    // read all files at projectDir
+    const projects = await fs.promises.readdir(projectsPath)
+    const projectList = await parseProjects(projects);
+    loggy.info('Final Results');
+    loggy.info({ projectList })
+    lazyImport(projectList)
 }
 
 loadProjects();

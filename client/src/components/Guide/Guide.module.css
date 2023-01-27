@@ -4,7 +4,7 @@
 
 .guide ul {
   display: flex;
-  gap: 5px;
+  gap: 25px;
 }
 
 .guide ul li {
