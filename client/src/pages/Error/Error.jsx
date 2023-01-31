@@ -1,8 +1,9 @@
-// import React from "react";
-import { Link } from "react-router-dom";
-// import Navbar from "../../components/Navbar";
-// import Footer from "../../components/Footer";
+import { Link, useLocation, Navigate } from "react-router-dom";
 import "./Error.css";
+
+const redirectMap = {
+  '/polus': '/projects/polus-site'
+}
 
 const SadSVG = () => {
   return (
@@ -29,7 +30,10 @@ const SadSVG = () => {
 };
 
 const Error = ({ message }) => {
-
+  const location = useLocation();
+  if (Object.keys(redirectMap).includes(location.pathname)) {
+    return <Navigate to={{ pathname: redirectMap[location.pathname] }} />
+  }
   const errorMessage = message || "Oops! This page does not exist"
   return (
     <>

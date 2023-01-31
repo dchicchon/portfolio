@@ -4,6 +4,7 @@ import { HOME, ABOUT, PROJECTS } from '../../utils/mainRoutes';
 import styles from './Home.module.css'
 import appStyles from '../../App.module.css';
 import Guide from '../../components/Guide/Guide';
+import { classList } from '../../utils';
 
 const colors = {
     blue: 'rgb(97, 218, 251)',
@@ -17,7 +18,6 @@ const colorsList = Object.values(colors);
 
 
 const Home = () => {
-
     const sketchNum = 1;
     const sketchArr = useMemo(() => {
         const list = [];
@@ -29,7 +29,6 @@ const Home = () => {
     const isMobile = useMemo(() => {
         return window.innerWidth <= 768
     }, [])
-
     useEffect(() => {
         for (let i = 0; i < sketchArr.length; i++) {
             const _ = new p5((s) => sketch(s, i));
@@ -50,13 +49,13 @@ const Home = () => {
 
         const gridNum = 5; // 5
         const decimalPlace = 4; // 4
-        const gridConst = isMobile ? gridNum * 3 : gridNum * 9;
         const iterConst = 5;
-        const iterSketch = isMobile ? iterConst * 30 : iterConst * 50;
-        const iterPause = isMobile ? iterConst * 12 : iterConst * 30;
+        const gridConst = isMobile ? gridNum * 5 : gridNum * 9;
+        const iterSketch = isMobile ? iterConst * 50 : iterConst * 50;
+        const iterPause = isMobile ? iterConst * 20 : iterConst * 30;
         const numAcross = s.floor(width / gridConst)
         const numDown = s.floor(height / gridConst)
-        const strokeWeight = isMobile ? 3 : 7;
+        const strokeWeight = isMobile ? 4 : 7;
 
         const grid = []
         const initialPos = { x: s.floor(numAcross / 2), y: s.floor(numDown / 2) }
@@ -83,7 +82,6 @@ const Home = () => {
                 }
             }
             s.noiseSeed(seed);
-            s.background(31, 33, 34);
             // s.frameRate(25);
         }
 
@@ -125,12 +123,14 @@ const Home = () => {
                 iters++
             }
             else {
-                s.background(31, 33, 34);
                 currentPos = initialPos
                 currentColor = colorsList[s.floor(s.random(colorsList.length))]
                 iters = 0;
                 seed++;
                 s.noiseSeed(seed);
+                s.erase();
+                s.rect(0, 0, width, height);
+                s.noErase();
                 inputX = seed;
                 inputY = seed + 1;
             }
@@ -139,7 +139,7 @@ const Home = () => {
     }
 
     return (
-        <div className={appStyles.main_page}>
+        <div className={classList(appStyles.main_page, appStyles.background_dark)}>
             <Guide links={[HOME]} />
             <div id={styles.sketch_container}>
                 {sketchArr.map((i) =>

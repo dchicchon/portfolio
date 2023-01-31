@@ -4,7 +4,44 @@
   display: flex;
   flex-direction: column;
   height: 100%;
+}
+
+.border_blue {
+  border-color: #61dafb;
+}
+
+.gray {
   background: rgb(31, 33, 34);
+}
+
+.background_white {
+  background-color: white;
+}
+
+.background_gray {
+  background: #20232a;
+}
+
+.background_light {
+  background-color: #282c34;
+}
+
+.background_dark {
+  background: hsl(222, 14%, 10%);
+}
+.h1 {
+  font-size: xx-large;
+}
+
+.h2 {
+  font-size: x-large;
+}
+
+.h3 {
+  font-size: large;
+  letter-spacing: 3px;
+  line-height: 30px;
+
 }
 
 .flex_end {

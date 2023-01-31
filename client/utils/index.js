@@ -8,7 +8,8 @@ import { execSync } from 'child_process'
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const projectsPath = process.env.PROJECTS_DIR;
 const projectRoutesDirPath = path.join(__dirname, '..', 'src', 'utils');
-const projectRoutesPath = path.join(__dirname, '..', 'src', 'utils', 'projectRoutes.jsx');
+const projectRoutesPath = path.join(projectRoutesDirPath, 'projectRoutes.jsx');
+const projectPagePath = path.join(__dirname, '..', 'src', 'pages', 'Projects')
 const rootPackageJsonPath = path.join(__dirname, '..', 'package.json');
 // const sourcePath = path.join(__dirname, '..', 'src');
 // const projectList = [];
@@ -70,6 +71,13 @@ const installDependencies = (projectPath, packageJson) => {
     loggy.log(devDependenciesInstall);
 }
 
+const getIcon = (projectPath, icon) => {
+    if (!icon) return ""
+    const iconPath = path.resolve(projectPath, icon);
+    const relativeIconPath = path.relative(projectPagePath, iconPath);
+    return relativeIconPath
+}
+
 /**
  * 
  * @param {string} file Name of file being parsed
@@ -89,15 +97,19 @@ const parseFile = async (file, projectName, projectPath) => {
         installDependencies(projectName, projectPath, packageJson)
     }
 
-    const { description } = packageJson;
-    const { entry } = packageJson.reactProject;
+    const { description: mainDescription } = packageJson;
+    const { entry, title, description, icon } = packageJson.reactProject;
 
     const entryPath = path.resolve(projectPath, entry);
-    const relativeRoute = path.relative(projectRoutesDirPath, entryPath)
+    const relativeEntryPath = path.relative(projectRoutesDirPath, entryPath)
+
+
     const insertProject = {
-        entry: quote(relativeRoute),
+        entry: quote(relativeEntryPath),
+        title: title || projectName[0].toUpperCase() + projectName.slice(1),
         name: projectName,
-        description: quote(description),
+        description: description ? quote(description) : quote(mainDescription),
+        icon: getIcon(projectPath, icon)
     }
     return insertProject;
 }
@@ -120,7 +132,13 @@ const parseProjects = async (projects) => {
         }
     })
     const promiseResults = await Promise.allSettled(promiseList);
-    const projectList = promiseResults.filter(result => result.value).map(result => result.value);
+    const projectList = promiseResults.filter(result => {
+        if (result.value) {
+            return result.value
+        }
+        loggy.log("The below project was not valid for project parsing")
+        loggy.log(result)
+    }).map(result => result.value);
     return projectList
 }
 
@@ -130,8 +148,10 @@ const lazyImport = (projectList) => {
     projectList.forEach((p) => {
         lines.push(`
         ${quote(p.name)}:{
+            title: ${quote(p.title)},
+            description: ${p.description},
             export: () => import(${p.entry}),
-            description: ${p.description}
+            icon: ${quote(p.icon)}
         },`)
 
     })

@@ -4,7 +4,7 @@ import { lazy, Suspense } from "react";
 
 // Components
 import Loading from "./components/Loading/Loading";
-
+import Guide from './components/Guide/Guide'
 // pages
 import Home from "./pages/Home/Home.jsx";
 import { projectMap } from './utils/projectRoutes';
@@ -18,10 +18,17 @@ const Project = () => {
   if (!projectMap[loc.id]) return <Error message={`Project: ${loc.id} does not exist`} />
   const { export: componentexport } = projectMap[loc.id];
   const Component = lazy(componentexport);
+  console.log(Component);
   return (
-    <Suspense fallback={<Loading />}>
-      < Component />
-    </Suspense >
+    <>
+      <Guide links={[HOME]} />
+      <Suspense fallback={<Loading />}>
+        < Component />
+      </Suspense >
+      <Guide links={[ABOUT, PROJECTS]} startRight />
+    </>
+
+
   )
 }
 
@@ -38,6 +45,7 @@ const App = () => {
         <Route path={ERROR.to} element={<Error />} />
       </Routes>
     </Router>
+
   );
 }
 
