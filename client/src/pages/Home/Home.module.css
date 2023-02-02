@@ -1,5 +1,5 @@
 
-#sketch_container {
+.sketch_container {
   display: flex;
   flex-grow: 2;
   flex-wrap: wrap;

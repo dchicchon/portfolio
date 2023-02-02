@@ -31,6 +31,7 @@
 }
 .h1 {
   font-size: xx-large;
+
 }
 
 .h2 {
@@ -40,8 +41,10 @@
 .h3 {
   font-size: large;
   letter-spacing: 3px;
-  line-height: 30px;
+}
 
+.line_height_adjust {
+  line-height: 30px;
 }
 
 .flex_end {

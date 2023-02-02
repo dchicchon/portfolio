@@ -2,7 +2,10 @@ import { Link, useLocation, Navigate } from "react-router-dom";
 import "./Error.css";
 
 const redirectMap = {
-  '/polus': '/projects/polus-site'
+  '/polus': '/projects/polus-site',
+  '/polus/privacy': '/projects/polus-site/privacy',
+
+
 }
 
 const SadSVG = () => {

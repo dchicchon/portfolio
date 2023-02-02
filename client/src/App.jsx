@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Route, Routes, useParams } from "react-router-dom";
-import { HOME, ABOUT, PROJECTS, ERROR, LOADING } from "./utils/mainRoutes";
 import { lazy, Suspense } from "react";
+import { HOME, ABOUT, PROJECTS, ERROR, LOADING } from "./utils/mainRoutes";
 
 // Components
 import Loading from "./components/Loading/Loading";
@@ -12,7 +12,6 @@ import Error from "./pages/Error/Error";
 import Projects from "./pages/Projects/Projects";
 import About from "./pages/About/About";
 
-// We should show the project based on param ids?
 const Project = () => {
   const loc = useParams();
   if (!projectMap[loc.id]) return <Error message={`Project: ${loc.id} does not exist`} />

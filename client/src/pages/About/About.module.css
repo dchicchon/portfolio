@@ -2,6 +2,7 @@
   height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -10,8 +11,7 @@
   justify-content: space-between;
   margin-top: 2rem;
   gap: 10px;
-  flex-grow: 2;
-  width: 50%;
+  width: 70%;
 }
 
 .about_poweredby {
@@ -19,9 +19,9 @@
 }
 
 .my_image {
-  width: 50%;
-  height: 50%;
-  border-radius: 100px
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
 }
 
 .about_description {
@@ -46,6 +46,10 @@
   height: 48px;
   width: 48px;
   border-radius: 10px;
+  transition: background-color 0.2s;
+}
+.icon:hover {
+  background-color: #5b5a5a;
 }
 
 .icon_image {
@@ -71,5 +75,4 @@
     align-items: center;
     padding: 1rem;
   }
-  
 }
