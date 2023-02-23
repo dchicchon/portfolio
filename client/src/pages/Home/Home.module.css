@@ -1,8 +1,14 @@
 
 .sketch_container {
   display: flex;
+  flex-direction: column;
   flex-grow: 2;
   flex-wrap: wrap;
+}
+
+.pause_button {
+  width: 50px;
+  height: 25px;
 }
 
 #home {
