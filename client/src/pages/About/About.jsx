@@ -8,6 +8,7 @@ import youtubeIcon from '../../assets/images/youtube48.png'
 
 import appStyles from '../../App.module.css'
 import styles from './About.module.css';
+import { useEffect } from 'react';
 
 // Link socials, maybe a blurb
 // maybe add in that cool dithering thing I did on my face?
@@ -34,6 +35,9 @@ const ImageWrapper = ({ height, width, imgSrc, alt }) => {
     )
 }
 const About = () => {
+    useEffect(() => {
+        document.title = 'About > Danny'
+    })
     return (
         <div className={appStyles.main_page}>
             <Guide links={[HOME]} />

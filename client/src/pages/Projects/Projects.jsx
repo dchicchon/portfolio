@@ -7,10 +7,14 @@ import { classList } from '../../utils'
 // styes
 import styles from './Projects.module.css';
 import appStyles from '../../App.module.css';
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 
 const ProjectCard = ({ project }) => {
+
+    useEffect(() => {
+        document.title = 'Projects > Danny'
+    })
     const [icon, setImage] = useState('');
     const { description, title, icon: iconPath } = projectMap[project];
     console.log(iconPath);
