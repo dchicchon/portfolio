@@ -76,6 +76,15 @@ class MainDrawing {
         this.currentColorIndex = sketchInst.floor(sketchInst.random(colorsList.length));
         this.currentFaceIndex = sketchInst.floor(sketchInst.random(colorsList.length))
         this.canvas = '';
+        this.drawRunning = true;
+
+        // add a listener?
+        this.mainSketch.onclick = () => {
+            this.drawRunning = !this.drawRunning;
+        }
+        // this.mainSketch.ontouchend = () => {
+        //     this.drawRunning = !this.drawRunning;
+        // }
 
 
         this.initialSeed = 1;
@@ -138,87 +147,77 @@ class MainDrawing {
 
     }
     draw() {
+        if (this.drawRunning) {
+            this.sketchInst.strokeWeight(this.strokeWeight);
+            this.sketchInst.stroke(this.currentColor)
 
-        if (this.debug) {
-            try {
-                this.drawGrid();
-            } catch (err) {
-                this.logger.info({ err });
-            }
-            this.iterDiv.textContent = `Iters: ${this.iters}`;
-            if (!this.playing) return;
-        }
+            let currentDrawPattern;
+            for (let i = 0; i < this.drawQueues.length; i++) {
+                const drawQueue = this.drawQueues[i];
+                if (drawQueue.length > this.queueLimit) {
+                    for (let i = 0; i < this.queueLimit; i++) {
+                        try {
+                            // instruction with args
+                            const [instruction, ...args] = drawQueue.dequeue();
+                            currentDrawPattern = { instruction, args };
+                            if (instruction === 'fill') {
+                                this.logger.log('we have a fill!')
+                                this.sketchInst.noStroke();
+                                this.sketchInst[instruction](...args);
+                                let keepGoing = true;
+                                while (keepGoing) {
+                                    this.logger.log('keep going');
+                                    this.logger.log(drawQueue.peek());
+                                    const [subInstruction, ...subArgs] = drawQueue.dequeue();
+                                    this.logger.log({ subInstruction, subArgs });
+                                    currentDrawPattern = { subInstruction, subArgs };
+                                    if (subInstruction === 'STOP') {
+                                        keepGoing = false;
+                                    } else {
+                                        this.sketchInst[subInstruction](...subArgs);
+                                    }
 
-        this.sketchInst.strokeWeight(this.strokeWeight);
-        this.sketchInst.stroke(this.currentColor)
-
-        let currentDrawPattern;
-        for (let i = 0; i < this.drawQueues.length; i++) {
-            const drawQueue = this.drawQueues[i];
-            if (drawQueue.length > this.queueLimit) {
-                for (let i = 0; i < this.queueLimit; i++) {
-                    try {
-                        // instruction with args
-                        const [instruction, ...args] = drawQueue.dequeue();
-                        currentDrawPattern = { instruction, args };
-                        if (instruction === 'fill') {
-                            this.logger.log('we have a fill!')
-                            this.sketchInst.noStroke();
-                            this.sketchInst[instruction](...args);
-                            let keepGoing = true;
-                            while (keepGoing) {
-                                this.logger.log('keep going');
-                                this.logger.log(drawQueue.peek());
-                                const [subInstruction, ...subArgs] = drawQueue.dequeue();
-                                this.logger.log({ subInstruction, subArgs });
-                                currentDrawPattern = { subInstruction, subArgs };
-                                if (subInstruction === 'STOP') {
-                                    keepGoing = false;
-                                } else {
-                                    this.sketchInst[subInstruction](...subArgs);
                                 }
-
+                            } else {
+                                this.sketchInst[instruction](...args);
                             }
-                        } else {
-                            this.sketchInst[instruction](...args);
+                        } catch (err) {
+                            this.logger.log('error in draw');
+                            this.logger.log(currentDrawPattern);
+                            this.logger.log(err);
                         }
-                    } catch (err) {
-                        this.logger.log('error in draw');
-                        this.logger.log(currentDrawPattern);
-                        this.logger.log(err);
                     }
                 }
             }
-        }
 
-        const drawsLeft = this.drawQueues.reduce((curr, queue) => curr + queue.length, 0);
-        const outOfMoves = drawsLeft === 0 || drawsLeft === this.prevDrawsLeft;
-        // Check to see if any of our queues still must draw
-        if ((this.debug && this.iters >= this.frameStop) || ((this.iters > this.iterSketch + this.iterPause) && outOfMoves)) {
-            if (!this.reset) return;
-            this.seed += 1;
-            this.inputX = this.seed;
-            this.inputY = this.seed + 1;
-            // we can randomize stuff here?
-            // this.strokeWeight = this.sketchInst.random(2 );
-            this.setupBoxInstance();
+            const drawsLeft = this.drawQueues.reduce((curr, queue) => curr + queue.length, 0);
+            const outOfMoves = drawsLeft === 0 || drawsLeft === this.prevDrawsLeft;
+            // Check to see if any of our queues still must draw
+            if ((this.debug && this.iters >= this.frameStop) || ((this.iters > this.iterSketch + this.iterPause) && outOfMoves)) {
+                if (!this.reset) return;
+                this.seed += 1;
+                this.inputX = this.seed;
+                this.inputY = this.seed + 1;
+                // we can randomize stuff here?
+                // this.strokeWeight = this.sketchInst.random(2 );
+                this.setupBoxInstance();
 
-        }
-        this.prevDrawsLeft = drawsLeft;
-
-        if (this.iters < this.iterSketch) {
-            if (this.debug) {
-                this.logger.log(`tick ${this.iters}`);
             }
-            for (let i = 0; i < this.snakes.length; i++) {
-                this.moveSnake(i);
-                this.inputX += this.xInc;
-                this.inputY += this.yInc;
+            this.prevDrawsLeft = drawsLeft;
+
+            if (this.iters < this.iterSketch) {
+                if (this.debug) {
+                    this.logger.log(`tick ${this.iters}`);
+                }
+                for (let i = 0; i < this.snakes.length; i++) {
+                    this.moveSnake(i);
+                    this.inputX += this.xInc;
+                    this.inputY += this.yInc;
+                }
             }
+
+            this.iters += 1;
         }
-
-        this.iters += 1;
-
     }
     setupBoxInstance() {
         this.gridConst = this.sketchInst.random(5, 12);
@@ -581,7 +580,7 @@ class MainDrawing {
                     shapes.push(shape2Verts)
                     for (let k = 0; k < shapes.length; k++) {
                         const shapeVerts = shapes[k];
-                   
+
                         if (this.isSquare(shapeVerts)) {
                             const altcolor = this.sketchInst.color(...colorsList[this.currentFaceIndex]);
                             altcolor.setAlpha(150);
