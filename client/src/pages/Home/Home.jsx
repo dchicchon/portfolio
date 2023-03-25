@@ -84,7 +84,7 @@ class MainDrawing {
         // const strokeWeight = isMobile ? 4 : 7;
         // const gridConst = isMobile ? gridNum * 5 : gridNum * 9;
         // const iterSketch = 10;
-        this.iterConst = 5; // 3
+        this.iterConst = 6; // 3
         this.iterSketch = isMobile ? this.iterConst * 30 : this.iterConst * 50;
         this.iterPause = isMobile ? this.iterConst * 20 : this.iterConst * 30;
 
@@ -94,7 +94,7 @@ class MainDrawing {
         this.debugFR = 30;
         this.frameStop = 300;
 
-        this.numberSnakes = 10;
+        this.numberSnakes = 12;
         this.padX = this.debug ? 35 : 20; // 10
         this.padY = this.debug ? 40 : 20; // 10
         this.decimalPlace = 4; // 4
@@ -200,7 +200,6 @@ class MainDrawing {
             this.inputX = this.seed;
             this.inputY = this.seed + 1;
             // we can randomize stuff here?
-            this.gridConst = this.sketchInst.random(3, 15);
             // this.strokeWeight = this.sketchInst.random(2 );
             this.setupBoxInstance();
 
@@ -222,6 +221,7 @@ class MainDrawing {
 
     }
     setupBoxInstance() {
+        this.gridConst = this.sketchInst.random(5, 12);
         this.numAcross = this.debug ? this.sketchInst.floor(this.sketchInst.width / this.gridConst) - 3 : this.sketchInst.floor(this.sketchInst.width / this.gridConst);
         this.numDown = this.debug ? this.sketchInst.floor(this.sketchInst.height / this.gridConst) - 3 : this.sketchInst.floor(this.sketchInst.height / this.gridConst);
 
@@ -552,13 +552,12 @@ class MainDrawing {
                 if (vertices.length <= 4) {
                     if (this.isSquare(vertices)) {
                         const altcolor = this.sketchInst.color(...colorsList[this.currentFaceIndex]);
-                        altcolor.setAlpha(5);
+                        altcolor.setAlpha(150);
                         this.sketchInst.fill(altcolor)
                         drawQueue.enqueue(['fill', altcolor])
                     } else {
                         const altcolor = this.sketchInst.color(...colorsList[this.currentFaceIndex]);
-                        altcolor.setAlpha(5);
-                        // this.sketchInst.fill(altcolor)
+                        altcolor.setAlpha(150);
                         drawQueue.enqueue(['fill', altcolor])
 
                     }
@@ -585,13 +584,11 @@ class MainDrawing {
                    
                         if (this.isSquare(shapeVerts)) {
                             const altcolor = this.sketchInst.color(...colorsList[this.currentFaceIndex]);
-                            altcolor.setAlpha(100);
-                            // this.sketchInst.fill(altcolor)
+                            altcolor.setAlpha(150);
                             drawQueue.enqueue(['fill', altcolor])
                         } else {
                             const altcolor = this.sketchInst.color(...colorsList[this.currentFaceIndex]);
-                            altcolor.setAlpha(200);
-                            // this.sketchInst.fill(altcolor)
+                            altcolor.setAlpha(150);
                             drawQueue.enqueue(['fill', altcolor])
 
                         }
@@ -668,9 +665,6 @@ const Home = () => {
         }
         // This doesn't work, trying to minimize url bar seen
         // here https://remysharp.com/2010/08/05/doing-it-right-skipping-the-iphone-url-bar
-        // setTimeout(() => {
-        //     window.scroll(0,1);
-        // }, 1000)
     }, [])
 
     const sketch = (s) => {
