@@ -55,8 +55,11 @@ const props = {
 const loggy = new Logger(props)
 
 const quote = (text) => `"${text}"`
+const wrapImport = (text) => `import(${text})`;
 
-const installDependencies = (projectPath, packageJson) => {
+const installDependencies = (projectName, projectPath, packageJson) => {
+    loggy.log('installing dependencies');
+    loggy.log({ projectName, projectPagePath, packageJson })
     const execSyncOptions = { encoding: 'utf-8' };
     const installOutput = execSync(`cd ${projectPath} && npm i`, execSyncOptions);
     loggy.log(installOutput)
@@ -74,8 +77,8 @@ const installDependencies = (projectPath, packageJson) => {
 const getIcon = (projectPath, icon) => {
     if (!icon) return ""
     const iconPath = path.resolve(projectPath, icon);
-    const relativeIconPath = path.relative(projectPagePath, iconPath);
-    return relativeIconPath
+    // const relativeIconPath = path.relative(projectPagePath, iconPath);
+    return iconPath
 }
 
 /**
@@ -86,6 +89,7 @@ const getIcon = (projectPath, icon) => {
  * @returns 
  */
 const parseFile = async (file, projectName, projectPath) => {
+    loggy.log('Parsing File');
     const packageJsonPath = path.join(projectPath, file);
 
     const packageJsonFile = await fs.promises.readFile(packageJsonPath);
@@ -101,26 +105,35 @@ const parseFile = async (file, projectName, projectPath) => {
     const { entry, title, description, icon } = packageJson.reactProject;
 
     const entryPath = path.resolve(projectPath, entry);
-    const relativeEntryPath = path.relative(projectRoutesDirPath, entryPath)
 
+    const relativeEntryPath = path.relative(projectRoutesDirPath, entryPath)
 
     const insertProject = {
         entry: quote(relativeEntryPath),
         title: title || projectName[0].toUpperCase() + projectName.slice(1),
         name: projectName,
         description: description ? quote(description) : quote(mainDescription),
-        icon: getIcon(projectPath, icon)
+    };
+    const iconPath = getIcon(projectPath, icon);
+    if (iconPath) {
+        insertProject.icon = quote(iconPath);
     }
     return insertProject;
 }
 
 const parseProjects = async (projects) => {
     const promiseList = [];
+    loggy.log(projects)
+    console.log(projects);
     projects.forEach(projectName => {
+        loggy.log('Parsing Project')
+        loggy.log(projectName);
         const projectPath = path.join(projectsPath, projectName);
         const isDir = fs.lstatSync(projectPath).isDirectory();
         try {
-            if (!isDir) return;
+            if (!isDir) {
+                return loggy.log('Found item is not a project. Skipping...')
+            };
             const projectFiles = fs.readdirSync(projectPath);
             const packageJson = projectFiles.find(p => p === fileMap.packageJson);
             if (!packageJson) return;
@@ -146,13 +159,15 @@ const lazyImport = (projectList) => {
     const lines = []
     lines.push('export const projectMap = {');
     projectList.forEach((p) => {
-        lines.push(`
-        ${quote(p.name)}:{
-            title: ${quote(p.title)},
-            description: ${p.description},
-            export: () => import(${p.entry}),
-            icon: ${quote(p.icon)}
-        },`)
+        lines.push(`${quote(p.name)}: {`)
+        lines.push(`title: ${quote(p.title)},`)
+        lines.push(`description: ${p.description},`)
+        lines.push(`export: () => ${wrapImport(p.entry)},`)
+        console.log(p.icon)
+        if (p.icon) {
+            lines.push(`icon: () => ${wrapImport(p.icon)},`)
+        }
+        lines.push('},')
 
     })
     lines.push('};')

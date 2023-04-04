@@ -35,14 +35,6 @@
   flex-grow: 1;
 }
 
-.project:hover {
-  box-shadow: inset 0px 0px 1px 5px var(--border-blue);
-}
-
-.project_description {
-  padding: 1rem 0;
-}
-
 /* mobile */
 @media only screen and (max-width: 600px) {
   .project {

@@ -1,21 +1,17 @@
 .about {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  flex: 2;
+  padding: 0 10%;
 }
 
+.about_info {
+  display: flex;
+  gap: 50px;
+}
 .about_main {
   display: flex;
   justify-content: space-between;
   margin-top: 2rem;
   gap: 10px;
-  width: 70%;
-}
-
-.about_poweredby {
-  padding: 1rem;
 }
 
 .my_image {
@@ -24,16 +20,18 @@
   border-radius: 100%;
 }
 
+.image_wrapper {
+  height: 50%;
+  width: 70%;
+  /* min-height: 10px; */
+}
+
 .about_description {
   display: flex;
   gap: 10px;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   padding: 1rem;
-}
-
-.blurb {
-  /* width: 75%; */
 }
 
 .about_links {
@@ -74,5 +72,15 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
+  }
+  .my_image {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+  }
+
+  .image_wrapper {
+    height: 50%;
+    width: 75%;
   }
 }

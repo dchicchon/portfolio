@@ -103,7 +103,7 @@ class MainDrawing {
         this.debugFR = 30;
         this.frameStop = 300;
 
-        this.numberSnakes = 12;
+        this.numberSnakes = isMobile ? 10 : 12;
         this.padX = this.debug ? 35 : 20; // 10
         this.padY = this.debug ? 40 : 20; // 10
         this.decimalPlace = 4; // 4

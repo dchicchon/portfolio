@@ -17,21 +17,16 @@ const ProjectCard = ({ project }) => {
     })
     const [icon, setImage] = useState('');
     const { description, title, icon: iconPath } = projectMap[project];
-    console.log(iconPath);
-    console.log(title);
     if (iconPath) {
-        console.log('iconPath');
-        iconPath.then(res => {
-            console.log('found icon');
-            console.log(res.default);
+        iconPath().then(res => {
             setImage(res.default);
         });
     }
     return (
         <Link className={classList(styles.project, appStyles.background_gray)} to={project}>
-            {icon && <img src={icon} className={styles.project_icon} alt="project icon" />}
+            {icon && <img src={icon} loading='lazy' className={styles.project_icon} alt="project icon" />}
             <div className={styles.project_details}>
-                <h2 className={appStyles.h2}>{title}</h2>
+                <h3 className={appStyles.h2}>{title}</h3>
                 <p className={styles.project_description}>{description}</p>
             </div>
         </Link>

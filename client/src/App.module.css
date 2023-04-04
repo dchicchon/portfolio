@@ -31,16 +31,22 @@
 }
 .h1 {
   font-size: xx-large;
-
 }
 
-.h2 {
+/* .h2 {
   font-size: x-large;
-}
+} */
 
 .h3 {
   font-size: large;
-  letter-spacing: 3px;
+  /* letter-spacing: 3px; */
+}
+
+.link {
+  text-decoration: underline;
+}
+.link:hover {
+  color: #61dafb;
 }
 
 .line_height_adjust {
