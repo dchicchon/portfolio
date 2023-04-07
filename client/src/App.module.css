@@ -1,0 +1,65 @@
+/* App Specific styles to apply across all things */
+.main_page {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.outlet {
+  flex: 2;
+}
+
+.border_blue {
+  border-color: #61dafb;
+}
+
+.gray {
+  background: rgb(31, 33, 34);
+}
+
+.background_white {
+  background-color: white;
+}
+
+.background_gray {
+  background: #20232a;
+}
+
+.background_light {
+  background-color: #282c34;
+}
+
+.background_dark {
+  background: hsl(222, 14%, 10%);
+}
+.h1 {
+  font-size: xx-large;
+}
+
+/* .h2 {
+  font-size: x-large;
+} */
+
+.h3 {
+  font-size: large;
+  /* letter-spacing: 3px; */
+}
+
+.link {
+  text-decoration: underline;
+}
+.link:hover {
+  color: #61dafb;
+}
+
+.line_height_adjust {
+  line-height: 30px;
+}
+
+.flex_end {
+  justify-content: flex-end;
+}
+
+.flex_start {
+  justify-content: flex-start;
+}
