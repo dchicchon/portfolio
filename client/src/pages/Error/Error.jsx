@@ -40,7 +40,6 @@ const Error = ({ message }) => {
   const errorMessage = message || "Oops! This page does not exist"
   return (
     <>
-      {/* <Navbar /> */}
       <div className="errorPage">
         <h2>{errorMessage}</h2>
         <SadSVG />
@@ -49,7 +48,6 @@ const Error = ({ message }) => {
           <h2 id="error-link">Home</h2>
         </Link>
       </div>
-      {/* <Footer color="rgb(36, 35, 35)" /> */}
     </>
   );
 };

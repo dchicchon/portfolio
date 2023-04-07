@@ -1,6 +1,4 @@
-import Guide from '../../components/Guide/Guide'
 import { CV as cvPath } from '../../utils/mainRoutes';
-import { ABOUT, HOME, PROJECTS } from '../../utils/mainRoutes';
 import { Link } from 'react-router-dom';
 import { classList } from '../../utils';
 
@@ -9,8 +7,6 @@ import appStyles from '../../App.module.css'
 import styles from './About.module.css';
 import { useEffect } from 'react';
 
-// Link socials, maybe a blurb
-// maybe add in that cool dithering thing I did on my face?
 
 const ImageWrapper = ({ imgSrc, alt }) => {
     return (
@@ -28,7 +24,6 @@ const About = () => {
 
     return (
         <div className={appStyles.main_page}>
-            <Guide links={[HOME]} />
             <div className={classList(styles.about, appStyles.background_dark)}>
                 <h1>About</h1>
                 <div className={styles.about_main}>
@@ -62,7 +57,6 @@ const About = () => {
                     </div>
                 </div>
             </div>
-            <Guide links={[ABOUT, PROJECTS]} startRight />
         </div>
     )
 }

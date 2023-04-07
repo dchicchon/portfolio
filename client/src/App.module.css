@@ -5,6 +5,9 @@
   flex-direction: column;
   height: 100%;
 }
+.outlet {
+  flex: 2;
+}
 
 .border_blue {
   border-color: #61dafb;

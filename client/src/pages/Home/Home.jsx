@@ -1,16 +1,13 @@
 import { useEffect, useMemo } from 'react';
 import Q5 from 'q5xjs'
-import { HOME, ABOUT, PROJECTS } from '../../utils/mainRoutes';
 import styles from './Home.module.css'
 import appStyles from '../../App.module.css';
-import Guide from '../../components/Guide/Guide';
 import { classList } from '../../utils';
 
 const colors = {
     blue: [97, 218, 251],
     teal: [13, 202, 171],
     seagreen: [8, 230, 142],
-    // green: [20, 225, 0],
     yellow: [251, 219, 16],
     orange: [255, 129, 6],
 }
@@ -57,7 +54,6 @@ class Logger {
     }
 }
 
-// create new drawing
 class MainDrawing {
     constructor(sketchInst, isMobile) {
         this.sketchInst = sketchInst;
@@ -133,8 +129,6 @@ class MainDrawing {
         const width = this.debug ? this.sketchInst.floor(screenWidth * 0.75) : screenWidth;
         const height = this.debug ? this.sketchInst.floor(screenHeight * 0.75) : screenHeight;
 
-        // const width = this.sketchInst.floor(screenWidth * 0.5);
-        // const height = this.sketchInst.floor(screenHeight * 0.5);
         this.canvas = this.sketchInst.createCanvas(width, height);
 
         this.mainSketch.appendChild(this.canvas);
@@ -627,17 +621,6 @@ class MainDrawing {
     }
 }
 
-// const movementType = {
-//     '1,-1': 'UP_RIGHT',
-//     '1,0': 'RIGHT',
-//     '1,1': 'DOWN_RIGHT',
-//     '-1,-1': 'UP_LEFT',
-//     '-1,0': 'LEFT',
-//     '-1,1': 'DOWN_LEFT',
-//     '0,-1': 'UP',
-//     '0,1': 'DOWN',
-// }
-
 const Home = () => {
     const isMobile = useMemo(() => {
         return window.innerWidth <= 600
@@ -645,18 +628,17 @@ const Home = () => {
 
     useEffect(() => {
         document.title = 'Home > Danny'
-        const q5 = new Q5();
-        const s = sketch(q5);
-
+        // we should check if theres already a canvas
+        const foundCanvas = document.getElementsByTagName('canvas')
+        if (foundCanvas.length === 0) {
+            const q5 = new Q5();
+            const s = sketch(q5);
+        }
         // when we move to another tab, we should kill the sketch instance;
         return () => {
-            s.noLoop();
             const main = document.getElementById('main_sketch');
-            // const debugDiv = document.getElementById('debug_div');
             if (main) {
-                // stop the sketch instance;
                 const [...children] = main.children;
-                // remove all children?
                 children.forEach(child => {
                     main.removeChild(child);
                 })
@@ -676,12 +658,8 @@ const Home = () => {
 
     return (
         <div className={classList(appStyles.main_page, appStyles.background_dark)}>
-            <Guide links={[HOME]} />
             <div id='main_sketch' className={styles.sketch_container}>
             </div>
-            <Guide
-                startRight
-                links={[ABOUT, PROJECTS,]} />
         </div>
     )
 }

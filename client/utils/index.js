@@ -163,7 +163,6 @@ const lazyImport = (projectList) => {
         lines.push(`title: ${quote(p.title)},`)
         lines.push(`description: ${p.description},`)
         lines.push(`export: () => ${wrapImport(p.entry)},`)
-        console.log(p.icon)
         if (p.icon) {
             lines.push(`icon: () => ${wrapImport(p.icon)},`)
         }

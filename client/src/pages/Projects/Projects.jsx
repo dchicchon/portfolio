@@ -1,7 +1,5 @@
-import Guide from '../../components/Guide/Guide'
 import { Link } from 'react-router-dom'
 import { projectMap } from '../../utils/projectRoutes'
-import { HOME, ABOUT, PROJECTS } from '../../utils/mainRoutes'
 import { classList } from '../../utils'
 
 // styes
@@ -36,7 +34,6 @@ const ProjectCard = ({ project }) => {
 const Projects = () => {
     return (
         <div className={appStyles.main_page}>
-            <Guide links={[HOME]} />
             <div className={classList(styles.projects_page, appStyles.background_dark)}>
                 <div className={styles.project_list}>
                     {Object.keys(projectMap).map((project, i) => (
@@ -44,7 +41,6 @@ const Projects = () => {
                     ))}
                 </div>
             </div>
-            <Guide links={[ABOUT, PROJECTS]} startRight />
         </div >
 
     )

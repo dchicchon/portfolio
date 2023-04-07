@@ -1,5 +1,3 @@
-import Guide from '../../components/Guide/Guide'
-import { ABOUT, HOME, PROJECTS } from '../../utils/mainRoutes';
 import { classList } from '../../utils';
 
 import appStyles from '../../App.module.css'
@@ -13,7 +11,6 @@ const CV = () => {
 
     return (
         <div className={appStyles.main_page}>
-            <Guide links={[HOME]} />
             <div className={classList(styles.cv, appStyles.background_dark)}>
                 <h1>CV</h1>
                 <h2>Work Experience</h2>
@@ -24,7 +21,6 @@ const CV = () => {
                 <p>B.S. Biology - UC Santa Cruz, 2017</p>
 
             </div>
-            <Guide links={[ABOUT, PROJECTS]} startRight />
         </div>
     )
 }
