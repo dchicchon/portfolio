@@ -12,7 +12,8 @@ I intend to update this portfolio with two main releases while occasionally maki
 
 - React
 - Firebase
-- p5
+- Q5
+- Vite
 
 # Statistics
 
