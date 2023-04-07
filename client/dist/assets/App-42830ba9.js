@@ -1,11 +1,10 @@
-import {
-  R as React, r as reactExports, j as jsxs, a as jsx, F as Fragment, DataRouterContext,
+import { R as React, r as reactExports, j as jsxs, a as jsx, F as Fragment,   DataRouterContext,
   DataRouterStateContext,
   NavigationContext,
   LocationContext,
   RouteContext,
   RouteErrorContext,
-} from "./index-753ea245.js";
+ } from "./index-753ea245.js";
 /**
  * @remix-run/router v1.3.0
  *
@@ -17,7 +16,7 @@ import {
  * @license MIT
  */
 function _extends$2() {
-  _extends$2 = Object.assign ? Object.assign.bind() : function (target) {
+  _extends$2 = Object.assign ? Object.assign.bind() : function(target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = arguments[i];
       for (var key in source) {
@@ -31,7 +30,7 @@ function _extends$2() {
   return _extends$2.apply(this, arguments);
 }
 var Action;
-(function (Action2) {
+(function(Action2) {
   Action2["Pop"] = "POP";
   Action2["Push"] = "PUSH";
   Action2["Replace"] = "REPLACE";
@@ -73,7 +72,7 @@ function parsePath(path) {
   return parsedPath;
 }
 var ResultType;
-(function (ResultType2) {
+(function(ResultType2) {
   ResultType2["data"] = "data";
   ResultType2["deferred"] = "deferred";
   ResultType2["redirect"] = "redirect";
@@ -445,7 +444,7 @@ function isRouteErrorResponse(e) {
  * @license MIT
  */
 function _extends$1() {
-  _extends$1 = Object.assign ? Object.assign.bind() : function (target) {
+  _extends$1 = Object.assign ? Object.assign.bind() : function(target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = arguments[i];
       for (var key in source) {
@@ -572,7 +571,7 @@ function useNavigate() {
   reactExports.useEffect(() => {
     activeRef.current = true;
   });
-  let navigate = reactExports.useCallback(function (to, options) {
+  let navigate = reactExports.useCallback(function(to, options) {
     if (options === void 0) {
       options = {};
     }
@@ -789,12 +788,12 @@ function _renderMatches(matches, parentMatches, dataRouterState) {
   }, null);
 }
 var DataRouterHook$1;
-(function (DataRouterHook2) {
+(function(DataRouterHook2) {
   DataRouterHook2["UseBlocker"] = "useBlocker";
   DataRouterHook2["UseRevalidator"] = "useRevalidator";
 })(DataRouterHook$1 || (DataRouterHook$1 = {}));
 var DataRouterStateHook$1;
-(function (DataRouterStateHook2) {
+(function(DataRouterStateHook2) {
   DataRouterStateHook2["UseLoaderData"] = "useLoaderData";
   DataRouterStateHook2["UseActionData"] = "useActionData";
   DataRouterStateHook2["UseRouteError"] = "useRouteError";
@@ -845,7 +844,7 @@ function Routes(_ref5) {
   return useRoutes(routes, location);
 }
 var AwaitRenderStatus;
-(function (AwaitRenderStatus2) {
+(function(AwaitRenderStatus2) {
   AwaitRenderStatus2[AwaitRenderStatus2["pending"] = 0] = "pending";
   AwaitRenderStatus2[AwaitRenderStatus2["success"] = 1] = "success";
   AwaitRenderStatus2[AwaitRenderStatus2["error"] = 2] = "error";
@@ -899,7 +898,7 @@ function createRoutesFromChildren(children, parentPath) {
  * @license MIT
  */
 function _extends() {
-  _extends = Object.assign ? Object.assign.bind() : function (target) {
+  _extends = Object.assign ? Object.assign.bind() : function(target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = arguments[i];
       for (var key in source) {
@@ -931,8 +930,8 @@ function isModifiedEvent(event) {
 }
 function shouldProcessLinkClick(event, target) {
   return event.button === 0 && // Ignore everything but left clicks
-    (!target || target === "_self") && // Let browser handle "target=_blank" etc.
-    !isModifiedEvent(event);
+  (!target || target === "_self") && // Let browser handle "target=_blank" etc.
+  !isModifiedEvent(event);
 }
 const _excluded = ["onClick", "relative", "reloadDocument", "replace", "state", "target", "to", "preventScrollReset"];
 const Link = /* @__PURE__ */ reactExports.forwardRef(function LinkWithRef(_ref4, ref) {
@@ -966,21 +965,21 @@ const Link = /* @__PURE__ */ reactExports.forwardRef(function LinkWithRef(_ref4,
   return (
     // eslint-disable-next-line jsx-a11y/anchor-has-content
     /* @__PURE__ */ reactExports.createElement("a", _extends({}, rest, {
-    href,
-    onClick: reloadDocument ? onClick : handleClick,
-    ref,
-    target
-  }))
+      href,
+      onClick: reloadDocument ? onClick : handleClick,
+      ref,
+      target
+    }))
   );
 });
 var DataRouterHook;
-(function (DataRouterHook2) {
+(function(DataRouterHook2) {
   DataRouterHook2["UseScrollRestoration"] = "useScrollRestoration";
   DataRouterHook2["UseSubmitImpl"] = "useSubmitImpl";
   DataRouterHook2["UseFetcher"] = "useFetcher";
 })(DataRouterHook || (DataRouterHook = {}));
 var DataRouterStateHook;
-(function (DataRouterStateHook2) {
+(function(DataRouterStateHook2) {
   DataRouterStateHook2["UseFetchers"] = "useFetchers";
   DataRouterStateHook2["UseScrollRestoration"] = "useScrollRestoration";
 })(DataRouterStateHook || (DataRouterStateHook = {}));
@@ -1051,34 +1050,26 @@ function Home() {
   reactExports.useEffect(() => {
     document.title = "Polus";
   }, []);
-  return /* @__PURE__ */ jsxs("div", {
-    id: styles$4.polus, children: [
-    /* @__PURE__ */ jsxs("main", {
-      className: styles$4.hero, children: [
+  return /* @__PURE__ */ jsxs("div", { id: styles$4.polus, children: [
+    /* @__PURE__ */ jsxs("main", { className: styles$4.hero, children: [
       /* @__PURE__ */ jsx("img", { className: styles$4.hero_icon, src: polusIcon, alt: "Polus Icon" }),
       /* @__PURE__ */ jsx("h2", { className: appStyles.h2, children: "Polus" }),
       /* @__PURE__ */ jsx("p", { children: "A chrome extension to help plan your day" })
-      ]
-    }),
-    /* @__PURE__ */ jsxs("main", {
-      className: styles$4.video_section, children: [
+    ] }),
+    /* @__PURE__ */ jsxs("main", { className: styles$4.video_section, children: [
       /* @__PURE__ */ jsx("div", { id: styles$4.polus_video_wrapper, children: /* @__PURE__ */ jsx("iframe", { id: styles$4.polus_video, title: "polus_video", src: "https://www.youtube.com/embed/25f_hLEdLds", allowFullScreen: true }) }),
-      /* @__PURE__ */ jsx("section", {
-        id: styles$4.link, children: /* @__PURE__ */ jsx(
-          "a",
-          {
-            id: styles$4.link_tag,
-            target: "_blank",
-            rel: "noopener noreferrer",
-            href: "https://chrome.google.com/webstore/detail/polus/meajimhgfmioppbkoppphhkbcmapfngh?hl=en&authuser=0",
-            children: "+ Add Polus to Chrome"
-          }
-        )
-      })
-      ]
-    })
-    ]
-  });
+      /* @__PURE__ */ jsx("section", { id: styles$4.link, children: /* @__PURE__ */ jsx(
+        "a",
+        {
+          id: styles$4.link_tag,
+          target: "_blank",
+          rel: "noopener noreferrer",
+          href: "https://chrome.google.com/webstore/detail/polus/meajimhgfmioppbkoppphhkbcmapfngh?hl=en&authuser=0",
+          children: "+ Add Polus to Chrome"
+        }
+      ) })
+    ] })
+  ] });
 }
 const classList = (...args) => args.join(" ");
 const subheading = "_subheading_1q1zw_2";
@@ -1093,43 +1084,31 @@ const styles$3 = {
 };
 const screenshot = "/assets/screenshot-4431c665.png";
 function About() {
-  return /* @__PURE__ */ jsx(Fragment, {
-    children: /* @__PURE__ */ jsxs("div", {
-      className: styles$3.container, children: [
+  return /* @__PURE__ */ jsx(Fragment, { children: /* @__PURE__ */ jsxs("div", { className: styles$3.container, children: [
     /* @__PURE__ */ jsx("h1", { className: classList(appStyles.h1), children: "About" }),
     /* @__PURE__ */ jsx("p", { className: styles$3.subheading, children: "Polus is a personal planner designed to help you keep track of your time throughout the day, week, and month across multiple devices" }),
     /* @__PURE__ */ jsx("img", { className: styles$3.screenshot, src: screenshot, alt: "Polus screenshot" })
-      ]
-    })
-  });
+  ] }) });
 }
 const table = "_table_gc9jm_2";
 const styles$2 = {
   table
 };
 function Privacy() {
-  return /* @__PURE__ */ jsx(Fragment, {
-    children: /* @__PURE__ */ jsxs("section", {
-      className: "legal", children: [
+  return /* @__PURE__ */ jsx(Fragment, { children: /* @__PURE__ */ jsxs("section", { className: "legal", children: [
     /* @__PURE__ */ jsx("h2", { className: "legal-h2", children: "Privacy Policy" }),
-    /* @__PURE__ */ jsxs("p", {
-        className: "legal-p", children: [
-          "We at Polus are committed to protecting your privacy. This privacy policy applies to our browser extension (Polus), our website",
-      /* @__PURE__ */ jsxs("a", {
-            style: { color: "black" }, href: "https://www.danielchicchon.com/code/polus", children: [
-              " ",
-              " https://www.danielchicchon.com/projects/polus"
-            ]
-          }),
-          ", any subdomains of danielchicchon.com."
-        ]
-      }),
-    /* @__PURE__ */ jsxs("p", {
-        className: "legal-p", children: [
-          "The information we gather or process is used solely for core functionality of Polus and to improve the quality and security of our service.",
+    /* @__PURE__ */ jsxs("p", { className: "legal-p", children: [
+      "We at Polus are committed to protecting your privacy. This privacy policy applies to our browser extension (Polus), our website",
+      /* @__PURE__ */ jsxs("a", { style: { color: "black" }, href: "https://www.danielchicchon.com/code/polus", children: [
+        " ",
+        " https://www.danielchicchon.com/projects/polus"
+      ] }),
+      ", any subdomains of danielchicchon.com."
+    ] }),
+    /* @__PURE__ */ jsxs("p", { className: "legal-p", children: [
+      "The information we gather or process is used solely for core functionality of Polus and to improve the quality and security of our service.",
       /* @__PURE__ */ jsx("strong", { children: "Your information isn’t and has never been sold to third parties." })
-        ]
-      }),
+    ] }),
     /* @__PURE__ */ jsx("h4", { id: "what-information-is-being-stored-or-accessed", children: "What information is being stored, or accessed?" }),
     /* @__PURE__ */ jsx("h5", { children: "Polus account information" }),
     /* @__PURE__ */ jsx("p", { className: "legal-p", children: "Your name, email, account settings, and extension data (such as to-dos and links) are transferred and stored securely, solely for your usage within our extension and not shared with any other third parties, except as specified in this policy." }),
@@ -1137,257 +1116,183 @@ function Privacy() {
     /* @__PURE__ */ jsx("p", { className: "legal-p", children: "To improve the content, features and overall experience of the extension, we gather and log data on how our users access and use Polus Dashboard. For example, we may log actions like clicking on a photo source or completing/deleting a to-do (not the content of the to-do, just the action of completing/deleting it)." }),
     /* @__PURE__ */ jsx("h4", { id: "what-vendors-sub-processors-do-you-use", children: "What vendors/sub-processors do you use?" }),
     /* @__PURE__ */ jsx("p", { className: "legal-p", children: "We use several vendors/sub-processors to conduct various aspects of our business." }),
-    /* @__PURE__ */ jsxs("table", {
-        className: styles$2.table, children: [
-      /* @__PURE__ */ jsx("thead", {
-          children: /* @__PURE__ */ jsxs("tr", {
-            children: [
+    /* @__PURE__ */ jsxs("table", { className: styles$2.table, children: [
+      /* @__PURE__ */ jsx("thead", { children: /* @__PURE__ */ jsxs("tr", { children: [
         /* @__PURE__ */ jsx("th", { children: "Vendor" }),
         /* @__PURE__ */ jsx("th", { children: "Purpose" })
-            ]
-          })
-        }),
-      /* @__PURE__ */ jsx("tbody", {
-          children: /* @__PURE__ */ jsxs("tr", {
-            children: [
+      ] }) }),
+      /* @__PURE__ */ jsx("tbody", { children: /* @__PURE__ */ jsxs("tr", { children: [
         /* @__PURE__ */ jsx("td", { children: "Unsplash" }),
         /* @__PURE__ */ jsx("td", { children: "Some photos/backgrounds are retrieved from Unsplash. A request is made from your IP address to download photos." })
-            ]
-          })
-        })
-        ]
-      }),
+      ] }) })
+    ] }),
     /* @__PURE__ */ jsx("h4", { id: "what-are-my-rights-in-relation-to-my-personal-data", children: "What are my rights in relation to my personal data?" }),
     /* @__PURE__ */ jsx("p", { className: "legal-p", children: "By using Polus Dashboard, you may exercise the following rights:" }),
-    /* @__PURE__ */ jsxs("ol", {
-        children: [
-      /* @__PURE__ */ jsxs("li", {
-          children: [
+    /* @__PURE__ */ jsxs("ol", { children: [
+      /* @__PURE__ */ jsxs("li", { children: [
         /* @__PURE__ */ jsx("strong", { children: " The right to refuse to provide your personal data" }),
         /* @__PURE__ */ jsx("br", {}),
-            "The voluntary Personal Data you provide to us is an integral part of your use of Polus Dashboard. You can choose to forego the provision of that data, but you will be restricted from using our services."
-          ]
-        }),
-      /* @__PURE__ */ jsxs("li", {
-          children: [
+        "The voluntary Personal Data you provide to us is an integral part of your use of Polus Dashboard. You can choose to forego the provision of that data, but you will be restricted from using our services."
+      ] }),
+      /* @__PURE__ */ jsxs("li", { children: [
         /* @__PURE__ */ jsx("strong", { children: "The right to access and modify your personal data" }),
         /* @__PURE__ */ jsx("br", {}),
-            "Through your use of Polus Dashboard, you can access and amend your own data at any time. This includes adding, editing and deleting other Polus data like your to-dos."
-          ]
-        }),
-      /* @__PURE__ */ jsxs("li", {
-          children: [
+        "Through your use of Polus Dashboard, you can access and amend your own data at any time. This includes adding, editing and deleting other Polus data like your to-dos."
+      ] }),
+      /* @__PURE__ */ jsxs("li", { children: [
         /* @__PURE__ */ jsx("strong", { children: " The right to be forgotten" }),
         /* @__PURE__ */ jsx("br", {}),
-            "You can manually delete your account by clicking Delete my account on your Polus account’s Profile page at any time. See the “What happens to my data when I delete my account?” section below to learn more about the deletion process."
-          ]
-        }),
-      /* @__PURE__ */ jsxs("li", {
-          children: [
+        "You can manually delete your account by clicking Delete my account on your Polus account’s Profile page at any time. See the “What happens to my data when I delete my account?” section below to learn more about the deletion process."
+      ] }),
+      /* @__PURE__ */ jsxs("li", { children: [
         /* @__PURE__ */ jsx("strong", { children: "The right to obtain your personal data " }),
         /* @__PURE__ */ jsx("br", {}),
-            "Upon request, we will provide a data export of all your data stored in our system. If you wish to receive an export of your data, or have any problems deleting your account, please contact us."
-          ]
-        }),
-      /* @__PURE__ */ jsxs("li", {
-          children: [
+        "Upon request, we will provide a data export of all your data stored in our system. If you wish to receive an export of your data, or have any problems deleting your account, please contact us."
+      ] }),
+      /* @__PURE__ */ jsxs("li", { children: [
         /* @__PURE__ */ jsx("strong", { children: " The right to submit a complaint " }),
         /* @__PURE__ */ jsx("br", {}),
-            "If you have a complaint about the way in which your Personal Data is handled, please contact us. After submitting a complaint, we will reply within five (5) business days to confirm that we have received your complaint. After receiving your complaint, we will investigate it and provide you with our response within two (2) weeks."
-          ]
-        }),
-      /* @__PURE__ */ jsxs("li", {
-          children: [
+        "If you have a complaint about the way in which your Personal Data is handled, please contact us. After submitting a complaint, we will reply within five (5) business days to confirm that we have received your complaint. After receiving your complaint, we will investigate it and provide you with our response within two (2) weeks."
+      ] }),
+      /* @__PURE__ */ jsxs("li", { children: [
         /* @__PURE__ */ jsx("strong", { children: "The right to submit a complaint with a data protection authority" }),
         /* @__PURE__ */ jsx("br", {}),
-            "If you are a resident of the European Union, and you are not satisfied with the outcome of the complaint submitted to us, you have the right to lodge a complaint with your local data protection authority."
-          ]
-        })
-        ]
-      }),
+        "If you are a resident of the European Union, and you are not satisfied with the outcome of the complaint submitted to us, you have the right to lodge a complaint with your local data protection authority."
+      ] })
+    ] }),
     /* @__PURE__ */ jsx("h4", { id: "what-happens-to-my-data-when-i-delete-my-account", children: "What happens to my data when I delete my account?" }),
     /* @__PURE__ */ jsx("p", { className: "legal-p", children: "Upon account deletion, your account is flagged as deleted and your data is no longer accessible. This data is stored for a grace period (90 days) to allow for account recovery in the case of accidental or malicious deletion, or your desire to reopen your account. Upon request, you can expedite the process of performing a hard delete to remove all of your personal data from our databases. After a hard delete, your data will be deleted from our system, but could still be present in encrypted database backups for up to an additional 35 days." }),
-    /* @__PURE__ */ jsxs("p", {
-        className: "legal-p", children: [
-          "To request an expedited hard delete, please",
-          " ",
+    /* @__PURE__ */ jsxs("p", { className: "legal-p", children: [
+      "To request an expedited hard delete, please",
+      " ",
       /* @__PURE__ */ jsx("a", { href: "mailto:danielchicchon@gmail.com", children: " contact us." })
-        ]
-      }),
+    ] }),
     /* @__PURE__ */ jsx("h4", { id: "is-my-data-secure", children: " Is my data secure?" }),
     /* @__PURE__ */ jsx("p", { className: "legal-p", children: "Data security is a priority at all times." }),
     /* @__PURE__ */ jsx("h4", { id: "will-the-privacy-policy-change", children: "Will the privacy policy change?" }),
     /* @__PURE__ */ jsx("p", { className: "legal-p", children: "Although most changes are likely to be minor, Polus may change its Privacy Policy from time to time, and at Polus' sole discretion. Polus encourages visitors to frequently check this page for any changes to its Privacy Policy. Your continued use of this site after any change in this Privacy Policy will constitute your acceptance of such change." }),
-    /* @__PURE__ */ jsxs("p", {
-        className: "legal-p", children: [
-          "If you have any questions about Polus' Privacy policy, please",
+    /* @__PURE__ */ jsxs("p", { className: "legal-p", children: [
+      "If you have any questions about Polus' Privacy policy, please",
       /* @__PURE__ */ jsx("a", { href: "mailto:danielchicchon@gmail.com", children: " contact us." })
-        ]
-      }),
+    ] }),
     /* @__PURE__ */ jsx("p", { className: "last-updated", children: "Last updated September 14, 2020" })
-      ]
-    })
-  });
+  ] }) });
 }
 const Terms$1 = "";
 function Terms() {
-  return /* @__PURE__ */ jsx(Fragment, {
-    children: /* @__PURE__ */ jsxs("section", {
-      className: "legal", children: [
+  return /* @__PURE__ */ jsx(Fragment, { children: /* @__PURE__ */ jsxs("section", { className: "legal", children: [
     /* @__PURE__ */ jsx("h2", { className: "legal-h2", children: "Terms of Use" }),
     /* @__PURE__ */ jsx("p", { className: "small", children: "Important: Before using this software (Polus), please carefully read this agreement which contains the terms and conditions under which you are acquiring a license to use Polus. If you do not accept the terms and conditions of this agreement please do not use Polus. If you access or use Polus, you will be accepting the terms and conditions of this agreement and Polus' Privacy Policy. Polus is protected by copyright laws and international copyright treaties, as well as other intellectual property laws." }),
     /* @__PURE__ */ jsx("p", { className: "small", children: "If you are an agent or employee of another entity you represent and warrant that (i) the individual accepting this agreement is duly authorized to accept this agreement on such entity’s behalf and to bind such entity, and (ii) such entity has full power, corporate or otherwise, to enter into this agreement and perform its obligations hereunder." }),
     /* @__PURE__ */ jsx("h4", { id: "1-definitions", children: "1. Definitions" }),
-    /* @__PURE__ */ jsxs("p", {
-        children: [
-          '(i) "User" or "You" means the individual or the business entity to which a license is granted by Polus for the use of the Software;',
-          " "
-        ]
-      }),
+    /* @__PURE__ */ jsxs("p", { children: [
+      '(i) "User" or "You" means the individual or the business entity to which a license is granted by Polus for the use of the Software;',
+      " "
+    ] }),
     /* @__PURE__ */ jsx("p", { children: `(ii) "Effective Date" means the date on which a User first installs the Licensed Software through Polus' website or through a third-party application, extension, or add-on store such as the Chrome Web Store` }),
     /* @__PURE__ */ jsx("p", { children: "(iii) “Licensed Software” means the web-based software extension called Polus, which is proprietary to Polus;" }),
     /* @__PURE__ */ jsx("p", { children: "(iv) “Licensee Data” means all electronic data or information submitted by User to the Service;" }),
     /* @__PURE__ */ jsx("p", { children: "(v) “Service” means the provision of access to the Licensed Software for the purpose of transmitting Licensee Data;" }),
     /* @__PURE__ */ jsx("p", { children: "(vi) “Usage Data” means data collected about the User’s use of the Service. For example, how often the User accesses a to do list, or what photo(s) they download." }),
     /* @__PURE__ */ jsx("h4", { id: "2-licenses-and-data", children: "2. Licenses and Data" }),
-    /* @__PURE__ */ jsxs("p", {
-        children: [
+    /* @__PURE__ */ jsxs("p", { children: [
       /* @__PURE__ */ jsx("strong", { children: " 2. Licenses and Data 2.1 Software License Grant" }),
       /* @__PURE__ */ jsx("br", {}),
-          "Subject to all of the terms and conditions of this Agreement and payment of any applicable fees, Polus grants to the User a royalty-free, non-exclusive, non-transferable license to download, install and use the Licensed Software as part of the Service."
-        ]
-      }),
-    /* @__PURE__ */ jsxs("p", {
-        children: [
+      "Subject to all of the terms and conditions of this Agreement and payment of any applicable fees, Polus grants to the User a royalty-free, non-exclusive, non-transferable license to download, install and use the Licensed Software as part of the Service."
+    ] }),
+    /* @__PURE__ */ jsxs("p", { children: [
       /* @__PURE__ */ jsx("strong", { children: " 2.2 License to Licensee Data" }),
       /* @__PURE__ */ jsx("br", {}),
-          "User grants to Polus a non-exclusive license to access and modify Licensee Data as required in order to provide the Service."
-        ]
-      }),
-    /* @__PURE__ */ jsxs("p", {
-        children: [
+      "User grants to Polus a non-exclusive license to access and modify Licensee Data as required in order to provide the Service."
+    ] }),
+    /* @__PURE__ */ jsxs("p", { children: [
       /* @__PURE__ */ jsx("strong", { children: " 2.3 Usage Data" }),
       /* @__PURE__ */ jsx("br", {}),
-          "User agrees that Polus will have the right to collect Usage Data and to create statistics and analytics therefrom (“Derived Data”) as per the Privacy Policy currently in effect."
-        ]
-      }),
-    /* @__PURE__ */ jsxs("p", {
-        children: [
+      "User agrees that Polus will have the right to collect Usage Data and to create statistics and analytics therefrom (“Derived Data”) as per the Privacy Policy currently in effect."
+    ] }),
+    /* @__PURE__ */ jsxs("p", { children: [
       /* @__PURE__ */ jsx("strong", { children: " 2.4 Consent for Children Under 16" }),
       /* @__PURE__ */ jsx("br", {}),
-          "By using our service, you represent and warrant that you are at least 16 years of age. No one under the age of 16 may use the Service, except as set forth as follows."
-        ]
-      }),
+      "By using our service, you represent and warrant that you are at least 16 years of age. No one under the age of 16 may use the Service, except as set forth as follows."
+    ] }),
     /* @__PURE__ */ jsx("p", { children: "Polus is not directed to children, and we expect that any use by children will only be done with the guidance, supervision and consent of their parents, guardians and/or authorized school officials. If you are under the age of 16 you must receive consent from a parent, guardian and/or an authorized school official to use the Service. Polus relies on parents and guardians to ensure that minors only use Polus if they can understand their rights and responsibilities as laid out in these Terms of Service and in our Privacy Policy." }),
     /* @__PURE__ */ jsx("p", { children: `If you are an authorized school official in the United States or in the EU and want your students, who are under the age of 16, to create Polus accounts, you are responsible for complying with the U.S. Children's Online Privacy Protection Act ("COPPA") and, to the extent applicable, the Family Educational Rights and Privacy Act ("FERPA"), or the GDPR policy, respectively. This means that you must notify the students' parents/guardians of the personally identifiable information that Polus will collect, and that you will obtain parental/guardian consent before your students establish accounts or use Polus. When obtaining such consent, you must provide their parents or guardians with a copy of our Privacy Policy and keep all consents on file and provide them to us upon request.` }),
     /* @__PURE__ */ jsx("p", { children: "For more information on complying with COPPA, see the Federal Trade Commission's website. If you are located outside of the United States, we will rely on you to obtain any required consent or approval from the parent or guardian of any student covered by similar laws, and, as a condition to your and your students' use of Polus, you agree that you will be responsible for complying with such laws." }),
     /* @__PURE__ */ jsx("p", { children: "If we become aware that a child under the age of 16 has provided us with personal information, without the consent of a parent, guardian and/or an authorized school official, we will delete the child’s account and information. If you are aware that a child under the age of 16 has provided Polus with personal information without the consent of a parent, guardian and/or an authorized school official, please contact Polus support." }),
     /* @__PURE__ */ jsx("h4", { id: "3-disclaimer-of-warranties", children: " 3. Disclaimer of Warranties " }),
-    /* @__PURE__ */ jsxs("p", {
-        children: [
+    /* @__PURE__ */ jsxs("p", { children: [
       /* @__PURE__ */ jsx("strong", { children: "3.1" }),
-          ' To the greatest extent permitted by law, the licensed software and technical support provided by Polus hereunder are provided on an "as is" basis. There are no warranties, representations or conditions, express or implied, written or oral, arising by statute, operation of law, course of dealing, usage of trade or otherwise, regarding them or any other product or service provided under this agreement or in connection with this agreement by Polus. Polus disclaims any implied warranties or conditions of quality, merchantability, merchantable quality, durability, fitness for a particular purpose and non-infringement. Polus does not represent or warrant that the software shall meet any or all of User’s particular requirements, that the software will operate error-free or uninterrupted or that all errors or defects in the software can be found or corrected.'
-        ]
-      }),
-    /* @__PURE__ */ jsxs("p", {
-        children: [
+      ' To the greatest extent permitted by law, the licensed software and technical support provided by Polus hereunder are provided on an "as is" basis. There are no warranties, representations or conditions, express or implied, written or oral, arising by statute, operation of law, course of dealing, usage of trade or otherwise, regarding them or any other product or service provided under this agreement or in connection with this agreement by Polus. Polus disclaims any implied warranties or conditions of quality, merchantability, merchantable quality, durability, fitness for a particular purpose and non-infringement. Polus does not represent or warrant that the software shall meet any or all of User’s particular requirements, that the software will operate error-free or uninterrupted or that all errors or defects in the software can be found or corrected.'
+    ] }),
+    /* @__PURE__ */ jsxs("p", { children: [
       /* @__PURE__ */ jsx("strong", { children: "3.2" }),
-          " In certain jurisdictions some or all of the provisions in this Section may not be effective, or the applicable law may mandate a more extensive warranty, in which case the applicable law will prevail over this Agreement."
-        ]
-      }),
+      " In certain jurisdictions some or all of the provisions in this Section may not be effective, or the applicable law may mandate a more extensive warranty, in which case the applicable law will prevail over this Agreement."
+    ] }),
     /* @__PURE__ */ jsx("h4", { id: "4-limitation-of-liability", children: " 4. Limitation of Liability " }),
-    /* @__PURE__ */ jsxs("p", {
-        children: [
+    /* @__PURE__ */ jsxs("p", { children: [
       /* @__PURE__ */ jsx("strong", { children: "4.1" }),
-          " To the greatest extent permitted by applicable law, in no event shall Polus be liable to the User or any other person for any direct, indirect, incidental, special, punitive, exemplary or consequential damages whatsoever, including without limitation, legal expenses, loss of business, loss of profits, loss of revenue, lost or damaged data, loss of computer time, cost of substitute goods or services, or failure to realize expected savings or any other commercial or economic losses arising out of or in connection with this agreement, even if Polus has been advised of the possibility of such loss or damages, or such losses or damages are foreseeable."
-        ]
-      }),
-    /* @__PURE__ */ jsxs("p", {
-        children: [
+      " To the greatest extent permitted by applicable law, in no event shall Polus be liable to the User or any other person for any direct, indirect, incidental, special, punitive, exemplary or consequential damages whatsoever, including without limitation, legal expenses, loss of business, loss of profits, loss of revenue, lost or damaged data, loss of computer time, cost of substitute goods or services, or failure to realize expected savings or any other commercial or economic losses arising out of or in connection with this agreement, even if Polus has been advised of the possibility of such loss or damages, or such losses or damages are foreseeable."
+    ] }),
+    /* @__PURE__ */ jsxs("p", { children: [
       /* @__PURE__ */ jsx("strong", { children: "4.2" }),
-          " The entire liability of Polus and the User’s exclusive remedy with respect to the software and technical support. Any other products or services supplied by Polus in connection with this agreement for damages for any cause and regardless of the cause of action, whether in contract or in tort, including fundamental breach or negligence, will be limited in the aggregate to the amounts paid by User to Polus under this agreement for the software, technical support or services giving rise to the claim."
-        ]
-      }),
-    /* @__PURE__ */ jsxs("p", {
-        children: [
+      " The entire liability of Polus and the User’s exclusive remedy with respect to the software and technical support. Any other products or services supplied by Polus in connection with this agreement for damages for any cause and regardless of the cause of action, whether in contract or in tort, including fundamental breach or negligence, will be limited in the aggregate to the amounts paid by User to Polus under this agreement for the software, technical support or services giving rise to the claim."
+    ] }),
+    /* @__PURE__ */ jsxs("p", { children: [
       /* @__PURE__ */ jsx("strong", { children: "4.3" }),
-          " The disclaimer of representations, warranties and conditions and limitation of liability constitute an essential part of this agreement. You acknowledge that for the disclaimer of representations, warranties and conditions and limitation of liability, neither Polus nor any of its licensors or suppliers would grant the rights granted in this agreement."
-        ]
-      }),
+      " The disclaimer of representations, warranties and conditions and limitation of liability constitute an essential part of this agreement. You acknowledge that for the disclaimer of representations, warranties and conditions and limitation of liability, neither Polus nor any of its licensors or suppliers would grant the rights granted in this agreement."
+    ] }),
     /* @__PURE__ */ jsx("h4", { id: "5-proprietary-rights", children: "5. Proprietary Rights " }),
-    /* @__PURE__ */ jsxs("p", {
-        children: [
+    /* @__PURE__ */ jsxs("p", { children: [
       /* @__PURE__ */ jsx("strong", { children: "5.1" }),
-          " The User acknowledges and agrees that the Licensed Software contains confidential and proprietary information and trade secrets belonging to Polus and its licensors. The User acknowledges and agrees that title in and rights to the Software remains exclusively with Polus and its licensors. The User’s rights to the Software are strictly limited to those granted in this Agreement. User shall not decompile, disassemble or otherwise reverse engineer the Software. If the foregoing provision is prohibited by applicable law, the User will provide Polus with advance written notification of (a) its intention to decompile, disassemble or otherwise reverse engineer the Software, and (b) the nature of the work involved. Polus will be given the right of first refusal to perform such work at its prevailing rates and prices."
-        ]
-      }),
+      " The User acknowledges and agrees that the Licensed Software contains confidential and proprietary information and trade secrets belonging to Polus and its licensors. The User acknowledges and agrees that title in and rights to the Software remains exclusively with Polus and its licensors. The User’s rights to the Software are strictly limited to those granted in this Agreement. User shall not decompile, disassemble or otherwise reverse engineer the Software. If the foregoing provision is prohibited by applicable law, the User will provide Polus with advance written notification of (a) its intention to decompile, disassemble or otherwise reverse engineer the Software, and (b) the nature of the work involved. Polus will be given the right of first refusal to perform such work at its prevailing rates and prices."
+    ] }),
     /* @__PURE__ */ jsx("h4", { id: "6-uninstalling-the-software", children: " 6. Uninstalling the Software " }),
-    /* @__PURE__ */ jsxs("p", {
-        children: [
+    /* @__PURE__ */ jsxs("p", { children: [
       /* @__PURE__ */ jsx("strong", { children: "6.1" }),
-          " Users can uninstall the Licensed Software at any time by following the process outlined in your browser’s help documentation."
-        ]
-      }),
+      " Users can uninstall the Licensed Software at any time by following the process outlined in your browser’s help documentation."
+    ] }),
     /* @__PURE__ */ jsx("h4", { id: "7-term-and-termination", children: "7. Term and Termination " }),
-    /* @__PURE__ */ jsxs("p", {
-        children: [
+    /* @__PURE__ */ jsxs("p", { children: [
       /* @__PURE__ */ jsx("strong", { children: "7.1" }),
-          " The term of this Agreement will begin upon the Effective Date and shall continue for as long as User uses the Service under subscription and pays all applicable fees, unless earlier terminated under this section 7."
-        ]
-      }),
-    /* @__PURE__ */ jsxs("p", {
-        children: [
+      " The term of this Agreement will begin upon the Effective Date and shall continue for as long as User uses the Service under subscription and pays all applicable fees, unless earlier terminated under this section 7."
+    ] }),
+    /* @__PURE__ */ jsxs("p", { children: [
       /* @__PURE__ */ jsx("strong", { children: "7.2" }),
-          " Polus may terminate this Agreement in the event of any breach by the User if such breach has not been cured within thirty (30) days of notice to User. No termination of this Agreement will entitle the User to a refund of any amounts paid by User to Polus or affect any obligations User may have to pay any outstanding amounts owing to Polus."
-        ]
-      }),
-    /* @__PURE__ */ jsxs("p", {
-        children: [
+      " Polus may terminate this Agreement in the event of any breach by the User if such breach has not been cured within thirty (30) days of notice to User. No termination of this Agreement will entitle the User to a refund of any amounts paid by User to Polus or affect any obligations User may have to pay any outstanding amounts owing to Polus."
+    ] }),
+    /* @__PURE__ */ jsxs("p", { children: [
       /* @__PURE__ */ jsx("strong", { children: "7.3" }),
-          " The User’s rights to use and access the Service will immediately terminate upon termination or expiration of this Agreement. Sections 1, 4, 5, 6, 7, and 8.3 of this Agreement shall survive the expiration or termination of this Agreement."
-        ]
-      }),
+      " The User’s rights to use and access the Service will immediately terminate upon termination or expiration of this Agreement. Sections 1, 4, 5, 6, 7, and 8.3 of this Agreement shall survive the expiration or termination of this Agreement."
+    ] }),
     /* @__PURE__ */ jsx("h4", { id: "8-general-provisions", children: "8. General Provisions " }),
-    /* @__PURE__ */ jsxs("p", {
-        children: [
+    /* @__PURE__ */ jsxs("p", { children: [
       /* @__PURE__ */ jsx("strong", { children: "8.1 No Waiver" }),
       /* @__PURE__ */ jsx("br", {}),
-          "No delay or failure in exercising any right under this Agreement, or any partial or single exercise of any right, will constitute a waiver of that right or any other rights under this Agreement. No consent to a breach of any express or implied term set out in this Agreement constitutes consent to any subsequent breach, whether of the same or any other provision."
-        ]
-      }),
-    /* @__PURE__ */ jsxs("p", {
-        children: [
+      "No delay or failure in exercising any right under this Agreement, or any partial or single exercise of any right, will constitute a waiver of that right or any other rights under this Agreement. No consent to a breach of any express or implied term set out in this Agreement constitutes consent to any subsequent breach, whether of the same or any other provision."
+    ] }),
+    /* @__PURE__ */ jsxs("p", { children: [
       /* @__PURE__ */ jsx("strong", { children: "8.2 Severability" }),
       /* @__PURE__ */ jsx("br", {}),
-          "If any provision of this Agreement is, or becomes, unenforceable, it will be severed from this Agreement and the remainder of this Agreement will remain in full force and effect."
-        ]
-      }),
-    /* @__PURE__ */ jsxs("p", {
-        children: [
+      "If any provision of this Agreement is, or becomes, unenforceable, it will be severed from this Agreement and the remainder of this Agreement will remain in full force and effect."
+    ] }),
+    /* @__PURE__ */ jsxs("p", { children: [
       /* @__PURE__ */ jsx("strong", { children: "8.3 Assignment" }),
       /* @__PURE__ */ jsx("br", {}),
-          "The User may not transfer or assign this Agreement (whether voluntarily, by operation of law, or otherwise) without Polus' prior written consent. Polus may assign this Agreement at any time without notice. This Agreement is binding upon and will inure to the benefit of both parties, and their respective successors and permitted assigns."
-        ]
-      }),
-    /* @__PURE__ */ jsxs("p", {
-        children: [
+      "The User may not transfer or assign this Agreement (whether voluntarily, by operation of law, or otherwise) without Polus' prior written consent. Polus may assign this Agreement at any time without notice. This Agreement is binding upon and will inure to the benefit of both parties, and their respective successors and permitted assigns."
+    ] }),
+    /* @__PURE__ */ jsxs("p", { children: [
       /* @__PURE__ */ jsx("strong", { children: "8.4 Governing Law and Venue" }),
       /* @__PURE__ */ jsx("br", {}),
-          "This Agreement shall be governed by the laws of the United States of America. No choice of laws rules of any jurisdiction shall apply to this Agreement. The User consents and agrees that the courts of the United States of America shall have jurisdiction over any legal action or proceeding brought by the User arising out of or relating to this Agreement, and the User consents to the jurisdiction of such courts for any such action or proceeding."
-        ]
-      }),
-    /* @__PURE__ */ jsxs("p", {
-        children: [
+      "This Agreement shall be governed by the laws of the United States of America. No choice of laws rules of any jurisdiction shall apply to this Agreement. The User consents and agrees that the courts of the United States of America shall have jurisdiction over any legal action or proceeding brought by the User arising out of or relating to this Agreement, and the User consents to the jurisdiction of such courts for any such action or proceeding."
+    ] }),
+    /* @__PURE__ */ jsxs("p", { children: [
       /* @__PURE__ */ jsx("strong", { children: "8.5 Entire Agreement " }),
       /* @__PURE__ */ jsx("br", {}),
-          "This Agreement is the entire understanding and agreement between the User and Polus with respect to the subject matter hereof, and it supersedes all prior negotiations, commitments and understandings, verbal or written, any purchase order issued by User."
-        ]
-      }),
+      "This Agreement is the entire understanding and agreement between the User and Polus with respect to the subject matter hereof, and it supersedes all prior negotiations, commitments and understandings, verbal or written, any purchase order issued by User."
+    ] }),
     /* @__PURE__ */ jsx("p", { children: "If you have any questions about this agreement, please contact us." }),
     /* @__PURE__ */ jsx("p", { className: "last-updated", children: "Last updated September 14, 2020." })
-      ]
-    })
-  });
+  ] }) });
 }
 const nav = "_nav_1fgal_1";
 const nav_link = "_nav_link_1fgal_11";
@@ -1396,14 +1301,12 @@ const styles$1 = {
   nav_link
 };
 function Navbar() {
-  return /* @__PURE__ */ jsxs("header", {
-    className: styles$1.nav, children: [
+  return /* @__PURE__ */ jsxs("header", { className: styles$1.nav, children: [
     /* @__PURE__ */ jsx(Link, { className: styles$1.nav_link, to: "", children: "Home" }),
     /* @__PURE__ */ jsx(Link, { className: styles$1.nav_link, to: "about", children: "About" }),
     /* @__PURE__ */ jsx(Link, { className: styles$1.nav_link, to: "privacy", children: "Privacy" }),
     /* @__PURE__ */ jsx(Link, { className: styles$1.nav_link, to: "terms", children: "Terms" })
-    ]
-  });
+  ] });
 }
 const polus_footer = "_polus_footer_10pn9_1";
 const footer_nav = "_footer_nav_10pn9_13";
@@ -1418,49 +1321,35 @@ const styles = {
   footer_legal
 };
 function Footer() {
-  return /* @__PURE__ */ jsxs("footer", {
-    id: styles.polus_footer, children: [
-    /* @__PURE__ */ jsxs("nav", {
-      className: styles.footer_nav, children: [
-      /* @__PURE__ */ jsxs("div", {
-        className: styles.footer_nav_col, children: [
+  return /* @__PURE__ */ jsxs("footer", { id: styles.polus_footer, children: [
+    /* @__PURE__ */ jsxs("nav", { className: styles.footer_nav, children: [
+      /* @__PURE__ */ jsxs("div", { className: styles.footer_nav_col, children: [
         /* @__PURE__ */ jsx("h4", { children: "Company" }),
         /* @__PURE__ */ jsx(Link, { to: "about", children: "About" })
-        ]
-      }),
-      /* @__PURE__ */ jsxs("div", {
-        className: styles.footer_nav_col, children: [
+      ] }),
+      /* @__PURE__ */ jsxs("div", { className: styles.footer_nav_col, children: [
         /* @__PURE__ */ jsx("h4", { children: "Support" }),
         /* @__PURE__ */ jsx(Link, { to: "privacy", children: "Privacy" }),
         /* @__PURE__ */ jsx(Link, { to: "terms", children: "Terms" })
-        ]
-      })
-      ]
-    }),
+      ] })
+    ] }),
     /* @__PURE__ */ jsx("img", { className: styles.footer_logo, src: polusIcon, alt: "Polus Icon" })
-    ]
-  });
+  ] });
 }
 const Root = () => {
-  return /* @__PURE__ */ jsxs(Fragment, {
-    children: [
+  return /* @__PURE__ */ jsxs(Fragment, { children: [
     /* @__PURE__ */ jsx(Navbar, {}),
     /* @__PURE__ */ jsx(Outlet, {}),
     /* @__PURE__ */ jsx(Footer, {})
-    ]
-  });
+  ] });
 };
 const App = () => {
-  return /* @__PURE__ */ jsx(Routes, {
-    children: /* @__PURE__ */ jsxs(Route, {
-      path: "/", element: /* @__PURE__ */ jsx(Root, {}), children: [
+  return /* @__PURE__ */ jsx(Routes, { children: /* @__PURE__ */ jsxs(Route, { path: "/", element: /* @__PURE__ */ jsx(Root, {}), children: [
     /* @__PURE__ */ jsx(Route, { path: "", element: /* @__PURE__ */ jsx(Home, {}) }),
     /* @__PURE__ */ jsx(Route, { path: "about", element: /* @__PURE__ */ jsx(About, {}) }),
     /* @__PURE__ */ jsx(Route, { path: "privacy", element: /* @__PURE__ */ jsx(Privacy, {}) }),
     /* @__PURE__ */ jsx(Route, { path: "terms", element: /* @__PURE__ */ jsx(Terms, {}) })
-      ]
-    })
-  });
+  ] }) });
 };
 export {
   App as default
