@@ -14,17 +14,12 @@ body {
   height: 100%;
   width: 100%;
   overflow-x: hidden;
-  /* height: 1px; */
-  /* font-family: "Lato", sans-serif; */
-  /* min-height: 100vh; */
 }
 
 #root {
-  height: 1px;
   display: flex;
   flex-direction: column;
   height: 100%;
-  /* min-height: 100vh; */
 }
 
 a {

@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 100px;
+  /* padding: 100px; */
   background: rgb(28, 35, 51);
   height: 100%;
   color: #85ceff;
