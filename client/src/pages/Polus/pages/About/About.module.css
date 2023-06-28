@@ -1,0 +1,45 @@
+
+.subheading {
+  font-size: 1.5em;
+  margin-top: 20px;
+  margin: 15px 0;
+  color: #a1a1a1;
+  font-size: 150%;
+  font-weight: 300;
+  line-height: 140%;
+  text-align: center;
+}
+
+.container {
+  margin: 2rem auto;
+  /* padding-top: 2rem; */
+  width: 90%;
+  /* height: 100%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.screenshot {
+  width: 75%;
+  padding-top: 5rem;
+}
+
+@media only screen and (max-width: 600px) {
+
+.container {
+  margin: 2rem auto 0;
+  width: 100%;
+}
+  .subheading {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+  .card_width {
+    width: 75%;
+  }
+  .screenshot{ 
+    width: 100%;
+    padding-top: 2rem;
+  }
+}

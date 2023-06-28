@@ -1,0 +1,26 @@
+/* App wide styles */
+
+.h1,
+.h2,
+.h3 {
+  /* margin: 0; */
+  padding: 0.5rem;
+  font-weight: 300;
+}
+
+.h1 {
+  font-size: xx-large;
+}
+
+.h2 {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
+    Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: x-large;
+}
+
+.color_dark {
+  color: #222;
+}
+.color_light {
+  color: white;
+}

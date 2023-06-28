@@ -1,6 +1,5 @@
 import { initializeApp } from 'firebase/app';
-import { getAnalytics } from "firebase/analytics";
-
+import { getAnalytics, logEvent } from "firebase/analytics";
 const firebaseConfig = {
     apiKey: "AIzaSyCGCLC3r0-eVYoKoJ1q8p_ZT1I4ghhyi-Y",
     authDomain: "react-portfolio-f7e64.firebaseapp.com",
@@ -14,3 +13,4 @@ const firebaseConfig = {
 
 export const app = initializeApp(firebaseConfig);
 export const analytics = getAnalytics(app);
+export const ga = (item) => logEvent(analytics, item)

@@ -1,12 +1,5 @@
-import { Link, useLocation, Navigate } from "react-router-dom";
-import "./Error.css";
-
-const redirectMap = {
-  '/polus': '/projects/polus-site',
-  '/polus/privacy': '/projects/polus-site/privacy',
-
-
-}
+import { Link } from 'react-router-dom';
+import './Error.css';
 
 const SadSVG = () => {
   return (
@@ -33,11 +26,7 @@ const SadSVG = () => {
 };
 
 const Error = ({ message }) => {
-  const location = useLocation();
-  if (Object.keys(redirectMap).includes(location.pathname)) {
-    return <Navigate to={{ pathname: redirectMap[location.pathname] }} />
-  }
-  const errorMessage = message || "Oops! This page does not exist"
+  const errorMessage = message || 'Oops! This page does not exist';
   return (
     <>
       <div className="errorPage">

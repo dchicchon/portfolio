@@ -24,7 +24,7 @@ body {
 
 a {
   color: white;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 a:hover {

@@ -10,9 +10,9 @@ import { useEffect } from 'react';
 
 const ImageWrapper = ({ imgSrc, alt }) => {
     return (
-        <div className={styles.image_wrapper}>
+        // <div className={styles.image_wrapper}>
             <img className={styles.my_image} loading='lazy' src={imgSrc} alt={alt} />
-        </div>
+        // </div>
     )
 }
 
@@ -40,6 +40,7 @@ const About = () => {
                                 <Link to={cvPath.to}>
                                     <p className={appStyles.link}>CV</p>
                                 </Link>
+                                Github: <a target='_blank' rel='noreferrer' href="https://github.com/dchicchon">@dchicchon</a>
                             </div>
                             <div>
                                 <h2>Get in touch</h2>

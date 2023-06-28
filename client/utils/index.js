@@ -113,7 +113,7 @@ const parseFile = async (file, projectName, projectPath) => {
         }
 
         const { description: mainDescription } = packageJson;
-        const { entry, title, description, icon } = packageJson.reactProject;
+        const { entry, title, description, icon, repository } = packageJson.reactProject;
 
         const entryPath = path.resolve(projectPath, entry);
 
@@ -124,6 +124,7 @@ const parseFile = async (file, projectName, projectPath) => {
             title: title || projectName[0].toUpperCase() + projectName.slice(1),
             name: projectName,
             description: description ? quote(description) : quote(mainDescription),
+            repository: quote(repository)
         };
         const iconPath = getIcon(projectPath, icon);
         if (iconPath) {
