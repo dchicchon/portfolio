@@ -16,7 +16,7 @@
     "build": "vite build",
     "build:debug": "vite build --debug",
     "preview": "vite preview",
-    "check-deps": "check-dependencies",
+    "check-deps": "check-dependencies --verbose",
     "update-deps": "npx npm-check-updates -u && npm install",
     "deploy": "firebase deploy"
   },
