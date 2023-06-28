@@ -38,6 +38,6 @@
     "@vitejs/plugin-react": "^3.1.0",
     "chalk": "^5.2.0",
     "check-dependencies": "^1.1.0",
-    "vite": "^4.2.3"
+    "vite": "^4.3.9"
   }
 }
