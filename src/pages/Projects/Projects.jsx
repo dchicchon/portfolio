@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-// import { projectMap } from '../../utils/projectRoutes';
 import { projectsList } from '../../utils/projectsList';
 import { classList } from '../../utils';
 
@@ -28,6 +27,25 @@ const ProjectCard = ({ project }) => {
       </a>
     );
   };
+
+
+  const RepoLink = () => {
+    if (!repo) return;
+    return (
+      <a
+        onClick={() => {
+          console.log('repo visit');
+          ga(`repo visit: ${title}`);
+        }}
+        target="_blank"
+        rel="noreferrer"
+        href={repo}
+      >
+        Repository
+      </a>
+    );
+  };
+
   return (
     <div className={classList(styles.project, appStyles.background_gray)}>
       <div className={styles.project_details}>
@@ -35,17 +53,7 @@ const ProjectCard = ({ project }) => {
         <p className={styles.project_description}>{description}</p>
         <ProjectLink />
         {'    '}
-        <a
-          onClick={() => {
-            console.log('repo visit');
-            ga(`repo visit: ${title}`);
-          }}
-          target="_blank"
-          rel="noreferrer"
-          href={repo}
-        >
-          Repository
-        </a>
+        <RepoLink />
       </div>
     </div>
   );

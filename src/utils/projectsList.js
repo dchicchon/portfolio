@@ -16,6 +16,12 @@ export const projectsList = [
         internal: false,
     },
     {
+        title: 'LetsMeet',
+        description: 'A site to figure out when to meet',
+        site: 'https://letsmeet.space',
+        internal: false,
+    },
+    {
         title: 'topo',
         description: 'A configurable map used to create custom contour maps',
         repo: 'https://github.com/dchicchon/topo-art',
