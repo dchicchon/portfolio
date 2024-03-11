@@ -28,7 +28,6 @@ const ProjectCard = ({ project }) => {
     );
   };
 
-
   const RepoLink = () => {
     if (!repo) return;
     return (
@@ -51,9 +50,11 @@ const ProjectCard = ({ project }) => {
       <div className={styles.project_details}>
         <h3 className={appStyles.h2}>{title}</h3>
         <p className={styles.project_description}>{description}</p>
-        <ProjectLink />
-        {'    '}
-        <RepoLink />
+        {/* we should add space between */}
+        <div style={{ display: 'flex', justifyContent: 'space-around' }}>
+          <ProjectLink />
+          <RepoLink />
+        </div>
       </div>
     </div>
   );
