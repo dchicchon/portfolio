@@ -31,8 +31,7 @@ function Cell({ activity }) {
         <p>Activity: Github</p>
         <p>Type: {activity.type}</p>
         <div>
-          <p>Repository:</p>
-          <a href={activity.repo.url}>{activity.repo.name}</a>
+          <p>Repository:  <a href={`https://github.com/${activity.repo.name}`}>{activity.repo.name}</a></p>
         </div>
       </div>
     );

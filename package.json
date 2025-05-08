@@ -12,7 +12,7 @@
     "check-deps": "check-dependencies --verbose",
     "update-deps": "npx npm-check-updates -u && npm install",
     "deploy": "firebase deploy"
-  },
+  },  
   "eslintConfig": {
     "extends": "react-app"
   },

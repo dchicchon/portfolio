@@ -1,20 +1,18 @@
 {
   "hosting": {
     "public": "dist",
-    "headers":[
+    "headers": [
       {
-        "source":"**",
-        "headers": [ {
-          "key":"Access-Control-Allow-Origin",
-          "value":"*"
-        }]
+        "source": "**",
+        "headers": [
+          {
+            "key": "Access-Control-Allow-Origin",
+            "value": "*"
+          }
+        ]
       }
     ],
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ],
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "rewrites": [
       {
         "source": "**",
