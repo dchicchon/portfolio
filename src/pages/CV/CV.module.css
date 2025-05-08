@@ -10,7 +10,7 @@
 .wrapper {
   padding: 5rem;
   width: 50%;
-  border: 1px solid var(--red);
+  border: 5px solid var(--red);
 }
 
 .link:hover {
@@ -28,9 +28,8 @@
 
   .wrapper {
     padding: 1rem;
-    /* min-height: 75%; */
     width: 75%;
-    border: 1px solid var(--red);
+    border: 5px solid var(--red);
   }
 
   .about_info {

@@ -9,7 +9,12 @@
 }
 
 html {
-  background: var(--bg-dark);
+  background-color: var(--bg-light);
+  color: var(--font-light);
+}
+
+a {
+  color: var(--font-light);
 }
 
 body {
@@ -34,7 +39,6 @@ body {
 }
 
 a {
-  color: white;
   text-decoration: underline;
 }
 

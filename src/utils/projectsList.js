@@ -15,6 +15,13 @@ export const projectsList = [
         internal: true
     },
     {
+        title: 'Portfolio - Raymond Salazar',
+        description: 'Custom Portfolio website for Raymond Salazar',
+        repo: 'https://github.com/dchicchon/ray-portfolio',
+        site: 'https://dchicchon.github.io/ray-portfolio',
+        internal: false
+    },
+    {
         title: 'wordymap',
         description: 'A bananagram emulator',
         repo: 'https://github.com/dchicchon/wordymap',

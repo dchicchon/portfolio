@@ -1,5 +1,4 @@
 #polus_footer {
-  color: white;
   padding: 6rem 0 2rem;
   width: 100%;
   position: relative;
@@ -20,7 +19,6 @@
 .footer_nav h4 {
   margin: 0 0 12px;
   padding: 0 8px;
-  color: white;
   font-size: 0.9375rem;
   letter-spacing: 0.5px;
   text-transform: uppercase;
@@ -31,7 +29,6 @@
   display: block;
   line-height: 1.9rem;
   opacity: 0.8;
-  color: white;
   text-decoration: none;
 }
 
@@ -54,6 +51,5 @@
 .footer_legal a {
   padding: 10px;
   opacity: 0.4;
-  color: white;
   text-decoration: none;
 }

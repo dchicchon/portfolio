@@ -10,10 +10,9 @@
 .wrapper {
   min-height: 50%;
   width: 50%;
-  border-right: 1px solid;
-  border-left: 1px solid;
+  border-right: 2px solid;
+  border-left: 2px solid;
   border-color: var(--blue);
-  /* border: 1px solid var(--blue); */
   padding: 5rem;
   overflow: auto;
   display: flex;
@@ -23,7 +22,7 @@
 
 .cell {
   padding: 1rem;
-  border: 1px solid var(--blue);
+  border: 5px solid var(--blue);
   border-radius: 10px;
 }
 
@@ -32,10 +31,9 @@
   .wrapper {
     min-height: 50%;
     width: unset;
-    border-right: 1px solid;
-    border-left: 1px solid;
+    border-right: 2px solid;
+    border-left: 2px solid;
     border-color: var(--blue);
-    /* border: 1px solid var(--blue); */
     padding: 2rem;
     overflow: auto;
     display: flex;

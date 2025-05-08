@@ -1,18 +1,10 @@
 /* App Specific styles to apply across all things */
 .main_page {
-  color: white;
   display: flex;
   flex-direction: column;
   height: 100%;
 }
 
-.background_light {
-  background-color: #282c34;
-}
-
-.background_dark {
-  background: hsl(222, 14%, 10%);
-}
 
 .h1 {
   font-size: xx-large;
@@ -29,9 +21,6 @@
 
 .link {
   text-decoration: underline;
-}
-.link:hover {
-  color: #61dafb;
 }
 
 .line_height_adjust {

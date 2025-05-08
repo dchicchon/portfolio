@@ -21,7 +21,7 @@
   height: 200px;
   width: 45%;
   padding: 1rem;
-  border: 1px solid;
+  border: 5px solid;
   border-color: var(--yellow);
   border-radius: 10px;
 }

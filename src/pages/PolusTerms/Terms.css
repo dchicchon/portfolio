@@ -39,14 +39,13 @@
 
 .legal-h2 {
   margin: 0;
-  color: #222;
   font-weight: 300;
   font-size: 2rem;
   text-align: center;
 }
 .highlight {
   height: 2px;
-  background-color: rgb(237, 150, 131);
+  background-color: var(--red);
   position: absolute;
   bottom: 0;
   left: 8px;
