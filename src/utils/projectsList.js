@@ -2,23 +2,23 @@ export const projectsList = [
     // in the future, we may consider just doing a read of github for projects and descriptions
     // for now we'll hardcode into the website
     {
-        title: 'colaco',
-        description: 'Best soda machine on the web',
-        repo: 'https://github.com/dchicchon/colaco',
-        site: 'https://dchicchon.github.io/colaco/',
+        title: 'LetsMeet',
+        description: 'A site to figure out when to meet',
+        site: 'https://letsmeet.space',
         internal: false,
+    },
+    {
+        title: 'polus',
+        description: 'A chrome extension daily planner',
+        repo: 'https://github.com/dchicchon/Polus',
+        site: '/polus',
+        internal: true
     },
     {
         title: 'wordymap',
         description: 'A bananagram emulator',
         repo: 'https://github.com/dchicchon/wordymap',
         site: 'https://dchicchon.github.io/wordymap/',
-        internal: false,
-    },
-    {
-        title: 'LetsMeet',
-        description: 'A site to figure out when to meet',
-        site: 'https://letsmeet.space',
         internal: false,
     },
     {
@@ -29,10 +29,10 @@ export const projectsList = [
         internal: false,
     },
     {
-        title: 'polus',
-        description: 'A chrome extension daily planner',
-        repo: 'https://github.com/dchicchon/Polus',
-        site: '/polus',
-        internal: true
+        title: 'colaco',
+        description: 'Best soda machine on the web',
+        repo: 'https://github.com/dchicchon/colaco',
+        site: 'https://dchicchon.github.io/colaco/',
+        internal: false,
     },
 ]
