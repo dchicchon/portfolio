@@ -1,0 +1,68 @@
+[
+  {
+    "sourceType": "strava",
+    "name": "Recovery run",
+    "distance": 7529,
+    "moving_time": 2716,
+    "elapsed_time": 2875,
+    "type": "Run",
+    "sport_type": "Run",
+    "date": "5/7/2025",
+    "date_local": "2025-05-07T13:49:37Z",
+    "average_speed": 2.772
+  },
+  {
+    "sourceType": "github",
+    "type": "PushEvent",
+    "repo": {
+      "id": 935594313,
+      "name": "dchicchon/crystal",
+      "url": "https://api.github.com/repos/dchicchon/crystal"
+    },
+    "date": "5/6/2025"
+  },
+  {
+    "sourceType": "github",
+    "type": "PushEvent",
+    "repo": {
+      "id": 935594313,
+      "name": "dchicchon/crystal",
+      "url": "https://api.github.com/repos/dchicchon/crystal"
+    },
+    "date": "5/6/2025"
+  },
+  {
+    "sourceType": "github",
+    "type": "PushEvent",
+    "repo": {
+      "id": 935594313,
+      "name": "dchicchon/crystal",
+      "url": "https://api.github.com/repos/dchicchon/crystal"
+    },
+    "date": "5/6/2025"
+  },
+  {
+    "sourceType": "strava",
+    "name": "Afternoon Run",
+    "distance": 9660.4,
+    "moving_time": 3298,
+    "elapsed_time": 3374,
+    "type": "Run",
+    "sport_type": "Run",
+    "date": "5/5/2025",
+    "date_local": "2025-05-05T15:20:07Z",
+    "average_speed": 2.929
+  },
+  {
+    "sourceType": "strava",
+    "name": "Recovery run",
+    "distance": 10389.4,
+    "moving_time": 3877,
+    "elapsed_time": 4027,
+    "type": "Run",
+    "sport_type": "Run",
+    "date": "5/1/2025",
+    "date_local": "2025-05-01T08:42:18Z",
+    "average_speed": 2.68
+  }
+]

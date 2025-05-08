@@ -1,26 +1,54 @@
-.sketch_container {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 2;
-  flex-wrap: wrap;
-}
-
-.pause_button {
-  width: 50px;
-  height: 25px;
-}
-
 #home {
   color: white;
-  display: flex;
-  flex-direction: column;
+  width: 100%;
   height: 100%;
   background: rgb(31, 33, 34);
 }
-/* Make sure that the sketch is centered */
-/* .sketch { */
-  /* border: 1px solid white; */
-  /* flex: 25%; */
-  /* width: 200px; */
-  /* height: 200px; */
-/* } */
+
+.wrapper {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+}
+
+.linkAbout {
+  text-align: center;
+}
+.linkAbout:hover {
+  color: rgb(210, 119, 95);
+}
+
+.linkProject {
+  text-align: center;
+}
+
+.linkProject:hover {
+  color: rgb(210, 200, 95);
+}
+
+.linkActivity {
+  text-align: center;
+}
+
+.linkActivity:hover {
+  color: rgb(100, 119, 200);
+}
+
+/* mobile */
+@media only screen and (max-width: 600px) {
+  #home {
+    height: unset;
+    padding: 2rem 0;
+    overflow: auto;
+  }
+
+  .wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+}

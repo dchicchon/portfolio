@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link } from 'wouter';
 import { projectsList } from '../../utils/projectsList';
 import { classList } from '../../utils';
 
@@ -12,7 +12,11 @@ const ProjectCard = ({ project }) => {
 
   const ProjectLink = () => {
     if (internal) {
-      return <Link to={site}>Project</Link>;
+      return (
+        <Link to={site}>
+          <p className={classList(appStyles.h3, styles.link)}>Project</p>
+        </Link>
+      );
     }
     return (
       <a
@@ -20,8 +24,7 @@ const ProjectCard = ({ project }) => {
           ga(`project visit: ${title}`);
         }}
         href={site}
-        target="_blank"
-        rel="noreferrer"
+        className={classList(appStyles.h3, styles.link)}
       >
         Project
       </a>
@@ -32,12 +35,10 @@ const ProjectCard = ({ project }) => {
     if (!repo) return;
     return (
       <a
+        className={classList(appStyles.h3, styles.link)}
         onClick={() => {
-          console.log('repo visit');
           ga(`repo visit: ${title}`);
         }}
-        target="_blank"
-        rel="noreferrer"
         href={repo}
       >
         Repository
@@ -46,11 +47,12 @@ const ProjectCard = ({ project }) => {
   };
 
   return (
-    <div className={classList(styles.project, appStyles.background_gray)}>
+    <div className={styles.project}>
       <div className={styles.project_details}>
-        <h3 className={appStyles.h2}>{title}</h3>
-        <p className={styles.project_description}>{description}</p>
-        {/* we should add space between */}
+        <h3 className={appStyles.h3}>{title}</h3>
+        <p className={classList(appStyles.h3, styles.project_description)}>
+          {description}
+        </p>
         <div style={{ display: 'flex', justifyContent: 'space-around' }}>
           <ProjectLink />
           <RepoLink />
@@ -66,7 +68,7 @@ const Projects = () => {
   });
   return (
     <div className={appStyles.main_page}>
-      <div className={classList(styles.projects_page, appStyles.background_dark)}>
+      <div className={classList(styles.projects_page)}>
         <div className={styles.project_list}>
           {projectsList.map((project, i) => (
             <ProjectCard key={i} project={project} />

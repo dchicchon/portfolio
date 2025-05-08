@@ -5,25 +5,6 @@
   flex-direction: column;
   height: 100%;
 }
-.outlet {
-  flex: 2;
-}
-
-.border_blue {
-  border-color: #61dafb;
-}
-
-.gray {
-  background: rgb(31, 33, 34);
-}
-
-.background_white {
-  background-color: white;
-}
-
-.background_gray {
-  background: #20232a;
-}
 
 .background_light {
   background-color: #282c34;
@@ -32,6 +13,7 @@
 .background_dark {
   background: hsl(222, 14%, 10%);
 }
+
 .h1 {
   font-size: xx-large;
 }
@@ -53,6 +35,7 @@
 }
 
 .line_height_adjust {
+  margin: 0;
   line-height: 30px;
 }
 

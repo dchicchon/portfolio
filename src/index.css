@@ -1,25 +1,36 @@
 :root {
-  --border-blue: #61dafb;
+  --font-light: black;
+  --font-dark: rgb(255, 255, 225);
+  --bg-light: rgb(255, 255, 225);
+  --bg-dark: rgb(31, 33, 34);
+  --red: rgb(210, 119, 95);
+  --yellow: rgb(210, 200, 95);
+  --blue: rgb(100, 119, 200);
+}
+
+html {
+  background: var(--bg-dark);
 }
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
-    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 html,
 body {
+  user-select: none;
   height: 100%;
   width: 100%;
-  overflow-x: hidden;
 }
 
 #root {
-  display: flex;
-  flex-direction: column;
+  /* display: flex; */
+  /* flex-direction: column; */
   height: 100%;
+  width: 100%;
 }
 
 a {
@@ -30,4 +41,3 @@ a {
 a:hover {
   text-decoration: underline;
 }
-
