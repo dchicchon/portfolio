@@ -2,19 +2,21 @@
   --font-light: black;
   --font-dark: rgb(255, 255, 225);
   --bg-light: rgb(255, 255, 225);
-  --bg-dark: rgb(31, 33, 34);
+  --bg-dark: rgb(49 60 66);
+  /* --bg-dark: rgb(71 81 87); */
+  /* --bg-dark: rgb(31, 33, 34); */
   --red: rgb(210, 119, 95);
   --yellow: rgb(210, 200, 95);
   --blue: rgb(100, 119, 200);
 }
 
 html {
-  background-color: var(--bg-light);
-  color: var(--font-light);
+  background-color: var(--bg-dark);
+  color: var(--font-dark);
 }
 
 a {
-  color: var(--font-light);
+  color: var(--font-dark);
 }
 
 body {

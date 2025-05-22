@@ -2,6 +2,7 @@ import { CrystalComponent } from 'crystals';
 import styles from './Home.module.css';
 import { Link } from 'wouter';
 import { ABOUT, PROJECTS } from '../../utils/mainRoutes';
+
 const Home = () => {
   return (
     <div id={styles.home}>
@@ -16,9 +17,13 @@ const Home = () => {
             // bgRed={31}
             // bgGreen={33}
             // bgBlue={34}
-            bgRed={255}
-            bgGreen={255}
-            bgBlue={225}
+
+            bgRed={49}
+            bgGreen={60}
+            bgBlue={66}
+            // bgRed={255}
+            // bgGreen={255}
+            // bgBlue={225}
           />
           <Link to={ABOUT.to}>
             <h2 className={styles.linkAbout}>About</h2>
@@ -34,9 +39,13 @@ const Home = () => {
             // bgRed={31}
             // bgGreen={33}
             // bgBlue={34}
-            bgRed={255}
-            bgGreen={255}
-            bgBlue={225}
+
+            bgRed={49}
+            bgGreen={60}
+            bgBlue={66}
+            // bgRed={255}
+            // bgGreen={255}
+            // bgBlue={225}
           />
 
           <Link to={PROJECTS.to}>
@@ -60,9 +69,12 @@ const Home = () => {
             // bgRed={31}
             // bgGreen={33}
             // bgBlue={34}
-            bgRed={255}
-            bgGreen={255}
-            bgBlue={225}
+            bgRed={49}
+            bgGreen={60}
+            bgBlue={66}
+            // bgRed={255}
+            // bgGreen={255}
+            // bgBlue={225}
           />
           <Link to={'/activity'}>
             <h2 className={styles.linkActivity}>Activity</h2>
